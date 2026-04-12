@@ -1,0 +1,1960 @@
+/* react-to-print가 scss형식을 못읽어서 css로 바꿈*/
+
+/* ============================================
+   인쇄 전용 스타일 (@media print)
+   ============================================ */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+
+  /* 인쇄 시 전체 페이지 설정 */
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    font-family: Arial, sans-serif !important;
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+
+  body * {
+    visibility: hidden !important;
+  }
+
+  /* 인쇄할 영역만 보이기 */
+  #main_reportPrint,
+  #main_reportPrint * {
+    visibility: visible !important;
+  }
+
+  /* 레이아웃 설정 - 스크롤 없이 전체 출력 */
+  .main_report {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+    border: none !important;
+  }
+
+  #main_reportPrint {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    border: none !important;
+  }
+
+  .main_report .container_left {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    position: static !important;
+    border: none !important;
+  }
+
+  .main_report .container_right {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* 빨간색 테두리 예외 처리 */
+  #main_reportPrint .section-performance-container th:last-child {
+    border: 2px solid #ff0000 !important;
+    border-bottom: none !important;
+  }
+
+  #main_reportPrint .section-performance-container td:last-child {
+    border: 2px solid #ff0000 !important;
+    border-top: none !important;
+    color: #ff0000 !important;
+  }
+
+  #main_reportPrint .media-performance-container tr.highlight {
+    border-left: 2px solid #f00 !important;
+    border-right: 2px solid #f00 !important;
+  }
+
+  #main_reportPrint .media-performance-container tr.highlight td {
+    color: #ffffff !important;
+  }
+
+  #main_reportPrint .media-performance-container tbody tr.first-highlight {
+    border-top: 2px solid red !important;
+  }
+
+  #main_reportPrint .media-performance-container tbody tr.last-highlight {
+    border-bottom: 2px solid red !important;
+  }
+
+  /* 페이지 나누기 */
+  .page-break {
+    page-break-before: always !important;
+    break-before: page !important;
+    display: block !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .page_section {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    width: 100% !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 인쇄 시 숨길 요소 */
+  .no-print,
+  .performanceComparisonModal,
+  nav, header, footer, .sidebar,
+  button {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .print-only {
+    display: inline !important;
+    visibility: visible !important;
+  }
+
+  /* 인쇄용 스타일 적용 */
+  #main_reportPrint .section-header {
+    margin-top: 20px !important;
+  }
+
+  #main_reportPrint .section-header h3 {
+    font-size: 13px !important;
+    margin-bottom: 20px !important;
+  }
+
+  #main_reportPrint .table-wrapper {
+    width: 100% !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #main_reportPrint .table-wrapper table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: 15px !important;
+    table-layout: fixed !important;
+  }
+
+  #main_reportPrint .table-wrapper table tr {
+    display: table-row !important;
+    width: 100% !important;
+    border-left: 1px solid #cfcfcf !important;
+  }
+
+  #main_reportPrint .table-wrapper table td,
+  #main_reportPrint .table-wrapper table th {
+    display: table-cell !important;
+    border-bottom: 1px solid #cfcfcf !important;
+    border-right: 1px solid #cfcfcf !important;
+    width: auto !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
+
+  #main_reportPrint .table-wrapper table thead th {
+    font-size: 12px !important;
+    height: 35px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    background: #3b82f6 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+  }
+
+  #main_reportPrint .table-wrapper table tbody td {
+    font-size: 10px !important;
+    height: 35px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+
+  #main_reportPrint .table-wrapper table tbody td span {
+    bottom: -15px !important;
+    line-height: 110% !important;
+    font-size: 6px !important;
+  }
+
+  #main_reportPrint .table-wrapper table tbody input {
+    border: none !important;
+    font-size: 8px !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    line-height: 100% !important;
+  }
+
+  #main_reportPrint .total-revenue-container .graph-wrapper {
+    height: 300px !important;
+    padding: 0 2% 2% !important;
+    margin-bottom: 40px !important;
+  }
+
+  #main_reportPrint .total-revenue-container .graph-wrapper h4 {
+    font-size: 14px !important;
+  }
+
+  #main_reportPrint .total-revenue-container .graph-container {
+    height: 12rem !important;
+  }
+
+  #main_reportPrint .total-revenue-container .graph-container .y-axis-labels {
+    font-size: 0.4rem !important;
+  }
+
+  #main_reportPrint .total-revenue-container .graph-container .bar-group .value {
+    font-size: 8px !important;
+    top: 15px !important;
+  }
+
+  /* 테이블 행 페이지 나누기 방지 */
+  #main_reportPrint table tr {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important;
+  }
+
+  #main_reportPrint table thead {
+    display: table-header-group !important;
+  }
+
+  #main_reportPrint table tbody {
+    display: table-row-group !important;
+  }
+
+  /* 이벤트별 주요 지표 테이블 border 처리 */
+  #main_reportPrint .event-metric-summary table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border: 1px solid #cfcfcf !important;
+  }
+
+  #main_reportPrint .event-metric-summary table thead th {
+    border-right: 1px solid #cfcfcf !important;
+    border-bottom: 1px solid #cfcfcf !important;
+    background: #3b82f6 !important;
+    color: #ffffff !important;
+    box-sizing: border-box !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  #main_reportPrint .event-metric-summary table thead th:last-child {
+    border-right: none !important;
+  }
+
+  #main_reportPrint .event-metric-summary table tbody tr {
+    background: transparent !important;
+  }
+
+  #main_reportPrint .event-metric-summary table tbody td {
+    border-right: 1px solid #cfcfcf !important;
+    border-bottom: 1px solid #cfcfcf !important;
+    background: transparent !important;
+    box-sizing: border-box !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  #main_reportPrint .event-metric-summary table tbody td:last-child {
+    border-right: none !important;
+  }
+
+  #main_reportPrint .event-metric-summary table tbody tr:last-child td {
+    border-bottom: none !important;
+  }
+}
+
+/* // 화면에서 두 개의 TitleBox가 보이지 않게 */
+.main_report .page_section:not(:first-of-type) .titleBox {
+  display: none;
+}
+
+.main_report .print-only {
+  display: none;
+}
+
+.main_report .no-print {
+  display: block !important;
+}
+
+@media print {
+  .main_reportPrint {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main_reportPrint .no-print {
+    display: none !important;
+  }
+}
+
+#main_reportPdf .no-print {
+  display: none !important;
+}
+
+@media print {
+  .main_reportPrint .print-only {
+    display: inline;
+  }
+}
+
+#main_reportPdf .print-only {
+  display: inline;
+}
+
+@media print {
+  .main_reportPrint .page-break {
+    page-break-before: always;
+  }
+}
+#main_reportPdf .page-break {
+  page-break-before: always;
+}
+
+@media print {
+  .main_reportPrint .page_section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+#main_reportPdf .page_section {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* 공통 -------------------------------------------------*/
+
+/* 메인보고서에서는 항상 좁은 패딩 사용 (접수일/방문일 기준 동일) */
+.main_report .container_left {
+  padding: 57px 40px !important;
+}
+
+.main_reportPrint .section-header {
+  margin-top: 60px;
+}
+
+@media print {
+  .main_reportPrint .section-header {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+  }
+}
+#main_reportPdf .section-header {
+  margin-top: 20px;
+}
+
+.main_reportPrint .section-header h3 {
+  color: #202224;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+@media print {
+  .main_reportPrint .section-header h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+
+#main_reportPdf .section-header h3 {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.main_reportPrint .table-wrapper,
+#main_reportPdf .table-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_reportPrint .table-wrapper h4 {
+  color: #343434;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+@media print {
+  .main_reportPrint .table-wrapper h4 {
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+  }
+}
+#main_reportPdf .table-wrapper h4 {
+  font-size: 12px;
+}
+
+.main_reportPrint .table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+@media print {
+  .main_reportPrint .table-wrapper table {
+    margin-bottom: 15px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
+#main_reportPdf .table-wrapper table {
+  margin-bottom: 15px;
+}
+
+.main_reportPrint .table-wrapper table tr {
+  display: flex;
+  border-left: 1px solid #cfcfcf;
+}
+
+.main_reportPrint .table-wrapper table td,
+.main_reportPrint .table-wrapper table th {
+  border-bottom: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_reportPrint .table-wrapper table thead th {
+  background: #3b82f6;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.56px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+@media print {
+  .main_reportPrint .table-wrapper table thead th {
+    font-size: 12px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+#main_reportPdf .table-wrapper table thead th {
+  font-size: 12px;
+  height: 35px;
+}
+
+.main_reportPrint .table-wrapper table tbody td {
+  /* width: 188px; */
+  height: 40px;
+  color: #646464;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.48px;
+  position: relative;
+}
+
+@media print {
+  .main_reportPrint .table-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_reportPrint .table-wrapper table tbody td {
+    font-size: 10px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .main_reportPrint .table-wrapper table tr {
+    display: table-row;
+    width: 100%;
+  }
+
+  .main_reportPrint .table-wrapper table td,
+  .main_reportPrint .table-wrapper table th {
+    display: table-cell;
+    border-bottom: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+  }
+}
+#main_reportPdf .table-wrapper table tbody td {
+  font-size: 10px;
+  height: 35px;
+}
+
+.main_reportPrint .table-wrapper table tbody td span {
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  text-align: right;
+  color: rgba(54, 54, 58, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.48px;
+}
+@media print {
+  .main_reportPrint .table-wrapper table tbody td span {
+    bottom: -15px;
+    line-height: 110%;
+    font-size: 6px;
+  }
+}
+#main_reportPdf .table-wrapper table tbody td span {
+  bottom: -15px;
+  line-height: 110%;
+  font-size: 6px;
+}
+
+.main_reportPrint .table-wrapper table tbody td.gray {
+  border: 1px solid #cfcfcf;
+  background: #ededed;
+}
+@media print {
+  .main_reportPrint .table-wrapper table tbody td.gray {
+    border: 1px solid #cfcfcf;
+  }
+}
+
+.main_reportPrint .table-wrapper table tbody input {
+  width: 80%;
+  height: 90%;
+  text-align: right;
+}
+@media print {
+  .main_reportPrint .table-wrapper table tbody input {
+    border: none;
+    font-size: 8px;
+    text-align: center;
+    height: 100%;
+    line-height: 100%;
+  }
+}
+#main_reportPdf .table-wrapper table tbody input {
+  border: none;
+  font-size: 8px;
+  text-align: center;
+  height: 100%;
+  line-height: 100%;
+}
+
+/* 이번달 총 매출 실적 -------------------------------------------------*/
+.main_reportPrint .total-revenue-container .section-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.main_reportPrint .total-revenue-container .section-header span {
+  color: #f00;
+}
+
+.main_reportPrint .total-revenue-container .graph-wrapper {
+  height: 380px;
+  background: #eef7ff;
+  width: 100%;
+  padding: 0 3% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 55px;
+}
+
+@media print {
+  .main_reportPrint .total-revenue-container .graph-wrapper {
+    height: 300px;
+    padding: 0 2% 2%;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#main_reportPdf .total-revenue-container .graph-wrapper {
+  height: 300px;
+  padding: 0 2% 2%;
+  margin-bottom: 40px;
+}
+
+.main_reportPrint .total-revenue-container .graph-wrapper h4 {
+  color: #343434;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+
+@media print {
+  .main_reportPrint .total-revenue-container .graph-wrapper h4 {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+  }
+}
+#main_reportPdf .total-revenue-container .graph-wrapper h4 {
+  font-size: 14px;
+}
+
+.main_reportPrint .total-revenue-container .graph-container {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 15rem;
+}
+@media print {
+  .main_reportPrint .total-revenue-container .graph-container {
+    height: 12rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+#main_reportPdf .total-revenue-container .graph-container {
+  height: 12rem;
+}
+
+.main_reportPrint .total-revenue-container .graph-container .y-axis-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: right;
+  width: 10%;
+}
+@media print {
+  .main_reportPrint .total-revenue-container .graph-container .y-axis-labels {
+    font-size: 0.4rem;
+  }
+}
+#main_reportPdf .total-revenue-container .graph-container .y-axis-labels {
+  font-size: 0.4rem;
+}
+
+.main_reportPrint .total-revenue-container .graph-container .bar-container {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.main_reportPrint .total-revenue-container .graph-container .bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+  position: relative;
+}
+.main_reportPrint
+  .total-revenue-container
+  .graph-container
+  .bar-group:nth-child(1)
+  .bar,
+.main_reportPrint
+  .total-revenue-container
+  .graph-container
+  .bar-group:nth-child(2)
+  .bar {
+  background: #c6d5e1;
+}
+.main_reportPrint
+  .total-revenue-container
+  .graph-container
+  .bar-group:nth-child(3)
+  .bar {
+  background: #809aff;
+}
+.main_reportPrint
+  .total-revenue-container
+  .graph-container
+  .bar-group:nth-child(4)
+  .bar {
+  background: #acdaff;
+}
+.main_reportPrint
+  .total-revenue-container
+  .graph-container
+  .bar-group:nth-child(5)
+  .bar {
+  background: #5eeba7;
+}
+
+.main_reportPrint .total-revenue-container .graph-container .bar-group .bar {
+  width: 100%;
+  height: 100%;
+  transition: height 0.3s ease;
+}
+
+.main_reportPrint .total-revenue-container .graph-container .bar-group .label {
+  position: absolute;
+  bottom: -25px;
+  color: #646464;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.main_reportPrint
+  .total-revenue-container
+  .graph-container
+  .bar-group.overHeight
+  .value {
+  color: #0051ff;
+  font-weight: bold;
+}
+
+@media print {
+  .main_reportPrint
+    .total-revenue-container
+    .graph-container
+    .bar-group.overHeight
+    .value {
+    font-weight: 600;
+  }
+}
+
+#main_reportPdf
+  .total-revenue-container
+  .graph-container
+  .bar-group.overHeight
+  .value {
+  font-weight: 600;
+}
+
+.main_reportPrint
+  .total-revenue-container
+  .graph-container
+  .bar-group.rowHeight
+  .value {
+  color: #5e5e5e;
+  font-weight: bold;
+  top: -20px;
+}
+
+@media print {
+  .main_reportPrint
+    .total-revenue-container
+    .graph-container
+    .bar-group.rowHeight
+    .value {
+    font-weight: 600;
+  }
+}
+
+#main_reportPdf
+  .total-revenue-container
+  .graph-container
+  .bar-group.rowHeight
+  .value {
+  color: #888888;
+  font-weight: 600;
+  top: -14px;
+}
+
+.main_reportPrint .total-revenue-container .graph-container .bar-group .value {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 141%;
+  letter-spacing: -0.48px;
+  position: absolute;
+  top: 20px;
+}
+
+@media print {
+  .main_reportPrint
+    .total-revenue-container
+    .graph-container
+    .bar-group
+    .value {
+    font-size: 8px;
+    top: 15px;
+  }
+}
+
+#main_reportPdf .total-revenue-container .graph-container .bar-group .value {
+  font-size: 8px;
+  top: 15px;
+}
+
+/* 이번달 총 매출 실적 -------------------------------------------------*/
+.main_reportPrint .section-performance-container button {
+  width: 194px;
+  height: 71px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: #003181;
+  border: none;
+  margin-top: 90px;
+}
+
+.main_reportPrint .section-performance-container th:last-child {
+  border: 2px solid #ff0000;
+  border-bottom: none;
+}
+
+.main_reportPrint .section-performance-container td:last-child {
+  border: 2px solid #ff0000;
+  border-top: none;
+  color: #ff0000;
+}
+.main_reportPrint .media-performance-container tr:first-child {
+  /* border: 1px solid #cfcfcf; */
+  background: #979797;
+}
+.main_reportPrint .media-performance-container tr:first-child td {
+  border: none;
+  color: #fff;
+}
+
+.main_reportPrint .media-performance-container tr.highlight {
+  border-left: 2px solid #f00;
+  border-right: 2px solid #f00;
+}
+.main_reportPrint .media-performance-container tr.highlight td.total {
+  background-color: #f00 !important;
+  border-bottom: 1px solid #cfcfcf;
+  color: white;
+}
+
+.main_reportPrint .media-performance-container tbody tr.first-highlight {
+  border-top: 2px solid red !important;
+}
+
+.main_reportPrint .media-performance-container tbody tr.last-highlight {
+  border-bottom: 2px solid red !important;
+}
+
+.main_reportPrint
+  .media-performance-container
+  tbody
+  tr:not(:first-of-type)
+  td.total {
+  background: #d0eaff;
+}
+
+/* SCSS에서 변환된 추가 스타일들 */
+.main_report .container_left .performanceComparisonModal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.main_report .container_left .performanceComparisonModal .content {
+  position: relative;
+  width: 60%;
+  min-width: 1080px;
+  max-width: 1200px;
+  min-height: 790px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  background: #fff;
+  padding: 60px;
+}
+
+.main_report .container_left .performanceComparisonModal .content .closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main_report .container_left .performanceComparisonModal .content .date-box-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.main_report .container_left .performanceComparisonModal .content .date-box-wrap h4 {
+  margin-bottom: 16px;
+  color: #343434;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table:nth-of-type(2) {
+  margin: 55px 0;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table th,
+.main_report .container_left .performanceComparisonModal .content table.performance-table td {
+  padding: 8px;
+  border: 1px solid #cfcfcf;
+  width: calc(100% / 6);
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table th span.efficiency.up,
+.main_report .container_left .performanceComparisonModal .content table.performance-table td span.efficiency.up {
+  color: #f00;
+  font-weight: 500;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table th span.efficiency.down,
+.main_report .container_left .performanceComparisonModal .content table.performance-table td span.efficiency.down {
+  color: #0029ff;
+  font-weight: 500;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table thead {
+  border: 1px solid #cfcfcf;
+  background: #3b82f6;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 141%;
+  letter-spacing: -0.56px;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table thead tr td:first-child {
+  background: #646464;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table tbody {
+  color: #646464;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 141%;
+  letter-spacing: -0.48px;
+}
+
+.main_report .container_left .performanceComparisonModal .content table.performance-table tbody tr td:first-child {
+  background: #efefef;
+}
+
+/* performanceComparisonModal 내부 DateFilter 스타일 */
+.main_report .container_left .performanceComparisonModal .date-filter-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .date-filter-box {
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .date-filter {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .custom-select {
+  align-items: center;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  height: 100%;
+  justify-content: space-around;
+  width: 121px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .custom-options {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  z-index: 10;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .option-item {
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  background: #fff;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .option-item:hover,
+.main_report .container_left .performanceComparisonModal .date-filter-container .option-item.selected {
+  background-color: #f0f0f0;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .date-text {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  cursor: pointer;
+  padding-right: 13px;
+  border-right: 1px solid #d9d9d9;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .arrow-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .arrow-icon {
+  color: #707070;
+  margin: 0px 16.5px 0 16.5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .date-range-picker-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  margin-top: 5px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .calendar-icon {
+  margin: 0 -8px;
+}
+
+.main_report .container_left .performanceComparisonModal .date-filter-container .line-seper {
+  font-size: 26px;
+  color: #d9d9d9;
+}
+
+/* 날짜 필터 스타일 */
+.main_report .container_left .date-filter-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main_report .container_left .date-filter-container .date-filter-box {
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.main_report .container_left .date-filter-container .date-filter {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.main_report .container_left .date-filter-container .custom-select {
+  align-items: center;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  height: 100%;
+  justify-content: space-around;
+  width: 121px;
+}
+
+.main_report .container_left .date-filter-container .date-display {
+  display: flex;
+  align-items: center;
+}
+
+.main_report .container_left .date-filter-container .date-text {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  cursor: pointer;
+  padding-right: 13px;
+  border-right: 1px solid #d9d9d9;
+}
+
+.main_report .container_left .date-filter-container .divider.large {
+  width: 1px;
+  height: 50px;
+  background: #d9d9d9;
+  margin: 0 15px;
+}
+
+.main_report .container_left .date-filter-container .calendar-icon {
+  margin: 0 -8px;
+}
+
+.main_report .container_left .date-filter-container .lineSeper {
+  font-size: 26px;
+  color: #d9d9d9;
+}
+
+.main_report .container_left .date-filter-container .arrow-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main_report .container_left .date-filter-container .arrow-icon {
+  color: #707070;
+  margin: 0px 16.5px 0 16.5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main_report .container_left .date-filter-container .dateRangePicker-box {
+  position: absolute;
+  top: 100%;
+  left: 43%;
+  z-index: 3;
+}
+
+.main_report .container_left .date-filter-container .custom-options {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  z-index: 10;
+  overflow-y: auto;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.main_report .container_left .date-filter-container .custom-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main_report .container_left .date-filter-container .custom-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main_report .container_left .date-filter-container .custom-options::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.main_report .container_left .date-filter-container .custom-options::-webkit-scrollbar-thumb:hover {
+  background-color: #b0b0b0;
+}
+
+.main_report .container_left .date-filter-container .option-item {
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  background: #fff;
+}
+
+.main_report .container_left .date-filter-container .option-item:hover,
+.main_report .container_left .date-filter-container .option-item.selected {
+  background-color: #f0f0f0;
+}
+
+/* 오른쪽 컨테이너 스타일 */
+.main_report .pre-search-text {
+  color: #979797;
+  font-size: 20px;
+  font-weight: 400;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_report .container_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_report .container_right .filter-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+/* 공통 */
+.main_report .container_right .filter-container .dropdown-icon {
+  color: #707070;
+  font-size: 20px;
+}
+
+.main_report .container_right .filter-container .custom-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid var(--sidebar-border, #e5e7eb);
+  border-radius: 8px;
+  z-index: 10;
+  overflow-y: auto;
+  max-height: 240px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.main_report .container_right .filter-container .custom-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main_report .container_right .filter-container .custom-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main_report .container_right .filter-container .custom-options::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.main_report .container_right .filter-container .custom-options::-webkit-scrollbar-thumb:hover {
+  background-color: #b0b0b0;
+}
+
+.main_report .container_right .filter-container .custom-options .option-item {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--sidebar-foreground, #374151);
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main_report .container_right .filter-container .custom-options .option-item.disabled {
+  opacity: 0.5;
+  background: #bbbbbb;
+  pointer-events: none;
+}
+
+.main_report .container_right .filter-container .custom-options .option-item:hover {
+  background: var(--sidebar-accent, #f8fafc);
+}
+
+.main_report .container_right .filter-container .custom-options .option-item.selected {
+  background: var(--sidebar-accent, #eff6ff);
+  color: var(--sidebar-primary, #3b82f6);
+  font-weight: 500;
+}
+
+/* 날짜타입(라디오) */
+.main_report .container_right .date-type-selector {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.main_report .container_right .date-type-selector label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #343434;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main_report .container_right .date-type-selector input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+}
+
+/* 날짜 필터 스타일 */
+.main_report .container_right .calendarDateFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10% 5% 2% 5%;
+  background-color: #fff;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title {
+  width: 95%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title span {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: right;
+}
+
+/* 날짜 및 기수 드롭박스 */
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter {
+  width: 137px;
+  height: 34px;
+  border-radius: 5px;
+  border: 1px solid #4880ff;
+  background: #fff;
+  position: relative;
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter .cohort-custom-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 10%;
+  color: #202224;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter .cohort-custom-select .dropdown-icon {
+  width: 15px;
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter .custom-options {
+  top: 40px;
+  border-radius: 5px;
+  border: 1px solid #4880ff;
+  background: #fff;
+  cursor: pointer;
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter .custom-options .option-item {
+  color: #4880ff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter .custom-options .option-item.disabled {
+  opacity: 0.5;
+  background: #bbbbbb;
+  pointer-events: none;
+}
+
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter .custom-options .option-item:hover,
+.main_report .container_right .calendarDateFilter .calendar-title .cohort-filter .custom-options .option-item.selected {
+  border: 1px solid #4880ff;
+  background: #4880ff;
+  color: white;
+}
+
+.main_report .container_right .calendarDateFilter .calendar {
+  height: 80%;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(60, 60, 67, 0.6);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-header .calendar-day {
+  width: calc(100% / 7);
+  height: 100%;
+  text-align: center;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100% - 50px);
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-cell {
+  width: calc(100% / 7);
+  aspect-ratio: 1/0.8;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-cell.today {
+  background: #eef7ff;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-cell.selected {
+  background: rgba(72, 128, 255, 0.2);
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-cell.selected.start-date {
+  border-radius: 50% 0 0 50%;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-cell.selected.end-date {
+  border-radius: 0 50% 50% 0;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-cell.selected .calendar-date {
+  background: #4880ff;
+  color: #000;
+  border-radius: 50% 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-cell.in-range {
+  background: rgba(72, 128, 255, 0.2);
+  mix-blend-mode: multiply;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-date {
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.32px;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-reservation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-reservation-list .calendar-reservation-item {
+  padding: 5px 12px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-reservation-list .calendar-reservation-item.visit_status {
+  background-color: #00b69b;
+}
+
+.main_report .container_right .calendarDateFilter .calendar .calendar-reservation-list .calendar-reservation-item.not_visit_status {
+  background-color: #f77;
+}
+
+.main_report .container_right .calendarDateFilter .year-month-button {
+  margin-top: auto;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.main_report .container_right .calendarDateFilter .year-month-button button {
+  background: none;
+  border: none;
+  height: 100%;
+  aspect-ratio: 1/1;
+  line-height: 100%;
+}
+
+.main_report .container_right .calendarDateFilter .year-month-button button svg {
+  font-weight: bold;
+  color: #979797;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 5%;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput h3 {
+  color: #343434;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput > .input-group {
+  width: 100%;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput > .input-group input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: #e9f5ff;
+  padding: 5%;
+  color: #b49292;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput .cancle-save-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput .cancle-save-btns button {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput .cancle-save-btns button.cancleBtn {
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  color: #d9d9d9;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput .cancle-save-btns button.cancleBtn:hover {
+  background-color: #dddddd;
+  color: #c2c2c2;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput .cancle-save-btns button.saveBtn {
+  background: rgba(217, 217, 217, 1);
+  color: #fff;
+  border: 0;
+}
+
+.main_report .container_right .calendarDateFilter .dataInput .cancle-save-btns button.saveBtn.active,
+.main_report .container_right .calendarDateFilter .dataInput .cancle-save-btns button.saveBtn:hover {
+  background: #4880ff;
+  color: #fff;
+  border: 0;
+}
+
+/* 병원 필터 스타일 - dbList 스타일 적용 */
+.main_report .container_right .hospital-filter {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid var(--sidebar-border, #e5e7eb);
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main_report .container_right .hospital-custom-select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: var(--sidebar-foreground, #374151);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.main_report .container_right .hospital-custom-select.disabled {
+  cursor: not-allowed;
+  color: var(--sidebar-muted-foreground, #6b7280);
+}
+
+/* 매체 필터 스타일 - dbList 스타일 적용 */
+.main_report .container_right .company-filter {
+  position: relative;
+  width: 100%;
+}
+
+.main_report .container_right .company-filter .company-custom-select {
+  padding: 0 16px;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid var(--sidebar-border, #e5e7eb);
+  font-size: 14px;
+  color: var(--sidebar-foreground, #374151);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main_report .container_right .company-filter .company-custom-select input {
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  color: var(--sidebar-foreground, #374151);
+  flex: 1;
+}
+
+.main_report .container_right .company-filter .company-custom-select input::placeholder {
+  color: var(--sidebar-muted-foreground, #9ca3af);
+}
+
+.main_report .container_right .company-filter .company-custom-select button {
+  width: 60px;
+  height: 32px;
+  background: var(--sidebar-primary, #3b82f6);
+  color: var(--sidebar-primary-foreground, #ffffff);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-left: 8px;
+}
+
+.main_report .container_right .company-filter .company-custom-select button:hover {
+  background: var(--sidebar-primary, #2563eb);
+}
+
+.main_report .container_right .company-filter .mediaCheckBox {
+  margin: 0 10px 0 3px;
+}
+
+.main_report .container_right .company-filter .dropdown-arrow {
+  color: #999999;
+  font-size: 12px;
+  user-select: none;
+}
+
+.main_report .container_right .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.main_report .container_right .buttons button {
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+.main_report .container_right .buttons .saveSearchBtn {
+  margin-top: 15px;
+  background: #4880ff;
+  color: white;
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(72, 128, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.main_report .container_right .buttons .saveSearchBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.main_report .container_right .buttons .saveSearchBtn:hover {
+  background: #3b70e6;
+  box-shadow: 0 6px 20px rgba(72, 128, 255, 0.4);
+}
+
+.main_report .container_right .buttons .saveSearchBtn:hover::before {
+  left: 100%;
+}
+
+.main_report .container_right .buttons .saveSearchBtn:active {
+  box-shadow: 0 2px 8px rgba(72, 128, 255, 0.3);
+}
+
+.main_report .container_right .buttons .printBtns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+  flex-direction: row;
+  height: 54px;
+}
+
+.main_report .container_right .buttons .printBtns button {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.main_report .container_right .buttons .printBtns button.printBtn {
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+}
+
+.main_report .container_right .buttons .printBtns button.printBtn:hover {
+  background: #059669;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.main_report .container_right .buttons .printBtns button.printBtn:active {
+  box-shadow: 0 1px 4px rgba(16, 185, 129, 0.2);
+}
+
+.main_report .container_right .buttons .printBtns button.printBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.main_report .container_right .buttons .printBtns button.pdfBtn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+}
+
+.main_report .container_right .buttons .printBtns button.pdfBtn:hover {
+  background: #4f46e5;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.main_report .container_right .buttons .printBtns button.pdfBtn:active {
+  box-shadow: 0 1px 4px rgba(99, 102, 241, 0.2);
+}
+
+.main_report .container_right .buttons .printBtns button.pdfBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* mainReport 페이지네이션 스타일 - tm/notice 완전 동일 */
+.main_report .pagination-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 8px;
+  padding: 16px;
+  background: white
+}
+
+.main_report .pagination-btn {
+  height: 36px;
+  min-width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  background: white;
+  border: 1px solid #dee2e6;
+  color: #495057;
+  cursor: pointer;
+}
+
+.main_report .pagination-btn-icon {
+  width: 36px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main_report .pagination-btn-number {
+  min-width: 36px;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.main_report .pagination-btn-active {
+  background: #3b82f6;
+  border: 1px solid #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+.main_report .pagination-btn:not(.pagination-btn-active):hover:not(:disabled) {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.main_report .pagination-btn:not(.pagination-btn-active):active:not(:disabled) {
+  background: #e9ecef;
+}
+
+.main_report .pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f8f9fa;
+  border-color: #e9ecef;
+  color: #6c757d;
+}
+
+.main_report .pagination-btn:disabled:hover {
+  background: #f8f9fa;
+  border-color: #e9ecef;
+}
+
+
+@media (max-width: 768px) {
+  .main_report .pagination-modern {
+    padding: 12px;
+    gap: 4px;
+  }
+
+  .main_report .pagination-btn {
+    height: 32px;
+    min-width: 32px;
+    font-size: 13px;
+  }
+
+  .main_report .pagination-btn-icon {
+    width: 32px;
+    font-size: 14px;
+  }
+
+  .main_report .pagination-btn-number {
+    min-width: 32px;
+    font-size: 13px;
+  }
+}
+
+/* 병원 필터 검색 입력 스타일 */
+.main_report .container_right .hospital-filter .search-input-wrapper {
+  padding: 0;
+  cursor: default;
+}
+
+.main_report .container_right .hospital-filter .search-input-wrapper:hover {
+  background-color: transparent;
+}
+
+.main_report .container_right .hospital-filter .hospital-search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,191 @@
+/* 계정 테이블 및 검색 스타일 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.accounts-section {
+  background: white;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* 검색 기능 스타일 */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.search-input {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px 0 0 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  width: 250px;
+  height: 36px;
+  transition: all 0.2s ease;
+  color: #374151;
+  border-right: none;
+}
+
+.search-input:focus {
+  outline: none;
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.search-btn {
+  background: #3b82f6;
+  border: 2px solid #3b82f6;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  padding: 0.5rem 1rem;
+  height: 36px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.action-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.table-container {
+  flex: 1;
+  width: 100%;
+}
+
+/* 액션 버튼들 스타일 */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn-action {
+  padding: 0.375rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-change-password {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-change-password:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.btn-edit {
+  background: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+}
+
+.btn-edit:hover {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.btn-retire {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-retire:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* 테이블 내 배지는 더 작게 */
+.data-table .grade-badge {
+  width: 24px;
+  height: 24px;
+  font-size: 0.75rem;
+  margin: 0 auto;
+}
+
+/* 퇴사자 행 스타일 */
+.data-table tbody tr[data-retired="true"] {
+  background-color: #f8f9fa !important;
+  color: #6c757d;
+  opacity: 0.7;
+}
+
+.data-table tbody tr[data-retired="true"]:hover {
+  background-color: #e9ecef !important;
+}
+
+.data-table tbody tr[data-retired="true"] td {
+  background-color: inherit !important;
+  color: inherit;
+}
+
+/* 등급 뱃지 스타일 */
+.grade-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.grade-s {
+  background: #dc2626;
+}
+
+.grade-a {
+  background: #3b82f6;
+}
+
+.grade-b {
+  background: #10b981;
+}
+
+.grade-c {
+  background: #6b7280;
+}

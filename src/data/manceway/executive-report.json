@@ -1,0 +1,62 @@
+{
+  "monthly": [
+    { "month": "2026-04", "label": "4월", "sales": 211000000, "profit": 62000000, "adCost": 26000000 }
+  ],
+  "salesTable": [
+    {
+      "product": "알파덴탈",
+      "카페24Sales": 18500000, "쿠팡Sales": 32000000, "쿠팡그로서리Sales": 8500000,
+      "스마트스토어Sales": 22000000, "옥션Sales": 6200000, "11번가Sales": 9800000,
+      "totalSales": 97000000,
+      "salesMargin": 38800000, "contributionProfit": 29100000, "profitRate": "30.0",
+      "adCost": 12500000, "roas": "776.0", "salesCommission": 4850000
+    },
+    {
+      "product": "베타케어",
+      "카페24Sales": 12300000, "쿠팡Sales": 24500000, "쿠팡그로서리Sales": 5200000,
+      "스마트스토어Sales": 16800000, "옥션Sales": 4100000, "11번가Sales": 6900000,
+      "totalSales": 69800000,
+      "salesMargin": 27920000, "contributionProfit": 20940000, "profitRate": "30.0",
+      "adCost": 8900000, "roas": "784.3", "salesCommission": 3490000
+    },
+    {
+      "product": "감마헬스",
+      "카페24Sales": 9800000, "쿠팡Sales": 18200000, "쿠팡그로서리Sales": 3900000,
+      "스마트스토어Sales": 13500000, "옥션Sales": 3200000, "11번가Sales": 5400000,
+      "totalSales": 54000000,
+      "salesMargin": 21600000, "contributionProfit": 16200000, "profitRate": "30.0",
+      "adCost": 7000000, "roas": "771.4", "salesCommission": 2700000
+    },
+    {
+      "product": "델타치과",
+      "카페24Sales": 7200000, "쿠팡Sales": 15400000, "쿠팡그로서리Sales": 3100000,
+      "스마트스토어Sales": 10800000, "옥션Sales": 2600000, "11번가Sales": 4300000,
+      "totalSales": 43400000,
+      "salesMargin": 17360000, "contributionProfit": 13020000, "profitRate": "30.0",
+      "adCost": 5600000, "roas": "775.0", "salesCommission": 2170000
+    },
+    {
+      "product": "엡실론임플",
+      "카페24Sales": 14600000, "쿠팡Sales": 28900000, "쿠팡그로서리Sales": 6100000,
+      "스마트스토어Sales": 19700000, "옥션Sales": 4800000, "11번가Sales": 8100000,
+      "totalSales": 82200000,
+      "salesMargin": 32880000, "contributionProfit": 24660000, "profitRate": "30.0",
+      "adCost": 10500000, "roas": "782.9", "salesCommission": 4110000
+    }
+  ],
+  "marketplaces": [
+    { "id": 1, "name": "카페24" },
+    { "id": 2, "name": "쿠팡" },
+    { "id": 3, "name": "쿠팡그로서리" },
+    { "id": 4, "name": "스마트스토어" },
+    { "id": 5, "name": "옥션" },
+    { "id": 6, "name": "11번가" }
+  ],
+  "products": [
+    { "id": 1, "name": "알파덴탈" },
+    { "id": 2, "name": "베타케어" },
+    { "id": 3, "name": "감마헬스" },
+    { "id": 4, "name": "델타치과" },
+    { "id": 5, "name": "엡실론임플" }
+  ]
+}

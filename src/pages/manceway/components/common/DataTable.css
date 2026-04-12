@@ -1,0 +1,358 @@
+/* shadcn/ui 스타일 기반 공통 테이블 스타일 */
+.data-table-container {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  overflow-x: auto;
+  overflow-y: visible;
+  position: relative;
+}
+
+/* 스크롤이 있을 때만 첫 번째 컬럼의 가상 보더 표시 */
+.data-table-container.scrolled .data-table thead tr:first-child th:first-child::after,
+.data-table-container.scrolled .data-table td:first-child::after {
+  opacity: 1;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  min-width: 800px;
+  background: white;
+  table-layout: auto;
+}
+
+/* 관리자 권한일 때는 더 넓은 최소 너비 */
+.data-table-container.admin-view .data-table {
+  min-width: 1200px;
+}
+
+/* 관리자 권한이지만 판매처가 2개 이하일 때 */
+.data-table-container.admin-view-small .data-table {
+  min-width: 800px;
+}
+
+/* 기본 권한일 때는 더 작은 최소 너비 */
+.data-table-container.basic-view .data-table {
+  min-width: 750px;
+}
+
+.data-table th {
+  background: #fafafa;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #71717a;
+  text-align: center;
+  border-bottom: 1px solid #e4e4e7;
+  border-right: 1px solid #e4e4e7;
+  height: 2.5rem;
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+  min-width: 70px;
+  padding: 0.5rem 0.75rem;
+}
+
+
+.data-table th:last-child {
+  border-right: none;
+}
+
+/* thead sticky 기본 - 모든 첫 번째 행 헤더를 상단에 고정 */
+.data-table thead tr:first-child th {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #fafafa;
+}
+
+/* 좌상단 셀: sticky left + top (가로/세로 스크롤 모두 고정) */
+.data-table thead tr:first-child th:first-child {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background: #fafafa;
+  z-index: 40;
+}
+
+.data-table thead tr:first-child th:first-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e4e4e7;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* 두 번째 행 헤더도 sticky (첫 번째 행 아래에 위치) */
+.data-table thead tr:nth-child(2) th {
+  position: sticky;
+  top: 2.5rem;
+  z-index: 19;
+  background: #fafafa;
+}
+
+/* 두 번째 행의 첫 번째 셀은 sticky 해제 */
+.data-table thead tr:nth-child(2) th:first-child {
+  position: static;
+  background: #fafafa;
+}
+
+.data-table td {
+  text-align: center;
+  border-bottom: 1px solid #f4f4f5;
+  color: #09090b;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  transition: background-color 0.15s ease-in-out;
+  vertical-align: middle;
+  height: 2.75rem;
+  white-space: nowrap;
+  padding: 0.75rem;
+}
+
+/* 진짜 마지막 컬럼만 오른쪽 보더 제거 */
+.data-table td:last-child {
+  border-right: none;
+}
+
+.data-table td {
+  border: 1px solid #f4f4f5;
+}
+
+.data-table td:first-child {
+  position: sticky;
+  left: 0;
+  background: white !important;
+  z-index: 9;
+  border-left:none;
+}
+
+.data-table td:first-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #f4f4f5;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+
+
+.data-table tbody tr:hover {
+  background-color: #f4f4f5 ;
+}
+
+.data-table tbody tr:hover td:first-child {
+  background-color: #f4f4f5 !important;
+}
+
+.data-table tbody td {
+  text-align: center;
+}
+
+.data-table tbody tr.total-row {
+  background-color: #f9fafb;
+  border-top: 1px solid #e4e4e7;
+}
+
+.data-table tbody tr.total-row td {
+  font-weight: 600;
+  color: #09090b;
+  background-color: #f9fafb;
+  border-bottom: none;
+}
+
+.data-table tbody tr.total-row:hover {
+  background-color: #f3f4f6;
+}
+
+.data-table tbody tr.total-row:hover td {
+  background-color: #f3f4f6;
+}
+
+.data-table tbody tr.total-row:hover td:first-child {
+  background-color: #f3f4f6 !important;
+}
+
+.data-table tbody tr.total-row:hover td:first-child::after {
+  background-color: #f4f4f5;
+}
+
+.data-table tbody tr.total-row td:first-child {
+  font-weight: 600;
+  text-align: center;
+  background: #f9fafb !important;
+}
+
+.data-table tbody tr.total-row td:first-child::after {
+  background-color: #f4f4f5;
+}
+
+/* 클릭 가능한 셀 스타일 */
+
+.data-table .clickable-cell:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 데이터 입력 현황용 셀 스타일 */
+.data-table .has-data {
+  background-color: #dbeafe;
+}
+
+.data-table .no-data {
+  background-color: #f1f5f9;
+}
+
+.data-table tbody tr:hover .has-data {
+  background-color: #bfdbfe;
+}
+
+.data-table tbody tr:hover .no-data {
+  background-color: #e2e8f0;
+}
+
+/* 툴팁 스타일 */
+.data-table th.has-tooltip {
+  cursor: help;
+}
+
+/* 박스별 데이터 툴팁을 가진 셀 스타일 */
+.data-table td.has-cell-tooltip {
+  cursor: help;
+  position: relative;
+}
+
+.data-table td.has-cell-tooltip:hover {
+  background-color: #f0f9ff;
+}
+
+/* 부모 판매처 헤더 스타일 */
+.data-table th.parent-channel-header {
+  background-color: #e0f2fe;
+  color: #0c4a6e;
+  font-weight: 600;
+}
+
+/* 부모 판매처 셀 스타일 (2번째 행의 매출/비율) */
+.data-table th.parent-channel-cell {
+  background-color: #f0f9ff;
+  color: #0c4a6e;
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+  .data-table {
+    font-size: 0.8rem;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 0.625rem 0.75rem;
+  }
+  
+  .data-table th {
+    height: 2.5rem;
+  }
+  
+  .data-table td {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .data-table {
+    font-size: 0.75rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .data-table th {
+    height: 2.25rem;
+  }
+
+  .data-table td {
+    height: 2.75rem;
+  }
+}
+
+/* 드래그 앤 드롭 컬럼 순서 변경 스타일 */
+.data-table th.draggable-header {
+  cursor: grab;
+  user-select: none;
+  position: relative;
+}
+
+.data-table th.draggable-header:active {
+  cursor: grabbing;
+}
+
+.data-table th.draggable-header .drag-handle {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.4;
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+.data-table th.draggable-header:hover .drag-handle {
+  opacity: 0.8;
+}
+
+.data-table th.dragging {
+  opacity: 0.5;
+  background-color: #bfdbfe !important;
+}
+
+.data-table th.drag-over {
+  background-color: #93c5fd !important;
+  box-shadow: inset 0 0 0 2px #3b82f6;
+}
+
+/* 정렬 가능한 헤더 */
+.data-table th.sortable {
+  user-select: none;
+  position: relative;
+}
+
+.data-table th.sortable:hover {
+  background-color: #f4f4f5;
+}
+
+.data-table th.sorted {
+  background-color: #eff6ff;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+/* 정렬 아이콘 */
+.data-table th .sort-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-left: 2px;
+  opacity: 0.5;
+}
+
+.data-table th.sorted .sort-icon {
+  color: #3b82f6;
+  opacity: 1;
+}
+
+.data-table th.sortable:hover .sort-icon {
+  opacity: 0.8;
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ref-1",
+    "name": "경쟁사 광고 분석 세트",
+    "completed": false,
+    "completed_at": null,
+    "created_at": "2026-03-01T00:00:00.000Z",
+    "updated_at": "2026-04-08T12:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-1-1",
+        "set_id": "ref-1",
+        "url": "https://picsum.photos/seed/ref1a/800/600",
+        "url_type": "image",
+        "note": "경쟁사 A — 상단 히어로 배너. 감성적 카피와 제품 이미지 조합이 효과적",
+        "created_at": "2026-03-05T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-1-2",
+        "set_id": "ref-1",
+        "url": "https://picsum.photos/seed/ref1b/800/450",
+        "url_type": "image",
+        "note": "경쟁사 B — 리뷰 섹션 레이아웃. 별점 + 텍스트 + 프로필 이미지 구성 참고",
+        "created_at": "2026-03-07T11:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-1-3",
+        "set_id": "ref-1",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "url_type": "video",
+        "note": "경쟁사 C 유튜브 광고 — 15초 인트로 후킹 방식 분석용",
+        "created_at": "2026-03-10T09:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-1-4",
+        "set_id": "ref-1",
+        "url": "https://picsum.photos/seed/ref1d/600/800",
+        "url_type": "image",
+        "note": "경쟁사 D — 세로형 광고 소재. 모바일 피드에 최적화된 비율",
+        "created_at": "2026-03-12T14:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-1-5",
+        "set_id": "ref-1",
+        "url": "https://picsum.photos/seed/ref1e/800/600",
+        "url_type": "image",
+        "note": "경쟁사 E — CTA 버튼 디자인. 컬러 대비와 문구 전략 참고",
+        "created_at": "2026-03-15T16:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-1-6",
+        "set_id": "ref-1",
+        "url": "https://performancelab.co.kr/meta-ads",
+        "url_type": "link",
+        "note": "퍼포먼스랩 랜딩 페이지 — 폼 배치와 헤드라인 전략 분석",
+        "created_at": "2026-03-18T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      }
+    ]
+  },
+  {
+    "id": "ref-2",
+    "name": "우수 크리에이티브 모음",
+    "completed": false,
+    "completed_at": null,
+    "created_at": "2026-03-10T00:00:00.000Z",
+    "updated_at": "2026-04-10T09:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-2-1",
+        "set_id": "ref-2",
+        "url": "https://picsum.photos/seed/creative1/800/600",
+        "url_type": "image",
+        "note": "단일 제품 클로즈업 — 텍스처 강조로 고급감 연출. 뷰티 카테고리 참고",
+        "created_at": "2026-03-12T09:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-2-2",
+        "set_id": "ref-2",
+        "url": "https://picsum.photos/seed/creative2/800/600",
+        "url_type": "image",
+        "note": "Before/After 포맷 — 사용 전후 비교로 효과 직관적 전달",
+        "created_at": "2026-03-14T11:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-2-3",
+        "set_id": "ref-2",
+        "url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+        "url_type": "video",
+        "note": "UGC 스타일 영상 광고 — 자연스러운 추천 형식으로 신뢰도 향상",
+        "created_at": "2026-03-16T13:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-2-4",
+        "set_id": "ref-2",
+        "url": "https://picsum.photos/seed/creative4/800/500",
+        "url_type": "image",
+        "note": "인포그래픽 스타일 — 핵심 수치 3개로 간결하게 USP 전달",
+        "created_at": "2026-03-20T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-2-5",
+        "set_id": "ref-2",
+        "url": "https://picsum.photos/seed/creative5/600/600",
+        "url_type": "image",
+        "note": "정사각형 카드 포맷 — 인스타그램 피드 최적화. 여백 활용이 돋보임",
+        "created_at": "2026-03-22T15:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-2-6",
+        "set_id": "ref-2",
+        "url": "https://picsum.photos/seed/creative6/800/600",
+        "url_type": "image",
+        "note": "사회적 증거 포맷 — 수강생 수 강조로 신뢰감 형성",
+        "created_at": "2026-03-25T09:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-2-7",
+        "set_id": "ref-2",
+        "url": "https://adboost.kr",
+        "url_type": "link",
+        "note": "애드부스트 랜딩 — 스크롤 트리거 애니메이션과 스티키 CTA 구조 참고",
+        "created_at": "2026-03-28T11:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      }
+    ]
+  },
+  {
+    "id": "ref-3",
+    "name": "4월 캠페인 소재 준비",
+    "completed": true,
+    "completed_at": "2026-04-05T18:00:00.000Z",
+    "created_at": "2026-03-20T00:00:00.000Z",
+    "updated_at": "2026-04-05T18:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-3-1",
+        "set_id": "ref-3",
+        "url": "https://picsum.photos/seed/april1/800/600",
+        "url_type": "image",
+        "note": "봄 시즌 컬러팔레트 — 파스텔 그린/핑크 조합으로 시즌감 연출",
+        "created_at": "2026-03-22T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-3-2",
+        "set_id": "ref-3",
+        "url": "https://picsum.photos/seed/april2/800/600",
+        "url_type": "image",
+        "note": "봄 신상 론칭 배너 — '새로운 시작' 메시지와 제품 이미지 구성",
+        "created_at": "2026-03-24T11:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-3-3",
+        "set_id": "ref-3",
+        "url": "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+        "url_type": "video",
+        "note": "시즌 론칭 영상 레퍼런스 — 빠른 컷편집과 배경음악 활용법",
+        "created_at": "2026-03-27T09:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-3-4",
+        "set_id": "ref-3",
+        "url": "https://picsum.photos/seed/april4/600/800",
+        "url_type": "image",
+        "note": "세로형 스토리 광고 — 상단 텍스트 + 하단 CTA 레이아웃",
+        "created_at": "2026-03-30T14:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-3-5",
+        "set_id": "ref-3",
+        "url": "https://skincare365.com",
+        "url_type": "link",
+        "note": "스킨케어365 이벤트 페이지 — 카운트다운 타이머 + 한정 할인 구조",
+        "created_at": "2026-04-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      }
+    ]
+  },
+  {
+    "id": "ref-4",
+    "name": "랜딩 페이지 UX 벤치마킹",
+    "completed": false,
+    "completed_at": null,
+    "created_at": "2026-04-01T00:00:00.000Z",
+    "updated_at": "2026-04-11T15:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-4-1",
+        "set_id": "ref-4",
+        "url": "https://picsum.photos/seed/lp1/1200/600",
+        "url_type": "image",
+        "note": "풀위드 히어로 섹션 — 배경 이미지 위 반투명 오버레이로 텍스트 가독성 확보",
+        "created_at": "2026-04-02T09:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-4-2",
+        "set_id": "ref-4",
+        "url": "https://picsum.photos/seed/lp2/800/600",
+        "url_type": "image",
+        "note": "신뢰 배지 섹션 — 언론사 로고 5개 + '믿을 수 있는 브랜드' 헤드라인",
+        "created_at": "2026-04-04T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-4-3",
+        "set_id": "ref-4",
+        "url": "https://picsum.photos/seed/lp3/800/600",
+        "url_type": "image",
+        "note": "FAQ 아코디언 섹션 — 전환 장벽 제거를 위한 핵심 질문 7개 구성",
+        "created_at": "2026-04-06T11:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-4-4",
+        "set_id": "ref-4",
+        "url": "https://creatorhub.io",
+        "url_type": "link",
+        "note": "크리에이터허브 — 스크롤에 따른 프로그레스 바 + 멀티스텝 폼 UX",
+        "created_at": "2026-04-08T13:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      }
+    ]
+  }
+]

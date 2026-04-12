@@ -1,0 +1,112 @@
+[
+  {
+    "id": "al-001",
+    "name": "정보성",
+    "description": "실질적인 도움과 지식을 제공하여 제품의 가치를 전달하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "김민지",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-002",
+    "name": "후기성",
+    "description": "제품의 효과를 경험한 사람들의 이야기를 통해 직관적인 효과를 보여주는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "이준혁",
+    "created_by_team": "마케팅팀"
+  },
+  {
+    "id": "al-003",
+    "name": "프로모션",
+    "description": "직접적으로 혜택(할인, 사은품 등)을 제시하여 구매를 제안하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "박서연",
+    "created_by_team": "마케팅팀"
+  },
+  {
+    "id": "al-004",
+    "name": "10초이내",
+    "description": "광고 핵심 메시지가 10초 이내에 전달되는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "김민지",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-005",
+    "name": "UGC",
+    "description": "사용자 생성 콘텐츠 형식으로 제작된 광고",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "최지원",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-006",
+    "name": "공포유발",
+    "description": "손실 회피 심리를 자극하여 문제 해결의 시급성을 만드는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "홍길동",
+    "created_by_team": "마케팅팀"
+  },
+  {
+    "id": "al-007",
+    "name": "권위신뢰",
+    "description": "전문가 또는 의학적 기준을 활용하여 제품의 신뢰성을 증명하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "김민지",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-008",
+    "name": "판매제한",
+    "description": "판매 제한 또는 성분 감소 상황을 부여하여 고객의 결단을 촉구하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "이준혁",
+    "created_by_team": "마케팅팀"
+  },
+  {
+    "id": "al-009",
+    "name": "문제나열",
+    "description": "고객이 현재 겪는 불편함을 나열하여 공감대를 형성하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "박서연",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-010",
+    "name": "기획의도불분명",
+    "description": "7가지 기획의도 분류에 해당하지 않는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "최지원",
+    "created_by_team": "콘텐츠팀"
+  }
+]

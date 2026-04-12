@@ -1,0 +1,407 @@
+[
+  {
+    "id": "bm-1",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-001",
+    "landing_url": null,
+    "note": "경쟁사 분석용 — 퍼포먼스랩 메타 광고",
+    "created_at": "2026-03-15T10:00:00.000Z",
+    "advertiser_name": "퍼포먼스랩",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad001/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://performancelab.co.kr/meta-ads"
+      }
+    ],
+    "scraped_date": "2026-03-10",
+    "last_shown_date": "2026-04-01",
+    "keyword_id": "kw-002"
+  },
+  {
+    "id": "bm-2",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-002",
+    "landing_url": null,
+    "note": "멀티배리언트 소재 참고 — 그로스해킹코 A/B 크리에이티브",
+    "created_at": "2026-03-16T14:00:00.000Z",
+    "advertiser_name": "그로스해킹코",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad002/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://growthhacking.co/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad002b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://growthhacking.co/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-03-10",
+    "last_shown_date": "2026-04-01",
+    "keyword_id": "kw-002"
+  },
+  {
+    "id": "bm-3",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-003",
+    "landing_url": null,
+    "note": "크리에이티브 레퍼런스 — 애드부스트",
+    "created_at": "2026-03-18T09:30:00.000Z",
+    "advertiser_name": "애드부스트",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad003/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://adboost.kr"
+      }
+    ],
+    "scraped_date": "2026-03-10",
+    "last_shown_date": "2026-04-02",
+    "keyword_id": "kw-002"
+  },
+  {
+    "id": "bm-4",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-004",
+    "landing_url": null,
+    "note": "다이어트 카테고리 소재 — CTA '지금 바로 시작' 문구 참고",
+    "created_at": "2026-03-19T11:00:00.000Z",
+    "advertiser_name": "슬림핏코리아",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad004/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://slimfit.kr/product"
+      }
+    ],
+    "scraped_date": "2026-03-12",
+    "last_shown_date": "2026-04-03",
+    "keyword_id": "kw-005"
+  },
+  {
+    "id": "bm-5",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-005",
+    "landing_url": null,
+    "note": "뷰티 카테고리 벤치마킹 — 듀얼 소재 비교",
+    "created_at": "2026-03-20T14:00:00.000Z",
+    "advertiser_name": "뷰티팜",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad005/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://beautyfarm.co.kr"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad005b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://beautyfarm.co.kr/sale"
+      }
+    ],
+    "scraped_date": "2026-03-12",
+    "last_shown_date": "2026-04-03",
+    "keyword_id": "kw-005"
+  },
+  {
+    "id": "bm-6",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-006",
+    "landing_url": null,
+    "note": "피부과 광고 — 레이저 시술 직접 소구 방식 참고",
+    "created_at": "2026-03-21T09:00:00.000Z",
+    "advertiser_name": "클리어스킨의원",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad006/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://clearskin.kr/laser"
+      }
+    ],
+    "scraped_date": "2026-03-14",
+    "last_shown_date": "2026-04-04",
+    "keyword_id": "kw-008"
+  },
+  {
+    "id": "bm-7",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-007",
+    "landing_url": null,
+    "note": "스킨케어 광고 카피 레퍼런스",
+    "created_at": "2026-03-25T10:00:00.000Z",
+    "advertiser_name": "스킨케어365",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad007/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://skincare365.com"
+      }
+    ],
+    "scraped_date": "2026-03-18",
+    "last_shown_date": "2026-04-04",
+    "keyword_id": "kw-008"
+  },
+  {
+    "id": "bm-8",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-008",
+    "landing_url": null,
+    "note": "크리에이터 광고 포맷 참고",
+    "created_at": "2026-03-27T13:00:00.000Z",
+    "advertiser_name": "크리에이터허브",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad008/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://creatorhub.io"
+      }
+    ],
+    "scraped_date": "2026-03-17",
+    "last_shown_date": "2026-04-05",
+    "keyword_id": "kw-012"
+  },
+  {
+    "id": "bm-9",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-011",
+    "landing_url": null,
+    "note": "구글 디스플레이 광고 — 배너 레이아웃과 문구 전략 분석",
+    "created_at": "2026-03-28T10:00:00.000Z",
+    "advertiser_name": "구글애즈마스터",
+    "source": "google",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad011/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://googleadsmaster.co.kr"
+      }
+    ],
+    "scraped_date": "2026-03-20",
+    "last_shown_date": "2026-04-06",
+    "keyword_id": "kw-003"
+  },
+  {
+    "id": "bm-10",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-012",
+    "landing_url": null,
+    "note": "서치 광고 카피 — '검색 1위 비결' 소재 후킹 방식 참고",
+    "created_at": "2026-03-29T11:00:00.000Z",
+    "advertiser_name": "서치마케팅랩",
+    "source": "google",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad012/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://searchmarketinglab.io"
+      }
+    ],
+    "scraped_date": "2026-03-20",
+    "last_shown_date": "2026-04-06",
+    "keyword_id": "kw-003"
+  },
+  {
+    "id": "bm-11",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-018",
+    "landing_url": null,
+    "note": "퍼포먼스원 — 전환 최적화 소재. 숫자 기반 USP 강조 방식",
+    "created_at": "2026-04-01T10:30:00.000Z",
+    "advertiser_name": "퍼포먼스원",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad018/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://performance1.kr"
+      }
+    ],
+    "scraped_date": "2026-03-22",
+    "last_shown_date": "2026-04-07",
+    "keyword_id": "kw-001"
+  },
+  {
+    "id": "bm-12",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-020",
+    "landing_url": null,
+    "note": "자동화 마케팅 솔루션 — 멀티 랜딩 A/B 구조 참고",
+    "created_at": "2026-04-02T09:00:00.000Z",
+    "advertiser_name": "오토마케터",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad020/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://automarketer.io"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad020b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://automarketer.io/v2"
+      }
+    ],
+    "scraped_date": "2026-03-20",
+    "last_shown_date": "2026-04-07",
+    "keyword_id": "kw-013"
+  },
+  {
+    "id": "bm-13",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-022",
+    "landing_url": null,
+    "note": "쇼핑 광고 소재 — 제품 이미지 + 가격 태그 레이아웃",
+    "created_at": "2026-04-03T14:00:00.000Z",
+    "advertiser_name": "쇼핑광고소",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad022/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://shopadagency.kr"
+      }
+    ],
+    "scraped_date": "2026-03-22",
+    "last_shown_date": "2026-04-08",
+    "keyword_id": "kw-004"
+  },
+  {
+    "id": "bm-14",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-024",
+    "landing_url": null,
+    "note": "부동산 카테고리 — 지역 타겟 소재 구성 참고",
+    "created_at": "2026-04-05T11:00:00.000Z",
+    "advertiser_name": "부동산마스터",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad024/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://realestate-master.kr"
+      }
+    ],
+    "scraped_date": "2026-03-20",
+    "last_shown_date": "2026-04-09",
+    "keyword_id": "kw-007"
+  },
+  {
+    "id": "bm-15",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-025",
+    "landing_url": null,
+    "note": "창업 교육 광고 — '무료 체험' 후킹 + 수강 후기 소셜 프루프 조합",
+    "created_at": "2026-04-07T13:00:00.000Z",
+    "advertiser_name": "스마트창업학교",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad025/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://smartbizschool.kr"
+      }
+    ],
+    "scraped_date": "2026-03-19",
+    "last_shown_date": "2026-04-10",
+    "keyword_id": "kw-010"
+  },
+  {
+    "id": "bm-16",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://performancelab.co.kr/meta-ads",
+    "note": "랜딩 구조 분석 — CTA 배치 참고",
+    "created_at": "2026-03-22T11:00:00.000Z",
+    "advertiser_name": "퍼포먼스랩",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-03-15",
+    "last_shown_date": "2026-04-01",
+    "keyword_id": "kw-002"
+  },
+  {
+    "id": "bm-17",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://adboost.kr",
+    "note": "랜딩 UI 레이아웃 벤치마킹",
+    "created_at": "2026-03-30T09:00:00.000Z",
+    "advertiser_name": "애드부스트",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-03-20",
+    "last_shown_date": "2026-04-06",
+    "keyword_id": "kw-002"
+  },
+  {
+    "id": "bm-18",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://skincare365.com",
+    "note": "스킨케어 랜딩 폼 구조 분석",
+    "created_at": "2026-04-08T14:00:00.000Z",
+    "advertiser_name": "스킨케어365",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-03-18",
+    "last_shown_date": "2026-04-10",
+    "keyword_id": "kw-008"
+  },
+  {
+    "id": "bm-19",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://slimfit.kr/product",
+    "note": "다이어트 제품 랜딩 — 비포/애프터 섹션과 구매 후기 구성 분석",
+    "created_at": "2026-04-09T10:00:00.000Z",
+    "advertiser_name": "슬림핏코리아",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-03-22",
+    "last_shown_date": "2026-04-10",
+    "keyword_id": "kw-005"
+  },
+  {
+    "id": "bm-20",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://smartbizschool.kr",
+    "note": "창업스쿨 랜딩 — 멀티스텝 신청 폼 + 카운트다운 타이머 구조",
+    "created_at": "2026-04-10T11:00:00.000Z",
+    "advertiser_name": "스마트창업학교",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-03-19",
+    "last_shown_date": "2026-04-11",
+    "keyword_id": "kw-010"
+  }
+]

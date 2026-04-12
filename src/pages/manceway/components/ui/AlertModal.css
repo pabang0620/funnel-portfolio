@@ -1,0 +1,95 @@
+.alert-modal-content {
+  text-align: center;
+}
+
+.alert-modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert-modal-icon {
+  font-size: 3rem;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.alert-modal-icon.error {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.alert-modal-icon.success {
+  background: #f0fdf4;
+  color: #10b981;
+}
+
+.alert-modal-icon.warning {
+  background: #fffbeb;
+  color: #f59e0b;
+}
+
+.alert-modal-icon.info {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.alert-modal-icon.loading {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.alert-modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.alert-modal-message {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.alert-modal-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.alert-modal-actions .modal-btn {
+  min-width: 80px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.alert-modal-actions .modal-btn-cancel {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.alert-modal-actions .modal-btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+.alert-modal-actions .modal-btn-confirm {
+  background: #3b82f6;
+  color: white;
+}
+
+.alert-modal-actions .modal-btn-confirm:hover {
+  background: #2563eb;
+}

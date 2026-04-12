@@ -1,0 +1,442 @@
+[
+  {
+    "id": "ad-001",
+    "keyword_id": "kw-002",
+    "source": "meta",
+    "advertiser_name": "퍼포먼스랩",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad001/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://performancelab.co.kr/meta-ads"
+      }
+    ],
+    "scraped_date": "2025-03-22",
+    "last_shown_date": "2025-03-22",
+    "created_at": "2025-03-22T10:00:00Z",
+    "updated_at": "2025-03-22T10:00:00Z"
+  },
+  {
+    "id": "ad-002",
+    "keyword_id": "kw-002",
+    "source": "meta",
+    "advertiser_name": "그로스해킹코",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad002/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://growthhacking.co/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad002b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://growthhacking.co/ads/v2"
+      }
+    ],
+    "scraped_date": "2025-03-21",
+    "last_shown_date": "2025-03-21",
+    "created_at": "2025-03-21T09:00:00Z",
+    "updated_at": "2025-03-21T09:00:00Z"
+  },
+  {
+    "id": "ad-003",
+    "keyword_id": "kw-002",
+    "source": "meta",
+    "advertiser_name": "애드부스트",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad003/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://adboost.kr"
+      }
+    ],
+    "scraped_date": "2025-03-20",
+    "last_shown_date": "2025-03-20",
+    "created_at": "2025-03-20T11:00:00Z",
+    "updated_at": "2025-03-20T11:00:00Z"
+  },
+  {
+    "id": "ad-004",
+    "keyword_id": "kw-005",
+    "source": "meta",
+    "advertiser_name": "슬림핏코리아",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad004/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://slimfit.kr/product"
+      }
+    ],
+    "scraped_date": "2025-03-22",
+    "last_shown_date": "2025-03-22",
+    "created_at": "2025-03-22T08:00:00Z",
+    "updated_at": "2025-03-22T08:00:00Z"
+  },
+  {
+    "id": "ad-005",
+    "keyword_id": "kw-005",
+    "source": "meta",
+    "advertiser_name": "뷰티팜",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad005/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://beautyfarm.co.kr"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad005b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://beautyfarm.co.kr/sale"
+      }
+    ],
+    "scraped_date": "2025-03-21",
+    "last_shown_date": "2025-03-21",
+    "created_at": "2025-03-21T10:30:00Z",
+    "updated_at": "2025-03-21T10:30:00Z"
+  },
+  {
+    "id": "ad-006",
+    "keyword_id": "kw-008",
+    "source": "meta",
+    "advertiser_name": "클리어스킨의원",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad006/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://clearskin.kr/laser"
+      }
+    ],
+    "scraped_date": "2025-03-19",
+    "last_shown_date": "2025-03-19",
+    "created_at": "2025-03-19T09:00:00Z",
+    "updated_at": "2025-03-19T09:00:00Z"
+  },
+  {
+    "id": "ad-007",
+    "keyword_id": "kw-008",
+    "source": "meta",
+    "advertiser_name": "스킨케어365",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad007/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://skincare365.com"
+      }
+    ],
+    "scraped_date": "2025-03-18",
+    "last_shown_date": "2025-03-18",
+    "created_at": "2025-03-18T14:00:00Z",
+    "updated_at": "2025-03-18T14:00:00Z"
+  },
+  {
+    "id": "ad-008",
+    "keyword_id": "kw-012",
+    "source": "meta",
+    "advertiser_name": "크리에이터허브",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad008/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://creatorhub.io"
+      }
+    ],
+    "scraped_date": "2025-03-17",
+    "last_shown_date": "2025-03-17",
+    "created_at": "2025-03-17T11:00:00Z",
+    "updated_at": "2025-03-17T11:00:00Z"
+  },
+  {
+    "id": "ad-009",
+    "keyword_id": "kw-014",
+    "source": "meta",
+    "advertiser_name": "리마케팅전문",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad009/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://remarketing.pro"
+      }
+    ],
+    "scraped_date": "2025-03-16",
+    "last_shown_date": "2025-03-16",
+    "created_at": "2025-03-16T10:00:00Z",
+    "updated_at": "2025-03-16T10:00:00Z"
+  },
+  {
+    "id": "ad-010",
+    "keyword_id": "kw-014",
+    "source": "meta",
+    "advertiser_name": "픽셀마케터",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad010/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://pixelmarketer.kr"
+      }
+    ],
+    "scraped_date": "2025-03-15",
+    "last_shown_date": "2025-03-15",
+    "created_at": "2025-03-15T09:30:00Z",
+    "updated_at": "2025-03-15T09:30:00Z"
+  },
+  {
+    "id": "ad-011",
+    "keyword_id": "kw-003",
+    "source": "google",
+    "advertiser_name": "구글애즈마스터",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad011/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://googleadsmaster.co.kr"
+      }
+    ],
+    "scraped_date": "2025-03-22",
+    "last_shown_date": "2025-03-22",
+    "created_at": "2025-03-22T07:00:00Z",
+    "updated_at": "2025-03-22T07:00:00Z"
+  },
+  {
+    "id": "ad-012",
+    "keyword_id": "kw-003",
+    "source": "google",
+    "advertiser_name": "서치마케팅랩",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad012/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://searchmarketinglab.io"
+      }
+    ],
+    "scraped_date": "2025-03-20",
+    "last_shown_date": "2025-03-20",
+    "created_at": "2025-03-20T13:00:00Z",
+    "updated_at": "2025-03-20T13:00:00Z"
+  },
+  {
+    "id": "ad-013",
+    "keyword_id": "kw-006",
+    "source": "google",
+    "advertiser_name": "잉글리쉬플러스",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad013/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://englishplus.kr"
+      }
+    ],
+    "scraped_date": "2025-03-19",
+    "last_shown_date": "2025-03-19",
+    "created_at": "2025-03-19T12:00:00Z",
+    "updated_at": "2025-03-19T12:00:00Z"
+  },
+  {
+    "id": "ad-014",
+    "keyword_id": "kw-006",
+    "source": "google",
+    "advertiser_name": "스피킹클럽",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad014/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://speakingclub.co.kr"
+      }
+    ],
+    "scraped_date": "2025-03-18",
+    "last_shown_date": "2025-03-18",
+    "created_at": "2025-03-18T10:00:00Z",
+    "updated_at": "2025-03-18T10:00:00Z"
+  },
+  {
+    "id": "ad-015",
+    "keyword_id": "kw-009",
+    "source": "google",
+    "advertiser_name": "헬스킹PT",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad015/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://healthkingpt.com"
+      }
+    ],
+    "scraped_date": "2025-03-17",
+    "last_shown_date": "2025-03-17",
+    "created_at": "2025-03-17T09:00:00Z",
+    "updated_at": "2025-03-17T09:00:00Z"
+  },
+  {
+    "id": "ad-016",
+    "keyword_id": "kw-011",
+    "source": "google",
+    "advertiser_name": "보험비교닷컴",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad016/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://insurecompare.kr"
+      }
+    ],
+    "scraped_date": "2025-03-16",
+    "last_shown_date": "2025-03-16",
+    "created_at": "2025-03-16T14:30:00Z",
+    "updated_at": "2025-03-16T14:30:00Z"
+  },
+  {
+    "id": "ad-017",
+    "keyword_id": "kw-015",
+    "source": "google",
+    "advertiser_name": "콘텐츠팩토리",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad017/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://contentfactory.io"
+      }
+    ],
+    "scraped_date": "2025-03-15",
+    "last_shown_date": "2025-03-15",
+    "created_at": "2025-03-15T11:00:00Z",
+    "updated_at": "2025-03-15T11:00:00Z"
+  },
+  {
+    "id": "ad-018",
+    "keyword_id": "kw-001",
+    "source": "meta",
+    "advertiser_name": "퍼포먼스원",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad018/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://performance1.kr"
+      }
+    ],
+    "scraped_date": "2025-03-22",
+    "last_shown_date": "2025-03-22",
+    "created_at": "2025-03-22T06:00:00Z",
+    "updated_at": "2025-03-22T06:00:00Z"
+  },
+  {
+    "id": "ad-019",
+    "keyword_id": "kw-001",
+    "source": "google",
+    "advertiser_name": "마케팅허브코리아",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad019/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://marketinghub.kr"
+      }
+    ],
+    "scraped_date": "2025-03-21",
+    "last_shown_date": "2025-03-21",
+    "created_at": "2025-03-21T15:00:00Z",
+    "updated_at": "2025-03-21T15:00:00Z"
+  },
+  {
+    "id": "ad-020",
+    "keyword_id": "kw-013",
+    "source": "meta",
+    "advertiser_name": "오토마케터",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad020/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://automarketer.io"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad020b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://automarketer.io/v2"
+      }
+    ],
+    "scraped_date": "2025-03-20",
+    "last_shown_date": "2025-03-20",
+    "created_at": "2025-03-20T10:00:00Z",
+    "updated_at": "2025-03-20T10:00:00Z"
+  },
+  {
+    "id": "ad-021",
+    "keyword_id": "kw-013",
+    "source": "google",
+    "advertiser_name": "SaaS그로스",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad021/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://saasgrowthhack.com"
+      }
+    ],
+    "scraped_date": "2025-03-19",
+    "last_shown_date": "2025-03-19",
+    "created_at": "2025-03-19T08:00:00Z",
+    "updated_at": "2025-03-19T08:00:00Z"
+  },
+  {
+    "id": "ad-022",
+    "keyword_id": "kw-004",
+    "source": "meta",
+    "advertiser_name": "쇼핑광고소",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad022/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://shopadagency.kr"
+      }
+    ],
+    "scraped_date": "2025-03-22",
+    "last_shown_date": "2025-03-22",
+    "created_at": "2025-03-22T09:00:00Z",
+    "updated_at": "2025-03-22T09:00:00Z"
+  },
+  {
+    "id": "ad-023",
+    "keyword_id": "kw-004",
+    "source": "google",
+    "advertiser_name": "이커머스마케터",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad023/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://ecommercemarketer.co.kr"
+      }
+    ],
+    "scraped_date": "2025-03-21",
+    "last_shown_date": "2025-03-21",
+    "created_at": "2025-03-21T11:00:00Z",
+    "updated_at": "2025-03-21T11:00:00Z"
+  },
+  {
+    "id": "ad-024",
+    "keyword_id": "kw-007",
+    "source": "meta",
+    "advertiser_name": "부동산마스터",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad024/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://realestate-master.kr"
+      }
+    ],
+    "scraped_date": "2025-03-20",
+    "last_shown_date": "2025-03-20",
+    "created_at": "2025-03-20T12:00:00Z",
+    "updated_at": "2025-03-20T12:00:00Z"
+  },
+  {
+    "id": "ad-025",
+    "keyword_id": "kw-010",
+    "source": "meta",
+    "advertiser_name": "스마트창업학교",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad025/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://smartbizschool.kr"
+      }
+    ],
+    "scraped_date": "2025-03-19",
+    "last_shown_date": "2025-03-19",
+    "created_at": "2025-03-19T10:00:00Z",
+    "updated_at": "2025-03-19T10:00:00Z"
+  }
+]

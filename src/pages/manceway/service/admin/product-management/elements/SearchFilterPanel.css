@@ -1,0 +1,356 @@
+/* ===== 검색 필터 전용 스타일 ===== */
+.filter-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 12px;
+}
+
+.filter-box .filter-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-box .filter-field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  min-width: 80px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.filter-box .filter-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.filter-box .filter-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.filter-box .filter-input::placeholder {
+  color: #9ca3af;
+}
+
+/* 범위 입력 스타일 */
+.filter-box .range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.filter-box .range-input {
+  flex: 1;
+  height: 40px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.filter-box .range-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.filter-box .range-separator {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.filter-box .date-range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.filter-box .date-input {
+  flex: 1;
+  height: 40px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.filter-box .date-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* 필터 액션 버튼 */
+.filter-box .filter-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.filter-box .filter-search-btn {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-box .filter-search-btn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.filter-box .filter-reset-btn {
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-box .filter-reset-btn:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+/* CustomSelect 스타일 조정 */
+.filter-box .custom-select {
+  flex: 1;
+  min-height: 40px;
+  max-width: none;
+}
+
+.product-management-page .filter-box .custom-select .custom-select-trigger {
+  height: 40px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* 세로 배치 필터 필드 (날짜 범위용) */
+.filter-box .filter-field-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-box .main-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  text-align: left;
+}
+
+.filter-box .date-range-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.filter-box .date-field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-box .sub-label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #6b7280;
+  min-width: 60px;
+  text-align: left;
+}
+
+.filter-box .date-field .date-input {
+  flex: 1;
+}
+
+/* 날짜 서브 라벨 스타일 */
+.filter-box .date-sub-label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #9ca3af;
+  margin-left: 0.25rem;
+}
+
+/* 날짜 메인 라벨 정렬용 투명 spacer */
+.filter-box .date-main-spacer {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 날짜 범위 그룹 스타일 */
+.filter-box .date-range-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* ===== SearchableSelect (SearchFilterPanel 전용) ===== */
+.filter-box .searchable-select {
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+
+.filter-box .searchable-select-trigger {
+  height: 40px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.filter-box .searchable-select-trigger:hover {
+  border-color: #9ca3af;
+}
+
+.filter-box .searchable-select-trigger-text {
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.filter-box .searchable-select-trigger-text.placeholder {
+  color: #9ca3af;
+}
+
+.filter-box .searchable-select-trigger-arrow {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.filter-box .searchable-select-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-box .searchable-select-search {
+  padding: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-box .searchable-select-search input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.filter-box .searchable-select-search input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.filter-box .searchable-select-options {
+  overflow-y: auto;
+  max-height: 250px;
+}
+
+.filter-box .searchable-select-no-result {
+  padding: 12px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.filter-box .searchable-select-option {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: transparent;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.filter-box .searchable-select-option:hover {
+  background-color: #f9fafb;
+}
+
+.filter-box .searchable-select-option.selected {
+  background-color: #eff6ff;
+  border-left: 3px solid #3b82f6;
+}
+
+.filter-box .searchable-select-checkbox {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.filter-box .searchable-select-option-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}

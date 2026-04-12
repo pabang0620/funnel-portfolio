@@ -1,0 +1,9 @@
+/* WorkStatus 메인 페이지 스타일 */
+
+.funnelsolution-app .tmWorkStatus_container {
+  /* 기본 컨테이너 스타일 */
+}
+
+.funnelsolution-app .tmWorkStatus_container .table-container {
+  overflow-x: auto;
+}

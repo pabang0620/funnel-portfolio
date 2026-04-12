@@ -1,0 +1,320 @@
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  cursor: pointer;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+}
+
+.custom-select-trigger:hover {
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.custom-select.open .custom-select-trigger {
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.custom-select-trigger span {
+  color: #1e293b;
+  flex: 1;
+  text-align: left;
+}
+
+.custom-select-trigger span.placeholder {
+  color: #94a3b8;
+}
+
+.select-arrow {
+  color: #6b7280;
+  transition: transform 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.select-arrow.open {
+  transform: rotate(180deg);
+}
+
+.custom-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: visible;
+  margin-top: 2px;
+}
+
+.custom-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f3f4f6;
+  overflow: visible;
+}
+
+/* 즐겨찾기 기능이 있을 때만 왼쪽 패딩 추가 */
+.custom-select.with-favorites .custom-option {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.custom-option:last-child {
+  border-bottom: none;
+}
+
+.custom-option:hover {
+  background-color: transparent;
+}
+
+.custom-option input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+.custom-option input[type="radio"] {
+  display: none;
+}
+
+.custom-option label {
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #374151;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: visible;
+  max-width: none;
+}
+
+.custom-option input[type="checkbox"]:checked + label,
+.custom-option input[type="radio"]:checked + label {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.custom-select.open {
+  z-index: 1001;
+}
+
+.filter-field.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-field.vertical label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin: 0;
+  text-align: left;
+}
+
+.filter-field.vertical .custom-select {
+  width: 100%;
+}
+
+.custom-option.special-option-last {
+  border-bottom: 1px solid #d1d5db !important;
+}
+
+.custom-option.parent-option {
+  font-weight: 500;
+  background-color: #fafafa;
+}
+
+.custom-option.parent-option label {
+  font-weight: 500;
+  color: #1e293b;
+  white-space: nowrap;
+}
+
+.custom-option.child-option {
+  padding-left: 1rem;
+  background-color: #ffffff;
+}
+
+/* 즐겨찾기 기능이 있을 때 - 상위 매체와 동일한 패딩 */
+.custom-select.with-favorites .custom-option.child-option {
+  padding-left: 2.5rem;
+}
+
+.custom-option.child-option label {
+  color: #64748b;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.custom-option.child-option:hover {
+  background-color: transparent;
+}
+
+.custom-option.child-option input[type="checkbox"]:checked + label {
+  color: #3b82f6;
+}
+
+.custom-option.parent-header {
+  background-color: #f1f5f9;
+  padding: 0.5rem 1rem;
+  cursor: default;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.custom-option.parent-header:hover {
+  background-color: #f1f5f9;
+}
+
+.custom-option.parent-header label {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+}
+
+.expand-icon {
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.expand-icon:hover {
+  color: #3b82f6 !important;
+}
+
+.search-input-container {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 20;
+}
+
+.search-icon {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.search-clear {
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.search-clear:hover {
+  color: #6b7280;
+}
+
+.no-results {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.favorite-icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d1d5db;
+  font-size: 0.875rem;
+  cursor: pointer;
+  z-index: 10;
+  pointer-events: auto;
+  background-color: transparent;
+  padding: 0.25rem;
+}
+
+.favorite-icon:hover {
+  color: #d1d5db;
+}
+
+.favorite-icon.active {
+  color: #fbbf24;
+}
+
+.favorite-icon.active:hover {
+  color: #fbbf24;
+}
+
+.custom-option.favorite-option {
+  background-color: transparent;
+}
+
+.custom-option.favorite-option:hover {
+  background-color: transparent;
+}
+
+.custom-option:hover .favorite-icon {
+  background-color: transparent;
+}
+
+.custom-option.favorite-option .favorite-icon {
+  background-color: transparent;
+}
+
+.custom-option.favorite-option:hover .favorite-icon {
+  background-color: transparent;
+}
+
+.favorites-divider {
+  height: 2px;
+  background: linear-gradient(to right, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%);
+  margin: 0;
+}

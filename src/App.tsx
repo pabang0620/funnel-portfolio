@@ -1,0 +1,75 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from '@/pages/Landing'
+import UtmBuilderRoutes from '@/pages/utm-builder/routes'
+import HrHubRoutes from '@/pages/hr-hub/routes'
+import AdContentStorageRoutes from '@/pages/ad-content-storage/routes'
+import FunnelEduRoutes from '@/pages/funnel-edu/routes'
+import FunnelmanceCsRoutes from '@/pages/funnelmance-cs/routes'
+import AdLibraryScraperRoutes from '@/pages/ad-library-scraper/routes'
+import MeetingRoomRoutes from '@/pages/meeting-room/routes'
+import FunnelsDriveRoutes from '@/pages/funnels-drive/routes'
+import MancewayRoutes from '@/pages/manceway/routes'
+import FunnelSolutionRoutes from '@/pages/funnelsolution/routes'
+import PortfolioLayout from '@/components/PortfolioLayout'
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/utm-builder/*" element={
+          <PortfolioLayout project="UTM Builder">
+            <UtmBuilderRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/hr-hub/*" element={
+          <PortfolioLayout project="HR Hub">
+            <HrHubRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/ad-content-storage/*" element={
+          <PortfolioLayout project="Ad Content Storage">
+            <AdContentStorageRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/funnel-edu/*" element={
+          <PortfolioLayout project="Funnel Edu">
+            <FunnelEduRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/funnelmance-cs/*" element={
+          <PortfolioLayout project="Funnelmance CS">
+            <FunnelmanceCsRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/ad-library-scraper/*" element={
+          <PortfolioLayout project="Ad Library Scraper">
+            <AdLibraryScraperRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/meeting-room/*" element={
+          <PortfolioLayout project="Meeting Room">
+            <MeetingRoomRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/funnels-drive/*" element={
+          <PortfolioLayout project="Funnels Drive">
+            <FunnelsDriveRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/manceway/*" element={
+          <PortfolioLayout project="Manceway">
+            <MancewayRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/funnelsolution/*" element={
+          <PortfolioLayout project="Funnel Solution">
+            <FunnelSolutionRoutes />
+          </PortfolioLayout>
+        } />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App

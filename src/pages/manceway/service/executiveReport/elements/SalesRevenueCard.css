@@ -1,0 +1,121 @@
+/* SalesRevenueCard Styles */
+
+.executive-report-container .revenue-box {
+  padding: 0;
+  min-width: 0;
+}
+
+.executive-report-container .revenue-box-content-separated {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 메인 섹션 (월 예상 금액) - 박스 스타일 */
+.executive-report-container .revenue-main-section {
+  background: #3b82f6;
+  border-radius: 1px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.executive-report-container .revenue-main-top {
+  margin-bottom: 1rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.executive-report-container .revenue-section-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.executive-report-container .revenue-main-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.executive-report-container .amount-number {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+.executive-report-container .amount-unit {
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.executive-report-container .revenue-main-chart-full {
+  height: 80px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* 세부 메트릭 섹션 */
+.executive-report-container .revenue-details-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.executive-report-container .revenue-detail-box:first-child {
+  flex: 6;
+}
+
+.executive-report-container .revenue-detail-box:nth-child(2) {
+  flex: 4;
+}
+
+.executive-report-container .revenue-detail-box {
+  flex: 1;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.executive-report-container .detail-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.executive-report-container .detail-value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #374151;
+}
+
+.executive-report-container .detail-value.positive-growth .amount-number-detail,
+.executive-report-container .detail-value.positive-growth .amount-unit-detail {
+  color: #dc2626;
+}
+
+.executive-report-container .detail-value.negative-growth .amount-number-detail,
+.executive-report-container .detail-value.negative-growth .amount-unit-detail {
+  color: #2563eb;
+}
+
+.executive-report-container .amount-number-detail {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.executive-report-container .amount-unit-detail {
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #6b7280;
+  margin-left: 0.25rem;
+}

@@ -1,0 +1,38 @@
+# Meeting Room - Required npm packages
+# Run: npm install <package>
+
+# Radix UI components
+@radix-ui/react-alert-dialog
+@radix-ui/react-checkbox
+@radix-ui/react-dialog
+@radix-ui/react-label
+@radix-ui/react-popover
+@radix-ui/react-scroll-area
+@radix-ui/react-select
+@radix-ui/react-separator
+@radix-ui/react-slot
+@radix-ui/react-tabs
+
+# Utility / styling
+class-variance-authority
+clsx
+tailwind-merge
+
+# Calendar & date handling
+date-fns
+react-day-picker
+
+# Multi-select dropdown
+react-select
+
+# Drag and Drop (used in DayView for reservation drag)
+@dnd-kit/core
+@dnd-kit/modifiers
+@dnd-kit/sortable
+@dnd-kit/utilities
+
+# Image export (used in some admin views)
+html-to-image
+
+# Icons (already in portfolio, ensure same major version)
+# lucide-react  <-- already installed

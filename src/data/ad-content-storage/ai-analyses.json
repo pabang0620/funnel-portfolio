@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ana-001",
+    "file_id": "file-001",
+    "intent_label": "정보성",
+    "confidence": 0.92,
+    "reason": "영상 초반 10초 이내에 제품의 핵심 성분과 효능을 과학적으로 설명하며, 소비자에게 실질적인 정보를 전달하는 방식으로 구성되어 있습니다. 극적인 효과 연출과 함께 성분 설명이 결합된 전형적인 정보성 콘텐츠입니다.",
+    "script_quality": "high",
+    "hook_strength": "strong",
+    "analyzed_at": "2023-01-05T10:00:00Z"
+  },
+  {
+    "id": "ana-002",
+    "file_id": "file-002",
+    "intent_label": "후기성",
+    "confidence": 0.88,
+    "reason": "실제 사용자처럼 보이는 인물이 탈모 샴푸 사용 전후 경험을 자연스럽게 이야기하는 형식입니다. 카메라를 직시하며 개인 경험을 공유하는 UGC 스타일로 시청자의 공감을 유도합니다.",
+    "script_quality": "medium",
+    "hook_strength": "medium",
+    "analyzed_at": "2023-02-10T12:00:00Z"
+  },
+  {
+    "id": "ana-003",
+    "file_id": "file-003",
+    "intent_label": "프로모션",
+    "confidence": 0.95,
+    "reason": "이미지 상단에 '봄 한정 40% 할인'이라는 텍스트가 강조되어 있으며, 제품 이미지와 함께 구매 혜택이 직접적으로 제시됩니다. 긴급성을 나타내는 '오늘만' 문구도 포함되어 있습니다.",
+    "script_quality": "high",
+    "hook_strength": "strong",
+    "analyzed_at": "2023-03-15T15:00:00Z"
+  },
+  {
+    "id": "ana-004",
+    "file_id": "file-004",
+    "intent_label": "공포유발",
+    "confidence": 0.90,
+    "reason": "여름이 오기 전 지금 시작하지 않으면 후회한다는 손실 회피 심리를 명확히 자극하는 콘텐츠입니다. '지금 시작하지 않으면'이라는 조건부 문구가 시청자의 행동 시급성을 만들어냅니다.",
+    "script_quality": "high",
+    "hook_strength": "very_strong",
+    "analyzed_at": "2023-04-20T11:00:00Z"
+  },
+  {
+    "id": "ana-005",
+    "file_id": "file-005",
+    "intent_label": "권위신뢰",
+    "confidence": 0.93,
+    "reason": "피부과 전문의가 직접 출연하여 제품을 추천하는 형식으로, 의학적 권위를 활용하여 제품의 신뢰성을 증명합니다. 가운과 청진기 등 의사를 상징하는 시각적 요소가 권위감을 강화합니다.",
+    "script_quality": "high",
+    "hook_strength": "strong",
+    "analyzed_at": "2023-05-10T10:00:00Z"
+  },
+  {
+    "id": "ana-006",
+    "file_id": "file-006",
+    "intent_label": "프로모션",
+    "confidence": 0.97,
+    "reason": "할인 혜택, 사은품 증정, 한정 기간 등 프로모션 요소가 이미지 전면에 배치되어 있습니다. 구매 동기를 강화하는 모든 요소가 집중적으로 활용된 전형적인 프로모션 콘텐츠입니다.",
+    "script_quality": "medium",
+    "hook_strength": "strong",
+    "analyzed_at": "2023-06-15T14:00:00Z"
+  },
+  {
+    "id": "ana-007",
+    "file_id": "file-007",
+    "intent_label": "문제나열",
+    "confidence": 0.86,
+    "reason": "복합성 피부를 가진 소비자가 겪는 다양한 문제들(속당김, 번들거림, 트러블)을 차례로 나열하며 공감대를 형성합니다. '이런 분들을 위한 제품입니다'라는 구성이 문제나열형의 전형입니다.",
+    "script_quality": "medium",
+    "hook_strength": "medium",
+    "analyzed_at": "2023-07-20T11:30:00Z"
+  },
+  {
+    "id": "ana-008",
+    "file_id": "file-008",
+    "intent_label": "정보성",
+    "confidence": 0.94,
+    "reason": "단백질 종류(WPC, WPI, WPH)의 차이와 각각의 흡수율을 데이터 기반으로 설명합니다. 전문적인 영양학 정보를 시각화하여 소비자의 구매 판단을 돕는 교육형 콘텐츠입니다.",
+    "script_quality": "high",
+    "hook_strength": "strong",
+    "analyzed_at": "2023-08-25T09:00:00Z"
+  },
+  {
+    "id": "ana-009",
+    "file_id": "file-009",
+    "intent_label": "후기성",
+    "confidence": 0.89,
+    "reason": "시술 전후를 비교한 이미지가 명확하게 제시되어 있으며, 실제 고객의 변화를 보여줌으로써 제품 효과에 대한 신뢰를 형성합니다. 비포/애프터 구성은 후기성 콘텐츠의 핵심 요소입니다.",
+    "script_quality": "medium",
+    "hook_strength": "very_strong",
+    "analyzed_at": "2023-09-10T16:00:00Z"
+  },
+  {
+    "id": "ana-010",
+    "file_id": "file-010",
+    "intent_label": "판매제한",
+    "confidence": 0.91,
+    "reason": "이번 달 말 단종 예정이라는 명확한 판매 제한 상황이 제시되어 있습니다. '마지막 기회'라는 표현이 소비자의 즉각적인 구매 결정을 유도하며, FOMO(Fear Of Missing Out) 심리를 자극합니다.",
+    "script_quality": "high",
+    "hook_strength": "very_strong",
+    "analyzed_at": "2023-10-15T12:30:00Z"
+  }
+]

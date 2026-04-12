@@ -1,0 +1,72 @@
+/* 변경사항 확인 모달 스타일 */
+
+.changes-summary-modal .modal-content {
+  width: 600px;
+  max-width: 90vw;
+}
+
+.changes-summary-modal .modifier-info {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0;
+}
+
+.changes-summary-modal .modifier-text {
+  margin: 0;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.changes-summary-modal .changes-container {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.changes-summary-modal .date-group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.changes-summary-modal .date-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.changes-summary-modal .change-item {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.changes-summary-modal .field-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.changes-summary-modal .value-before {
+  color: #8d8d8d;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.changes-summary-modal .value-after {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.changes-summary-modal .arrow {
+  color: #6b7280;
+  font-weight: bold;
+}
+
+.changes-summary-modal .modal-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

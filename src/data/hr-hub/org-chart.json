@@ -1,0 +1,131 @@
+[
+  {
+    "name": "경영전략실",
+    "type": "division",
+    "id": "div-001",
+    "children": [
+      {
+        "name": "전략기획팀",
+        "type": "team",
+        "id": "team-001",
+        "children": [
+          { "name": "최수아", "type": "employee", "id": "emp-004", "label": "정규직", "initial": "CS", "job_grade": "팀장", "employee_no": "2020090001", "employment_type": "정규직", "hire_date": "2020-09-07", "phone": "010-4567-8901", "email": "sua.choi@company.com", "gender": "F", "department_id": "team-001", "department_full_path": "경영전략실_전략기획팀", "department_name": "전략기획팀", "department_level": "team" },
+          { "name": "정현우", "type": "employee", "id": "emp-005", "label": "정규직", "initial": "JH", "job_grade": "과장", "employee_no": "2021030001", "employment_type": "정규직", "hire_date": "2021-03-02", "phone": "010-5678-9012", "email": "hyunwoo.jung@company.com", "gender": "M", "department_id": "team-001", "department_full_path": "경영전략실_전략기획팀", "department_name": "전략기획팀", "department_level": "team" }
+        ]
+      },
+      {
+        "name": "재무팀",
+        "type": "team",
+        "id": "team-002",
+        "children": [
+          { "name": "한지민", "type": "employee", "id": "emp-006", "label": "정규직", "initial": "HJ", "job_grade": "대리", "employee_no": "2021060001", "employment_type": "정규직", "hire_date": "2021-06-07", "phone": "010-6789-0123", "email": "jimin.han@company.com", "gender": "F", "department_id": "team-002", "department_full_path": "경영전략실_재무팀", "department_name": "재무팀", "department_level": "team" },
+          { "name": "전소희", "type": "employee", "id": "emp-020", "label": "정규직", "initial": "JS", "job_grade": "주임", "employee_no": "2021120001", "employment_type": "정규직", "hire_date": "2021-12-06", "leave_date": "2023-08-31", "phone": "010-0123-0987", "email": "sohee.jeon@company.com", "gender": "F", "department_id": "team-002", "department_full_path": "경영전략실_재무팀", "department_name": "재무팀", "department_level": "team" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "개발실",
+    "type": "division",
+    "id": "div-002",
+    "children": [
+      {
+        "name": "백엔드팀",
+        "type": "team",
+        "id": "team-003",
+        "children": [
+          { "name": "오승현", "type": "employee", "id": "emp-007", "label": "정규직", "initial": "OS", "job_grade": "팀장", "employee_no": "2021090001", "employment_type": "정규직", "hire_date": "2021-09-06", "phone": "010-7890-1234", "email": "seunghyun.oh@company.com", "gender": "M", "department_id": "team-003", "department_full_path": "개발실_백엔드팀", "department_name": "백엔드팀", "department_level": "team" },
+          {
+            "name": "플랫폼파트",
+            "type": "part",
+            "id": "part-001",
+            "children": [
+              { "name": "임소영", "type": "employee", "id": "emp-008", "label": "정규직", "initial": "LS", "job_grade": "과장", "employee_no": "2022010001", "employment_type": "정규직", "hire_date": "2022-01-03", "phone": "010-8901-2345", "email": "soyoung.lim@company.com", "gender": "F", "department_id": "part-001", "department_full_path": "개발실_백엔드팀_플랫폼파트", "department_name": "플랫폼파트", "department_level": "part" },
+              { "name": "신도윤", "type": "employee", "id": "emp-009", "label": "정규직", "initial": "SD", "job_grade": "주임", "employee_no": "2022030001", "employment_type": "정규직", "hire_date": "2022-03-07", "phone": "010-9012-3456", "email": "doyun.shin@company.com", "gender": "M", "department_id": "part-001", "department_full_path": "개발실_백엔드팀_플랫폼파트", "department_name": "플랫폼파트", "department_level": "part" }
+            ]
+          },
+          {
+            "name": "인프라파트",
+            "type": "part",
+            "id": "part-002",
+            "children": [
+              { "name": "윤채린", "type": "employee", "id": "emp-010", "label": "정규직", "initial": "YC", "job_grade": "사원", "employee_no": "2022060001", "employment_type": "정규직", "hire_date": "2022-06-06", "phone": "010-0123-4567", "email": "chaelin.yoon@company.com", "gender": "F", "department_id": "part-002", "department_full_path": "개발실_백엔드팀_인프라파트", "department_name": "인프라파트", "department_level": "part" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "프론트엔드팀",
+        "type": "team",
+        "id": "team-004",
+        "children": [
+          { "name": "강태양", "type": "employee", "id": "emp-011", "label": "정규직", "initial": "KT", "job_grade": "팀장", "employee_no": "2022090001", "employment_type": "정규직", "hire_date": "2022-09-05", "phone": "010-1234-0987", "email": "taeyang.kang@company.com", "gender": "M", "department_id": "team-004", "department_full_path": "개발실_프론트엔드팀", "department_name": "프론트엔드팀", "department_level": "team" },
+          {
+            "name": "UI파트",
+            "type": "part",
+            "id": "part-003",
+            "children": [
+              { "name": "류다은", "type": "employee", "id": "emp-012", "label": "정규직", "initial": "RD", "job_grade": "대리", "employee_no": "2023010001", "employment_type": "정규직", "hire_date": "2023-01-02", "phone": "010-2345-0987", "email": "daeun.ryu@company.com", "gender": "F", "department_id": "part-003", "department_full_path": "개발실_프론트엔드팀_UI파트", "department_name": "UI파트", "department_level": "part" },
+              { "name": "홍성민", "type": "employee", "id": "emp-013", "label": "계약직", "initial": "HS", "job_grade": "사원", "employee_no": "2023030001", "employment_type": "계약직", "hire_date": "2023-03-06", "phone": "010-3456-0987", "email": "sungmin.hong@company.com", "gender": "M", "department_id": "part-003", "department_full_path": "개발실_프론트엔드팀_UI파트", "department_name": "UI파트", "department_level": "part" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "마케팅실",
+    "type": "division",
+    "id": "div-003",
+    "children": [
+      {
+        "name": "퍼포먼스팀",
+        "type": "team",
+        "id": "team-005",
+        "children": [
+          { "name": "배나린", "type": "employee", "id": "emp-014", "label": "정규직", "initial": "BN", "job_grade": "팀장", "employee_no": "2023060001", "employment_type": "정규직", "hire_date": "2023-06-05", "phone": "010-4567-0987", "email": "narin.bae@company.com", "gender": "F", "department_id": "team-005", "department_full_path": "마케팅실_퍼포먼스팀", "department_name": "퍼포먼스팀", "department_level": "team" },
+          {
+            "name": "그로스파트",
+            "type": "part",
+            "id": "part-004",
+            "children": [
+              { "name": "서준혁", "type": "employee", "id": "emp-015", "label": "정규직", "initial": "SJ", "job_grade": "대리", "employee_no": "2023090001", "employment_type": "정규직", "hire_date": "2023-09-04", "phone": "010-5678-0987", "email": "junhyuk.seo@company.com", "gender": "M", "department_id": "part-004", "department_full_path": "마케팅실_퍼포먼스팀_그로스파트", "department_name": "그로스파트", "department_level": "part" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "브랜드팀",
+        "type": "team",
+        "id": "team-006",
+        "children": [
+          { "name": "문지원", "type": "employee", "id": "emp-016", "label": "정규직", "initial": "MJ", "job_grade": "팀장", "employee_no": "2024010001", "employment_type": "정규직", "hire_date": "2024-01-02", "phone": "010-6789-0987", "email": "jiwon.moon@company.com", "gender": "F", "department_id": "team-006", "department_full_path": "마케팅실_브랜드팀", "department_name": "브랜드팀", "department_level": "team" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "운영실",
+    "type": "division",
+    "id": "div-004",
+    "children": [
+      {
+        "name": "고객지원팀",
+        "type": "team",
+        "id": "team-007",
+        "children": [
+          { "name": "조현석", "type": "employee", "id": "emp-017", "label": "정규직", "initial": "CH", "job_grade": "과장", "employee_no": "2024030001", "employment_type": "정규직", "hire_date": "2024-03-04", "phone": "010-7890-0987", "email": "hyunseok.cho@company.com", "gender": "M", "department_id": "team-007", "department_full_path": "운영실_고객지원팀", "department_name": "고객지원팀", "department_level": "team" },
+          { "name": "나유리", "type": "employee", "id": "emp-018", "label": "계약직", "initial": "NY", "job_grade": "사원", "employee_no": "2024060001", "employment_type": "계약직", "hire_date": "2024-06-03", "phone": "010-8901-0987", "email": "yuri.na@company.com", "gender": "F", "department_id": "team-007", "department_full_path": "운영실_고객지원팀", "department_name": "고객지원팀", "department_level": "team" }
+        ]
+      },
+      {
+        "name": "인사팀",
+        "type": "team",
+        "id": "team-008",
+        "children": [
+          { "name": "권민재", "type": "employee", "id": "emp-019", "label": "정규직", "initial": "KM", "job_grade": "팀장", "employee_no": "2024090001", "employment_type": "정규직", "hire_date": "2024-09-02", "phone": "010-9012-0987", "email": "minjae.kwon@company.com", "gender": "M", "department_id": "team-008", "department_full_path": "운영실_인사팀", "department_name": "인사팀", "department_level": "team" }
+        ]
+      }
+    ]
+  }
+]

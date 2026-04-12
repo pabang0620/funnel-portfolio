@@ -1,0 +1,177 @@
+[
+  {
+    "landing_url": "https://performancelab.co.kr/meta-ads",
+    "advertiser_name": "퍼포먼스랩",
+    "source": "meta",
+    "last_shown_date": "2025-03-22",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://growthhacking.co/ads",
+    "advertiser_name": "그로스해킹코",
+    "source": "meta",
+    "last_shown_date": "2025-03-21",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://adboost.kr",
+    "advertiser_name": "애드부스트",
+    "source": "meta",
+    "last_shown_date": "2025-03-20",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://slimfit.kr/product",
+    "advertiser_name": "슬림핏코리아",
+    "source": "meta",
+    "last_shown_date": "2025-03-22",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://beautyfarm.co.kr",
+    "advertiser_name": "뷰티팜",
+    "source": "meta",
+    "last_shown_date": "2025-03-21",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://clearskin.kr/laser",
+    "advertiser_name": "클리어스킨의원",
+    "source": "meta",
+    "last_shown_date": "2025-03-19",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://skincare365.com",
+    "advertiser_name": "스킨케어365",
+    "source": "meta",
+    "last_shown_date": "2025-03-18",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://creatorhub.io",
+    "advertiser_name": "크리에이터허브",
+    "source": "meta",
+    "last_shown_date": "2025-03-17",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://remarketing.pro",
+    "advertiser_name": "리마케팅전문",
+    "source": "meta",
+    "last_shown_date": "2025-03-16",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://pixelmarketer.kr",
+    "advertiser_name": "픽셀마케터",
+    "source": "meta",
+    "last_shown_date": "2025-03-15",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://performance1.kr",
+    "advertiser_name": "퍼포먼스원",
+    "source": "meta",
+    "last_shown_date": "2025-03-22",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://automarketer.io",
+    "advertiser_name": "오토마케터",
+    "source": "meta",
+    "last_shown_date": "2025-03-20",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://shopadagency.kr",
+    "advertiser_name": "쇼핑광고소",
+    "source": "meta",
+    "last_shown_date": "2025-03-22",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://realestate-master.kr",
+    "advertiser_name": "부동산마스터",
+    "source": "meta",
+    "last_shown_date": "2025-03-20",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://smartbizschool.kr",
+    "advertiser_name": "스마트창업학교",
+    "source": "meta",
+    "last_shown_date": "2025-03-19",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://googleadsmaster.co.kr",
+    "advertiser_name": "구글애즈마스터",
+    "source": "google",
+    "last_shown_date": "2025-03-22",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://searchmarketinglab.io",
+    "advertiser_name": "서치마케팅랩",
+    "source": "google",
+    "last_shown_date": "2025-03-20",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://englishplus.kr",
+    "advertiser_name": "잉글리쉬플러스",
+    "source": "google",
+    "last_shown_date": "2025-03-19",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://speakingclub.co.kr",
+    "advertiser_name": "스피킹클럽",
+    "source": "google",
+    "last_shown_date": "2025-03-18",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://healthkingpt.com",
+    "advertiser_name": "헬스킹PT",
+    "source": "google",
+    "last_shown_date": "2025-03-17",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://insurecompare.kr",
+    "advertiser_name": "보험비교닷컴",
+    "source": "google",
+    "last_shown_date": "2025-03-16",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://contentfactory.io",
+    "advertiser_name": "콘텐츠팩토리",
+    "source": "google",
+    "last_shown_date": "2025-03-15",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://marketinghub.kr",
+    "advertiser_name": "마케팅허브코리아",
+    "source": "google",
+    "last_shown_date": "2025-03-21",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://saasgrowthhack.com",
+    "advertiser_name": "SaaS그로스",
+    "source": "google",
+    "last_shown_date": "2025-03-19",
+    "image_url": null
+  },
+  {
+    "landing_url": "https://ecommercemarketer.co.kr",
+    "advertiser_name": "이커머스마케터",
+    "source": "google",
+    "last_shown_date": "2025-03-21",
+    "image_url": null
+  }
+]

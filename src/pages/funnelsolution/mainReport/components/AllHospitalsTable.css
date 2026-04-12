@@ -1,0 +1,490 @@
+.all-hospitals-table-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.all-hospitals-table-container .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 20px;
+}
+
+.all-hospitals-table-container .section-header h3 {
+  color: #202224;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* 오른쪽 컨트롤 (팀 필터 + 날짜 기준) */
+.all-hospitals-table-container .right-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 팀 필터 라디오 버튼 */
+.all-hospitals-table-container .team-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.all-hospitals-table-container .team-filter-container label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #646464;
+}
+
+.all-hospitals-table-container .team-filter-container input[type="radio"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.all-hospitals-table-container .date-type-badge {
+  padding: 6px 16px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.all-hospitals-table-container .loading-message,
+.all-hospitals-table-container .error-message,
+.all-hospitals-table-container .no-data-message {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  color: #979797;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.all-hospitals-table-container .error-message {
+  color: #ef4444;
+}
+
+.all-hospitals-table-container .table-wrapper {
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+/* 접수일 기준 래퍼 */
+.all-hospitals-table-container .table-wrapper.receipt-mode {
+  max-width: 100%;
+}
+
+/* 방문일 기준 래퍼 - 중앙 정렬 */
+.all-hospitals-table-container .table-wrapper.visit-mode {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.all-hospitals-table-container .table-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  display: flex;
+  justify-content: center;
+}
+
+.all-hospitals-table-container .table-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.all-hospitals-table-container .table-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.all-hospitals-table-container .table-scroll-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.all-hospitals-table-container .table-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* 접수일 기준 (14개 컬럼) - 고정 너비 */
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode {
+  width: 1096px;
+  min-width: 1096px;
+  max-width: 1096px;
+}
+
+/* 방문일 기준 (10개 컬럼) - 고정 너비 */
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode {
+  width: 935px;
+  min-width: 935px;
+  max-width: 935px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table thead {
+  background: #3b82f6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table .all-hospitals-thead .all-hospitals-th {
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px !important;
+  font-weight: 600;
+  padding: 10px 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+  line-height: 1.3;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table thead th:last-child {
+  border-right: none;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.15s ease;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table .all-hospitals-tbody .all-hospitals-td {
+  color: #646464;
+  text-align: center;
+  font-size: 12px !important;
+  font-weight: 500;
+  padding: 10px 6px;
+  border-right: 1px solid #e5e7eb;
+  white-space: nowrap;
+  line-height: 1.4;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table tbody td:last-child {
+  border-right: none;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table tbody td:first-child {
+  font-weight: 600;
+  color: #202224;
+}
+
+/* 병원명 셀 스타일 */
+.all-hospitals-table-container .hospital-name-cell {
+  color: #3b82f6 !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.all-hospitals-table-container .hospital-name-cell:hover {
+  color: #2563eb !important;
+  background-color: #f0f7ff !important;
+}
+
+/* 합계 행 스타일 */
+.all-hospitals-table-container .all-hospitals-main-table tbody tr.total-row {
+  background-color: #f3f4f6;
+  border-top: 2px solid #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+  font-weight: 600;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table tbody tr.total-row:hover {
+  background-color: #e5e7eb;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table tbody tr.total-row .total-cell {
+  font-weight: 700;
+  color: #202224 !important;
+}
+
+/* 정렬 버튼 스타일 */
+.all-hospitals-table-container .sortable-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.all-hospitals-table-container .sort-arrows {
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+  line-height: 1;
+  gap: 1px;
+}
+
+.all-hospitals-table-container .sort-arrow {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.all-hospitals-table-container .sort-arrow.active {
+  color: #ffffff;
+}
+
+/* ========================================
+   접수일 기준 컬럼 너비 (14개 컬럼) - 픽셀 기반
+   총 너비: 1096px (고정)
+   기수 제거 후: 병원명, 시작일, 종료일, 광고비, DB수량, DB단가, 예약률, 약속이행률, 상담동의율, 신환객단가, 내원수, 총진료비, 예상매출, 마감ROAS
+   ======================================== */
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(1),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(1) {
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(2),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(2) {
+  width: 84.5px;
+  min-width: 84.5px;
+  max-width: 84.5px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(3),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(3) {
+  width: 84.5px;
+  min-width: 84.5px;
+  max-width: 84.5px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(4),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(4) {
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(5),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(5) {
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(6),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(6) {
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(7),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(7) {
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(8),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(8) {
+  width: 75px;
+  min-width: 75px;
+  max-width: 75px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(9),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(9) {
+  width: 75px;
+  min-width: 75px;
+  max-width: 75px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(10),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(10) {
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(11),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(11) {
+  width: 55px;
+  min-width: 55px;
+  max-width: 55px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(12),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(12) {
+  width: 95px;
+  min-width: 95px;
+  max-width: 95px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(13),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(13) {
+  width: 95px;
+  min-width: 95px;
+  max-width: 95px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-th:nth-child(14),
+.all-hospitals-table-container .all-hospitals-main-table.receipt-mode .all-hospitals-td:nth-child(14) {
+  width: 72px;
+  min-width: 72px;
+  max-width: 72px;
+}
+
+/* ========================================
+   방문일 기준 컬럼 너비 (10개 컬럼) - 픽셀 기반
+   총 너비: 935px (고정)
+   기수 제거 후: 병원명, 시작일, 종료일, 약속이행률, 상담동의율, 신환객단가, 내원수, 총진료비, 예상매출, 마감ROAS
+   ======================================== */
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(1),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(1) {
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(2),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(2) {
+  width: 94.5px;
+  min-width: 94.5px;
+  max-width: 94.5px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(3),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(3) {
+  width: 94.5px;
+  min-width: 94.5px;
+  max-width: 94.5px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(4),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(4) {
+  width: 75px;
+  min-width: 75px;
+  max-width: 75px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(5),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(5) {
+  width: 75px;
+  min-width: 75px;
+  max-width: 75px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(6),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(6) {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(7),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(7) {
+  width: 65px;
+  min-width: 65px;
+  max-width: 65px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(8),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(8) {
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(9),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(9) {
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+}
+
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-th:nth-child(10),
+.all-hospitals-table-container .all-hospitals-main-table.visit-mode .all-hospitals-td:nth-child(10) {
+  width: 81px;
+  min-width: 81px;
+  max-width: 81px;
+}
+
+/* 인쇄 스타일 */
+@media print {
+  .all-hospitals-table-container {
+    page-break-inside: avoid;
+  }
+
+  .all-hospitals-table-container .section-header h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .all-hospitals-table-container .date-type-badge {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+
+  .all-hospitals-table-container .all-hospitals-main-table {
+    font-size: 10px;
+  }
+
+  .all-hospitals-table-container .all-hospitals-main-table thead th {
+    font-size: 11px;
+    padding: 8px 6px;
+  }
+
+  .all-hospitals-table-container .all-hospitals-main-table tbody td {
+    font-size: 9px;
+    padding: 8px 6px;
+  }
+}
+
+/* PDF 스타일 */
+#main_reportPdf .all-hospitals-table-container .section-header h3 {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+#main_reportPdf .all-hospitals-table-container .date-type-badge {
+  font-size: 11px;
+  padding: 4px 12px;
+}
+
+#main_reportPdf .all-hospitals-table-container .all-hospitals-main-table {
+  font-size: 10px;
+}
+
+#main_reportPdf .all-hospitals-table-container .all-hospitals-main-table thead th {
+  font-size: 11px;
+  padding: 8px 6px;
+}
+
+#main_reportPdf .all-hospitals-table-container .all-hospitals-main-table tbody td {
+  font-size: 9px;
+  padding: 8px 6px;
+}
+

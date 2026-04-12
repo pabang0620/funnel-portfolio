@@ -1,0 +1,533 @@
+/* 매체 운영 현황 페이지 스타일 */
+
+.media-operations-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-operations-container .page-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+/* 우측 패널 스타일 */
+.media-operations-right-panel .filter-panel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.media-operations-right-panel .filter-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: none;
+}
+
+.media-operations-right-panel .filter-field.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.media-operations-right-panel .filter-field.horizontal label {
+  flex-shrink: 0;
+  min-width: 56px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+  text-align: left;
+}
+
+.media-operations-right-panel .filter-field.horizontal .custom-select {
+  flex: 1;
+}
+
+/* 히스토리 버튼 박스 */
+.media-operations-right-panel .history-button-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.media-operations-right-panel .history-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.media-operations-right-panel .history-btn:hover {
+  background: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 기존 컨테이너 내부 스타일 (하위 호환성) */
+.media-operations-container .filter-panel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.media-operations-container .filter-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: none;
+}
+
+.media-operations-container .filter-field.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.media-operations-container .filter-field.vertical:last-child {
+  margin-bottom: 0;
+}
+
+.media-operations-container .filter-field.vertical label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+/* 가로 배치 스타일 */
+.media-operations-container .filter-panel-container.horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.media-operations-container .filter-box.horizontal {
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+
+.media-operations-container .filter-field.horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.media-operations-container .filter-field.horizontal label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+/* 히스토리 상세보기 버튼 */
+.media-operations-container .view-details-btn:hover {
+  background: #2563eb !important;
+}
+
+/* 테이블 섹션 */
+.media-operations-container .table-section {
+  margin-bottom: 1.5rem;
+}
+
+/* 팀 컬럼 고정 너비 (td만) */
+.media-operations-container .data-table td.team-column {
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+}
+
+/* 제품명 컬럼 기본 텍스트 너비 */
+.media-operations-container .data-table th:first-child,
+.media-operations-container .data-table td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+/* 셀 컨텐츠 커스텀 스타일 */
+.media-operations-container .cell-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.media-operations-container .status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.media-operations-container .status-badge.clickable {
+  cursor: pointer;
+}
+
+.media-operations-container .status-badge.clickable:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.media-operations-container .status-badge.status-active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.media-operations-container .status-badge.status-inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.media-operations-container .value-text {
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.media-operations-container .empty-cell {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  height: 24px;
+  min-height: 24px;
+}
+
+.media-operations-container .empty-cell:hover {
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+/* 매체 미할당 셀 스타일 - 회색 배경, 텍스트 없음 */
+.media-operations-container .unassigned-cell {
+  background-color: #f3f4f6 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+/* 최근 히스토리 컴포넌트 */
+.media-operations-container .recent-history-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.media-operations-container .recent-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.media-operations-container .recent-history-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.media-operations-container .view-details-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.media-operations-container .view-details-btn:hover {
+  background: #2563eb;
+}
+
+.media-operations-container .recent-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.media-operations-container .no-history {
+  text-align: center;
+  color: #9ca3af;
+  padding: 2rem;
+  font-size: 0.875rem;
+}
+
+.media-operations-container .history-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  border-left: 3px solid #3b82f6;
+  transition: all 0.2s ease;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.media-operations-container .history-item:hover {
+  background: #f3f4f6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.media-operations-container .history-team {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1f2937;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.media-operations-container .history-product {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #4b5563;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.media-operations-container .history-action {
+  padding: 0.125rem 0.375rem;
+  border-radius: 3px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.media-operations-container .history-action.action-on {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.media-operations-container .history-action.action-off {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.media-operations-container .history-datetime {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.media-operations-container .history-editor {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 400;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 히스토리 상세보기 모달 */
+.media-operations-container .history-detail-modal {
+  background: white;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.media-operations-container .history-detail-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.media-operations-container .history-detail-modal .modal-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.media-operations-container .history-detail-modal .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.media-operations-container .history-detail-modal .close-btn:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.media-operations-container .history-detail-modal .modal-body {
+  padding: 1.5rem;
+}
+
+.media-operations-container .history-table-container {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.media-operations-container .history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.media-operations-container .history-table thead {
+  background: #f9fafb;
+  border-top: 2px solid #e5e7eb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.media-operations-container .history-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.media-operations-container .history-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+}
+
+.media-operations-container .history-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.media-operations-container .history-table td {
+  padding: 0.75rem 1rem;
+  color: #4b5563;
+}
+
+.media-operations-container .history-table .no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #9ca3af;
+}
+
+.media-operations-container .status-badge-small {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.media-operations-container .status-badge-small.status-on {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.media-operations-container .status-badge-small.status-off {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* 페이지네이션 */
+.media-operations-container .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.media-operations-container .page-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.media-operations-container .page-btn:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.media-operations-container .page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.media-operations-container .page-number {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 40px;
+}
+
+.media-operations-container .page-number:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.media-operations-container .page-number.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+  font-weight: 700;
+}
+
+.media-operations-container .page-number.active:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}

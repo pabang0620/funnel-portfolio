@@ -1,0 +1,50 @@
+/* Excel 업로드 컴포넌트 스타일 */
+.excel-upload-area {
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.excel-upload-area:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.excel-upload-input {
+  display: none;
+}
+
+.excel-upload-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+
+.excel-upload-icon {
+  font-size: 1.5rem;
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.excel-upload-area:hover .excel-upload-icon {
+  color: #3b82f6;
+}
+
+.excel-upload-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.excel-upload-subtext {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}

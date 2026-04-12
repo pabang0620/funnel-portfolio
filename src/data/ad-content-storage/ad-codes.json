@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ac-001",
+    "ad_code": "AD-2023-001",
+    "product_id": "prod-001",
+    "product_name": "퓨어 진정크림",
+    "platform": "Meta",
+    "campaign_name": "피부진정_스킨케어_2023Q1",
+    "created_at": "2023-01-05T09:30:00Z",
+    "file_count": 3
+  },
+  {
+    "id": "ac-002",
+    "ad_code": "AD-2023-015",
+    "product_id": "prod-002",
+    "product_name": "두피케어 탈모샴푸",
+    "platform": "Meta",
+    "campaign_name": "탈모케어_헤어_2023Q1",
+    "created_at": "2023-02-10T11:00:00Z",
+    "file_count": 2
+  },
+  {
+    "id": "ac-003",
+    "ad_code": "AD-2023-022",
+    "product_id": "prod-003",
+    "product_name": "비타민C 고함량 영양제",
+    "platform": "Google",
+    "campaign_name": "비타민C_건강_2023Q1",
+    "created_at": "2023-03-15T14:20:00Z",
+    "file_count": 1
+  },
+  {
+    "id": "ac-004",
+    "ad_code": "AD-2023-031",
+    "product_id": "prod-004",
+    "product_name": "슬림다운 다이어트쉐이크",
+    "platform": "Meta",
+    "campaign_name": "다이어트_공포유발_2023Q2",
+    "created_at": "2023-04-20T10:00:00Z",
+    "file_count": 4
+  },
+  {
+    "id": "ac-005",
+    "ad_code": "AD-2023-045",
+    "product_id": "prod-001",
+    "product_name": "퓨어 진정크림",
+    "platform": "Kakao",
+    "campaign_name": "콜라겐_스킨케어_2023Q2",
+    "created_at": "2023-05-10T09:00:00Z",
+    "file_count": 2
+  },
+  {
+    "id": "ac-006",
+    "ad_code": "AD-2023-058",
+    "product_id": "prod-005",
+    "product_name": "프리미엄 프로바이오틱스",
+    "platform": "Meta",
+    "campaign_name": "여름프로모션_건강_2023Q2",
+    "created_at": "2023-06-15T13:00:00Z",
+    "file_count": 2
+  },
+  {
+    "id": "ac-007",
+    "ad_code": "AD-2024-018",
+    "product_id": "prod-001",
+    "product_name": "퓨어 진정크림",
+    "platform": "TikTok",
+    "campaign_name": "봄환절기_피부_2024Q1",
+    "created_at": "2024-02-15T11:00:00Z",
+    "file_count": 3
+  },
+  {
+    "id": "ac-008",
+    "ad_code": "AD-2024-029",
+    "product_id": "prod-006",
+    "product_name": "프로 크레아틴 모노하이드레이트",
+    "platform": "Meta",
+    "campaign_name": "스포츠영양_전문가_2024Q1",
+    "created_at": "2024-03-20T09:00:00Z",
+    "file_count": 5
+  }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "user-1", "name": "홍길동", "team_id": "team-1", "email": "hong@funnelzone.com" },
+  { "id": "user-2", "name": "김지수", "team_id": "team-1", "email": "jisu@funnelzone.com" },
+  { "id": "user-3", "name": "이민준", "team_id": "team-2", "email": "minjun@funnelzone.com" },
+  { "id": "user-4", "name": "박소연", "team_id": "team-2", "email": "soyeon@funnelzone.com" },
+  { "id": "user-5", "name": "최현우", "team_id": "team-3", "email": "hyunwoo@funnelzone.com" },
+  { "id": "user-6", "name": "정다은", "team_id": "team-3", "email": "daeun@funnelzone.com" },
+  { "id": "user-7", "name": "강도현", "team_id": "team-4", "email": "dohyun@funnelzone.com" },
+  { "id": "user-8", "name": "윤서진", "team_id": "team-4", "email": "seojin@funnelzone.com" },
+  { "id": "user-9", "name": "임재원", "team_id": "team-5", "email": "jaewon@funnelzone.com" },
+  { "id": "user-10", "name": "한예린", "team_id": "team-5", "email": "yerin@funnelzone.com" }
+]

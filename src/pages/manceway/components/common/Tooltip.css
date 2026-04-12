@@ -1,0 +1,55 @@
+/* 커스텀 툴팁 스타일 */
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+[data-tooltip]::before,
+[data-tooltip]::after {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease-in-out;
+  transition-delay: 0.05s; /* 0.05초 후 나타남 (거의 즉시) */
+  z-index: 9999;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[data-tooltip]::after {
+  content: '';
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.9);
+  bottom: calc(100% + 3px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+/* 하단 툴팁 */
+[data-tooltip][data-tooltip-position="bottom"]::before {
+  bottom: auto;
+  top: calc(100% + 8px);
+}
+
+[data-tooltip][data-tooltip-position="bottom"]::after {
+  bottom: auto;
+  top: calc(100% + 3px);
+  border-top-color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+}

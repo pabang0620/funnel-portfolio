@@ -1,0 +1,1380 @@
+import React, { useState, useMemo, useRef, useEffect, useCallback } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+// import { filterData, aggregateDailyData } from "../dummyData"; // Removed: using API data instead
+import { calculateWeekTotals, calculateCPC, calculateCTR, calculateCVR, calculateROAS, calculateAvgOrderValue } from "./utils/metricsUtils";
+import { useAuth } from "../../../contexts/AuthContext";
+import "./DailyDetailTable.css";
+
+// 편집 가능한 필드 순서
+const EDITABLE_FIELDS = ["impressions", "clicks", "adCost", "conversions", "revenue"];
+
+// 필드 한글 레이블
+const FIELD_LABELS = {
+  adCost: "광고비",
+  revenue: "매출액",
+  impressions: "노출수",
+  clicks: "클릭수",
+  conversions: "구매건수",
+};
+
+// 모든 데이터 필드 (선택 가능한 컬럼들 - 날짜 포함, 주차 제외)
+const ALL_DATA_FIELDS = ["date", "impressions", "clicks", "adCost", "cpc", "ctr", "conversions", "revenue", "avgOrderValue", "cvr", "roas"];
+
+const DailyDetailTable = ({
+  weekStartDay,
+  customDateRange,
+  selectedMedia,
+  userTeam,
+  isEditMode,
+  editingCell,
+  manualData,
+  setEditingCell,
+  handleCancel,
+  handleManualInput,
+  formatNumber,
+  dailyData,
+  loading,
+  error,
+  operationStatus,
+  selectedProductId,
+  selectedMediaId,
+}) => {
+  const { parentTeam, userRole } = useAuth();
+  const [collapsedWeeks, setCollapsedWeeks] = useState(new Set());
+  const tableRef = useRef(null);
+
+  // 엑셀 스타일 셀 선택 상태
+  const [selectedCells, setSelectedCells] = useState(new Set());
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState(null);
+  const dragStartTimeRef = useRef(0); // 드래그 시작 시간 추적
+
+  // 붙여넣기 모달 상태
+  const [showPasteModal, setShowPasteModal] = useState(false);
+  const [pasteData, setPasteData] = useState([]); // 클립보드에서 파싱된 행 데이터
+  const [columnMappings, setColumnMappings] = useState([]); // 각 열이 어떤 필드에 매핑되는지
+  const [pasteStartDate, setPasteStartDate] = useState(null); // 붙여넣기 시작 날짜
+
+  // 셀 키 생성/파싱 함수 (날짜에 -가 포함되므로 구분자로 | 사용)
+  const getCellKey = (date, field) => `${date}|${field}`;
+  const parseCellKey = (key) => {
+    const idx = key.lastIndexOf('|');
+    return { date: key.substring(0, idx), field: key.substring(idx + 1) };
+  };
+
+  // 주차 토글 핸들러
+  const toggleWeek = (weekName) => {
+    const newCollapsedWeeks = new Set(collapsedWeeks);
+    if (newCollapsedWeeks.has(weekName)) {
+      newCollapsedWeeks.delete(weekName);
+    } else {
+      newCollapsedWeeks.add(weekName);
+    }
+    setCollapsedWeeks(newCollapsedWeeks);
+  };
+
+
+  const tableData = useMemo(() => {
+    if (
+      !customDateRange ||
+      !customDateRange.startDate ||
+      !customDateRange.endDate ||
+      !dailyData ||
+      dailyData.length === 0
+    ) {
+      return null;
+    }
+
+    // API 데이터를 직접 사용 (이미 필터링되고 집계된 상태)
+    const completeData = dailyData.map(item => ({
+      date: item.date,
+      adCost: item.adCost,
+      revenue: item.revenue,
+      impressions: item.impressions,
+      clicks: item.clicks,
+      conversions: item.conversions,
+      // 계산된 값들은 프론트엔드에서 계산
+      cpc: calculateCPC(item.adCost, item.clicks),
+      ctr: calculateCTR(item.clicks, item.impressions),
+      cvr: calculateCVR(item.conversions, item.clicks),
+      roas: calculateROAS(item.revenue, item.adCost),
+      avgOrderValue: calculateAvgOrderValue(item.revenue, item.conversions),
+    }));
+
+    // 주차별로 그룹핑
+    const groupedData = [];
+    let currentWeek = "";
+    let weekData = [];
+
+    completeData.forEach((data, index) => {
+      const date = new Date(data.date);
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+
+      let weekInfo;
+      
+      if (weekStartDay === "월요일 시작") {
+        // 월요일 시작 방식 - ISO 주차 계산
+        const firstDay = new Date(date.getFullYear(), month - 1, 1);
+        const firstMonday = firstDay.getDate() + ((7 - firstDay.getDay() + 1) % 7);
+        
+        let weekNumber;
+        if (day < firstMonday) {
+          // 첫째 주에 속함
+          weekNumber = 1;
+        } else {
+          // 첫 번째 월요일 이후의 주차 계산
+          weekNumber = Math.floor((day - firstMonday) / 7) + 2;
+        }
+        weekInfo = `${month}월 ${weekNumber}주`;
+      } else {
+        // 1일 시작 방식 (기존)
+        const weekNumber = Math.ceil(day / 7);
+        weekInfo = `${month}월 ${weekNumber}주`;
+      }
+
+      if (weekInfo !== currentWeek) {
+        if (currentWeek && weekData.length > 0) {
+          groupedData.push({
+            week: currentWeek,
+            data: weekData,
+          });
+        }
+        currentWeek = weekInfo;
+        weekData = [data];
+      } else {
+        weekData.push(data);
+      }
+
+      // 마지막 그룹 처리
+      if (index === completeData.length - 1) {
+        groupedData.push({
+          week: currentWeek,
+          data: weekData,
+        });
+      }
+    });
+
+    return groupedData;
+  }, [customDateRange, dailyData, weekStartDay]);
+
+  // 모든 날짜를 flat 배열로 (Tab 이동용)
+  const allDates = useMemo(() => {
+    if (!tableData) return [];
+    return tableData.flatMap(group => group.data.map(d => d.date));
+  }, [tableData]);
+
+  // 다음/이전 날짜 가져오기
+  const getNextDate = (currentDate) => {
+    const idx = allDates.indexOf(currentDate);
+    return idx < allDates.length - 1 ? allDates[idx + 1] : null;
+  };
+
+  const getPreviousDate = (currentDate) => {
+    const idx = allDates.indexOf(currentDate);
+    return idx > 0 ? allDates[idx - 1] : null;
+  };
+
+  // Tab 키로 다음/이전 편집 가능한 셀로 이동
+  const getNextEditableCell = (currentDate, currentField) => {
+    const currentDateIndex = allDates.indexOf(currentDate);
+    const currentFieldIndex = EDITABLE_FIELDS.indexOf(currentField);
+    
+    // 같은 날짜의 다음 필드로 이동
+    if (currentFieldIndex < EDITABLE_FIELDS.length - 1) {
+      return { date: currentDate, field: EDITABLE_FIELDS[currentFieldIndex + 1] };
+    }
+    
+    // 다음 날짜의 첫 번째 필드로 이동
+    if (currentDateIndex < allDates.length - 1) {
+      return { date: allDates[currentDateIndex + 1], field: EDITABLE_FIELDS[0] };
+    }
+    
+    // 마지막이면 null
+    return null;
+  };
+
+  const getPreviousEditableCell = (currentDate, currentField) => {
+    const currentDateIndex = allDates.indexOf(currentDate);
+    const currentFieldIndex = EDITABLE_FIELDS.indexOf(currentField);
+    
+    // 같은 날짜의 이전 필드로 이동
+    if (currentFieldIndex > 0) {
+      return { date: currentDate, field: EDITABLE_FIELDS[currentFieldIndex - 1] };
+    }
+    
+    // 이전 날짜의 마지막 필드로 이동
+    if (currentDateIndex > 0) {
+      return { date: allDates[currentDateIndex - 1], field: EDITABLE_FIELDS[EDITABLE_FIELDS.length - 1] };
+    }
+    
+    // 첫 번째면 null
+    return null;
+  };
+
+  // 방향키로 셀 이동
+  const getLeftCell = (currentDate, currentField) => {
+    const currentFieldIndex = EDITABLE_FIELDS.indexOf(currentField);
+    if (currentFieldIndex > 0) {
+      return { date: currentDate, field: EDITABLE_FIELDS[currentFieldIndex - 1] };
+    }
+    return null;
+  };
+
+  const getRightCell = (currentDate, currentField) => {
+    const currentFieldIndex = EDITABLE_FIELDS.indexOf(currentField);
+    if (currentFieldIndex < EDITABLE_FIELDS.length - 1) {
+      return { date: currentDate, field: EDITABLE_FIELDS[currentFieldIndex + 1] };
+    }
+    return null;
+  };
+
+  const getUpCell = (currentDate, currentField) => {
+    const currentDateIndex = allDates.indexOf(currentDate);
+    if (currentDateIndex > 0) {
+      return { date: allDates[currentDateIndex - 1], field: currentField };
+    }
+    return null;
+  };
+
+  const getDownCell = (currentDate, currentField) => {
+    const currentDateIndex = allDates.indexOf(currentDate);
+    if (currentDateIndex < allDates.length - 1) {
+      return { date: allDates[currentDateIndex + 1], field: currentField };
+    }
+    return null;
+  };
+
+
+  // 매체 운영 상태 확인 함수 (ID 기반)
+  const checkMediaOperationStatus = () => {
+    // S등급 사용자는 매체 중단 상태와 관계없이 모든 데이터 수정 가능
+    if (userRole === 'S') {
+      return { isStopped: false };
+    }
+
+    if (!operationStatus || !selectedProductId || !selectedMediaId) {
+      return { isStopped: false };
+    }
+
+    // 제품ID-매체ID 조합으로 중단 상태 확인 (제품명 변경에도 영향 없음)
+    const productMediaKey = `${selectedProductId}-${selectedMediaId}`;
+
+    // 해당 제품-매체 조합이 어떤 팀에서든 중단됨인지 확인
+    const isOperationStopped = Object.entries(operationStatus).some(([key, value]) => {
+      return key.startsWith(productMediaKey + '-') && value?.statusValue === 0;
+    });
+
+    return { isStopped: isOperationStopped };
+  };
+
+  // 셀 클릭 핸들러 (매체 운영 상태 체크 포함)
+  const handleCellClickWithCheck = (date, field) => {
+    if (!isEditMode) return;
+
+    const { isStopped } = checkMediaOperationStatus();
+    
+    if (isStopped) {
+      alert('해당 매체가 중단 상태입니다. 데이터를 수정할 수 없습니다.');
+      return;
+    }
+
+    // 클릭 시 편집 모드로 전환
+    setEditingCell({ date, field });
+  };
+
+  // 드래그로 선택된 범위 계산
+  const getSelectedRange = (start, end) => {
+    if (!start || !end || allDates.length === 0) return new Set();
+
+    const startDateIdx = allDates.indexOf(start.date);
+    const endDateIdx = allDates.indexOf(end.date);
+    const startFieldIdx = ALL_DATA_FIELDS.indexOf(start.field);
+    const endFieldIdx = ALL_DATA_FIELDS.indexOf(end.field);
+
+    const minDateIdx = Math.min(startDateIdx, endDateIdx);
+    const maxDateIdx = Math.max(startDateIdx, endDateIdx);
+    const minFieldIdx = Math.min(startFieldIdx, endFieldIdx);
+    const maxFieldIdx = Math.max(startFieldIdx, endFieldIdx);
+
+    const selected = new Set();
+    for (let i = minDateIdx; i <= maxDateIdx; i++) {
+      for (let j = minFieldIdx; j <= maxFieldIdx; j++) {
+        if (allDates[i] && ALL_DATA_FIELDS[j]) {
+          selected.add(getCellKey(allDates[i], ALL_DATA_FIELDS[j]));
+        }
+      }
+    }
+    return selected;
+  };
+
+  // 마우스 다운 핸들러 (셀 선택 시작) - 항상 선택 가능
+  const handleCellMouseDown = (e, date, field) => {
+    if (editingCell) return;
+    e.preventDefault();
+    dragStartTimeRef.current = Date.now();
+    setIsDragging(true);
+    setDragStart({ date, field });
+    setSelectedCells(new Set([getCellKey(date, field)]));
+    // 테이블 컨테이너에 포커스를 줘서 키보드 이벤트가 작동하도록 함 (스크롤 방지)
+    if (tableRef.current) {
+      tableRef.current.focus({ preventScroll: true });
+    }
+  };
+
+  // 마우스 이동 핸들러 (드래그 선택)
+  const handleCellMouseEnter = (date, field) => {
+    if (!isDragging || !dragStart) return;
+
+    // 드래그 시작 후 100ms 이내의 mouseEnter는 무시 (클릭 시 발생하는 오류 방지)
+    if (Date.now() - dragStartTimeRef.current < 100) return;
+
+    const newSelection = getSelectedRange(dragStart, { date, field });
+    setSelectedCells(newSelection);
+  };
+
+  // 마우스 업 핸들러 (드래그 종료)
+  useEffect(() => {
+    const handleMouseUp = () => setIsDragging(false);
+    document.addEventListener('mouseup', handleMouseUp);
+    return () => document.removeEventListener('mouseup', handleMouseUp);
+  }, []);
+
+  // 더블클릭 핸들러 (편집 모드에서만 편집 진입)
+  const handleCellDoubleClick = (date, field) => {
+    if (!isEditMode) return;
+    if (!EDITABLE_FIELDS.includes(field)) return;
+    const { isStopped } = checkMediaOperationStatus();
+    if (isStopped) {
+      alert('해당 매체가 중단 상태입니다. 데이터를 수정할 수 없습니다.');
+      return;
+    }
+    setEditingCell({ date, field });
+    setSelectedCells(new Set([getCellKey(date, field)]));
+  };
+
+  // 선택된 셀들의 데이터 복사
+  const copySelectedCells = async () => {
+    if (selectedCells.size === 0) return;
+    const dateFieldPairs = Array.from(selectedCells).map(key => parseCellKey(key));
+    const dates = [...new Set(dateFieldPairs.map(p => p.date))].sort();
+    const fields = [...new Set(dateFieldPairs.map(p => p.field))];
+    const sortedFields = ALL_DATA_FIELDS.filter(f => fields.includes(f));
+
+    const rows = dates.map(date => {
+      return sortedFields.map(field => {
+        const manual = manualData[date] || {};
+        const dayData = dailyData.find(d => d.date === date) || {};
+        let value;
+        if (EDITABLE_FIELDS.includes(field)) {
+          value = manual[field] !== undefined ? manual[field] : dayData[field];
+        } else {
+          const adCost = manual.adCost !== undefined ? manual.adCost : dayData.adCost || 0;
+          const revenue = manual.revenue !== undefined ? manual.revenue : dayData.revenue || 0;
+          const impressions = manual.impressions !== undefined ? manual.impressions : dayData.impressions || 0;
+          const clicks = manual.clicks !== undefined ? manual.clicks : dayData.clicks || 0;
+          const conversions = manual.conversions !== undefined ? manual.conversions : dayData.conversions || 0;
+          switch (field) {
+            case 'cpc': value = calculateCPC(adCost, clicks); break;
+            case 'ctr': value = calculateCTR(clicks, impressions); break;
+            case 'cvr': value = calculateCVR(conversions, clicks); break;
+            case 'roas': value = calculateROAS(revenue, adCost); break;
+            case 'avgOrderValue': value = calculateAvgOrderValue(revenue, conversions); break;
+            default: value = dayData[field];
+          }
+        }
+        return value !== null && value !== undefined ? value : '';
+      }).join('\t');
+    }).join('\n');
+
+    try { await navigator.clipboard.writeText(rows); } catch (err) { console.error('복사 실패:', err); }
+  };
+
+  // 붙여넣기 모달 열기 (수정 모드에서만)
+  const openPasteModal = async () => {
+    if (!isEditMode) return;
+    const { isStopped } = checkMediaOperationStatus();
+    if (isStopped) { alert('해당 매체가 중단 상태입니다.'); return; }
+    if (selectedCells.size === 0) return;
+
+    try {
+      const text = await navigator.clipboard.readText();
+      if (!text.trim()) {
+        alert('클립보드에 데이터가 없습니다.');
+        return;
+      }
+
+      // 클립보드 데이터 파싱
+      const rows = text.split('\n')
+        .filter(row => row.trim() !== '')
+        .map(row => row.split('\t').map(cell => cell.trim()));
+
+      if (rows.length === 0) {
+        alert('붙여넣을 데이터가 없습니다.');
+        return;
+      }
+
+      // 선택된 셀 중 시작 날짜 찾기
+      const dateFieldPairs = Array.from(selectedCells).map(key => parseCellKey(key));
+      let startDateIdx = Infinity;
+      dateFieldPairs.forEach(({ date }) => {
+        const dateIdx = allDates.indexOf(date);
+        if (dateIdx !== -1 && dateIdx < startDateIdx) startDateIdx = dateIdx;
+      });
+      if (startDateIdx === Infinity) startDateIdx = 0;
+
+      // 열 개수에 맞게 기본 매핑 설정 (순서대로 광고비, 직접매출, 노출수, 클릭수, 구매건수)
+      const colCount = Math.max(...rows.map(r => r.length));
+      const defaultMappings = [];
+      for (let i = 0; i < colCount; i++) {
+        defaultMappings.push(i < EDITABLE_FIELDS.length ? EDITABLE_FIELDS[i] : 'skip');
+      }
+
+      setPasteData(rows);
+      setColumnMappings(defaultMappings);
+      setPasteStartDate(allDates[startDateIdx]);
+      setShowPasteModal(true);
+    } catch (err) {
+      console.error('클립보드 읽기 실패:', err);
+      alert('클립보드 접근에 실패했습니다. 권한을 확인해주세요.');
+    }
+  };
+
+  // 붙여넣기 모달에서 열 매핑 변경
+  const handleColumnMappingChange = (colIdx, newField) => {
+    setColumnMappings(prev => {
+      const updated = [...prev];
+      updated[colIdx] = newField;
+      return updated;
+    });
+  };
+
+  // 붙여넣기 적용
+  const applyPaste = () => {
+    if (!pasteStartDate || pasteData.length === 0) return;
+
+    const startDateIdx = allDates.indexOf(pasteStartDate);
+    if (startDateIdx === -1) return;
+
+    pasteData.forEach((row, rowIdx) => {
+      const targetDateIdx = startDateIdx + rowIdx;
+      if (targetDateIdx >= allDates.length) return;
+
+      const targetDate = allDates[targetDateIdx];
+
+      row.forEach((value, colIdx) => {
+        const targetField = columnMappings[colIdx];
+        if (!targetField || targetField === 'skip') return;
+        if (!EDITABLE_FIELDS.includes(targetField)) return;
+
+        const numValue = value.replace(/,/g, '').trim();
+        if (numValue === '' || /^\d+$/.test(numValue)) {
+          handleManualInput(targetDate, targetField, numValue);
+        }
+      });
+    });
+
+    // 모달 닫기
+    setShowPasteModal(false);
+    setPasteData([]);
+    setColumnMappings([]);
+    setPasteStartDate(null);
+  };
+
+  // 붙여넣기 모달 닫기
+  const closePasteModal = () => {
+    setShowPasteModal(false);
+    setPasteData([]);
+    setColumnMappings([]);
+    setPasteStartDate(null);
+  };
+
+  // 선택된 셀 삭제 (수정 모드에서만)
+  const deleteSelectedCells = () => {
+    if (!isEditMode) return;
+    const { isStopped } = checkMediaOperationStatus();
+    if (isStopped) { alert('해당 매체가 중단 상태입니다.'); return; }
+    if (selectedCells.size === 0) return;
+    selectedCells.forEach(key => {
+      const { date, field } = parseCellKey(key);
+      if (EDITABLE_FIELDS.includes(field)) handleManualInput(date, field, '');
+    });
+  };
+
+  // 키보드 이벤트 핸들러
+  const handleKeyDown = (e) => {
+    if (editingCell) return;
+
+    // Ctrl+C: 복사 - 항상 가능
+    if (e.ctrlKey && e.key === 'c') {
+      e.preventDefault();
+      copySelectedCells();
+      return;
+    }
+
+    // ESC: 선택 해제 - 항상 가능
+    if (e.key === 'Escape') {
+      setSelectedCells(new Set());
+      setDragStart(null);
+      return;
+    }
+
+    // 방향키: 셀 이동 - 항상 가능
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key) && selectedCells.size > 0) {
+      e.preventDefault();
+      const firstKey = Array.from(selectedCells)[0];
+      const { date, field } = parseCellKey(firstKey);
+      const dateIdx = allDates.indexOf(date);
+      const fieldIdx = ALL_DATA_FIELDS.indexOf(field);
+
+      let nextDate = date, nextField = field;
+      if (e.key === 'ArrowUp' && dateIdx > 0) nextDate = allDates[dateIdx - 1];
+      if (e.key === 'ArrowDown' && dateIdx < allDates.length - 1) nextDate = allDates[dateIdx + 1];
+      if (e.key === 'ArrowLeft' && fieldIdx > 0) nextField = ALL_DATA_FIELDS[fieldIdx - 1];
+      if (e.key === 'ArrowRight' && fieldIdx < ALL_DATA_FIELDS.length - 1) nextField = ALL_DATA_FIELDS[fieldIdx + 1];
+
+      if (nextDate !== date || nextField !== field) {
+        setSelectedCells(new Set([getCellKey(nextDate, nextField)]));
+      }
+      return;
+    }
+
+    // 아래 기능들은 수정 모드에서만 동작
+    if (!isEditMode) return;
+
+    // Ctrl+V: 붙여넣기 모달 열기
+    if (e.ctrlKey && e.key === 'v') {
+      e.preventDefault();
+      openPasteModal();
+      return;
+    }
+
+    // Delete/Backspace: 삭제
+    if (e.key === 'Delete' || e.key === 'Backspace') {
+      e.preventDefault();
+      deleteSelectedCells();
+      return;
+    }
+
+    // 숫자 입력: 편집 모드로 진입 (기존 값 덮어쓰기)
+    if (/^\d$/.test(e.key) && selectedCells.size > 0 && !e.ctrlKey && !e.altKey) {
+      e.preventDefault();
+      for (const key of selectedCells) {
+        const { date, field } = parseCellKey(key);
+        if (EDITABLE_FIELDS.includes(field)) {
+          const { isStopped } = checkMediaOperationStatus();
+          if (!isStopped) {
+            handleManualInput(date, field, e.key);
+            setEditingCell({ date, field });
+          }
+          break;
+        }
+      }
+      return;
+    }
+
+    // Enter: 선택된 셀 중 첫 번째 편집 가능한 셀로 편집 모드 진입
+    if (e.key === 'Enter' && selectedCells.size > 0) {
+      e.preventDefault();
+      for (const key of selectedCells) {
+        const { date, field } = parseCellKey(key);
+        if (EDITABLE_FIELDS.includes(field)) {
+          const { isStopped } = checkMediaOperationStatus();
+          if (!isStopped) setEditingCell({ date, field });
+          break;
+        }
+      }
+      return;
+    }
+  };
+
+  // 일별 상세 데이터가 표시되어야 하는지 확인 (모든 등급, 모든 팀 표시)
+  const shouldShow = true;
+
+  if (!shouldShow) {
+    return null;
+  }
+
+  if (loading) {
+    return (
+      <div className="daily-detail">
+        <h3 className="section-title">일별 상세 데이터</h3>
+        <div className="data-table-container">
+          <table className="data-table">
+            <tbody>
+              <tr>
+                <td colSpan="12">데이터를 불러오는 중...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="daily-detail">
+        <h3 className="section-title">일별 상세 데이터</h3>
+        <div className="data-table-container">
+          <table className="data-table">
+            <tbody>
+              <tr>
+                <td colSpan="12">오류: {error}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  }
+
+  if (!tableData) {
+    return (
+      <div className="daily-detail">
+        <h3 className="section-title">일별 상세 데이터</h3>
+        <div className="data-table-container">
+          <table className="data-table">
+            <tbody>
+              <tr>
+                <td colSpan="12">날짜를 선택하세요</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="daily-detail">
+      <h3 className="section-title">일별 상세 데이터</h3>
+      <div
+        className={`data-table-container ${isEditMode ? "edit-mode" : ""} ${isDragging ? "dragging" : ""}`}
+        ref={tableRef}
+        tabIndex={0}
+        onKeyDown={handleKeyDown}
+      >
+        <table className="data-table">
+          <thead>
+            <tr>
+              <th>주차</th>
+              <th>날짜</th>
+              <th>노출수</th>
+              <th>클릭수</th>
+              <th>광고비</th>
+              <th title="광고비 / 클릭수">CPC</th>
+              <th title="(클릭수 / 노출수) × 100">CTR</th>
+              <th>구매건수</th>
+              <th>매출액</th>
+              <th title="매출액 / 구매건수">객단가</th>
+              <th title="(구매건수 / 클릭수) × 100">CVR</th>
+              <th title="(매출액 / 광고비) × 100">ROAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tableData
+              .map((group, groupIndex) => {
+                const isCollapsed = collapsedWeeks.has(group.week);
+                const weekTotals = calculateWeekTotals(group.data, manualData);
+                const rows = [];
+
+                if (isCollapsed) {
+                  // 접혀있을 때는 합계 행만 표시
+                  rows.push(
+                    <tr
+                      key={`week-${groupIndex}-summary`}
+                      className="week-summary-row"
+                    >
+                      <td
+                        onClick={() => toggleWeek(group.week)}
+                        className="week-toggle-cell collapsed"
+                      >
+                        {group.week}
+                        <FontAwesomeIcon
+                          icon={faChevronRight}
+                          className="toggle-icon"
+                        />
+                      </td>
+                      <td className="week-summary-cell">합계</td>
+                      <td className="week-summary-cell">
+                        {weekTotals.impressions.toLocaleString()}
+                      </td>
+                      <td className="week-summary-cell">
+                        {weekTotals.clicks.toLocaleString()}
+                      </td>
+                      <td className="week-summary-cell">
+                        {weekTotals.adCost.toLocaleString()}
+                      </td>
+                      <td className="week-summary-cell">
+                        {weekTotals.cpc.toLocaleString()}
+                      </td>
+                      <td className="week-summary-cell">{weekTotals.ctr}%</td>
+                      <td className="week-summary-cell">
+                        {weekTotals.conversions.toLocaleString()}
+                      </td>
+                      <td className="week-summary-cell">
+                        {weekTotals.revenue.toLocaleString()}
+                      </td>
+                      <td className="week-summary-cell">
+                        {weekTotals.avgOrderValue.toLocaleString()}
+                      </td>
+                      <td className="week-summary-cell">{weekTotals.cvr}%</td>
+                      <td className="week-summary-cell">{weekTotals.roas}%</td>
+                    </tr>
+                  );
+                } else {
+                  // 펼쳐있을 때는 모든 일별 데이터와 합계 행 표시
+                  group.data.forEach((dayData, dateIndex) => {
+                    const date = new Date(dayData.date);
+                    const formattedDate = `${String(date.getMonth() + 1).padStart(2, "0")}.${String(
+                      date.getDate()
+                    ).padStart(2, "0")}`;
+
+                    // 수동 입력 데이터 가져오기
+                    const manual = manualData[dayData.date] || {};
+                    
+                    // 현재 편집 중인 행인지 확인
+                    const isCurrentlyEditingRow = editingCell?.date === dayData.date;
+
+                    // null 체크 및 데이터 유무 확인
+                    const hasData =
+                      dayData.adCost !== null &&
+                      dayData.adCost !== undefined &&
+                      (dayData.adCost > 0 || dayData.impressions > 0);
+
+                    // 계산된 값들 (수동 입력 데이터가 있을 때)
+                    const calculated = hasData
+                      ? {
+                          cpc: calculateCPC(dayData.adCost, dayData.clicks),
+                          ctr: calculateCTR(dayData.clicks, dayData.impressions),
+                          cvr: calculateCVR(dayData.conversions, dayData.clicks)
+                        }
+                      : {
+                          cpc: calculateCPC(manual.adCost || 0, manual.clicks || 0),
+                          ctr: calculateCTR(manual.clicks || 0, manual.impressions || 0),
+                          cvr: calculateCVR(manual.conversions || 0, manual.clicks || 0)
+                        };
+
+                    rows.push(
+                      <tr key={`${groupIndex}-${dateIndex}`} className={isCurrentlyEditingRow ? "editing-row" : ""}>
+                        {dateIndex === 0 && (
+                          <td
+                            rowSpan={group.data.length + 1}
+                            onClick={() => toggleWeek(group.week)}
+                            className="week-toggle-cell expanded"
+                          >
+                            {group.week}
+                            <FontAwesomeIcon
+                              icon={faChevronDown}
+                              className="toggle-icon"
+                            />
+                          </td>
+                        )}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "date")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "date")}
+                          className={`date-cell ${!editingCell ? "selectable-cell" : ""} ${selectedCells.has(getCellKey(dayData.date, "date")) ? "selected-cell" : ""}`}
+                          style={{ cursor: "cell" }}
+                        >{formattedDate}</td>
+
+                        {/* 노출수 - 편집 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "impressions")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "impressions")}
+                          onDoubleClick={() => handleCellDoubleClick(dayData.date, "impressions")}
+                          className={`
+                          ${!editingCell ? "selectable-cell" : ""}
+                          ${isEditMode && EDITABLE_FIELDS.includes("adCost") ? "editable-cell" : ""}
+                          ${selectedCells.has(getCellKey(dayData.date, "adCost")) ? "selected-cell" : ""}
+                          ${editingCell?.date === dayData.date && editingCell?.field === "adCost" ? "editing-cell" : ""}
+                        `.trim()}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(() => {
+                            const cellValue =
+                              manual.adCost !== undefined
+                                ? manual.adCost
+                                : dayData.adCost;
+                            const showInput =
+                              editingCell?.date === dayData.date &&
+                              editingCell?.field === "adCost";
+
+                            return showInput ? (
+                              <input
+                                type="text"
+                                className="editing-input"
+                                placeholder=""
+                                value={
+                                  cellValue !== null && cellValue !== undefined
+                                    ? formatNumber(cellValue)
+                                    : ""
+                                }
+                                onChange={(e) => {
+                                  const value = e.target.value.replace(
+                                    /,/g,
+                                    ""
+                                  );
+                                  if (/^\d*$/.test(value)) {
+                                    handleManualInput(
+                                      dayData.date,
+                                      "adCost",
+                                      value
+                                    );
+                                  }
+                                }}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter') {
+                                    e.preventDefault();
+                                    const nextCell = getDownCell(dayData.date, "adCost");
+                                    setEditingCell(null);
+                                    if (nextCell) {
+                                      setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)]));
+                                    }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                  if (e.key === 'Escape') {
+                                    e.preventDefault();
+                                    setEditingCell(null);
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                  if (e.key === 'Tab') {
+                                    e.preventDefault();
+                                    const nextCell = e.shiftKey ? getPreviousEditableCell(dayData.date, "adCost") : getNextEditableCell(dayData.date, "adCost");
+                                    setEditingCell(null);
+                                    if (nextCell) {
+                                      setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)]));
+                                    }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                }}
+                                autoFocus
+                              />
+                            ) : (
+                              <span>
+                                {cellValue !== null && cellValue !== undefined
+                                  ? cellValue.toLocaleString()
+                                  : ""}
+                              </span>
+                            );
+                          })()}
+                        </td>
+
+                        {/* 매출 - 편집 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "revenue")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "revenue")}
+                          onDoubleClick={() => handleCellDoubleClick(dayData.date, "revenue")}
+                          className={`
+                          ${!editingCell ? "selectable-cell" : ""}
+                          ${isEditMode && EDITABLE_FIELDS.includes("revenue") ? "editable-cell" : ""}
+                          ${selectedCells.has(getCellKey(dayData.date, "revenue")) ? "selected-cell" : ""}
+                          ${editingCell?.date === dayData.date && editingCell?.field === "revenue" ? "editing-cell" : ""}
+                        `.trim()}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(() => {
+                            const cellValue =
+                              manual.revenue !== undefined
+                                ? manual.revenue
+                                : dayData.revenue;
+                            const showInput =
+                              editingCell?.date === dayData.date &&
+                              editingCell?.field === "revenue";
+
+                            return showInput ? (
+                              <input
+                                type="text"
+                                className="editing-input"
+                                placeholder=""
+                                value={
+                                  cellValue !== null && cellValue !== undefined
+                                    ? formatNumber(cellValue)
+                                    : ""
+                                }
+                                onChange={(e) => {
+                                  const value = e.target.value.replace(
+                                    /,/g,
+                                    ""
+                                  );
+                                  if (/^\d*$/.test(value)) {
+                                    handleManualInput(
+                                      dayData.date,
+                                      "revenue",
+                                      value
+                                    );
+                                  }
+                                }}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter') {
+                                    e.preventDefault();
+                                    const nextCell = getDownCell(dayData.date, "revenue");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                  if (e.key === 'Escape') { e.preventDefault(); setEditingCell(null); setTimeout(() => tableRef.current?.focus(), 0); return; }
+                                  if (e.key === 'Tab') {
+                                    e.preventDefault();
+                                    const nextCell = e.shiftKey ? getPreviousEditableCell(dayData.date, "revenue") : getNextEditableCell(dayData.date, "revenue");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                }}
+                                autoFocus
+                              />
+                            ) : (
+                              <span>
+                                {cellValue !== null && cellValue !== undefined
+                                  ? cellValue.toLocaleString()
+                                  : ""}
+                              </span>
+                            );
+                          })()}
+                        </td>
+
+                        {/* 노출수 - 편집 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "impressions")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "impressions")}
+                          onDoubleClick={() => handleCellDoubleClick(dayData.date, "impressions")}
+                          className={`
+                          ${!editingCell ? "selectable-cell" : ""}
+                          ${isEditMode && EDITABLE_FIELDS.includes("impressions") ? "editable-cell" : ""}
+                          ${selectedCells.has(getCellKey(dayData.date, "impressions")) ? "selected-cell" : ""}
+                          ${editingCell?.date === dayData.date && editingCell?.field === "impressions" ? "editing-cell" : ""}
+                        `.trim()}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(() => {
+                            const cellValue =
+                              manual.impressions !== undefined
+                                ? manual.impressions
+                                : dayData.impressions;
+                            const showInput =
+                              editingCell?.date === dayData.date &&
+                              editingCell?.field === "impressions";
+
+                            return showInput ? (
+                              <input
+                                type="text"
+                                className="editing-input"
+                                placeholder=""
+                                value={
+                                  cellValue !== null && cellValue !== undefined
+                                    ? formatNumber(cellValue)
+                                    : ""
+                                }
+                                onChange={(e) => {
+                                  const value = e.target.value.replace(
+                                    /,/g,
+                                    ""
+                                  );
+                                  if (/^\d*$/.test(value)) {
+                                    handleManualInput(
+                                      dayData.date,
+                                      "impressions",
+                                      value
+                                    );
+                                  }
+                                }}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter') {
+                                    e.preventDefault();
+                                    const nextCell = getDownCell(dayData.date, "impressions");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                  if (e.key === 'Escape') { e.preventDefault(); setEditingCell(null); setTimeout(() => tableRef.current?.focus(), 0); return; }
+                                  if (e.key === 'Tab') {
+                                    e.preventDefault();
+                                    const nextCell = e.shiftKey ? getPreviousEditableCell(dayData.date, "impressions") : getNextEditableCell(dayData.date, "impressions");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                }}
+                                autoFocus
+                              />
+                            ) : (
+                              <span>
+                                {cellValue !== null && cellValue !== undefined
+                                  ? cellValue.toLocaleString()
+                                  : ""}
+                              </span>
+                            );
+                          })()}
+                        </td>
+
+                        {/* 클릭수 - 편집 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "clicks")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "clicks")}
+                          onDoubleClick={() => handleCellDoubleClick(dayData.date, "clicks")}
+                          className={`
+                          ${!editingCell ? "selectable-cell" : ""}
+                          ${isEditMode && EDITABLE_FIELDS.includes("clicks") ? "editable-cell" : ""}
+                          ${selectedCells.has(getCellKey(dayData.date, "clicks")) ? "selected-cell" : ""}
+                          ${editingCell?.date === dayData.date && editingCell?.field === "clicks" ? "editing-cell" : ""}
+                        `.trim()}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(() => {
+                            const cellValue =
+                              manual.clicks !== undefined
+                                ? manual.clicks
+                                : dayData.clicks;
+                            const showInput =
+                              editingCell?.date === dayData.date &&
+                              editingCell?.field === "clicks";
+
+                            return showInput ? (
+                              <input
+                                type="text"
+                                className="editing-input"
+                                placeholder=""
+                                value={
+                                  cellValue !== null && cellValue !== undefined
+                                    ? formatNumber(cellValue)
+                                    : ""
+                                }
+                                onChange={(e) => {
+                                  const value = e.target.value.replace(
+                                    /,/g,
+                                    ""
+                                  );
+                                  if (/^\d*$/.test(value)) {
+                                    handleManualInput(
+                                      dayData.date,
+                                      "clicks",
+                                      value
+                                    );
+                                  }
+                                }}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter') {
+                                    e.preventDefault();
+                                    const nextCell = getDownCell(dayData.date, "clicks");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                  if (e.key === 'Escape') { e.preventDefault(); setEditingCell(null); setTimeout(() => tableRef.current?.focus(), 0); return; }
+                                  if (e.key === 'Tab') {
+                                    e.preventDefault();
+                                    const nextCell = e.shiftKey ? getPreviousEditableCell(dayData.date, "clicks") : getNextEditableCell(dayData.date, "clicks");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                }}
+                                autoFocus
+                              />
+                            ) : (
+                              <span>
+                                {cellValue !== null && cellValue !== undefined
+                                  ? cellValue.toLocaleString()
+                                  : ""}
+                              </span>
+                            );
+                          })()}
+                        </td>
+
+                        {/* CPC (계산) - 읽기 전용, 선택 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "cpc")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "cpc")}
+                          className={`${!editingCell ? "selectable-cell" : ""} ${selectedCells.has(getCellKey(dayData.date, "cpc")) ? "selected-cell readonly-cell" : ""}`}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(calculated?.cpc || 0).toLocaleString()}
+                        </td>
+
+                        {/* CTR (계산) - 읽기 전용, 선택 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "ctr")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "ctr")}
+                          className={`${!editingCell ? "selectable-cell" : ""} ${selectedCells.has(getCellKey(dayData.date, "ctr")) ? "selected-cell readonly-cell" : ""}`}
+                          style={{ cursor: "cell" }}
+                        >
+                          {`${calculated?.ctr || 0}%`}
+                        </td>
+
+                        {/* 구매건수 - 편집 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "conversions")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "conversions")}
+                          onDoubleClick={() => handleCellDoubleClick(dayData.date, "conversions")}
+                          className={`
+                          ${!editingCell ? "selectable-cell" : ""}
+                          ${isEditMode && EDITABLE_FIELDS.includes("conversions") ? "editable-cell" : ""}
+                          ${selectedCells.has(getCellKey(dayData.date, "conversions")) ? "selected-cell" : ""}
+                          ${editingCell?.date === dayData.date && editingCell?.field === "conversions" ? "editing-cell" : ""}
+                        `.trim()}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(() => {
+                            const cellValue =
+                              manual.conversions !== undefined
+                                ? manual.conversions
+                                : dayData.conversions;
+                            const showInput =
+                              editingCell?.date === dayData.date &&
+                              editingCell?.field === "conversions";
+
+                            return showInput ? (
+                              <input
+                                type="text"
+                                className="editing-input"
+                                placeholder=""
+                                value={
+                                  cellValue !== null && cellValue !== undefined
+                                    ? formatNumber(cellValue)
+                                    : ""
+                                }
+                                onChange={(e) => {
+                                  const value = e.target.value.replace(
+                                    /,/g,
+                                    ""
+                                  );
+                                  if (/^\d*$/.test(value)) {
+                                    handleManualInput(
+                                      dayData.date,
+                                      "conversions",
+                                      value
+                                    );
+                                  }
+                                }}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter') {
+                                    e.preventDefault();
+                                    const nextCell = getDownCell(dayData.date, "conversions");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                  if (e.key === 'Escape') { e.preventDefault(); setEditingCell(null); setTimeout(() => tableRef.current?.focus(), 0); return; }
+                                  if (e.key === 'Tab') {
+                                    e.preventDefault();
+                                    const nextCell = e.shiftKey ? getPreviousEditableCell(dayData.date, "conversions") : getNextEditableCell(dayData.date, "conversions");
+                                    setEditingCell(null);
+                                    if (nextCell) { setSelectedCells(new Set([getCellKey(nextCell.date, nextCell.field)])); }
+                                    setTimeout(() => tableRef.current?.focus(), 0);
+                                    return;
+                                  }
+                                }}
+                                autoFocus
+                              />
+                            ) : (
+                              <span>
+                                {cellValue !== null && cellValue !== undefined
+                                  ? cellValue.toLocaleString()
+                                  : ""}
+                              </span>
+                            );
+                          })()}
+                        </td>
+
+                        {/* 객단가 (자동계산) - 읽기 전용, 선택 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "avgOrderValue")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "avgOrderValue")}
+                          className={`${!editingCell ? "selectable-cell" : ""} ${selectedCells.has(getCellKey(dayData.date, "avgOrderValue")) ? "selected-cell readonly-cell" : ""}`}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(() => {
+                            const revenue =
+                              manual.revenue !== undefined
+                                ? manual.revenue
+                                : dayData.revenue;
+                            const conversions =
+                              manual.conversions !== undefined
+                                ? manual.conversions
+                                : dayData.conversions;
+
+                            const avgOrderValue = calculateAvgOrderValue(revenue, conversions);
+
+                            return (
+                              <span>{avgOrderValue.toLocaleString()}</span>
+                            );
+                          })()}
+                        </td>
+
+                        {/* CVR (계산) - 읽기 전용, 선택 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "cvr")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "cvr")}
+                          className={`${!editingCell ? "selectable-cell" : ""} ${selectedCells.has(getCellKey(dayData.date, "cvr")) ? "selected-cell readonly-cell" : ""}`}
+                          style={{ cursor: "cell" }}
+                        >
+                          {`${calculated?.cvr || 0}%`}
+                        </td>
+
+                        {/* ROAS (계산) - 읽기 전용, 선택 가능 */}
+                        <td
+                          onMouseDown={(e) => handleCellMouseDown(e, dayData.date, "roas")}
+                          onMouseEnter={() => handleCellMouseEnter(dayData.date, "roas")}
+                          className={`roas-cell ${!editingCell ? "selectable-cell" : ""} ${selectedCells.has(getCellKey(dayData.date, "roas")) ? "selected-cell readonly-cell" : ""}`}
+                          style={{ cursor: "cell" }}
+                        >
+                          {(() => {
+                            const revenue =
+                              manual.revenue !== undefined
+                                ? manual.revenue
+                                : dayData.revenue;
+                            const adCost =
+                              manual.adCost !== undefined
+                                ? manual.adCost
+                                : dayData.adCost;
+
+                            const roas = calculateROAS(revenue, adCost);
+
+                            return `${roas}%`;
+                          })()}
+                        </td>
+                      </tr>
+                    );
+                  });
+
+                  // 주차별 합계 행 추가
+                  rows.push(
+                    <tr
+                      key={`week-${groupIndex}-total`}
+                      className="week-total-row"
+                    >
+                      <td className="week-total-label">합계</td>
+                      <td className="week-total-cell">
+                        {weekTotals.impressions.toLocaleString()}
+                      </td>
+                      <td className="week-total-cell">
+                        {weekTotals.clicks.toLocaleString()}
+                      </td>
+                      <td className="week-total-cell">
+                        {weekTotals.adCost.toLocaleString()}
+                      </td>
+                      <td className="week-total-cell">
+                        {weekTotals.cpc.toLocaleString()}
+                      </td>
+                      <td className="week-total-cell">{weekTotals.ctr}%</td>
+                      <td className="week-total-cell">
+                        {weekTotals.conversions.toLocaleString()}
+                      </td>
+                      <td className="week-total-cell">
+                        {weekTotals.revenue.toLocaleString()}
+                      </td>
+                      <td className="week-total-cell">
+                        {weekTotals.avgOrderValue.toLocaleString()}
+                      </td>
+                      <td className="week-total-cell">{weekTotals.cvr}%</td>
+                      <td className="week-total-cell">{weekTotals.roas}%</td>
+                    </tr>
+                  );
+                }
+
+                return rows;
+              })
+              .flat()}
+          </tbody>
+        </table>
+      </div>
+
+      {/* 붙여넣기 열 매핑 모달 */}
+      {showPasteModal && (
+        <div className="paste-modal-overlay" onClick={closePasteModal}>
+          <div className="paste-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="paste-modal-header">
+              <h3>데이터 붙여넣기</h3>
+              <button className="paste-modal-close" onClick={closePasteModal}>&times;</button>
+            </div>
+            <div className="paste-modal-body">
+              <p className="paste-modal-info">
+                시작 날짜: <strong>{pasteStartDate}</strong> |
+                행 수: <strong>{pasteData.length}</strong> |
+                열 수: <strong>{columnMappings.length}</strong>
+              </p>
+              <p className="paste-modal-guide">각 열이 어떤 항목에 해당하는지 선택해주세요:</p>
+
+              <div className="paste-modal-mappings">
+                {columnMappings.map((mapping, colIdx) => (
+                  <div key={colIdx} className="paste-mapping-item">
+                    <label>열 {colIdx + 1}</label>
+                    <select
+                      value={mapping}
+                      onChange={(e) => handleColumnMappingChange(colIdx, e.target.value)}
+                    >
+                      <option value="skip">입력 안함</option>
+                      {EDITABLE_FIELDS.map(field => (
+                        <option key={field} value={field}>{FIELD_LABELS[field]}</option>
+                      ))}
+                    </select>
+                    <span className="paste-preview-value">
+                      예: {pasteData[0]?.[colIdx] || '(빈값)'}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="paste-preview-table-container">
+                <p className="paste-preview-title">미리보기 (최대 5행)</p>
+                <table className="paste-preview-table">
+                  <thead>
+                    <tr>
+                      <th>날짜</th>
+                      {columnMappings.map((mapping, idx) => (
+                        <th key={idx} className={mapping === 'skip' ? 'skipped-column' : ''}>
+                          {mapping === 'skip' ? '입력 안함' : FIELD_LABELS[mapping]}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {pasteData.slice(0, 5).map((row, rowIdx) => {
+                      const startIdx = allDates.indexOf(pasteStartDate);
+                      const targetDate = allDates[startIdx + rowIdx];
+                      return (
+                        <tr key={rowIdx}>
+                          <td>{targetDate || '범위 초과'}</td>
+                          {columnMappings.map((mapping, colIdx) => (
+                            <td key={colIdx} className={mapping === 'skip' ? 'skipped-column' : ''}>
+                              {row[colIdx] || ''}
+                            </td>
+                          ))}
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+                {pasteData.length > 5 && (
+                  <p className="paste-preview-more">... 외 {pasteData.length - 5}개 행</p>
+                )}
+              </div>
+            </div>
+            <div className="paste-modal-footer">
+              <button className="paste-modal-cancel" onClick={closePasteModal}>취소</button>
+              <button className="paste-modal-apply" onClick={applyPaste}>적용</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default DailyDetailTable;

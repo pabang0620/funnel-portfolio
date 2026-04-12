@@ -1,0 +1,10 @@
+[
+  { "id": "media-001", "name": "네이버", "initial": "NV", "display_name": "Naver", "group": "검색광고" },
+  { "id": "media-002", "name": "구글", "initial": "GG", "display_name": "Google", "group": "검색광고" },
+  { "id": "media-003", "name": "카카오", "initial": "KK", "display_name": "Kakao", "group": "SNS" },
+  { "id": "media-004", "name": "메타", "initial": "MT", "display_name": "Meta", "group": "SNS" },
+  { "id": "media-005", "name": "틱톡", "initial": "TT", "display_name": "TikTok", "group": "SNS" },
+  { "id": "media-006", "name": "유튜브", "initial": "YT", "display_name": "YouTube", "group": "동영상" },
+  { "id": "media-007", "name": "카카오채널", "initial": "KC", "display_name": "KakaoChannel", "group": "SNS" },
+  { "id": "media-008", "name": "인스타그램", "initial": "IG", "display_name": "Instagram", "group": "SNS" }
+]

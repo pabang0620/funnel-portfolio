@@ -1,0 +1,271 @@
+/* Revenue Section Styles */
+
+.executive-report-container .revenue-section {
+  margin-bottom: 2rem;
+}
+
+.executive-report-container .revenue-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.executive-report-container .header-left {
+  display: flex;
+  align-items: center;
+}
+
+.executive-report-container .revenue-section-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.executive-report-container .ad-fee-inline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.executive-report-container .ad-fee-inline .ad-fee-title {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #374151;
+  margin: 0;
+}
+
+.executive-report-container .ad-fee-inline .ad-fee-value {
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #374151;
+}
+
+.executive-report-container .date-range-display {
+  margin-left: 1rem;
+}
+
+.executive-report-container .date-range-label {
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.executive-report-container .date-range-value {
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: normal;
+}
+
+/* 새로운 2박스 레이아웃 */
+.executive-report-container .revenue-cards-new {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+/* S등급 관리자용 2x2 그리드 레이아웃 */
+.executive-report-container .revenue-cards-admin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  min-width: 0;
+}
+
+/* SimpleMetricCard 스타일 */
+.executive-report-container .simple-metric-card {
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.executive-report-container .simple-metric-card.primary {
+  background: #3b82f6;
+}
+
+.executive-report-container .simple-metric-card.secondary {
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.executive-report-container .simple-metric-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.executive-report-container .simple-metric-card.primary .simple-metric-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.executive-report-container .simple-metric-card.secondary .simple-metric-label {
+  color: #6b7280;
+}
+
+.executive-report-container .simple-metric-value {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.executive-report-container .simple-metric-number {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.executive-report-container .simple-metric-card.primary .simple-metric-number {
+  color: white;
+}
+
+.executive-report-container .simple-metric-card.secondary .simple-metric-number {
+  color: #374151;
+}
+
+.executive-report-container .simple-metric-unit {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.executive-report-container .simple-metric-card.primary .simple-metric-unit {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.executive-report-container .simple-metric-card.secondary .simple-metric-unit {
+  color: #6b7280;
+}
+
+/* 자사+대행 통합 탭용 3개 차트 레이아웃 */
+.executive-report-container .revenue-cards-combined {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  min-width: 0;
+}
+
+/* 자사+대행 통합 탭용 1개 차트 보기 */
+.executive-report-container .combined-single-chart {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Grouped Bar Chart 컨테이너 */
+.executive-report-container .combined-grouped-bar-chart {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+/* 차트 헤더 */
+.executive-report-container .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.executive-report-container .chart-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.executive-report-container .chart-header .date-range-display {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.executive-report-container .chart-header .date-range-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.executive-report-container .chart-header .date-range-value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  background: #f3f4f6;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* 요약 카드 */
+.executive-report-container .summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.executive-report-container .summary-card {
+  padding: 1.5rem;
+  border-radius: 1px;
+  border-left: 4px solid;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(249, 250, 251, 0.9) 100%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.executive-report-container .summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.executive-report-container .summary-card.sales {
+  border-left-color: rgba(59, 130, 246, 1);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.executive-report-container .summary-card.ad-cost {
+  border-left-color: rgba(239, 68, 68, 1);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.executive-report-container .summary-card.profit {
+  border-left-color: rgba(34, 197, 94, 1);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.executive-report-container .summary-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.executive-report-container .summary-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+}
+
+/* 차트 컨테이너 */
+.executive-report-container .chart-container {
+  height: 500px;
+  padding: 1rem;
+  background: #fafbfc;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}

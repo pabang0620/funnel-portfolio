@@ -1,0 +1,2038 @@
+/* ========================================
+   판매처 및 매체 등록 페이지 전용 스타일
+   네임스페이스: .ma- (MarketplaceAdmedia)
+   모든 클래스는 marketplace-admedia-container 내부에서만 적용됨
+   ======================================== */
+
+/* 메인 컨테이너 스크롤 제거 */
+.marketplace-admedia-container {
+  min-height: 100%;
+}
+
+/* breadcrumb nav 스타일 수정 */
+.marketplace-admedia-container .breadcrumb-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
+  margin-bottom: 2rem;
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* breadcrumb 내 탭 버튼 그룹 */
+.marketplace-admedia-container .breadcrumb-tabs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+/* breadcrumb 탭 버튼 스타일 */
+.marketplace-admedia-container .breadcrumb-tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.marketplace-admedia-container
+  .breadcrumb-tabs
+  .breadcrumb-tab:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1rem;
+  width: 1px;
+  background: #e2e8f0;
+}
+
+.marketplace-admedia-container .breadcrumb-tab:hover {
+  color: #3b82f6;
+  border-bottom-color: #3b82f6;
+}
+
+.marketplace-admedia-container .breadcrumb-tab.active {
+  color: #3b82f6;
+  font-weight: 600;
+  border-bottom-color: #3b82f6;
+}
+
+/* 탭 컨텐츠 */
+.marketplace-admedia-container .tab-content {
+}
+
+/* 등록 폼 */
+.marketplace-admedia-container .registration-form {
+  margin-bottom: 3rem;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 0;
+}
+
+.marketplace-admedia-container .form-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marketplace-admedia-container .form-title::before {
+  content: "";
+  width: 4px;
+  height: 1.5rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  border-radius: 2px;
+}
+
+.marketplace-admedia-container .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.marketplace-admedia-container .form-actions {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.marketplace-admedia-container .form-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.marketplace-admedia-container .form-field label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.marketplace-admedia-container .form-input {
+  background: #f8fafc;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: #1e293b;
+  width: 100%;
+  max-width: 300px;
+}
+
+.marketplace-admedia-container .form-input:focus {
+  outline: none;
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.marketplace-admedia-container .form-input::placeholder {
+  color: #94a3b8;
+}
+
+.marketplace-admedia-container .form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+/* 리스트 섹션 */
+.marketplace-admedia-container .list-section {
+  margin-top: 0;
+}
+
+/* 분류 필터 칩 */
+.marketplace-admedia-container .category-filter-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.marketplace-admedia-container .filter-chip {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  background: white;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.marketplace-admedia-container .filter-chip:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  color: #1e40af;
+}
+
+.marketplace-admedia-container .filter-chip.active {
+  border-color: #3b82f6;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.marketplace-admedia-container .list-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marketplace-admedia-container .list-title::before {
+  content: "";
+  width: 4px;
+  height: 1.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 2px;
+}
+
+/* 테이블 스타일 - DataTable과 동일하게 통일 */
+.marketplace-admedia-container .list-table-wrapper {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  overflow: visible;
+  position: relative;
+}
+
+.marketplace-admedia-container .list-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  min-width: 800px;
+  background: white;
+  table-layout: auto;
+}
+
+.marketplace-admedia-container .list-table th {
+  background: #fafafa;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #71717a;
+  text-align: center;
+  border-bottom: 1px solid #e4e4e7;
+  border-right: 1px solid #e4e4e7;
+  height: 2.5rem;
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.marketplace-admedia-container .list-table th:last-child {
+  border-right: none;
+}
+
+.marketplace-admedia-container .list-table td {
+  text-align: center;
+  border-bottom: 1px solid #f4f4f5;
+  color: #09090b;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  transition: background-color 0.15s ease-in-out;
+  vertical-align: middle;
+  height: 2.75rem;
+  white-space: nowrap;
+  border: 1px solid #f4f4f5;
+  padding: 0.75rem 1rem;
+}
+
+.marketplace-admedia-container .list-table td:last-child {
+  border-right: none;
+}
+
+.marketplace-admedia-container .list-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.marketplace-admedia-container .code-cell {
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.marketplace-admedia-container .code-cell span {
+  background: #eff6ff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.marketplace-admedia-container .url-cell {
+  font-size: 0.85rem;
+  color: #6366f1;
+  word-break: break-all;
+}
+
+.marketplace-admedia-container .no-data {
+  text-align: center !important;
+  color: #94a3b8;
+  padding: 3rem 1.5rem !important;
+  font-size: 1rem;
+}
+
+/* 액션 버튼 */
+.marketplace-admedia-container .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 버튼 줄바꿈 방지 */
+.marketplace-admedia-container .registration-form button,
+.marketplace-admedia-container .list-table button,
+.marketplace-admedia-container .btn,
+.marketplace-admedia-container .tab {
+  white-space: nowrap;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .marketplace-admedia-container .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .marketplace-admedia-container .tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .marketplace-admedia-container .tab {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketplace-admedia-container .registration-form,
+  .marketplace-admedia-container .list-section {
+    padding: 1.5rem;
+  }
+
+  .marketplace-admedia-container .list-table th,
+  .marketplace-admedia-container .list-table td {
+    padding: 0.75rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .marketplace-admedia-container .form-title,
+  .marketplace-admedia-container .list-title {
+    font-size: 1.125rem;
+  }
+
+  .marketplace-admedia-container .tab {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .marketplace-admedia-container .form-row {
+    gap: 1rem;
+  }
+
+  .marketplace-admedia-container .form-field label {
+    font-size: 0.875rem;
+  }
+
+  .marketplace-admedia-container .form-input {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketplace-admedia-container .list-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .marketplace-admedia-container .list-table {
+    min-width: 750px;
+  }
+
+  .marketplace-admedia-container .registration-form,
+  .marketplace-admedia-container .list-section {
+    padding: 1rem;
+  }
+
+  .marketplace-admedia-container .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .marketplace-admedia-container .form-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .marketplace-admedia-container .form-actions button {
+    width: 100%;
+  }
+
+  .marketplace-admedia-container .action-buttons {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .marketplace-admedia-container .action-buttons button {
+    width: 100%;
+    min-width: 60px;
+  }
+
+  .marketplace-admedia-container .list-table th,
+  .marketplace-admedia-container .list-table td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .marketplace-admedia-container .list-table button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .marketplace-admedia-container .tab {
+    padding: 0.625rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* 박스 가격 섹션 */
+.marketplace-admedia-container .box-prices-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.marketplace-admedia-container .subsection-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marketplace-admedia-container .subsection-title::before {
+  content: "";
+  width: 4px;
+  height: 1.25rem;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  border-radius: 2px;
+}
+
+.marketplace-admedia-container .box-prices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.marketplace-admedia-container .box-price-item {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.marketplace-admedia-container .box-price-item:hover {
+  background: white;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.marketplace-admedia-container .box-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.marketplace-admedia-container .price-inputs {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.marketplace-admedia-container .price-input {
+  flex: 1;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.marketplace-admedia-container .price-input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.marketplace-admedia-container .price-input::placeholder {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+/* 박스 가격 반응형 */
+@media (max-width: 1024px) {
+  .marketplace-admedia-container .box-prices-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketplace-admedia-container .box-prices-section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .marketplace-admedia-container .box-price-item {
+    padding: 1rem;
+  }
+
+  .marketplace-admedia-container .price-inputs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketplace-admedia-container .subsection-title {
+    font-size: 1rem;
+  }
+
+  .marketplace-admedia-container .box-label {
+    font-size: 0.875rem;
+  }
+
+  .marketplace-admedia-container .price-input {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* 테스트 버튼 섹션 */
+.marketplace-admedia-container .test-buttons-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 2px solid #bae6fd;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.marketplace-admedia-container .test-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0c4a6e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketplace-admedia-container .test-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* 테이블 레이아웃 스타일 */
+.marketplace-admedia-container .box-prices-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  background: white;
+}
+
+.marketplace-admedia-container .box-prices-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.marketplace-admedia-container .box-prices-table thead {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+}
+
+.marketplace-admedia-container .box-prices-table th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.marketplace-admedia-container .box-prices-table th:first-child {
+  border-top-left-radius: 10px;
+  width: 120px;
+}
+
+.marketplace-admedia-container .box-prices-table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.marketplace-admedia-container .box-prices-table tbody tr {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.marketplace-admedia-container .box-prices-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.marketplace-admedia-container .box-prices-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.marketplace-admedia-container .box-prices-table td {
+  padding: 0.75rem 1.5rem;
+  vertical-align: middle;
+}
+
+.marketplace-admedia-container .box-number {
+  font-weight: 700;
+  color: #8b5cf6;
+  font-size: 0.95rem;
+}
+
+.marketplace-admedia-container .table-input {
+  width: 100%;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  color: #1e293b;
+}
+
+.marketplace-admedia-container .table-input:focus {
+  outline: none;
+  background: white;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.marketplace-admedia-container .table-input::placeholder {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+/* 반응형 - 테스트 버튼 */
+@media (max-width: 768px) {
+  .marketplace-admedia-container .test-buttons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marketplace-admedia-container .test-buttons-section {
+    padding: 1.5rem;
+  }
+
+  .marketplace-admedia-container .modal-overlay {
+    padding: 1rem;
+  }
+
+  .marketplace-admedia-container .modal-content {
+    max-height: 95vh;
+  }
+
+  .marketplace-admedia-container .modal-body {
+    padding: 1.5rem;
+  }
+
+  .marketplace-admedia-container .modal-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .marketplace-admedia-container .modal-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketplace-admedia-container .test-section-title {
+    font-size: 1rem;
+  }
+
+  .marketplace-admedia-container .modal-overlay {
+    padding: 0.5rem;
+  }
+
+  .marketplace-admedia-container .modal-body {
+    padding: 1rem;
+  }
+
+  .marketplace-admedia-container .box-prices-table th,
+  .marketplace-admedia-container .box-prices-table td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .marketplace-admedia-container .table-input {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* 엑셀 스타일 테이블 */
+.marketplace-admedia-container .excel-table-wrapper {
+  overflow-x: auto;
+  border: 2px solid #c0c0c0;
+  border-radius: 0;
+  background: #f0f0f0;
+  box-shadow: inset 0 0 0 1px #808080;
+}
+
+.marketplace-admedia-container .excel-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 엑셀 헤더 (A, B, C 컬럼 및 행 번호 헤더) */
+.marketplace-admedia-container .excel-header {
+  background: linear-gradient(180deg, #f5f5f5 0%, #e8e8e8 100%);
+  border: 1px solid #c0c0c0;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  min-width: 50px;
+}
+
+.marketplace-admedia-container .excel-header.row-header {
+  width: 50px;
+  background: linear-gradient(90deg, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.marketplace-admedia-container .excel-header.col-header {
+  min-width: 150px;
+  font-weight: 700;
+}
+
+/* 엑셀 셀 */
+.marketplace-admedia-container .excel-cell {
+  border: 1px solid #d0d0d0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  background: white;
+  position: relative;
+}
+
+/* 행 번호 */
+.marketplace-admedia-container .excel-cell.row-number {
+  background: linear-gradient(90deg, #f5f5f5 0%, #e8e8e8 100%);
+  border-right: 2px solid #c0c0c0;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.875rem;
+  width: 50px;
+  min-width: 50px;
+  padding: 0.5rem;
+}
+
+/* 타이틀 행 (박스, 가격, 히든 가격) */
+.marketplace-admedia-container .excel-cell.title-cell {
+  background: linear-gradient(180deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.75rem;
+  border: 1px solid #2c5f99;
+}
+
+/* 데이터 셀 */
+.marketplace-admedia-container .excel-cell.data-cell {
+  padding: 0;
+  background: white;
+  transition: all 0.15s ease;
+}
+
+.marketplace-admedia-container .excel-cell.data-cell:hover {
+  background: #e3f2fd;
+  box-shadow: inset 0 0 0 2px #2196f3;
+}
+
+/* 레이블 셀 (1박스, 2박스 등) */
+.marketplace-admedia-container .excel-cell.label-cell {
+  font-weight: 600;
+  color: #1976d2;
+  padding: 0.75rem;
+  background: #f5f9fc;
+}
+
+.marketplace-admedia-container .excel-cell.label-cell:hover {
+  background: #e3f2fd;
+}
+
+/* 엑셀 입력 필드 */
+.marketplace-admedia-container .excel-input {
+  width: 100%;
+  height: 100%;
+  min-height: 42px;
+  border: none;
+  background: transparent;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  text-align: right;
+  box-sizing: border-box;
+  transition: all 0.15s ease;
+}
+
+.marketplace-admedia-container .excel-input:focus {
+  outline: 2px solid #2196f3;
+  outline-offset: -2px;
+  background: #fff9e6;
+  box-shadow: inset 0 0 0 1px #2196f3;
+}
+
+.marketplace-admedia-container .excel-input::placeholder {
+  color: #bdbdbd;
+  text-align: right;
+}
+
+/* 엑셀 행 호버 효과 */
+.marketplace-admedia-container .excel-data-row:hover .excel-cell.row-number {
+  background: linear-gradient(90deg, #e8e8e8 0%, #d8d8d8 100%);
+}
+
+.marketplace-admedia-container .excel-data-row:hover .excel-cell.data-cell {
+  background: #f0f7ff;
+}
+
+/* 선택된 셀 스타일 */
+.marketplace-admedia-container .excel-input:focus {
+  position: relative;
+  z-index: 1;
+}
+
+/* 엑셀 테이블 전체 선택 효과 */
+.marketplace-admedia-container
+  .excel-table
+  tbody
+  tr:nth-child(even)
+  .excel-cell.data-cell:not(.label-cell) {
+  background: #fafafa;
+}
+
+.marketplace-admedia-container
+  .excel-table
+  tbody
+  tr:nth-child(even):hover
+  .excel-cell.data-cell {
+  background: #f0f7ff;
+}
+
+/* 반응형 - 엑셀 테이블 */
+@media (max-width: 768px) {
+  .marketplace-admedia-container .excel-header.col-header {
+    min-width: 120px;
+  }
+
+  .marketplace-admedia-container .excel-input {
+    font-size: 0.875rem;
+    min-height: 38px;
+    padding: 0.5rem;
+  }
+
+  .marketplace-admedia-container .excel-cell.title-cell {
+    font-size: 0.875rem;
+    padding: 0.625rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketplace-admedia-container .excel-table-wrapper {
+    font-size: 0.85rem;
+  }
+
+  .marketplace-admedia-container .excel-header.col-header {
+    min-width: 100px;
+    font-size: 0.8rem;
+  }
+
+  .marketplace-admedia-container .excel-cell.row-number {
+    font-size: 0.8rem;
+    width: 40px;
+    min-width: 40px;
+    padding: 0.375rem;
+  }
+
+  .marketplace-admedia-container .excel-input {
+    font-size: 0.8rem;
+    min-height: 34px;
+    padding: 0.375rem;
+  }
+
+  .marketplace-admedia-container .excel-cell.title-cell {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .marketplace-admedia-container .excel-cell.label-cell {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}
+
+/* 드롭다운 메뉴 */
+.marketplace-admedia-container .dropdown-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.marketplace-admedia-container .menu-trigger-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.marketplace-admedia-container .menu-trigger-btn:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.marketplace-admedia-container .dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.5rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  min-width: 160px;
+  overflow: hidden;
+  animation: dropdownFadeIn 0.2s ease-out;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.marketplace-admedia-container .dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: none;
+  color: #334155;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.marketplace-admedia-container .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.marketplace-admedia-container .dropdown-item:hover {
+  background: #f8fafc;
+  color: #3b82f6;
+}
+
+.marketplace-admedia-container .dropdown-item:active {
+  background: #e0f2fe;
+}
+
+/* 반응형 - 드롭다운 */
+@media (max-width: 640px) {
+  .marketplace-admedia-container .dropdown-menu {
+    min-width: 140px;
+  }
+
+  .marketplace-admedia-container .dropdown-item {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.85rem;
+  }
+
+  .marketplace-admedia-container .menu-trigger-btn {
+    font-size: 1.25rem;
+    padding: 0.375rem 0.75rem;
+  }
+}
+
+/* 수정 모드 스타일 */
+.marketplace-admedia-container .registration-form.edit-mode {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 2px solid #3b82f6;
+  position: relative;
+}
+
+/* 수정 모드 배너 */
+.marketplace-admedia-container .edit-mode-banner {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin: -2rem -2rem 1.5rem -2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  border-radius: 14px 14px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* 하이라이트 애니메이션 */
+.marketplace-admedia-container .registration-form.edit-mode-highlight {
+  animation: pulseHighlight 2s ease-in-out;
+}
+
+@keyframes pulseHighlight {
+  0%,
+  100% {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+  25% {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.4);
+  }
+  50% {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+  75% {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.4);
+  }
+}
+
+/* 수정 모드 취소 버튼 강조 */
+.marketplace-admedia-container
+  .registration-form.edit-mode
+  .form-actions
+  button[variant="secondary"] {
+  background: #ef4444;
+  color: white;
+  border: 2px solid #dc2626;
+  font-weight: 600;
+}
+
+.marketplace-admedia-container
+  .registration-form.edit-mode
+  .form-actions
+  button[variant="secondary"]:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+/* 반응형 - 수정 모드 */
+@media (max-width: 768px) {
+  .marketplace-admedia-container .edit-mode-banner {
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    padding: 0.625rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketplace-admedia-container .edit-mode-banner {
+    margin: -1rem -1rem 0.75rem -1rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* 컴팩트 모달 (히든 번호 관리) */
+.marketplace-admedia-container .compact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.marketplace-admedia-container .compact-modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.marketplace-admedia-container .compact-modal-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.marketplace-admedia-container .compact-modal-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.marketplace-admedia-container .compact-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.marketplace-admedia-container .compact-modal-close:hover {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.marketplace-admedia-container .compact-modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* 히든 번호 폼 섹션 */
+.marketplace-admedia-container .hidden-form-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.marketplace-admedia-container .hidden-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.marketplace-admedia-container .hidden-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.marketplace-admedia-container .hidden-form-field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.marketplace-admedia-container .hidden-form-field input {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.marketplace-admedia-container .hidden-form-field input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.marketplace-admedia-container .hidden-form-field input::placeholder {
+  color: #cbd5e1;
+}
+
+/* 히든 번호 목록 섹션 */
+.marketplace-admedia-container .hidden-list-section h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.marketplace-admedia-container .no-hidden-data {
+  text-align: center;
+  color: #9ca3af;
+  padding: 2rem;
+  font-size: 0.875rem;
+}
+
+.marketplace-admedia-container .hidden-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.marketplace-admedia-container .hidden-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.marketplace-admedia-container .hidden-item:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.marketplace-admedia-container .hidden-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.marketplace-admedia-container .hidden-number {
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 0.875rem;
+  background: #dbeafe;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.marketplace-admedia-container .hidden-name {
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+/* 반응형 - 컴팩트 모달 */
+@media (max-width: 640px) {
+  .marketplace-admedia-container .compact-modal-content {
+    width: 95%;
+    max-width: none;
+  }
+
+  .marketplace-admedia-container .compact-modal-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .marketplace-admedia-container .compact-modal-header h4 {
+    font-size: 0.9rem;
+  }
+
+  .marketplace-admedia-container .compact-modal-body {
+    padding: 1rem;
+  }
+
+  .marketplace-admedia-container .hidden-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .marketplace-admedia-container .hidden-form-grid button {
+    width: 100%;
+  }
+}
+
+/* 분류 드롭다운 트리거 버튼 컨테이너 */
+.marketplace-admedia-container .media-category-trigger-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* 분류 드롭다운 트리거 버튼 */
+.marketplace-admedia-container .media-category-trigger-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 2px solid transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-height: 3.25rem;
+  box-sizing: border-box;
+}
+
+.marketplace-admedia-container .media-category-trigger-btn:hover {
+  background: #f1f5f9;
+}
+
+.marketplace-admedia-container .media-category-trigger-btn--open {
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.marketplace-admedia-container .media-category-trigger-btn__value {
+  color: #1e293b;
+  flex: 1;
+  text-align: left;
+}
+
+.marketplace-admedia-container .media-category-trigger-btn__arrow {
+  font-size: 0.875rem;
+  color: #6b7280;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.marketplace-admedia-container .media-category-trigger-btn__arrow--open {
+  transform: rotate(180deg);
+}
+
+/* 분류 드롭다운 스타일 */
+.marketplace-admedia-container .category-dropdown.notion-style-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 2px;
+  transform: none;
+}
+
+.marketplace-admedia-container .category-dropdown-header {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.marketplace-admedia-container .category-dropdown-content {
+  padding: 0;
+}
+
+.marketplace-admedia-container .category-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.marketplace-admedia-container .category-option-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+  background: transparent;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.marketplace-admedia-container .category-option-btn:last-child {
+  border-bottom: none;
+}
+
+.marketplace-admedia-container .category-option-btn:hover {
+  background-color: #f8fafc;
+}
+
+.marketplace-admedia-container .category-option-btn.selected {
+  color: #3b82f6;
+  font-weight: 500;
+  background-color: #f8fafc;
+}
+
+.marketplace-admedia-container .category-trigger-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.marketplace-admedia-container .category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.marketplace-admedia-container .category-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* 노션 스타일 드롭다운 */
+.product-management-page .notion-style-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.5rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 320px;
+  max-width: 420px;
+  animation: dropdownFadeIn 0.2s ease-out;
+}
+
+.product-management-page .notion-dropdown-content {
+  padding: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* 리스트 섹션 */
+.product-management-page .notion-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-management-page .notion-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  gap: 0.5rem;
+}
+
+.product-management-page .notion-list-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.product-management-page .notion-item-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex: 1;
+}
+
+.product-management-page .notion-item-number {
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 0.875rem;
+  background: #dbeafe;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.product-management-page .notion-item-name {
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.product-management-page .notion-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-management-page .notion-edit-btn {
+  padding: 0.375rem 0.75rem;
+  background: #dbeafe;
+  color: #1e40af;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-management-page .notion-edit-btn:hover {
+  background: #bfdbfe;
+  color: #1e3a8a;
+}
+
+.product-management-page .notion-edit-btn:active {
+  transform: scale(0.95);
+}
+
+.product-management-page .notion-delete-btn {
+  padding: 0.375rem 0.75rem;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-management-page .notion-delete-btn:hover {
+  background: #fecaca;
+  color: #b91c1c;
+}
+
+.product-management-page .notion-delete-btn:active {
+  transform: scale(0.95);
+}
+
+.product-management-page .notion-save-btn {
+  padding: 0.375rem 0.75rem;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-management-page .notion-save-btn:hover {
+  background: #059669;
+}
+
+.product-management-page .notion-save-btn:active {
+  transform: scale(0.95);
+}
+
+.product-management-page .notion-cancel-btn {
+  padding: 0.375rem 0.75rem;
+  background: #e5e7eb;
+  color: #374151;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-management-page .notion-cancel-btn:hover {
+  background: #d1d5db;
+  color: #1f2937;
+}
+
+.product-management-page .notion-cancel-btn:active {
+  transform: scale(0.95);
+}
+
+.product-management-page .notion-edit-inputs {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  max-width: 240px;
+}
+
+.product-management-page .notion-input-small {
+  flex: 1;
+  min-width: 0;
+  padding: 0.375rem 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.product-management-page .notion-input-small:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.product-management-page .notion-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0.5rem 0;
+}
+
+/* 추가 섹션 */
+.product-management-page .notion-add-section {
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-management-page .notion-add-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.25rem;
+}
+
+.product-management-page .notion-add-inputs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-management-page .notion-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.product-management-page .notion-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.product-management-page .notion-input::placeholder {
+  color: #cbd5e1;
+}
+
+.product-management-page .notion-add-btn {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-management-page .notion-add-btn:hover {
+  background: #2563eb;
+}
+
+.product-management-page .notion-add-btn:active {
+  transform: scale(0.98);
+}
+
+/* 반응형 - 노션 드롭다운 */
+@media (max-width: 640px) {
+  .product-management-page .notion-style-dropdown {
+    min-width: 250px;
+    max-width: calc(100vw - 2rem);
+  }
+}
+
+/* ========================================
+   커스텀 셀렉트 컴포넌트 스타일
+   ======================================== */
+.marketplace-admedia-container .nc-custom-select {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.marketplace-admedia-container .nc-custom-select__trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 2px solid transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-height: 3.25rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.marketplace-admedia-container .nc-custom-select__trigger:hover {
+  background: #f1f5f9;
+}
+
+.marketplace-admedia-container .nc-custom-select__trigger--open {
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.marketplace-admedia-container .nc-custom-select__value {
+  color: #1e293b;
+  flex: 1;
+}
+
+.marketplace-admedia-container .nc-custom-select__value--placeholder {
+  color: #94a3b8;
+}
+
+.marketplace-admedia-container .nc-custom-select__arrow {
+  font-size: 0.75rem;
+  color: #6b7280;
+  transition: transform 0.2s ease;
+  margin-left: 0.5rem;
+}
+
+.marketplace-admedia-container .nc-custom-select__arrow--open {
+  transform: rotate(180deg);
+}
+
+.marketplace-admedia-container .nc-custom-select__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+  overflow: hidden;
+  animation: ncSelectFadeIn 0.2s ease-out;
+}
+
+@keyframes ncSelectFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.marketplace-admedia-container .nc-custom-select__options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.marketplace-admedia-container .nc-custom-select__option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  color: #1e293b;
+  text-align: left;
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.marketplace-admedia-container .nc-custom-select__option:last-child {
+  border-bottom: none;
+}
+
+.marketplace-admedia-container .nc-custom-select__option:hover {
+  background-color: #f8fafc;
+}
+
+.marketplace-admedia-container .nc-custom-select__option--selected {
+  background-color: #eff6ff;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.marketplace-admedia-container .nc-custom-select__option--selected:hover {
+  background-color: #dbeafe;
+}
+
+.marketplace-admedia-container .nc-custom-select__option-text--placeholder {
+  color: #94a3b8;
+}
+
+.marketplace-admedia-container .nc-custom-select__check {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.marketplace-admedia-container .nc-custom-select__divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-section {
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: white;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.marketplace-admedia-container .nc-custom-select__add-input::placeholder {
+  color: #cbd5e1;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-btn {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-btn:hover {
+  background: #2563eb;
+}
+
+.marketplace-admedia-container .nc-custom-select__add-btn:active {
+  transform: scale(0.98);
+}
+
+/* 반응형 - 커스텀 셀렉트 */
+@media (max-width: 640px) {
+  .marketplace-admedia-container .nc-custom-select__trigger {
+    padding: 0.875rem 1rem;
+    font-size: 0.9375rem;
+  }
+
+  .marketplace-admedia-container .nc-custom-select__option {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+  }
+
+  .marketplace-admedia-container .nc-custom-select__add-row {
+    flex-direction: column;
+  }
+
+  .marketplace-admedia-container .nc-custom-select__add-btn {
+    width: 100%;
+  }
+}
+
+/* ========================================
+   매체 상태 배지 스타일
+   ======================================== */
+.marketplace-admedia-container .media-status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.marketplace-admedia-container .media-status-badge--active {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.marketplace-admedia-container .media-status-badge--stopped {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* 상태 토글 버튼 */
+.marketplace-admedia-container .media-status-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.marketplace-admedia-container .media-status-toggle-btn:hover {
+  transform: scale(1.05);
+}
+
+.marketplace-admedia-container
+  .media-status-toggle-btn:hover
+  .media-status-badge {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   매체명 드롭다운 사이즈 조정
+   ======================================== */
+.marketplace-admedia-container .media-category-trigger-wrapper {
+  max-width: 140px;
+  margin: 0 auto;
+}
+
+.marketplace-admedia-container .media-category-trigger-btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  min-height: 2.25rem;
+}
+
+.marketplace-admedia-container .media-category-trigger-btn__arrow {
+  font-size: 0.625rem;
+}
+
+.marketplace-admedia-container .category-dropdown.notion-style-dropdown {
+  min-width: 120px;
+  max-height: 180px;
+  border-radius: 8px;
+}
+
+.marketplace-admedia-container .category-dropdown-header {
+  font-size: 0.75rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.marketplace-admedia-container .category-option-btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+/* ========================================
+   중단된 매체 행 스타일
+   ======================================== */
+/* rowspan된 셀(매체명, 대행료)은 제외하고 나머지 셀만 배경색 적용 */
+.marketplace-admedia-container .list-table tbody tr.media-row--stopped td:not([rowspan]) {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.marketplace-admedia-container .list-table tbody tr.media-row--stopped:hover td:not([rowspan]) {
+  background-color: #e2e8f0;
+}
+
+/* 팀별 매체 관리 탭 스타일은 elements/TeamMediaTab.css로 분리됨 */

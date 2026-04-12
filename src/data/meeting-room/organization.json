@@ -1,0 +1,56 @@
+[
+  {
+    "id": "dept-1",
+    "name": "퍼널존",
+    "parent_id": null,
+    "display_order": 0,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00Z",
+    "children": [
+      {
+        "id": "dept-2",
+        "name": "개발본부",
+        "parent_id": "dept-1",
+        "display_order": 1,
+        "is_active": true,
+        "created_at": "2024-01-01T00:00:00Z",
+        "children": [
+          {
+            "id": "dept-3",
+            "name": "개발팀",
+            "parent_id": "dept-2",
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2024-01-01T00:00:00Z"
+          }
+        ]
+      },
+      {
+        "id": "dept-4",
+        "name": "마케팅본부",
+        "parent_id": "dept-1",
+        "display_order": 2,
+        "is_active": true,
+        "created_at": "2024-01-01T00:00:00Z",
+        "children": [
+          {
+            "id": "dept-5",
+            "name": "마케팅팀",
+            "parent_id": "dept-4",
+            "display_order": 1,
+            "is_active": true,
+            "created_at": "2024-01-01T00:00:00Z"
+          },
+          {
+            "id": "dept-6",
+            "name": "디자인팀",
+            "parent_id": "dept-4",
+            "display_order": 2,
+            "is_active": true,
+            "created_at": "2024-01-01T00:00:00Z"
+          }
+        ]
+      }
+    ]
+  }
+]

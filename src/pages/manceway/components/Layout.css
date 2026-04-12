@@ -1,0 +1,208 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f6fa;
+  overflow: hidden;
+}
+
+.layout-content {
+  position: relative;
+  margin-left: calc(200px + 2rem);
+  margin-top: 2rem;
+  margin-right: calc(350px + 4rem);
+  margin-bottom: 2rem;
+  transition: margin-left 0.5s cubic-bezier(0.4, 0, 0.2, 1), margin-right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.layout-content.sidebar-collapsed {
+  margin-left: calc(60px + 2rem);
+}
+
+.layout-main {
+  width: calc(100vw - 200px - 350px - 6rem);
+  height: calc(100vh - 4rem);
+  padding: 0 3rem 2rem 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.layout-content.sidebar-collapsed .layout-main {
+  width: calc(100vw - 60px - 350px - 6rem);
+}
+
+/* 권한 설정 페이지용 특별 스타일 */
+.layout-main:has(.permission-settings-layout) {
+  width: calc(100vw - 200px - 4rem) !important;
+  transition: none !important;
+}
+
+.layout-content.sidebar-collapsed
+  .layout-main:has(.permission-settings-layout) {
+  width: calc(100vw - 60px - 4rem) !important;
+  transition: none !important;
+}
+
+/* 전체 너비 레이아웃 페이지용 스타일 (코드생성, 신규생성관리 등) */
+.layout-main:has(.full-width-layout) {
+  width: calc(100vw - 200px - 4rem) !important;
+}
+
+.layout-content.sidebar-collapsed .layout-main:has(.full-width-layout) {
+  width: calc(100vw - 60px - 4rem) !important;
+}
+
+.layout-right-panel {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 350px;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+  z-index: 100;
+}
+
+/* 토글 버튼 스타일 */
+.sidebar-toggle-btn {
+  position: absolute;
+  top: calc(50% + 2rem);
+  left: 0;
+  transform: translateY(-50%) translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: #64748b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-toggle-btn:hover {
+  background: #f8fafc;
+  color: #334155;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-toggle-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.sidebar-toggle-btn:active svg {
+  transform: scale(0.9);
+}
+
+/* 오른쪽 패널 토글 버튼 */
+.right-panel-toggle-btn {
+  position: absolute;
+  top: calc(50% + 2rem);
+  right: 0;
+  transform: translateY(-50%) translateX(50%);
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: #64748b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.right-panel-toggle-btn:hover {
+  background: #f8fafc;
+  color: #334155;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.right-panel-toggle-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.right-panel-toggle-btn:active svg {
+  transform: scale(0.9);
+}
+
+/* 오른쪽 패널 토글 애니메이션 */
+.layout-right-panel {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.layout-right-panel.collapsed {
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 오른쪽 패널이 닫혔을 때 layout-content 마진 조정 */
+.layout-content.right-panel-collapsed {
+  margin-right: 2rem;
+}
+
+/* 반응형: 작은 화면에서 토글 버튼 더 눈에 띄게 */
+@media (max-width: 1400px) {
+  .sidebar-toggle-btn,
+  .right-panel-toggle-btn {
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .sidebar-toggle-btn svg,
+  .right-panel-toggle-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+  .sidebar-toggle-btn,
+  .right-panel-toggle-btn {
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+  }
+
+  .sidebar-toggle-btn svg,
+  .right-panel-toggle-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* 오른쪽 패널이 닫혔을 때 layout-main 너비 조정 */
+.layout-content.right-panel-collapsed .layout-main {
+  width: calc(100vw - 200px - 4rem);
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 사이드바 + 오른쪽 패널 모두 닫혔을 때 */
+.layout-content.sidebar-collapsed.right-panel-collapsed .layout-main {
+  width: calc(100vw - 60px - 4rem);
+}
+
+/* layout-main의 transition 추가 */
+.layout-main {
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 권한 설정 페이지: 오른쪽 패널 없음 (항상 전체 너비) */
+.layout-main:has(.permission-settings-layout) {
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 전체 너비 레이아웃: 오른쪽 패널 없음 (항상 전체 너비) */
+.layout-main:has(.full-width-layout) {
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}

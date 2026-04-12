@@ -1,0 +1,218 @@
+/* 모달 스타일 개선 - 각 모달이 독립적으로 스타일 지정 */
+.confirm-modal-content {
+  padding: 2rem;
+}
+
+.confirm-modal-content .modal-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.confirm-modal-content .modal-icon {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+}
+
+.confirm-modal-content .modal-title {
+  color: #1e293b;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.confirm-modal-content .modal-description {
+  color: #64748b;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.confirm-modal-content .modal-form {
+  margin: 1.5rem 0;
+}
+
+.confirm-modal-content .modal-form .form-field input {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #374151;
+  width: 100%;
+}
+
+.confirm-modal-content .modal-form .form-field input:focus {
+  border-color: #3b82f6;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.alert-modal-content .modal-form .form-field input {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: #374151;
+  width: 100%;
+}
+
+.alert-modal-content .modal-form .form-field input:focus {
+  border-color: #3b82f6;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.modal-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.modal-btn-cancel {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.modal-btn-cancel:hover {
+  background: #e2e8f0;
+}
+
+.modal-btn-confirm {
+  background: #3b82f6;
+  color: white;
+}
+
+.modal-btn-confirm:hover {
+  background: #2563eb;
+}
+
+/* 삭제 버튼 스타일 */
+.modal-btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.modal-btn-danger:hover {
+  background: #b91c1c;
+}
+
+/* 비밀번호 입력 컨테이너 */
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.password-visibility-toggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.password-visibility-toggle:hover {
+  color: #374151;
+}
+
+/* 알림 모달 스타일 */
+.alert-modal-content {
+  padding: 2rem;
+}
+
+.alert-modal-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.alert-modal-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+  background: #fffbeb;
+  color: #f59e0b;
+}
+
+.alert-modal-icon.error {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.alert-modal-icon.success {
+  background: #f0fdf4;
+  color: #10b981;
+}
+
+.alert-modal-icon.warning {
+  background: #fffbeb;
+  color: #f59e0b;
+}
+
+.alert-modal-icon.info {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.alert-modal-title {
+  color: #1e293b;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.alert-modal-message {
+  color: #64748b;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+/* 폼 필드 라벨 */
+.form-field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.modal-warning {
+  font-size: 0.875rem;
+  color: #dc2626;
+  margin-top: 0.5rem;
+}

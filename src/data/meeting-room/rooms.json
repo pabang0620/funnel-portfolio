@@ -1,0 +1,62 @@
+[
+  {
+    "id": "room-1",
+    "name": "한강룸",
+    "floor": "3F",
+    "description": "대형 프레젠테이션 및 전사 회의용 룸",
+    "image_url": "https://picsum.photos/seed/room1/800/400",
+    "capacity": 20,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "room-2",
+    "name": "남산룸",
+    "floor": "3F",
+    "description": "팀 미팅 및 워크샵용 중형 회의실",
+    "image_url": "https://picsum.photos/seed/room2/800/400",
+    "capacity": 12,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "room-3",
+    "name": "북악룸",
+    "floor": "4F",
+    "description": "소규모 미팅 및 1:1 면담용 소형 회의실",
+    "image_url": "https://picsum.photos/seed/room3/800/400",
+    "capacity": 6,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "room-4",
+    "name": "관악룸",
+    "floor": "4F",
+    "description": "화상회의 장비 완비, 외부 미팅용",
+    "image_url": "https://picsum.photos/seed/room4/800/400",
+    "capacity": 8,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "room-5",
+    "name": "인왕룸",
+    "floor": "5F",
+    "description": "임원 회의 및 중요 외부 미팅 전용",
+    "image_url": "https://picsum.photos/seed/room5/800/400",
+    "capacity": 10,
+    "is_active": true,
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "room-6",
+    "name": "도봉룸",
+    "floor": "5F",
+    "description": "브레인스토밍 및 아이디어 회의용 창의 공간",
+    "image_url": "https://picsum.photos/seed/room6/800/400",
+    "capacity": 8,
+    "is_active": false,
+    "created_at": "2026-01-01T00:00:00Z"
+  }
+]

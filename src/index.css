@@ -1,0 +1,67 @@
+/* ── 폰트 (Pretendard - 대부분 프로젝트 기본) ───────────────── */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+/* Poppins - Funnels Drive, Funnelsolution */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+  ── Tailwind v4 @theme inline ──────────────────────────────────
+  var() 방식 사용 - oklch/hsl 모두 호환되도록
+  각 프로젝트 wrapper에서 --color-* 를 직접 override함
+*/
+@theme inline {
+  --color-background: var(--color-background-raw, hsl(0 0% 100%));
+  --color-foreground: var(--color-foreground-raw, hsl(0 0% 9%));
+  --color-card: var(--color-card-raw, hsl(0 0% 100%));
+  --color-card-foreground: var(--color-card-foreground-raw, hsl(0 0% 9%));
+  --color-popover: var(--color-popover-raw, hsl(0 0% 100%));
+  --color-popover-foreground: var(--color-popover-foreground-raw, hsl(0 0% 9%));
+  --color-primary: var(--color-primary-raw, hsl(220 90% 56%));
+  --color-primary-foreground: var(--color-primary-foreground-raw, hsl(0 0% 98%));
+  --color-secondary: var(--color-secondary-raw, hsl(0 0% 96%));
+  --color-secondary-foreground: var(--color-secondary-foreground-raw, hsl(0 0% 9%));
+  --color-muted: var(--color-muted-raw, hsl(0 0% 96%));
+  --color-muted-foreground: var(--color-muted-foreground-raw, hsl(0 0% 45%));
+  --color-accent: var(--color-accent-raw, hsl(0 0% 96%));
+  --color-accent-foreground: var(--color-accent-foreground-raw, hsl(0 0% 9%));
+  --color-destructive: var(--color-destructive-raw, hsl(0 84% 60%));
+  --color-destructive-foreground: var(--color-destructive-foreground-raw, hsl(0 0% 98%));
+  --color-border: var(--color-border-raw, hsl(0 0% 89%));
+  --color-input: var(--color-input-raw, hsl(0 0% 89%));
+  --color-ring: var(--color-ring-raw, hsl(220 90% 56%));
+  --color-sidebar: var(--color-sidebar-raw, hsl(0 0% 98.5%));
+  --color-sidebar-foreground: var(--color-sidebar-foreground-raw, hsl(0 0% 9%));
+  --color-sidebar-primary: var(--color-sidebar-primary-raw, hsl(0 0% 9%));
+  --color-sidebar-primary-foreground: var(--color-sidebar-primary-foreground-raw, hsl(0 0% 98%));
+  --color-sidebar-accent: var(--color-sidebar-accent-raw, hsl(0 0% 96%));
+  --color-sidebar-accent-foreground: var(--color-sidebar-accent-foreground-raw, hsl(0 0% 9%));
+  --color-sidebar-border: var(--color-sidebar-border-raw, hsl(0 0% 89%));
+  --color-sidebar-ring: var(--color-sidebar-ring-raw, hsl(220 90% 56%));
+  --color-chart-1: var(--color-chart-1-raw, hsl(12 76% 61%));
+  --color-chart-2: var(--color-chart-2-raw, hsl(173 58% 39%));
+  --color-chart-3: var(--color-chart-3-raw, hsl(197 37% 24%));
+  --color-chart-4: var(--color-chart-4-raw, hsl(43 74% 66%));
+  --color-chart-5: var(--color-chart-5-raw, hsl(27 87% 67%));
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* ── 포트폴리오 전역 기본 (프로젝트 밖 영역용) ─────────────── */
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    background-color: hsl(0 0% 100%);
+    color: hsl(0 0% 9%);
+    font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+}

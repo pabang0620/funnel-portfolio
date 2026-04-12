@@ -1,0 +1,61 @@
+/* 팝업 모달 */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+
+.modal-content {
+  position: relative;
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  max-height: 85vh;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  min-width: 450px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none !important;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-title,
+.modal-header .modal-title,
+.modal-header h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0 !important;
+  background: none !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+}
+
+.modal-close-btn,
+.modal-header .modal-close-btn,
+button.modal-close-btn {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.modal-close-btn:hover,
+.modal-header .modal-close-btn:hover,
+button.modal-close-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}

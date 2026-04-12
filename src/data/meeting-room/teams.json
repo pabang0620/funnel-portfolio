@@ -1,0 +1,37 @@
+[
+  {
+    "id": "team-1",
+    "name": "개발팀",
+    "display_order": 1,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "team-2",
+    "name": "마케팅팀",
+    "display_order": 2,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "team-3",
+    "name": "디자인팀",
+    "display_order": 3,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "team-4",
+    "name": "영업팀",
+    "display_order": 4,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "team-5",
+    "name": "경영지원팀",
+    "display_order": 5,
+    "is_active": true,
+    "created_at": "2024-01-01T00:00:00Z"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "executive": {
+    "totalSales": 289000000,
+    "totalProfit": 89000000,
+    "totalAdCost": 35000000,
+    "roas": "826.0",
+    "contributionProfit": 86700000,
+    "profitRate": "30.0",
+    "salesGrowth": "8.2",
+    "profitGrowth": "11.5"
+  },
+  "marketing": {
+    "totalAdSpend": 23480000,
+    "totalRevenue": 148200000,
+    "totalImpressions": 5823000,
+    "totalClicks": 243500,
+    "totalConversions": 6180,
+    "avgRoas": "631.2",
+    "avgCtr": "4.18",
+    "avgCvr": "2.54",
+    "avgCpc": "96"
+  },
+  "channels": {
+    "구글": { "spend": 4850000, "revenue": 31200000, "roas": "643.3" },
+    "메타": { "spend": 4120000, "revenue": 25800000, "roas": "626.2" },
+    "틱톡": { "spend": 2750000, "revenue": 16400000, "roas": "596.4" },
+    "GFA": { "spend": 2310000, "revenue": 13800000, "roas": "597.4" },
+    "쿠팡": { "spend": 3180000, "revenue": 20200000, "roas": "635.2" },
+    "네이버SA": { "spend": 4020000, "revenue": 25100000, "roas": "624.4" }
+  }
+}

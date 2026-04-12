@@ -1,0 +1,17 @@
+[
+  { "id": "kw-001", "keyword": "퍼포먼스 마케팅", "sources": "both", "created_at": "2025-01-15T09:00:00Z", "updated_at": "2025-03-20T14:30:00Z" },
+  { "id": "kw-002", "keyword": "메타 광고 대행사", "sources": "meta", "created_at": "2025-01-20T10:00:00Z", "updated_at": "2025-03-18T11:00:00Z" },
+  { "id": "kw-003", "keyword": "구글 광고 최적화", "sources": "google", "created_at": "2025-02-01T08:30:00Z", "updated_at": "2025-03-15T09:45:00Z" },
+  { "id": "kw-004", "keyword": "쇼핑몰 광고 대행", "sources": "both", "created_at": "2025-02-05T11:00:00Z", "updated_at": "2025-03-22T16:00:00Z" },
+  { "id": "kw-005", "keyword": "다이어트 보조식품", "sources": "meta", "created_at": "2025-02-10T13:00:00Z", "updated_at": "2025-03-21T10:30:00Z" },
+  { "id": "kw-006", "keyword": "온라인 영어 학원", "sources": "google", "created_at": "2025-02-12T09:00:00Z", "updated_at": "2025-03-19T14:00:00Z" },
+  { "id": "kw-007", "keyword": "부동산 투자 강의", "sources": "both", "created_at": "2025-02-15T10:30:00Z", "updated_at": "2025-03-17T12:00:00Z" },
+  { "id": "kw-008", "keyword": "피부과 레이저 시술", "sources": "meta", "created_at": "2025-02-18T14:00:00Z", "updated_at": "2025-03-16T09:00:00Z" },
+  { "id": "kw-009", "keyword": "헬스장 PT 등록", "sources": "google", "created_at": "2025-02-20T11:00:00Z", "updated_at": "2025-03-14T15:00:00Z" },
+  { "id": "kw-010", "keyword": "스마트스토어 창업", "sources": "both", "created_at": "2025-02-22T09:30:00Z", "updated_at": "2025-03-13T10:00:00Z" },
+  { "id": "kw-011", "keyword": "자동차 보험 비교", "sources": "google", "created_at": "2025-02-25T10:00:00Z", "updated_at": "2025-03-12T11:00:00Z" },
+  { "id": "kw-012", "keyword": "크리에이터 광고 플랫폼", "sources": "meta", "created_at": "2025-03-01T09:00:00Z", "updated_at": "2025-03-11T14:30:00Z" },
+  { "id": "kw-013", "keyword": "SaaS 마케팅 자동화", "sources": "both", "created_at": "2025-03-05T11:30:00Z", "updated_at": "2025-03-10T09:00:00Z" },
+  { "id": "kw-014", "keyword": "리타게팅 광고 전략", "sources": "meta", "created_at": "2025-03-08T10:00:00Z", "updated_at": "2025-03-09T16:00:00Z" },
+  { "id": "kw-015", "keyword": "콘텐츠 마케팅 에이전시", "sources": "google", "created_at": "2025-03-10T13:00:00Z", "updated_at": "2025-03-22T10:00:00Z" }
+]

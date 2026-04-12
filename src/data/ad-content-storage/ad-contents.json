@@ -1,0 +1,1404 @@
+[
+  {
+    "id": "file-001",
+    "name": "피부진정_영상광고_김민지_230105.mp4",
+    "path": "/2023/01",
+    "file_type": "video/mp4",
+    "size": 15728640,
+    "created_at": "2026-01-05T09:30:00Z",
+    "updated_at": "2026-01-05T09:30:00Z",
+    "memo": "메인 소구점: 트러블 피부 진정",
+    "ad_codes": [
+      "AD-2023-001"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "피부 트러블 고민이신가요? 저희 진정크림 하나면 해결됩니다."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      },
+      {
+        "id": "al-004",
+        "name": "10초이내"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 1250000,
+    "total_revenue": 4800000,
+    "total_conversions": 48,
+    "total_impressions": 125000,
+    "total_clicks": 3200,
+    "cpc": 390,
+    "s3_key": "2023/01/피부진정_영상광고_김민지_230105.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file001/400/400"
+  },
+  {
+    "id": "file-002",
+    "name": "탈모샴푸_후기광고_이준혁_230210.mp4",
+    "path": "/2023/02",
+    "file_type": "video/mp4",
+    "size": 22020096,
+    "created_at": "2026-02-10T11:00:00Z",
+    "updated_at": "2026-02-10T11:00:00Z",
+    "memo": "고객 후기 기반 UGC",
+    "ad_codes": [
+      "AD-2023-015"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "탈모로 고생하다 이 샴푸 쓰고 나서 정말 달라졌어요."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 890000,
+    "total_revenue": 3200000,
+    "total_conversions": 32,
+    "total_impressions": 98000,
+    "total_clicks": 2100,
+    "cpc": 424,
+    "s3_key": "2023/02/탈모샴푸_후기광고_이준혁_230210.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file002/400/400"
+  },
+  {
+    "id": "file-003",
+    "name": "비타민C_이미지_박서연_230315.jpg",
+    "path": "/2023/03",
+    "file_type": "image/jpeg",
+    "size": 2097152,
+    "created_at": "2026-03-15T14:20:00Z",
+    "updated_at": "2026-03-15T14:20:00Z",
+    "memo": "봄 시즌 프로모션 배너",
+    "ad_codes": [
+      "AD-2023-022"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 320000,
+    "total_revenue": 1100000,
+    "total_conversions": 18,
+    "total_impressions": 45000,
+    "total_clicks": 980,
+    "cpc": 326,
+    "s3_key": "2023/03/비타민C_이미지_박서연_230315.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file003/400/400"
+  },
+  {
+    "id": "file-004",
+    "name": "다이어트_공포유발_최지원_230420.mp4",
+    "path": "/2023/04",
+    "file_type": "video/mp4",
+    "size": 31457280,
+    "created_at": "2026-04-02T10:00:00Z",
+    "updated_at": "2026-04-02T10:00:00Z",
+    "memo": "손실회피 심리 자극 광고",
+    "ad_codes": [
+      "AD-2023-031"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "지금 시작하지 않으면 여름이 와도 달라지는 것은 없습니다."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-006",
+        "name": "공포유발"
+      },
+      {
+        "id": "al-004",
+        "name": "10초이내"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 2100000,
+    "total_revenue": 9800000,
+    "total_conversions": 196,
+    "total_impressions": 280000,
+    "total_clicks": 8400,
+    "cpc": 250,
+    "s3_key": "2023/04/다이어트_공포유발_최지원_230420.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file004/400/400"
+  },
+  {
+    "id": "file-005",
+    "name": "콜라겐_권위신뢰_홍길동_230510.mp4",
+    "path": "/2023/05",
+    "file_type": "video/mp4",
+    "size": 18874368,
+    "created_at": "2026-03-10T09:00:00Z",
+    "updated_at": "2026-03-10T09:00:00Z",
+    "memo": "피부과 전문의 추천 광고",
+    "ad_codes": [
+      "AD-2023-045"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "피부과 전문의가 직접 추천하는 콜라겐 솔루션"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-007",
+        "name": "권위신뢰"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 1750000,
+    "total_revenue": 7200000,
+    "total_conversions": 86,
+    "total_impressions": 195000,
+    "total_clicks": 5100,
+    "cpc": 343,
+    "s3_key": "2023/05/콜라겐_권위신뢰_홍길동_230510.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file005/400/400"
+  },
+  {
+    "id": "file-006",
+    "name": "프로바이오틱스_프로모션_김민지_230615.jpg",
+    "path": "/2023/06",
+    "file_type": "image/jpeg",
+    "size": 1572864,
+    "created_at": "2026-03-15T13:00:00Z",
+    "updated_at": "2026-03-15T13:00:00Z",
+    "memo": "여름 이벤트 한정 할인",
+    "ad_codes": [
+      "AD-2023-058"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      },
+      {
+        "id": "al-008",
+        "name": "판매제한"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 450000,
+    "total_revenue": 1600000,
+    "total_conversions": 22,
+    "total_impressions": 55000,
+    "total_clicks": 1200,
+    "cpc": 375,
+    "s3_key": "2023/06/프로바이오틱스_프로모션_김민지_230615.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file006/400/400"
+  },
+  {
+    "id": "file-007",
+    "name": "수분크림_문제나열_이준혁_230720.mp4",
+    "path": "/2023/07",
+    "file_type": "video/mp4",
+    "size": 26214400,
+    "created_at": "2026-03-20T10:30:00Z",
+    "updated_at": "2026-03-20T10:30:00Z",
+    "memo": "공감형 문제 제시 광고",
+    "ad_codes": [
+      "AD-2023-067"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "속은 당기고 기름지고 트러블까지... 이런 피부 고민 있으신 분!"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-009",
+        "name": "문제나열"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 980000,
+    "total_revenue": 3500000,
+    "total_conversions": 42,
+    "total_impressions": 110000,
+    "total_clicks": 2800,
+    "cpc": 350,
+    "s3_key": "2023/07/수분크림_문제나열_이준혁_230720.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file007/400/400"
+  },
+  {
+    "id": "file-008",
+    "name": "단백질파우더_정보성_박서연_230825.mp4",
+    "path": "/2023/08",
+    "file_type": "video/mp4",
+    "size": 41943040,
+    "created_at": "2026-04-05T08:00:00Z",
+    "updated_at": "2026-04-05T08:00:00Z",
+    "memo": "성분 및 효능 설명 광고",
+    "ad_codes": [
+      "AD-2023-079"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "WPC, WPI, WPH의 차이 아세요? 단백질 흡수율 최대 98%의 비밀"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "스포츠영양",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 3200000,
+    "total_revenue": 14500000,
+    "total_conversions": 290,
+    "total_impressions": 380000,
+    "total_clicks": 11200,
+    "cpc": 286,
+    "s3_key": "2023/08/단백질파우더_정보성_박서연_230825.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file008/400/400"
+  },
+  {
+    "id": "file-009",
+    "name": "눈밑지방_수술전후_최지원_230910.jpg",
+    "path": "/2023/09",
+    "file_type": "image/jpeg",
+    "size": 3145728,
+    "created_at": "2026-04-10T15:00:00Z",
+    "updated_at": "2026-04-10T15:00:00Z",
+    "memo": "Before/After 비교 이미지",
+    "ad_codes": [
+      "AD-2023-092"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-015",
+        "name": "성형/시술",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-007",
+    "total_spend": 5800000,
+    "total_revenue": 28000000,
+    "total_conversions": 56,
+    "total_impressions": 620000,
+    "total_clicks": 15600,
+    "cpc": 372,
+    "s3_key": "2023/09/눈밑지방_수술전후_최지원_230910.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file009/400/400"
+  },
+  {
+    "id": "file-010",
+    "name": "영양제_판매제한_홍길동_231015.mp4",
+    "path": "/2023/10",
+    "file_type": "video/mp4",
+    "size": 20971520,
+    "created_at": "2026-01-15T11:30:00Z",
+    "updated_at": "2026-01-15T11:30:00Z",
+    "memo": "한정수량 긴급 소진 예정 광고",
+    "ad_codes": [
+      "AD-2023-105"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "이번 달 말에 단종 예정! 마지막 기회를 놓치지 마세요."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-008",
+        "name": "판매제한"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 760000,
+    "total_revenue": 2900000,
+    "total_conversions": 38,
+    "total_impressions": 88000,
+    "total_clicks": 2000,
+    "cpc": 380,
+    "s3_key": "2023/10/영양제_판매제한_홍길동_231015.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file010/400/400"
+  },
+  {
+    "id": "file-011",
+    "name": "탄력앰플_정보성_김민지_231120.mp4",
+    "path": "/2023/11",
+    "file_type": "video/mp4",
+    "size": 24117248,
+    "created_at": "2026-02-20T09:45:00Z",
+    "updated_at": "2026-02-20T09:45:00Z",
+    "memo": "리프팅 메커니즘 과학적 설명",
+    "ad_codes": [
+      "AD-2023-118"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "콜라겐 생성 촉진 성분이 피부 탄력을 48시간 유지합니다."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      },
+      {
+        "id": "al-007",
+        "name": "권위신뢰"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 1400000,
+    "total_revenue": 5600000,
+    "total_conversions": 64,
+    "total_impressions": 165000,
+    "total_clicks": 4200,
+    "cpc": 333,
+    "s3_key": "2023/11/탄력앰플_정보성_김민지_231120.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file011/400/400"
+  },
+  {
+    "id": "file-012",
+    "name": "다이어트쉐이크_후기_이준혁_231205.mp4",
+    "path": "/2023/12",
+    "file_type": "video/mp4",
+    "size": 35651584,
+    "created_at": "2026-03-05T08:30:00Z",
+    "updated_at": "2026-03-05T08:30:00Z",
+    "memo": "3개월 후기 영상",
+    "ad_codes": [
+      "AD-2023-130"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "3개월 만에 12kg 감량! 정말인가요? 네, 정말입니다."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 2450000,
+    "total_revenue": 11200000,
+    "total_conversions": 158,
+    "total_impressions": 310000,
+    "total_clicks": 9300,
+    "cpc": 263,
+    "s3_key": "2023/12/다이어트쉐이크_후기_이준혁_231205.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file012/400/400"
+  },
+  {
+    "id": "file-013",
+    "name": "오메가3_정보성_박서연_240110.jpg",
+    "path": "/2024/01",
+    "file_type": "image/jpeg",
+    "size": 2621440,
+    "created_at": "2026-01-10T10:00:00Z",
+    "updated_at": "2026-01-10T10:00:00Z",
+    "memo": "신년 건강 챙기기 캠페인",
+    "ad_codes": [
+      "AD-2024-005"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 560000,
+    "total_revenue": 2100000,
+    "total_conversions": 31,
+    "total_impressions": 72000,
+    "total_clicks": 1650,
+    "cpc": 339,
+    "s3_key": "2024/01/오메가3_정보성_박서연_240110.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file013/400/400"
+  },
+  {
+    "id": "file-014",
+    "name": "모공케어_공포유발_최지원_240215.mp4",
+    "path": "/2024/02",
+    "file_type": "video/mp4",
+    "size": 29360128,
+    "created_at": "2026-02-15T11:00:00Z",
+    "updated_at": "2026-02-15T11:00:00Z",
+    "memo": "봄 환절기 피부 트러블 경고",
+    "ad_codes": [
+      "AD-2024-018"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "지금 모공 관리 안 하면 여름에 후회합니다. 딱 2주만 써보세요."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-006",
+        "name": "공포유발"
+      },
+      {
+        "id": "al-009",
+        "name": "문제나열"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 1800000,
+    "total_revenue": 7600000,
+    "total_conversions": 102,
+    "total_impressions": 220000,
+    "total_clicks": 6200,
+    "cpc": 290,
+    "s3_key": "2024/02/모공케어_공포유발_최지원_240215.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file014/400/400"
+  },
+  {
+    "id": "file-015",
+    "name": "크레아틴_권위신뢰_홍길동_240320.mp4",
+    "path": "/2024/03",
+    "file_type": "video/mp4",
+    "size": 33554432,
+    "created_at": "2026-03-20T09:00:00Z",
+    "updated_at": "2026-03-20T09:00:00Z",
+    "memo": "스포츠 영양학 연구 기반 광고",
+    "ad_codes": [
+      "AD-2024-029"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "스포츠 영양학계 권위자 김철수 교수가 말하는 크레아틴의 진실"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "스포츠영양",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-007",
+        "name": "권위신뢰"
+      },
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 2800000,
+    "total_revenue": 12500000,
+    "total_conversions": 220,
+    "total_impressions": 350000,
+    "total_clicks": 10400,
+    "cpc": 269,
+    "s3_key": "2024/03/크레아틴_권위신뢰_홍길동_240320.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file015/400/400"
+  },
+  {
+    "id": "file-016",
+    "name": "진정크림_숏폼_릴스_이나라_260215.mp4",
+    "path": "/2026/02",
+    "file_type": "video/mp4",
+    "size": 9437184,
+    "created_at": "2026-02-15T11:20:00Z",
+    "updated_at": "2026-02-15T11:20:00Z",
+    "memo": "틱톡 스타일 숏폼 15초",
+    "ad_codes": [
+      "AD-2026-031"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "이거 하나로 피부 고민 끝! #진정크림 #스킨케어"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-008",
+        "name": "릴스"
+      },
+      {
+        "id": "al-004",
+        "name": "10초이내"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 680000,
+    "total_revenue": 2600000,
+    "total_conversions": 34,
+    "total_impressions": 142000,
+    "total_clicks": 4200,
+    "cpc": 162,
+    "s3_key": "2026/02/진정크림_숏폼_260215.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file016/400/400"
+  },
+  {
+    "id": "file-017",
+    "name": "탈모샴푸_배너_성분강조_260220.jpg",
+    "path": "/2026/02",
+    "file_type": "image/jpeg",
+    "size": 1835008,
+    "created_at": "2026-02-20T09:45:00Z",
+    "updated_at": "2026-02-20T09:45:00Z",
+    "memo": "네이버 디스플레이 배너 성분 강조",
+    "ad_codes": [
+      "AD-2026-032"
+    ],
+    "has_scripts": false,
+    "scripts": null,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      },
+      {
+        "id": "al-012",
+        "name": "성분강조"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 340000,
+    "total_revenue": 1100000,
+    "total_conversions": 15,
+    "total_impressions": 41000,
+    "total_clicks": 820,
+    "cpc": 415,
+    "s3_key": "2026/02/탈모샴푸_배너_260220.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file017/400/400"
+  },
+  {
+    "id": "file-018",
+    "name": "비타민C_복용방법_영상_이서진_260225.mp4",
+    "path": "/2026/02",
+    "file_type": "video/mp4",
+    "size": 12582912,
+    "created_at": "2026-02-25T15:30:00Z",
+    "updated_at": "2026-02-25T15:30:00Z",
+    "memo": "올바른 복용법 안내 신뢰 구축",
+    "ad_codes": [
+      "AD-2026-033"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "비타민C 언제 먹어야 가장 효과적일까요?"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      },
+      {
+        "id": "al-010",
+        "name": "30초이내"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 640000,
+    "total_revenue": 2100000,
+    "total_conversions": 26,
+    "total_impressions": 78000,
+    "total_clicks": 1950,
+    "cpc": 328,
+    "s3_key": "2026/02/비타민C_복용방법_260225.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file018/400/400"
+  },
+  {
+    "id": "file-019",
+    "name": "다이어트쉐이크_봄이벤트_배너_260310.png",
+    "path": "/2026/03",
+    "file_type": "image/png",
+    "size": 2359296,
+    "created_at": "2026-03-10T09:00:00Z",
+    "updated_at": "2026-03-10T09:00:00Z",
+    "memo": "봄 시즌 한정 2+1 프로모션",
+    "ad_codes": [
+      "AD-2026-034"
+    ],
+    "has_scripts": false,
+    "scripts": null,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      },
+      {
+        "id": "al-013",
+        "name": "할인이벤트"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 1800000,
+    "total_revenue": 9200000,
+    "total_conversions": 95,
+    "total_impressions": 195000,
+    "total_clicks": 6100,
+    "cpc": 295,
+    "s3_key": "2026/03/다이어트쉐이크_이벤트_260310.png",
+    "thumbnail_url": "https://picsum.photos/seed/file019/400/400"
+  },
+  {
+    "id": "file-020",
+    "name": "크레아틴_운동콜라보_영상_260318.mp4",
+    "path": "/2026/03",
+    "file_type": "video/mp4",
+    "size": 35651584,
+    "created_at": "2026-03-18T11:45:00Z",
+    "updated_at": "2026-03-18T11:45:00Z",
+    "memo": "헬스 유튜버 협찬 운동 루틴",
+    "ad_codes": [
+      "AD-2026-035"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "벌크업 3개월 프로젝트 크레아틴 실사용 후기"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "헬스/스포츠",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-007",
+        "name": "인플루언서"
+      },
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 950000,
+    "total_revenue": 3600000,
+    "total_conversions": 38,
+    "total_impressions": 102000,
+    "total_clicks": 2600,
+    "cpc": 365,
+    "s3_key": "2026/03/크레아틴_운동_260318.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file020/400/400"
+  },
+  {
+    "id": "file-021",
+    "name": "프로바이오틱스_인포그래픽_260322.jpg",
+    "path": "/2026/03",
+    "file_type": "image/jpeg",
+    "size": 1572864,
+    "created_at": "2026-03-22T14:20:00Z",
+    "updated_at": "2026-03-22T14:20:00Z",
+    "memo": "장내 세균 균형 인포그래픽",
+    "ad_codes": [
+      "AD-2026-036"
+    ],
+    "has_scripts": false,
+    "scripts": null,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      },
+      {
+        "id": "al-009",
+        "name": "카드뉴스"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 320000,
+    "total_revenue": 1450000,
+    "total_conversions": 19,
+    "total_impressions": 44000,
+    "total_clicks": 1050,
+    "cpc": 305,
+    "s3_key": "2026/03/프로바이오틱스_인포_260322.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file021/400/400"
+  },
+  {
+    "id": "file-022",
+    "name": "눈밑시술_전후비교_이미지_260325.png",
+    "path": "/2026/03",
+    "file_type": "image/png",
+    "size": 3145728,
+    "created_at": "2026-03-25T13:30:00Z",
+    "updated_at": "2026-03-25T13:30:00Z",
+    "memo": "Before After 비교 이미지",
+    "ad_codes": [
+      "AD-2026-037"
+    ],
+    "has_scripts": false,
+    "scripts": null,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-015",
+        "name": "성형/미용",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-011",
+        "name": "비포애프터"
+      },
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-007",
+    "total_spend": 4200000,
+    "total_revenue": 18500000,
+    "total_conversions": 12,
+    "total_impressions": 95000,
+    "total_clicks": 4100,
+    "cpc": 1024,
+    "s3_key": "2026/03/눈밑시술_비포애프터_260325.png",
+    "thumbnail_url": "https://picsum.photos/seed/file022/400/400"
+  },
+  {
+    "id": "file-023",
+    "name": "진정크림_인터뷰영상_260328.mp4",
+    "path": "/2026/03",
+    "file_type": "video/mp4",
+    "size": 16777216,
+    "created_at": "2026-03-28T10:00:00Z",
+    "updated_at": "2026-03-28T10:00:00Z",
+    "memo": "30대 민감성 피부 타겟 인터뷰",
+    "ad_codes": [
+      "AD-2026-038"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "피부가 예민해서 뭘 못 쓰겠다던 제가 드디어 찾은 크림이에요."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 920000,
+    "total_revenue": 3800000,
+    "total_conversions": 44,
+    "total_impressions": 115000,
+    "total_clicks": 3100,
+    "cpc": 297,
+    "s3_key": "2026/03/진정크림_인터뷰_260328.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file023/400/400"
+  },
+  {
+    "id": "file-024",
+    "name": "탈모샴푸_여성숏폼_260402.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 10485760,
+    "created_at": "2026-04-02T10:00:00Z",
+    "updated_at": "2026-04-02T10:00:00Z",
+    "memo": "여성 탈모 타겟 감성적 접근",
+    "ad_codes": [
+      "AD-2026-039"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "머리카락이 빠질 때마다 마음도 함께 빠지는 것 같았어요."
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-008",
+        "name": "릴스"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 780000,
+    "total_revenue": 3100000,
+    "total_conversions": 36,
+    "total_impressions": 98000,
+    "total_clicks": 2900,
+    "cpc": 269,
+    "s3_key": "2026/04/탈모샴푸_여성_260402.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file024/400/400"
+  },
+  {
+    "id": "file-025",
+    "name": "비타민C_봄철건강_이미지_260404.png",
+    "path": "/2026/04",
+    "file_type": "image/png",
+    "size": 2097152,
+    "created_at": "2026-04-04T13:00:00Z",
+    "updated_at": "2026-04-04T13:00:00Z",
+    "memo": "봄철 면역 강화 시즌 소재",
+    "ad_codes": [
+      "AD-2026-040"
+    ],
+    "has_scripts": false,
+    "scripts": null,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      },
+      {
+        "id": "al-006",
+        "name": "정방형"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 480000,
+    "total_revenue": 1750000,
+    "total_conversions": 24,
+    "total_impressions": 61000,
+    "total_clicks": 1520,
+    "cpc": 316,
+    "s3_key": "2026/04/비타민C_봄철_260404.png",
+    "thumbnail_url": "https://picsum.photos/seed/file025/400/400"
+  },
+  {
+    "id": "file-026",
+    "name": "다이어트쉐이크_맛후기_영상_260406.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 14680064,
+    "created_at": "2026-04-06T11:30:00Z",
+    "updated_at": "2026-04-06T11:30:00Z",
+    "memo": "맛 소구 다이어트 식품 거부감 해소",
+    "ad_codes": [
+      "AD-2026-041"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "다이어트 식품이 이렇게 맛있어도 되나요?"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 1350000,
+    "total_revenue": 5400000,
+    "total_conversions": 58,
+    "total_impressions": 148000,
+    "total_clicks": 4200,
+    "cpc": 321,
+    "s3_key": "2026/04/다이어트쉐이크_맛후기_260406.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file026/400/400"
+  },
+  {
+    "id": "file-027",
+    "name": "진정크림_신제품런칭_배너_260408.jpg",
+    "path": "/2026/04",
+    "file_type": "image/jpeg",
+    "size": 1835008,
+    "created_at": "2026-04-08T09:00:00Z",
+    "updated_at": "2026-04-08T09:00:00Z",
+    "memo": "리뉴얼 패키지 런칭 기념 배너",
+    "ad_codes": [
+      "AD-2026-042"
+    ],
+    "has_scripts": false,
+    "scripts": null,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      },
+      {
+        "id": "al-013",
+        "name": "할인이벤트"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 550000,
+    "total_revenue": 2200000,
+    "total_conversions": 30,
+    "total_impressions": 72000,
+    "total_clicks": 1800,
+    "cpc": 306,
+    "s3_key": "2026/04/진정크림_런칭_260408.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file027/400/400"
+  },
+  {
+    "id": "file-028",
+    "name": "크레아틴_QA영상_260410.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 11534336,
+    "created_at": "2026-04-10T14:00:00Z",
+    "updated_at": "2026-04-10T14:00:00Z",
+    "memo": "소비자 Q&A 안전성 우려 해소",
+    "ad_codes": [
+      "AD-2026-043"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "크레아틴에 대한 7가지 오해와 진실 전문가 답변"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "헬스/스포츠",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      },
+      {
+        "id": "al-010",
+        "name": "30초이내"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 410000,
+    "total_revenue": 1580000,
+    "total_conversions": 22,
+    "total_impressions": 51000,
+    "total_clicks": 1300,
+    "cpc": 315,
+    "s3_key": "2026/04/크레아틴_QA_260410.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file028/400/400"
+  },
+  {
+    "id": "file-029",
+    "name": "프로바이오틱스_가족건강_영상_260411.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 19922944,
+    "created_at": "2026-04-11T10:30:00Z",
+    "updated_at": "2026-04-11T10:30:00Z",
+    "memo": "온 가족 복용 가능 소구 가족 타겟",
+    "ad_codes": [
+      "AD-2026-044"
+    ],
+    "has_scripts": true,
+    "scripts": {
+      "text": "엄마부터 아이까지 온 가족의 장 건강을 한 번에"
+    },
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-007",
+        "name": "인플루언서"
+      },
+      {
+        "id": "al-010",
+        "name": "30초이내"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 720000,
+    "total_revenue": 2850000,
+    "total_conversions": 35,
+    "total_impressions": 89000,
+    "total_clicks": 2400,
+    "cpc": 300,
+    "s3_key": "2026/04/프로바이오틱스_가족_260411.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file029/400/400"
+  }
+]

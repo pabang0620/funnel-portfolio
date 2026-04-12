@@ -1,0 +1,54 @@
+/* Coming Soon Overlay 스타일 */
+.coming-soon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* 배경 블러 효과 */
+.coming-soon-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* 콘텐츠 영역 */
+.coming-soon-content {
+  position: relative;
+  z-index: 1001;
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+  max-width: 400px;
+  top: 100px;
+}
+
+/* 아이콘 */
+.coming-soon-icon {
+  font-size: 3rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* 제목 */
+.coming-soon-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+}

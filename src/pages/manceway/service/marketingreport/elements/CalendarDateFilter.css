@@ -1,0 +1,260 @@
+/* CalendarDateFilter 스타일 */
+.calendarDateFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5% 5% 2% 5%;
+  background-color: #fff;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
+}
+
+.calendarDateFilter .calendar-title {
+  width: 95%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendarDateFilter .calendar-title .year-month {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.calendarDateFilter .calendar-title .cohort-filter {
+  width: 100px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #3b82f6;
+  background: #fff;
+  position: relative;
+}
+
+.calendarDateFilter .calendar-title .cohort-filter .cohort-custom-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 6px 8px;
+  color: #202224;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.calendarDateFilter
+  .calendar-title
+  .cohort-filter
+  .cohort-custom-select
+  .dropdown-icon {
+  width: 12px;
+  font-size: 10px;
+}
+
+.calendarDateFilter .calendar-title .cohort-filter .custom-options {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  border: 1px solid #3b82f6;
+  background: #fff;
+  cursor: pointer;
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.calendarDateFilter
+  .calendar-title
+  .cohort-filter
+  .custom-options
+  .option-item {
+  color: #3b82f6;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 8px;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+}
+
+.calendarDateFilter
+  .calendar-title
+  .cohort-filter
+  .custom-options
+  .option-item:hover,
+.calendarDateFilter
+  .calendar-title
+  .cohort-filter
+  .custom-options
+  .option-item.selected {
+  border: 1px solid #3b82f6;
+  background: #3b82f6;
+  color: white;
+}
+
+.calendarDateFilter .calendar {
+  width: 100%;
+}
+
+.calendarDateFilter .calendar .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(60, 60, 67, 0.6);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.calendarDateFilter .calendar .calendar-header .calendar-day {
+  width: calc(100% / 7);
+  height: 100%;
+  text-align: center;
+}
+
+.calendarDateFilter .calendar .calendar-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendarDateFilter .calendar .calendar-cell {
+  width: calc(100% / 7);
+  aspect-ratio: 1/0.8;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.calendarDateFilter .calendar .calendar-cell.today {
+  background: #eef7ff;
+}
+
+.calendarDateFilter .calendar .calendar-cell.selected {
+  background: rgba(59, 130, 246, 0.2);
+  position: relative;
+}
+
+.calendarDateFilter .calendar .calendar-cell.selected.start-date {
+  background: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(59, 130, 246, 0.2) 50%
+  );
+  border-radius: 0;
+  position: relative;
+}
+
+.calendarDateFilter .calendar .calendar-cell.selected.start-date::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  aspect-ratio: 1/1;
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.calendarDateFilter .calendar .calendar-cell.selected.end-date {
+  background: linear-gradient(
+    to right,
+    rgba(59, 130, 246, 0.2) 50%,
+    transparent 50%
+  );
+  border-radius: 0;
+  position: relative;
+}
+
+.calendarDateFilter .calendar .calendar-cell.selected.end-date::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  aspect-ratio: 1/1;
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.calendarDateFilter .calendar .calendar-cell.selected .calendar-date {
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 50%;
+  width: 80%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.calendarDateFilter .calendar .calendar-cell.in-range {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.calendarDateFilter .calendar .calendar-cell.in-range .calendar-date {
+  position: relative;
+  z-index: 2;
+}
+
+.calendarDateFilter .calendar .calendar-date {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+}
+
+/* 데이터 없는 날짜 스타일 */
+.calendarDateFilter .calendar .calendar-cell.calendar-cell.no-data-date::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  background-color: #ff6363;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.calendarDateFilter .year-month-button {
+  margin-top: 1rem;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.calendarDateFilter .year-month-button button {
+  background: none;
+  border: none;
+  height: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.calendarDateFilter .year-month-button button svg {
+  font-weight: bold;
+  color: #979797;
+}

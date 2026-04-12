@@ -1,0 +1,124 @@
+/* DailyQuotes 페이지 스타일 */
+.daily-quotes-container {
+}
+
+.daily-quotes-container .daily-quotes-content {
+}
+
+.daily-quotes-container .daily-quotes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.daily-quotes-container .add-quote-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 검색 기능 스타일 */
+.daily-quotes-container .search-container {
+  display: flex;
+  align-items: center;
+}
+
+.daily-quotes-container .search-input {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  width: 250px;
+  transition: all 0.2s ease;
+  color: #374151;
+}
+
+.daily-quotes-container .search-input:focus {
+  outline: none;
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.daily-quotes-container .search-input::placeholder {
+  color: #9ca3af;
+}
+
+/* 삭제 확인 모달 */
+.daily-quotes-container .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.daily-quotes-container .modal-content.delete-confirm-modal {
+  background: white;
+  border-radius: 12px;
+  width: 400px;
+  max-width: none;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.daily-quotes-container .delete-confirm-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.daily-quotes-container .delete-confirm-modal .modal-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  padding-bottom: 15px;
+  color: #111827;
+}
+
+.daily-quotes-container .delete-confirm-modal .modal-body {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.daily-quotes-container .delete-confirm-modal .modal-body p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.daily-quotes-container .delete-confirm-modal .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 0 0 12px 12px;
+}
+
+/* 버튼 스타일 */
+.daily-quotes-container .cancel-btn {
+  background: #f3f4f6 !important;
+  color: #374151 !important;
+  border: 1px solid #374151 !important;
+}
+
+.daily-quotes-container .cancel-btn:hover {
+  background: #e5e7eb !important;
+}
+
+.daily-quotes-container .delete-confirm-btn {
+  background: #dc2626 !important;
+  color: white !important;
+  border: 1px solid #dc2626 !important;
+}
+
+.daily-quotes-container .delete-confirm-btn:hover {
+  background: #b91c1c !important;
+}

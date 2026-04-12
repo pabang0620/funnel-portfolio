@@ -1,0 +1,9 @@
+[
+  { "id": "pl-001", "name": "피드", "initial": "FD", "display_name": "Feed" },
+  { "id": "pl-002", "name": "스토리", "initial": "ST", "display_name": "Story" },
+  { "id": "pl-003", "name": "검색결과", "initial": "SR", "display_name": "SearchResult" },
+  { "id": "pl-004", "name": "디스플레이", "initial": "DP", "display_name": "Display" },
+  { "id": "pl-005", "name": "쇼핑검색", "initial": "SH", "display_name": "Shopping" },
+  { "id": "pl-006", "name": "인스트림", "initial": "IS", "display_name": "InStream" },
+  { "id": "pl-007", "name": "메시지", "initial": "MS", "display_name": "Message" }
+]

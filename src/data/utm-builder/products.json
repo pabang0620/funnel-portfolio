@@ -1,0 +1,60 @@
+[
+  {
+    "id": "prod-001",
+    "brand_id": "brand-001",
+    "brand_name": "퍼널브랜드",
+    "base_url": "https://funnelbrand.co.kr",
+    "name": "퍼널 프로 플랜",
+    "initial": "FP",
+    "landing_numbers": [
+      { "id": "ln-001-1", "product_id": "prod-001", "number": "1", "description": "메인 랜딩", "initial": "M" },
+      { "id": "ln-001-2", "product_id": "prod-001", "number": "2", "description": "이벤트 랜딩", "initial": "E" },
+      { "id": "ln-001-3", "product_id": "prod-001", "number": "3", "description": "무료체험 랜딩", "initial": "T" }
+    ],
+    "created_at": "2024-01-10T09:00:00Z",
+    "updated_at": "2024-03-15T11:00:00Z"
+  },
+  {
+    "id": "prod-002",
+    "brand_id": "brand-001",
+    "brand_name": "퍼널브랜드",
+    "base_url": "https://funnelbrand.co.kr/starter",
+    "name": "퍼널 스타터 플랜",
+    "initial": "FS",
+    "landing_numbers": [
+      { "id": "ln-002-1", "product_id": "prod-002", "number": "1", "description": "입문자 랜딩", "initial": "B" },
+      { "id": "ln-002-2", "product_id": "prod-002", "number": "2", "description": "할인 이벤트", "initial": "D" }
+    ],
+    "created_at": "2024-01-15T09:00:00Z",
+    "updated_at": "2024-04-01T10:00:00Z"
+  },
+  {
+    "id": "prod-003",
+    "brand_id": "brand-002",
+    "brand_name": "마케팅랩",
+    "base_url": "https://marketinglab.io",
+    "name": "마케팅랩 코스",
+    "initial": "ML",
+    "landing_numbers": [
+      { "id": "ln-003-1", "product_id": "prod-003", "number": "1", "description": "코스 소개", "initial": "I" },
+      { "id": "ln-003-2", "product_id": "prod-003", "number": "2", "description": "수강 신청", "initial": "A" },
+      { "id": "ln-003-3", "product_id": "prod-003", "number": "3", "description": "무료 특강", "initial": "F" }
+    ],
+    "created_at": "2024-02-01T09:00:00Z",
+    "updated_at": "2024-04-10T10:00:00Z"
+  },
+  {
+    "id": "prod-004",
+    "brand_id": "brand-003",
+    "brand_name": "그로스해커스",
+    "base_url": "https://growthhackers.kr",
+    "name": "그로스 부트캠프",
+    "initial": "GB",
+    "landing_numbers": [
+      { "id": "ln-004-1", "product_id": "prod-004", "number": "1", "description": "부트캠프 모집", "initial": "R" },
+      { "id": "ln-004-2", "product_id": "prod-004", "number": "2", "description": "설명회 신청", "initial": "S" }
+    ],
+    "created_at": "2024-02-15T09:00:00Z",
+    "updated_at": "2024-04-20T10:00:00Z"
+  }
+]

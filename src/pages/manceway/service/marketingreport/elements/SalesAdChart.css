@@ -1,0 +1,57 @@
+/* 매출 및 광고비 소진 현황 차트 스타일 */
+.marketing-report-container .marketing-chart-item {
+  flex: 1;
+  min-width: 300px;
+}
+
+.marketing-report-container .marketing-chart-box {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.marketing-report-container .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.marketing-report-container .marketing-chart-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e293b;
+  text-align: left;
+}
+
+.marketing-report-container .chart-legend {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: #F4F4F4;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.marketing-report-container .chart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.marketing-report-container .chart-legend-icon {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.marketing-report-container .chart-legend-label {
+  font-size: 10px;
+}
+
+.marketing-report-container .chart-wrapper {
+  height: 250px;
+}

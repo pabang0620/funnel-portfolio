@@ -1,0 +1,320 @@
+/* ── Ad Content Storage — 원본 index.css 기반 테마 (스코프 처리) ─────── */
+
+/* Pretendard Variable Font */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+
+/* Light mode */
+.ad-content-storage-app {
+  /* Layout Spacing */
+  --content-padding-x: 2rem;
+  --content-padding-y: 1.5rem;
+  --sidebar-width: 15rem;
+
+  /* Dashboard Pro - Light Mode (Linear/Notion inspired) */
+  --background: oklch(0.995 0 0);
+  --foreground: oklch(0.145 0.004 285.82);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0.004 285.82);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0.004 285.82);
+  --primary: oklch(0.205 0.006 285.89);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0.001 286.38);
+  --secondary-foreground: oklch(0.205 0.006 285.89);
+  --muted: oklch(0.968 0.001 286.38);
+  --muted-foreground: oklch(0.545 0.014 285.94);
+  --accent: oklch(0.968 0.001 286.38);
+  --accent-foreground: oklch(0.205 0.006 285.89);
+  --destructive: oklch(0.577 0.245 27.33);
+  --border: oklch(0.925 0.004 286.32);
+  --input: oklch(0.925 0.004 286.32);
+  --ring: oklch(0.555 0.014 285.94);
+
+  /* Chart Colors */
+  --chart-1: oklch(0.588 0.158 241.97);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.171 70.08);
+  --chart-4: oklch(0.627 0.214 303.9);
+  --chart-5: oklch(0.645 0.2 16.44);
+
+  /* Sidebar */
+  --sidebar: oklch(0.985 0.001 286.38);
+  --sidebar-foreground: oklch(0.32 0.006 285.82);
+  --sidebar-primary: oklch(0.205 0.006 285.89);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.955 0.002 286.38);
+  --sidebar-accent-foreground: oklch(0.145 0.004 285.82);
+  --sidebar-border: oklch(0.915 0.004 286.32);
+  --sidebar-ring: oklch(0.555 0.014 285.94);
+  --sidebar-muted: oklch(0.545 0.014 285.94);
+
+  --radius: 6px;
+
+  /* Shadows */
+  --shadow-2xs: 0 1px 2px 0px hsl(0 0% 0% / 0.03);
+  --shadow-xs: 0 1px 2px 0px hsl(0 0% 0% / 0.04);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.06), 0 1px 2px -1px hsl(0 0% 0% / 0.06);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.08), 0 1px 2px -1px hsl(0 0% 0% / 0.08);
+  --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.08), 0 2px 4px -2px hsl(0 0% 0% / 0.06);
+  --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.08), 0 4px 6px -4px hsl(0 0% 0% / 0.06);
+  --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.08), 0 8px 10px -6px hsl(0 0% 0% / 0.06);
+  --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.2);
+
+  /* Gradients */
+  --gradient-1: oklch(0.588 0.22 264.38);
+  --gradient-2: oklch(0.696 0.17 162.48);
+  --gradient-3: oklch(0.627 0.214 303.9);
+
+  /* Alerts */
+  --error: oklch(0.637 0.237 25.33);
+  --success: oklch(0.627 0.194 149.21);
+  --info: oklch(0.588 0.158 241.97);
+  --warning: oklch(0.769 0.171 70.08);
+
+  /* Action Button */
+  --action-button: oklch(0.588 0.158 241.97);
+  --action-button-foreground: oklch(1 0 0);
+
+  /* Multi Label Button */
+  --multi-label-button: oklch(0.955 0.025 264.38);
+  --multi-label-button-foreground: oklch(0.45 0.12 264.38);
+  --multi-label-button-hover: oklch(0.925 0.04 264.38);
+
+  /* Add Label Button */
+  --add-label-button: oklch(0.955 0.025 280);
+  --add-label-button-foreground: oklch(0.45 0.12 280);
+  --add-label-button-hover: oklch(0.925 0.04 280);
+
+  /* Fonts */
+  --font-sans: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-pretendard: 'Pretendard Variable', sans-serif;
+
+  /* Magicui Colors */
+  --color-1: oklch(66.2% 0.225 25.9);
+  --color-2: oklch(60.4% 0.26 302);
+  --color-3: oklch(69.6% 0.165 251);
+  --color-4: oklch(80.2% 0.134 225);
+  --color-5: oklch(90.7% 0.231 133);
+
+  /* Tailwind v4 color token overrides — light */
+  --color-background: oklch(0.995 0 0);
+  --color-foreground: oklch(0.145 0.004 285.82);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0.004 285.82);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.145 0.004 285.82);
+  --color-primary: oklch(0.205 0.006 285.89);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-secondary: oklch(0.97 0.001 286.38);
+  --color-secondary-foreground: oklch(0.205 0.006 285.89);
+  --color-muted: oklch(0.968 0.001 286.38);
+  --color-muted-foreground: oklch(0.545 0.014 285.94);
+  --color-accent: oklch(0.968 0.001 286.38);
+  --color-accent-foreground: oklch(0.205 0.006 285.89);
+  --color-destructive: oklch(0.577 0.245 27.33);
+  --color-border: oklch(0.925 0.004 286.32);
+  --color-input: oklch(0.925 0.004 286.32);
+  --color-ring: oklch(0.555 0.014 285.94);
+  --color-chart-1: oklch(0.588 0.158 241.97);
+  --color-chart-2: oklch(0.696 0.17 162.48);
+  --color-chart-3: oklch(0.769 0.171 70.08);
+  --color-chart-4: oklch(0.627 0.214 303.9);
+  --color-chart-5: oklch(0.645 0.2 16.44);
+  --color-sidebar: oklch(0.985 0.001 286.38);
+  --color-sidebar-foreground: oklch(0.32 0.006 285.82);
+  --color-sidebar-primary: oklch(0.205 0.006 285.89);
+  --color-sidebar-primary-foreground: oklch(0.985 0 0);
+  --color-sidebar-accent: oklch(0.955 0.002 286.38);
+  --color-sidebar-accent-foreground: oklch(0.145 0.004 285.82);
+  --color-sidebar-border: oklch(0.915 0.004 286.32);
+  --color-sidebar-ring: oklch(0.555 0.014 285.94);
+  --color-sidebar-muted: oklch(0.545 0.014 285.94);
+  --color-transparent: transparent;
+  --color-gradient-1: oklch(0.588 0.22 264.38);
+  --color-gradient-2: oklch(0.696 0.17 162.48);
+  --color-gradient-3: oklch(0.627 0.214 303.9);
+  --color-error: oklch(0.637 0.237 25.33);
+  --color-success: oklch(0.627 0.194 149.21);
+  --color-info: oklch(0.588 0.158 241.97);
+  --color-warning: oklch(0.769 0.171 70.08);
+  --color-action-button: oklch(0.588 0.158 241.97);
+  --color-action-button-foreground: oklch(1 0 0);
+  --color-multi-label-button: oklch(0.955 0.025 264.38);
+  --color-multi-label-button-foreground: oklch(0.45 0.12 264.38);
+  --color-multi-label-button-hover: oklch(0.925 0.04 264.38);
+  --color-add-label-button: oklch(0.955 0.025 280);
+  --color-add-label-button-foreground: oklch(0.45 0.12 280);
+  --color-add-label-button-hover: oklch(0.925 0.04 280);
+  --color-color-1: oklch(66.2% 0.225 25.9);
+  --color-color-2: oklch(60.4% 0.26 302);
+  --color-color-3: oklch(69.6% 0.165 251);
+  --color-color-4: oklch(80.2% 0.134 225);
+  --color-color-5: oklch(90.7% 0.231 133);
+
+  --radius-xs: calc(var(--radius) - 4px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* Dark mode */
+.ad-content-storage-app.dark {
+  /* Dashboard Pro - Dark Mode */
+  --background: oklch(0.13 0.004 285.82);
+  --foreground: oklch(0.965 0.001 286.38);
+  --card: oklch(0.17 0.005 285.88);
+  --card-foreground: oklch(0.965 0.001 286.38);
+  --popover: oklch(0.17 0.005 285.88);
+  --popover-foreground: oklch(0.965 0.001 286.38);
+  --primary: oklch(0.965 0.001 286.38);
+  --primary-foreground: oklch(0.13 0.004 285.82);
+  --secondary: oklch(0.22 0.005 285.88);
+  --secondary-foreground: oklch(0.965 0.001 286.38);
+  --muted: oklch(0.22 0.005 285.88);
+  --muted-foreground: oklch(0.62 0.012 285.94);
+  --accent: oklch(0.22 0.005 285.88);
+  --accent-foreground: oklch(0.965 0.001 286.38);
+  --destructive: oklch(0.637 0.237 25.33);
+  --border: oklch(0.26 0.006 285.88);
+  --input: oklch(0.26 0.006 285.88);
+  --ring: oklch(0.62 0.012 285.94);
+
+  /* Chart Colors — dark */
+  --chart-1: oklch(0.65 0.18 241.97);
+  --chart-2: oklch(0.72 0.17 162.48);
+  --chart-3: oklch(0.79 0.17 70.08);
+  --chart-4: oklch(0.68 0.21 303.9);
+  --chart-5: oklch(0.69 0.2 16.44);
+
+  /* Sidebar — dark */
+  --sidebar: oklch(0.15 0.004 285.88);
+  --sidebar-foreground: oklch(0.75 0.01 286.06);
+  --sidebar-primary: oklch(0.965 0.001 286.38);
+  --sidebar-primary-foreground: oklch(0.13 0.004 285.82);
+  --sidebar-accent: oklch(0.22 0.005 285.88);
+  --sidebar-accent-foreground: oklch(0.965 0.001 286.38);
+  --sidebar-border: oklch(0.24 0.005 285.88);
+  --sidebar-ring: oklch(0.62 0.012 285.94);
+  --sidebar-muted: oklch(0.55 0.01 285.94);
+
+  /* Gradients — dark */
+  --gradient-1: oklch(0.65 0.18 264.38);
+  --gradient-2: oklch(0.72 0.17 162.48);
+  --gradient-3: oklch(0.68 0.21 303.9);
+
+  /* Alerts — dark */
+  --error: oklch(0.637 0.237 25.33);
+  --success: oklch(0.627 0.194 149.21);
+  --info: oklch(0.65 0.18 241.97);
+  --warning: oklch(0.79 0.17 70.08);
+
+  /* Action Button — dark */
+  --action-button: oklch(0.65 0.18 241.97);
+  --action-button-foreground: oklch(1 0 0);
+
+  /* Multi Label Button — dark */
+  --multi-label-button: oklch(0.28 0.08 264.38);
+  --multi-label-button-foreground: oklch(0.78 0.08 264.38);
+  --multi-label-button-hover: oklch(0.33 0.1 264.38);
+
+  /* Add Label Button — dark */
+  --add-label-button: oklch(0.28 0.08 280);
+  --add-label-button-foreground: oklch(0.78 0.08 280);
+  --add-label-button-hover: oklch(0.33 0.1 280);
+
+  /* Tailwind v4 color token overrides — dark */
+  --color-background: oklch(0.13 0.004 285.82);
+  --color-foreground: oklch(0.965 0.001 286.38);
+  --color-card: oklch(0.17 0.005 285.88);
+  --color-card-foreground: oklch(0.965 0.001 286.38);
+  --color-popover: oklch(0.17 0.005 285.88);
+  --color-popover-foreground: oklch(0.965 0.001 286.38);
+  --color-primary: oklch(0.965 0.001 286.38);
+  --color-primary-foreground: oklch(0.13 0.004 285.82);
+  --color-secondary: oklch(0.22 0.005 285.88);
+  --color-secondary-foreground: oklch(0.965 0.001 286.38);
+  --color-muted: oklch(0.22 0.005 285.88);
+  --color-muted-foreground: oklch(0.62 0.012 285.94);
+  --color-accent: oklch(0.22 0.005 285.88);
+  --color-accent-foreground: oklch(0.965 0.001 286.38);
+  --color-destructive: oklch(0.637 0.237 25.33);
+  --color-border: oklch(0.26 0.006 285.88);
+  --color-input: oklch(0.26 0.006 285.88);
+  --color-ring: oklch(0.62 0.012 285.94);
+  --color-chart-1: oklch(0.65 0.18 241.97);
+  --color-chart-2: oklch(0.72 0.17 162.48);
+  --color-chart-3: oklch(0.79 0.17 70.08);
+  --color-chart-4: oklch(0.68 0.21 303.9);
+  --color-chart-5: oklch(0.69 0.2 16.44);
+  --color-sidebar: oklch(0.15 0.004 285.88);
+  --color-sidebar-foreground: oklch(0.75 0.01 286.06);
+  --color-sidebar-primary: oklch(0.965 0.001 286.38);
+  --color-sidebar-primary-foreground: oklch(0.13 0.004 285.82);
+  --color-sidebar-accent: oklch(0.22 0.005 285.88);
+  --color-sidebar-accent-foreground: oklch(0.965 0.001 286.38);
+  --color-sidebar-border: oklch(0.24 0.005 285.88);
+  --color-sidebar-ring: oklch(0.62 0.012 285.94);
+  --color-sidebar-muted: oklch(0.55 0.01 285.94);
+  --color-error: oklch(0.637 0.237 25.33);
+  --color-success: oklch(0.627 0.194 149.21);
+  --color-info: oklch(0.65 0.18 241.97);
+  --color-warning: oklch(0.79 0.17 70.08);
+  --color-action-button: oklch(0.65 0.18 241.97);
+  --color-action-button-foreground: oklch(1 0 0);
+  --color-multi-label-button: oklch(0.28 0.08 264.38);
+  --color-multi-label-button-foreground: oklch(0.78 0.08 264.38);
+  --color-multi-label-button-hover: oklch(0.33 0.1 264.38);
+  --color-add-label-button: oklch(0.28 0.08 280);
+  --color-add-label-button-foreground: oklch(0.78 0.08 280);
+  --color-add-label-button-hover: oklch(0.33 0.1 280);
+}
+
+/* Scoped base styles */
+.ad-content-storage-app * {
+  border-color: var(--border);
+  outline-color: color-mix(in oklch, var(--ring) 50%, transparent);
+}
+
+.ad-content-storage-app {
+  scrollbar-gutter: stable;
+}
+
+/* Utility classes scoped */
+.ad-content-storage-app .hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.ad-content-storage-app .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom button utilities */
+.ad-content-storage-app .btn-multi-label {
+  background-color: var(--multi-label-button);
+  color: var(--multi-label-button-foreground);
+}
+.ad-content-storage-app .btn-multi-label:hover {
+  background-color: var(--multi-label-button-hover);
+}
+.ad-content-storage-app .btn-add-label {
+  background-color: var(--add-label-button);
+  color: var(--add-label-button-foreground);
+}
+.ad-content-storage-app .btn-add-label:hover {
+  background-color: var(--add-label-button-hover);
+}
+
+/* Pretendard font for headings */
+.ad-content-storage-app h1,
+.ad-content-storage-app h2,
+.ad-content-storage-app h3,
+.ad-content-storage-app h4,
+.ad-content-storage-app h5,
+.ad-content-storage-app h6 {
+  font-family: var(--font-pretendard);
+}

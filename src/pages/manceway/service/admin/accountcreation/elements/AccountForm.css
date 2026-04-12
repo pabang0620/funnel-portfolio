@@ -1,0 +1,384 @@
+/* 계정 폼 컨테이너 - 컴팩트한 디자인 */
+.account-form-container {
+  background: white;
+}
+
+.account-form-container .signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.account-form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.account-form-container .form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.account-form-container .form-input {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  color: #1e293b;
+}
+
+.account-form-container .form-input:focus {
+  outline: none;
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.account-form-container .form-input::placeholder {
+  color: #94a3b8;
+  font-size: 0.813rem;
+}
+
+.account-form-container .form-select {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.account-form-container .form-select:focus {
+  outline: none;
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.account-form-container .form-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-container .form-input {
+  width: 100%;
+  padding-right: 2.5rem;
+}
+
+.password-visibility-toggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+.password-visibility-toggle:hover {
+  color: #374151;
+}
+
+.account-form-container .signup-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.account-form-container .signup-button:hover {
+  background: #2563eb;
+}
+
+.account-form-container .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+/* 커스텀 등급 드롭다운 */
+.account-form-container .custom-select-wrapper {
+  position: relative;
+}
+
+.account-form-container .custom-select {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  min-width: 200px;
+}
+
+.account-form-container .custom-select.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.account-form-container .custom-select:focus,
+.account-form-container .custom-select.open {
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.account-form-container .selected-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.grade-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grade-text {
+  font-size: 0.875rem;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.dropdown-arrow {
+  color: #6b7280;
+  transition: transform 0.2s ease;
+  font-size: 0.75rem;
+}
+
+.custom-select.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.account-form-container .dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.account-form-container .dropdown-option {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.875rem;
+}
+
+.account-form-container .dropdown-option:last-child {
+  border-bottom: none;
+}
+
+.account-form-container .dropdown-option:hover {
+  background-color: #f8fafc;
+}
+
+/* 새 팀 추가 기능 */
+.dropdown-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0.25rem 0;
+}
+
+.add-new-option {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.add-new-option:hover {
+  background-color: #eff6ff;
+}
+
+.new-team-form {
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 6px;
+  margin: 0.25rem;
+}
+
+.new-team-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.new-team-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.new-team-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.btn-confirm {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.btn-confirm:hover {
+  background: #2563eb;
+}
+
+.btn-cancel {
+  background: #f1f5f9;
+  color: #64748b;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background: #e2e8f0;
+}
+
+/* 옵션에 수정/삭제 아이콘 버튼 스타일 */
+.dropdown-option-with-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-option-with-actions .option-text {
+  flex: 1;
+}
+
+.dropdown-option-with-actions .option-actions {
+  display: flex;
+  gap: 0.25rem;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.dropdown-option-with-actions:hover .option-actions {
+  opacity: 1;
+}
+
+.option-action-btn {
+  background: none;
+  border: none;
+  padding: 0.25rem 0.375rem;
+  cursor: pointer;
+  color: #9ca3af;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  font-size: 0.75rem;
+}
+
+.option-action-btn:hover {
+  background: #f1f5f9;
+  color: #3b82f6;
+}
+
+.option-action-btn-danger:hover {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* 등급 뱃지 스타일 */
+.grade-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.grade-s {
+  background: #dc2626;
+}
+
+.grade-a {
+  background: #3b82f6;
+}
+
+.grade-b {
+  background: #10b981;
+}
+
+.grade-c {
+  background: #6b7280;
+}
+
+/* S등급 비활성화된 드롭다운 스타일 */
+.account-form-container .custom-select.disabled {
+  background-color: #f1f5f9 !important;
+  color: #94a3b8 !important;
+  cursor: not-allowed !important;
+  opacity: 0.7;
+}
+
+.account-form-container .custom-select.disabled .selected-option {
+  color: #64748b;
+}
+
+.account-form-container .custom-select.disabled .dropdown-arrow {
+  color: #94a3b8;
+}
+
+.account-form-container .custom-select.disabled:hover {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+@media (max-width: 640px) {
+  .account-form-container .form-row {
+    grid-template-columns: 1fr;
+  }
+}

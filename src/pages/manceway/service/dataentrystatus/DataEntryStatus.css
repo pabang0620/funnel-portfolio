@@ -1,0 +1,286 @@
+/* 데이터 입력 현황 페이지 스타일 */
+
+.data-entry-status-page {
+  padding: 0;
+}
+
+.data-entry-status-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 페이지 타이틀 섹션 */
+.data-entry-status-page .page-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.data-entry-status-page .page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.data-entry-status-page .today-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.data-entry-status-page .today-date {
+  font-size: 0.875rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+}
+
+.data-entry-status-page .entry-summary {
+  font-size: 0.875rem;
+  color: #475569;
+  background: #e0f2fe;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.data-entry-status-page .entry-percentage {
+  color: #0369a1;
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+/* 범례 섹션 */
+.data-entry-status-page .legend-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 0;
+}
+
+.data-entry-status-page .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.data-entry-status-page .legend-dot {
+  font-size: 1rem;
+}
+
+.data-entry-status-page .legend-dot.has-entry {
+  color: #16a34a;
+}
+
+.data-entry-status-page .legend-dot.no-entry {
+  color: #dc2626;
+}
+
+/* 범례 필터 버튼 그룹 */
+.data-entry-status-page .legend-filter-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.data-entry-status-page .legend-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.data-entry-status-page .legend-filter-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.data-entry-status-page .legend-filter-btn.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+  font-weight: 600;
+}
+
+.data-entry-status-page .legend-filter-btn.active .legend-dot {
+  color: white;
+}
+
+/* 우측 패널 필터 */
+.data-entry-status-container .filter-panel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.data-entry-status-container .filter-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+/* 히스토리 버튼 박스 */
+.data-entry-status-container .history-button-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.data-entry-status-container .history-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.data-entry-status-container .history-btn:hover {
+  background: #2563eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-entry-status-container .filter-field.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.data-entry-status-container .filter-field.horizontal label {
+  flex-shrink: 0;
+  min-width: 36px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+  text-align: left;
+}
+
+.data-entry-status-container .filter-field.horizontal .custom-select {
+  flex: 1;
+}
+
+/* 테이블 컨테이너 */
+.data-entry-status-page .table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 테이블 래퍼 */
+.entry-status-table-wrapper {
+  overflow-x: auto;
+}
+
+/* 테이블 스타일 */
+.entry-status-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.entry-status-table th,
+.entry-status-table td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.entry-status-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.entry-status-table th.first-col {
+  text-align: left;
+  min-width: 150px;
+}
+
+.entry-status-table td {
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.entry-status-table td.first-col {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* 데이터 입력된 셀 스타일 */
+.data-entry-status-page .entry-status-table td.cell-has-entry {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* 데이터 미입력 셀 스타일 */
+.data-entry-status-page .entry-status-table td.cell-no-entry {
+  color: #dc2626;
+}
+
+/* 행 호버 효과 */
+.data-entry-status-page .entry-status-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* 로딩/에러/빈 상태 */
+.loading-container,
+.error-container,
+.no-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: #64748b;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-container {
+  color: #dc2626;
+}
+

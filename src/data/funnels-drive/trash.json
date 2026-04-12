@@ -1,0 +1,80 @@
+{
+  "files": [
+    {
+      "id": "tfile001",
+      "folder_id": "f001",
+      "file_name": "구버전_마케팅_제안서.pdf",
+      "s3_id": "s3/tfile001.pdf",
+      "size": 2097152,
+      "mime_type": "application/pdf",
+      "created_date": "2023-12-01",
+      "creator": "이마케팅",
+      "event_name": null,
+      "uploaded_by": "u003",
+      "uploader_name": "이마케팅",
+      "upload_date": "2023-12-01T10:00:00Z",
+      "created_at": "2023-12-01T10:00:00Z",
+      "updated_at": "2024-01-20T09:00:00Z",
+      "deleted_at": "2024-01-20T09:00:00Z",
+      "preview_url": null
+    },
+    {
+      "id": "tfile002",
+      "folder_id": "f009",
+      "file_name": "테스트_배너_임시.png",
+      "s3_id": "s3/tfile002.png",
+      "size": 524288,
+      "mime_type": "image/png",
+      "created_date": "2024-01-10",
+      "creator": "박디자인",
+      "event_name": null,
+      "uploaded_by": "u004",
+      "uploader_name": "박디자인",
+      "upload_date": "2024-01-10T14:00:00Z",
+      "created_at": "2024-01-10T14:00:00Z",
+      "updated_at": "2024-01-25T11:00:00Z",
+      "deleted_at": "2024-01-25T11:00:00Z",
+      "preview_url": null
+    },
+    {
+      "id": "tfile003",
+      "folder_id": "f002",
+      "file_name": "삭제예정_영상_초안.mp4",
+      "s3_id": "s3/tfile003.mp4",
+      "size": 31457280,
+      "mime_type": "video/mp4",
+      "created_date": "2024-01-05",
+      "creator": "최콘텐츠",
+      "event_name": "테스트",
+      "uploaded_by": "u005",
+      "uploader_name": "최콘텐츠",
+      "upload_date": "2024-01-05T16:00:00Z",
+      "created_at": "2024-01-05T16:00:00Z",
+      "updated_at": "2024-02-01T09:00:00Z",
+      "deleted_at": "2024-02-01T09:00:00Z",
+      "preview_url": null
+    }
+  ],
+  "folders": [
+    {
+      "id": "tfolder001",
+      "name": "임시 작업 폴더",
+      "parent_id": "f001",
+      "is_admin_only": false,
+      "created_at": "2023-12-15T09:00:00Z",
+      "updated_at": "2024-01-30T10:00:00Z",
+      "deleted_at": "2024-01-30T10:00:00Z",
+      "children": []
+    },
+    {
+      "id": "tfolder002",
+      "name": "구버전_아카이브",
+      "parent_id": null,
+      "is_admin_only": false,
+      "created_at": "2023-11-01T09:00:00Z",
+      "updated_at": "2024-01-15T14:00:00Z",
+      "deleted_at": "2024-01-15T14:00:00Z",
+      "children": []
+    }
+  ]
+}

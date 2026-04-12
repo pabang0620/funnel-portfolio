@@ -1,0 +1,8 @@
+[
+  { "id": "ct-001", "name": "배너", "initial": "BN", "display_name": "Banner" },
+  { "id": "ct-002", "name": "영상", "initial": "VD", "display_name": "Video" },
+  { "id": "ct-003", "name": "카드뉴스", "initial": "CN", "display_name": "CardNews" },
+  { "id": "ct-004", "name": "스토리", "initial": "ST", "display_name": "Story" },
+  { "id": "ct-005", "name": "릴스", "initial": "RL", "display_name": "Reels" },
+  { "id": "ct-006", "name": "텍스트", "initial": "TX", "display_name": "Text" }
+]
