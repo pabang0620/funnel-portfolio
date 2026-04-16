@@ -1,5 +1,6 @@
 /* WorkStatusTable 컴포넌트 전용 스타일 */
 
+/* TM 작업 현황 테이블 스타일 */
 .funnelsolution-app .tmWorkStatus_container .work-status-table,
 .funnelsolution-app .tmWorkStatus_container .tm_table {
   width: 100%;
@@ -14,6 +15,7 @@
   text-align: center;
   height: 40px;
 }
+
 
 /* 테이블 헤더 */
 .funnelsolution-app .tmWorkStatus_container .work-status-table thead,
@@ -74,6 +76,8 @@
   color: #ffffff;
   font-weight: bold;
 }
+
+
 
 /* 테이블 바디 */
 .funnelsolution-app .tmWorkStatus_container .work-status-table tbody tr,
@@ -168,3 +172,5 @@
   font-weight: 500;
   font-size: 12px;
 }
+
+

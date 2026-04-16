@@ -87,6 +87,7 @@
   flex-shrink: 0;
 }
 
+
 /* 엑셀 다운로드 버튼 */
 .funnelsolution-app .tmWorkStatus_container .search-excel-container {
   width: 100%;
@@ -101,6 +102,37 @@
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.funnelsolution-app .tmWorkStatus_container .excel-upload-button {
+  height: 40px;
+  background: #d1d5db;
+  color: #374151;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 16px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.funnelsolution-app .tmWorkStatus_container .excel-upload-button:hover {
+  background: #9ca3af;
+}
+
+.funnelsolution-app .tmWorkStatus_container .excel-upload-button:active {
+  background: #6b7280;
+}
+
+.funnelsolution-app .tmWorkStatus_container .excel-upload-button svg {
+  width: 16px;
+  height: 16px;
 }
 
 .funnelsolution-app .tmWorkStatus_container .excel-download-button {
@@ -132,4 +164,30 @@
 .funnelsolution-app .tmWorkStatus_container .excel-download-button svg {
   width: 16px;
   height: 16px;
+}
+
+.funnelsolution-app .tmWorkStatus_container .delete-button {
+  height: 40px;
+  background: #d1d5db;
+  color: #374151;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 16px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.funnelsolution-app .tmWorkStatus_container .delete-button:hover {
+  background: #9ca3af;
+}
+
+.funnelsolution-app .tmWorkStatus_container .delete-button:active {
+  background: #6b7280;
 }
