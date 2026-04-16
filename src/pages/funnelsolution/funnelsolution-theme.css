@@ -2340,3 +2340,57 @@
 .funnelsolution-app .react-datepicker__current-month {
   font-size: 0.9rem !important;
 }
+
+/* ============ Demo layout override: position:fixed → flexbox ============ */
+/* PortfolioLayout의 overflow:auto 컨테이너 안에서 fixed는 클리핑됨 → flexbox 대체 */
+.funnelsolution-app .layout {
+  display: flex !important;
+  flex-direction: row !important;
+  height: 100vh;
+  overflow: hidden;
+}
+.funnelsolution-app nav {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  width: 250px !important;
+  min-width: 250px;
+  height: 100% !important;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+.funnelsolution-app nav.sidebar-collapsed {
+  width: 60px !important;
+  min-width: 60px;
+}
+.funnelsolution-app .right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+.funnelsolution-app header {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  flex-shrink: 0;
+}
+.funnelsolution-app .layout .main {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  flex: 1 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  overflow: auto;
+  min-height: 0;
+}
+/* header 위치 조정 (right-panel 안에 있으므로 left 오프셋 불필요) */
+.funnelsolution-app nav.sidebar-collapsed + .right-panel > header {
+  width: 100% !important;
+}

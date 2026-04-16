@@ -11,12 +11,14 @@ function Layout({ children }) {
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
       />
-      <Header
-        isSidebarOpen={isSidebarOpen}
-        setIsSidebarOpen={setIsSidebarOpen}
-      />
-      <div className="main">
-        <div className="content">{children}</div>
+      <div className="right-panel">
+        <Header
+          isSidebarOpen={isSidebarOpen}
+          setIsSidebarOpen={setIsSidebarOpen}
+        />
+        <div className="main">
+          <div className="content">{children}</div>
+        </div>
       </div>
     </div>
   );
