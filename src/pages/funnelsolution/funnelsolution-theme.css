@@ -2323,3 +2323,20 @@
   font-weight: 500;
   outline: none;
 }
+
+/* ============ react-datepicker 크기 정상화 ============ */
+.funnelsolution-app .react-datepicker {
+  font-size: 12px !important;
+}
+.funnelsolution-app .react-datepicker__month-container {
+  width: auto !important;
+}
+.funnelsolution-app .react-datepicker__day-name,
+.funnelsolution-app .react-datepicker__day {
+  width: 1.7rem !important;
+  line-height: 1.7rem !important;
+  margin: 0.1rem !important;
+}
+.funnelsolution-app .react-datepicker__current-month {
+  font-size: 0.9rem !important;
+}

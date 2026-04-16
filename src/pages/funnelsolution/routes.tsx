@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import './funnelsolution-theme.css'
 import DemoLock from '@/components/DemoLock'
 // @ts-ignore — JSX file, no type declarations needed for demo
+import Layout from './shared/Layout'
+// @ts-ignore — JSX file, no type declarations needed for demo
 import MainReportPage from './mainReport/index'
 // @ts-ignore — JSX file, no type declarations needed for demo
 import CustomerDbPage from './dbList/index'
@@ -16,6 +18,7 @@ function LockedPage({ pageName }: { pageName: string }) {
 export default function FunnelSolutionRoutes() {
   return (
     <div className="funnelsolution-app" style={{ minHeight: '100%' }}>
+      <Layout>
       <Routes>
         <Route index element={<Navigate to="main-report" replace />} />
         <Route path="main-report" element={<MainReportPage />} />
@@ -35,6 +38,7 @@ export default function FunnelSolutionRoutes() {
         <Route path="code-list" element={<LockedPage pageName="코드 목록" />} />
         <Route path="*" element={<LockedPage pageName="데모 버전에서 제공되지 않는 페이지" />} />
       </Routes>
+      </Layout>
     </div>
   )
 }
