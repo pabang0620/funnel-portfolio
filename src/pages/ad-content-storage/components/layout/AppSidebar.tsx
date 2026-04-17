@@ -28,9 +28,9 @@ interface AppSidebarProps {
 const mainMenuItems = [
   { id: 'dashboard' as Tab, icon: LayoutDashboard, label: '대시보드', locked: true },
   { id: 'upload' as Tab, icon: Upload, label: '업로드' },
-  { id: 'search' as Tab, icon: Search, label: '콘텐츠 분석' },
+  { id: 'search' as Tab, icon: Search, label: '콘텐츠 검색' },
   { id: 'guide' as Tab, icon: BookOpen, label: '가이드', locked: true },
-  { id: 'analytics' as Tab, icon: BarChart3, label: '분석', locked: true },
+  { id: 'analytics' as Tab, icon: BarChart3, label: '콘텐츠 분석' },
   { id: 'ad-code-mapping' as Tab, icon: Wand2, label: '광고코드 자동 입력', locked: true },
 ]
 

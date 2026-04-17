@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import DemoLockPage from './DemoLockPage'
 import SearchPage from './SearchPage'
 import UploadPage from './UploadPage'
+import AnalyticsPage from './AnalyticsPage'
 import './ad-content-storage-theme.css'
 
 export default function AdContentStorageRoutes() {
@@ -13,7 +14,7 @@ export default function AdContentStorageRoutes() {
         <Route path="upload" element={<UploadPage />} />
         <Route path="upload/:folderId" element={<UploadPage />} />
         <Route path="dashboard" element={<DemoLockPage pageName="대시보드" />} />
-        <Route path="analytics" element={<DemoLockPage pageName="콘텐츠 분석 (Analytics)" />} />
+        <Route path="analytics" element={<AnalyticsPage />} />
         <Route path="admin" element={<DemoLockPage pageName="사용자 관리" />} />
         <Route path="attribute-labels" element={<DemoLockPage pageName="속성 라벨" />} />
         <Route path="ad-code-mapping" element={<DemoLockPage pageName="광고코드 자동 입력" />} />
