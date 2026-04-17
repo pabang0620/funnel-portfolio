@@ -698,6 +698,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+  top: -15px;
+  margin-right: 10px;
 }
 
 .funnelsolution-app .DataContainer .filter-container .arrow-icon {
@@ -708,6 +711,10 @@
   padding: 8px;
   border-radius: 4px;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .funnelsolution-app .DataContainer .filter-container .arrow-icon:hover {
