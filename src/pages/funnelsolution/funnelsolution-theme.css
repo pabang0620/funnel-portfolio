@@ -2394,3 +2394,15 @@
 .funnelsolution-app nav.sidebar-collapsed + .right-panel > header {
   width: 100% !important;
 }
+
+/* db-list 화살표 아이콘 크기 정상화 */
+.funnelsolution-app .arrow-icon {
+  font-size: 14px !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+.funnelsolution-app .calendar-icon {
+  font-size: 14px !important;
+  width: 14px !important;
+  height: 14px !important;
+}
