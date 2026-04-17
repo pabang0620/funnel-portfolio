@@ -333,16 +333,8 @@ const FilterComponent = React.memo(({
               </span>
               <div className="divider large"></div>
               <div className="arrow-group">
-                <FontAwesomeIcon
-                  icon={faChevronLeft}
-                  className="arrow-icon"
-                  onClick={() => shiftDateRange("prev")}
-                />
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className="arrow-icon"
-                  onClick={() => shiftDateRange("next")}
-                />
+                <span className="arrow-icon" onClick={() => shiftDateRange("prev")}>&lt;</span>
+                <span className="arrow-icon" onClick={() => shiftDateRange("next")}>&gt;</span>
               </div>
             </div>
           </div>
