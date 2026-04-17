@@ -33,12 +33,12 @@ function App() {
           </PortfolioLayout>
         } />
         <Route path="/funnel-edu/*" element={
-          <PortfolioLayout project="Funnel Edu">
+          <PortfolioLayout project="Edu Platform">
             <FunnelEduRoutes />
           </PortfolioLayout>
         } />
         <Route path="/funnelmance-cs/*" element={
-          <PortfolioLayout project="Funnelmance CS">
+          <PortfolioLayout project="CS Manager">
             <FunnelmanceCsRoutes />
           </PortfolioLayout>
         } />
@@ -53,7 +53,7 @@ function App() {
           </PortfolioLayout>
         } />
         <Route path="/funnels-drive/*" element={
-          <PortfolioLayout project="Funnels Drive">
+          <PortfolioLayout project="File Hub">
             <FunnelsDriveRoutes />
           </PortfolioLayout>
         } />
@@ -63,7 +63,7 @@ function App() {
           </PortfolioLayout>
         } />
         <Route path="/funnelsolution/*" element={
-          <PortfolioLayout project="Funnel Solution">
+          <PortfolioLayout project="Med Manager">
             <FunnelSolutionRoutes />
           </PortfolioLayout>
         } />

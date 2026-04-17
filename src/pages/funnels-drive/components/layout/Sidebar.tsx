@@ -38,7 +38,7 @@ export default function Sidebar({ selectedFolderId, onFolderSelect }: SidebarPro
         className="px-3 pt-3 pb-2 flex items-center gap-2 hover:opacity-80 transition-opacity text-left cursor-pointer"
       >
         <HardDrive className="w-5 h-5 text-sidebar-primary flex-shrink-0" />
-        <span className="font-bold text-sidebar-foreground text-base truncate">Funnels Drive</span>
+        <span className="font-bold text-sidebar-foreground text-base truncate">File Hub</span>
       </button>
 
       {/* Row 2: Folder Filter + FolderPlus */}

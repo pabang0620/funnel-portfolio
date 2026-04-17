@@ -19,7 +19,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import AlertModal from "../shared/AlertModal";
 
-const BASE = "/portfolio/funnelsolution";
+const BASE = "/funnelsolution";
 
 const MENU_CONFIG = [
   {
@@ -200,7 +200,7 @@ function SideMenu({ isSidebarOpen, setIsSidebarOpen }) {
                 transition: "opacity 0.3s",
               }}
             >
-              Funnel Solution
+              Med Manager
             </span>
           )}
         </div>

@@ -12,7 +12,7 @@ import CreateCodePage from './createCode/index'
 import TmStatusPage from './tmStatus/index'
 
 function LockedPage({ pageName }: { pageName: string }) {
-  return <DemoLock projectName="Funnel Solution" pageName={pageName} />
+  return <DemoLock projectName="Med Manager" pageName={pageName} />
 }
 
 export default function FunnelSolutionRoutes() {

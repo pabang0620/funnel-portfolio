@@ -32,8 +32,8 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
 
       {/* 로고 */}
       <div className="logo">
-        <span className="gradient-text">Funnel Solution</span>
-        <span className="solid-text">Funnel Solution</span>
+        <span className="gradient-text">Med Manager</span>
+        <span className="solid-text">Med Manager</span>
       </div>
 
       {/* 우측 프로필 영역 */}
