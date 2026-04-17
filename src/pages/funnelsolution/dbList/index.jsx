@@ -81,9 +81,11 @@ const CustomerDbPage = React.memo(() => {
   const [recentSettings, setRecentSettings] = useState([]);
   const [checkedCompanies, setCheckedCompanies] = useState("");
   const [companyOptions, setCompanyOptions] = useState([]);
+  const _today = new Date();
+  const _month30 = new Date(); _month30.setDate(_today.getDate() - 29);
   const [customDateRange, setCustomDateRange] = useState({
-    startDate: new Date(),
-    endDate: new Date(),
+    startDate: _month30,
+    endDate: _today,
   });
   const [selectedHospital, setSelectedHospital] = useState(undefined);
   const [hospital_name, sethospital_name] = useState(undefined);

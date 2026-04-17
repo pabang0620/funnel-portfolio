@@ -41,7 +41,7 @@ const MENU_CONFIG = [
     label: "피봇 분석",
     icon: faChartPie,
     path: `${BASE}/pivot`,
-    locked: true,
+    locked: false,
   },
   {
     key: "tm",
