@@ -2387,8 +2387,13 @@
   margin-left: 0 !important;
   margin-top: 0 !important;
   padding-top: 0 !important;
-  overflow: auto;
+  overflow: hidden;
   min-height: 0;
+}
+/* .content가 내부 스크롤 담당 (피봇 등 height:100% 페이지 정상 작동) */
+.funnelsolution-app .layout .main .content {
+  height: 100%;
+  overflow: auto;
 }
 /* header 위치 조정 (right-panel 안에 있으므로 left 오프셋 불필요) */
 .funnelsolution-app nav.sidebar-collapsed + .right-panel > header {
