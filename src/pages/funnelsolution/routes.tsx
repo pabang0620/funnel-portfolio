@@ -10,6 +10,8 @@ import CustomerDbPage from './dbList/index'
 import CreateCodePage from './createCode/index'
 // @ts-ignore — JSX file, no type declarations needed for demo
 import TmStatusPage from './tmStatus/index'
+// @ts-ignore — JSX file, no type declarations needed for demo
+import PivotPage from './pivot/index'
 
 function LockedPage({ pageName }: { pageName: string }) {
   return <DemoLock projectName="Med Manager" pageName={pageName} />
@@ -25,8 +27,8 @@ export default function FunnelSolutionRoutes() {
         <Route path="db-list" element={<CustomerDbPage />} />
         <Route path="create-code" element={<CreateCodePage />} />
         <Route path="tm-status" element={<TmStatusPage />} />
-        {/* Locked pages */}
-        <Route path="pivot" element={<LockedPage pageName="피봇 분석" />} />
+        {/* Pivot */}
+        <Route path="pivot" element={<PivotPage />} />
         <Route path="admin/*" element={<LockedPage pageName="관리자 페이지" />} />
         <Route path="branch-list" element={<LockedPage pageName="지점 리스트" />} />
         <Route path="performance-report" element={<LockedPage pageName="성과 리포트" />} />
