@@ -2406,3 +2406,28 @@
   width: 14px !important;
   height: 14px !important;
 }
+
+/* FontAwesome SVG 크기 고정 — Tailwind preflight svg{max-width:100%} 충돌 방지 */
+.funnelsolution-app .arrow-icon,
+.funnelsolution-app .arrow-icon svg,
+.funnelsolution-app .svg-inline--fa.arrow-icon {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px !important;
+  font-size: 14px !important;
+}
+.funnelsolution-app .calendar-icon,
+.funnelsolution-app .calendar-icon svg,
+.funnelsolution-app .svg-inline--fa.calendar-icon {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px !important;
+  font-size: 14px !important;
+}
+/* 사이드바/헤더 내 모든 FA 아이콘 크기 정상화 */
+.funnelsolution-app nav .svg-inline--fa,
+.funnelsolution-app header .svg-inline--fa {
+  width: 1em !important;
+  height: 1em !important;
+  max-width: 1em !important;
+}
