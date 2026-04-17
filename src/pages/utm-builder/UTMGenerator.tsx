@@ -2051,8 +2051,12 @@ export function UTMGenerator() {
           </div>
         </TabsContent>
 
-        <TabsContent value="sheet" className="mt-0" style={{ height: 'calc(100vh - 120px)' }}>
-          <SheetContainer />
+        <TabsContent value="sheet" className="flex-1 min-h-0" style={{ height: 'calc(100vh - 120px)' }}>
+          <div className="px-6 pb-6 h-full">
+            <Card className="h-full overflow-hidden">
+              <SheetContainer />
+            </Card>
+          </div>
         </TabsContent>
 
       </Tabs>
