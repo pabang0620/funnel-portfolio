@@ -51,7 +51,7 @@ export default function AdminLayout() {
   return (
     <div className="flex flex-col h-screen">
       <header className="sticky top-0 z-50 h-14 bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto h-full flex items-center px-4">
+        <div className="max-w-7xl mx-auto h-full flex items-center px-8">
           <div className="flex items-center gap-2 flex-shrink-0">
             <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center">
               <GraduationCap className="w-4 h-4 text-white" />

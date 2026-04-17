@@ -40,7 +40,7 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
 
   return (
     <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
-      <div style={{ height: '100%', overflow: 'auto' }}>{children}</div>
+      <div style={{ width: '100%', height: '100%', overflow: 'auto' }}>{children}</div>
 
       {/* Fixed bottom-right floating widget */}
       <div
