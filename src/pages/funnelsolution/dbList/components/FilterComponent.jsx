@@ -224,6 +224,7 @@ const FilterComponent = React.memo(({
       setCheckedCompanies(allIds);
     }
 
+    updateDateRange("last30days");
     setTimeout(() => setIsInitialLoad(false), 100);
   }, [setHospitalOptions, setCompanyOptions, setCheckedCompanies]);
 
