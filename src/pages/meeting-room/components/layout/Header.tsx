@@ -16,11 +16,11 @@ export function Header() {
         <Link to="/meeting-room" className="flex items-center gap-2 mr-8">
           <img
             src="/images/logo.png"
-            alt="FunnelZone"
+            alt="PortfolioZone"
             className="h-8 object-contain"
             onError={(e) => { e.currentTarget.style.display = 'none' }}
           />
-          <span className="font-bold text-lg">FunnelZone - 회의실 예약</span>
+          <span className="font-bold text-lg">PortfolioZone - 회의실 예약</span>
         </Link>
 
         <nav className="flex items-center gap-1">

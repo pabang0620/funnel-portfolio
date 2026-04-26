@@ -3,14 +3,18 @@ import Landing from '@/pages/Landing'
 import UtmBuilderRoutes from '@/pages/utm-builder/routes'
 import HrHubRoutes from '@/pages/hr-hub/routes'
 import AdContentStorageRoutes from '@/pages/ad-content-storage/routes'
-import FunnelEduRoutes from '@/pages/funnel-edu/routes'
-import FunnelmanceCsRoutes from '@/pages/funnelmance-cs/routes'
+import PortfolioEduRoutes from '@/pages/portfolio-edu/routes'
+import PortfolioCsRoutes from '@/pages/portfolio-cs/routes'
 import AdLibraryScraperRoutes from '@/pages/ad-library-scraper/routes'
 import MeetingRoomRoutes from '@/pages/meeting-room/routes'
-import FunnelsDriveRoutes from '@/pages/funnels-drive/routes'
+import PortfolioDriveRoutes from '@/pages/portfolio-drive/routes'
 import MancewayRoutes from '@/pages/manceway/routes'
-import FunnelSolutionRoutes from '@/pages/funnelsolution/routes'
+import PortfolioSolutionRoutes from '@/pages/portfolio-solution/routes'
 import PortfolioLayout from '@/components/PortfolioLayout'
+import { LandingMakerRoutes } from '@/pages/landingmaker/routes'
+import { CroftRoutes } from '@/pages/croft/routes'
+import { DriveWebRoutes } from '@/pages/driveweb/routes'
+import { EliceRoutes } from '@/pages/elice/routes'
 
 function App() {
   return (
@@ -32,14 +36,14 @@ function App() {
             <AdContentStorageRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnel-edu/*" element={
+        <Route path="/portfolio-edu/*" element={
           <PortfolioLayout project="Edu Platform">
-            <FunnelEduRoutes />
+            <PortfolioEduRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnelmance-cs/*" element={
+        <Route path="/portfolio-cs/*" element={
           <PortfolioLayout project="CS Manager">
-            <FunnelmanceCsRoutes />
+            <PortfolioCsRoutes />
           </PortfolioLayout>
         } />
         <Route path="/ad-library-scraper/*" element={
@@ -52,9 +56,9 @@ function App() {
             <MeetingRoomRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnels-drive/*" element={
+        <Route path="/portfolio-drive/*" element={
           <PortfolioLayout project="File Hub">
-            <FunnelsDriveRoutes />
+            <PortfolioDriveRoutes />
           </PortfolioLayout>
         } />
         <Route path="/manceway/*" element={
@@ -62,9 +66,29 @@ function App() {
             <MancewayRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnelsolution/*" element={
+        <Route path="/portfolio-solution/*" element={
           <PortfolioLayout project="Med Manager">
-            <FunnelSolutionRoutes />
+            <PortfolioSolutionRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/portfolio/landingmaker/*" element={
+          <PortfolioLayout project="Landing Maker">
+            <LandingMakerRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/portfolio/croft/*" element={
+          <PortfolioLayout project="Croft Dashboard">
+            <CroftRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/portfolio/driveweb/*" element={
+          <PortfolioLayout project="DriveWeb">
+            <DriveWebRoutes />
+          </PortfolioLayout>
+        } />
+        <Route path="/portfolio/elice" element={
+          <PortfolioLayout project="Elice">
+            <EliceRoutes />
           </PortfolioLayout>
         } />
       </Routes>

@@ -1,0 +1,42 @@
+const translateKey = (key) => {
+  const translations = {
+    business_distance: "영업 거리",
+    card_income: "카드 수입",
+    cash_income: "현금 수입",
+    kakao_income: "카카오 수입",
+    uber_income: "우버 수입",
+    onda_income: "온다 수입",
+    tada_income: "타다 수입",
+    iam_income: "아이엠 수입",
+    etc_income: "기타 수입",
+    other_income: "기타 수입",
+    income_spare_1: "예비 수입 1",
+    income_spare_2: "예비 수입 2",
+    income_spare_3: "예비 수입 3",
+    income_spare_4: "예비 수입 4",
+    total_income: "총 수입",
+    income_per_hour: "시간당 수입",
+    income_per_km: "km당 수입",
+    fuel_expense: "주유비",
+    toll_fee: "통행료",
+    meal_expense: "식비",
+    fine_expense: "벌금",
+    other_expense: "기타 지출",
+    expense_spare_1: "예비 지출 1",
+    expense_spare_2: "예비 지출 2",
+    expense_spare_3: "예비 지출 3",
+    expense_spare_4: "예비 지출 4",
+    total_expense: "총 지출",
+    profit_loss: "손익",
+    card_fee: "카드 수수료",
+    kakao_fee: "카카오 수수료",
+    uber_fee: "우버 수수료",
+    onda_fee: "온다 수수료",
+    tada_fee: "타다 수수료",
+    iam_fee: "아이엠 수수료",
+    etc_fee: "기타 수수료",
+  };
+  return translations[key] || key;
+};
+
+export default translateKey;

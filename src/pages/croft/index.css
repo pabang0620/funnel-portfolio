@@ -1,0 +1,101 @@
+/* global.css */
+/* Croft 프로젝트 전용 색상 변수 */
+.croftPage {
+  --accent: #124946;
+  --primary: #3F9192;
+  --success: #2AAC73;
+  --error: #FF0000;
+  --yellow: #F2F600;
+  --base100: #FFFFFF;
+  --base200: #F1F1F1;
+  --base300: #E3E3E3;
+  --base400: #AEAEAE;
+  --base500: #767676;
+  --base600: #2f2f2f;
+  --secondary: #F3ECDF;
+  --primary-accent: #87DFCA;
+}
+
+/* Tailwind 유틸리티 클래스 확장 */
+.croftPage .text-accent { color: var(--accent); }
+.croftPage .text-primary { color: var(--primary); }
+.croftPage .text-success { color: var(--success); }
+.croftPage .text-error { color: var(--error); }
+.croftPage .text-base500 { color: var(--base500); }
+.croftPage .text-base600 { color: var(--base600); }
+.croftPage .bg-accent { background-color: var(--accent); }
+.croftPage .bg-primary { background-color: var(--primary); }
+.croftPage .bg-base200 { background-color: var(--base200); }
+.croftPage .bg-base300 { background-color: var(--base300); }
+.croftPage .border-accent { border-color: var(--accent); }
+.croftPage .border-base400 { border-color: var(--base400); }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
+
+/* index.css 또는 별도의 CSS 파일에 추가 */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px; /* 썸의 너비 */
+  height: 14px; /* 썸의 높이 */
+  background: white; /* 썸의 배경색 */
+  border: 3px solid #124946; /* 테두리 색상 */
+  border-radius: 50%; /* 원형 썸 */
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 100;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2')
+      format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff')
+      format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf')
+      format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2')
+      format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff')
+      format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf')
+      format('truetype');
+  font-display: swap;
+}
+
+@media print {
+  .print-container {
+    /* 특정 컴포넌트에만 적용될 프린트 스타일 */
+    size: A4; /* A4 크기의 페이지 */
+    margin: 0; /* 페이지 여백 제거 */
+    padding: 0;
+    break-after: page;
+  }
+}
+

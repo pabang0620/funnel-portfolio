@@ -1,0 +1,15 @@
+@theme {
+  --color-croft-accent: #124946;
+  --color-croft-primary: #3F9192;
+  --color-croft-success: #2AAC73;
+  --color-croft-error: #FF0000;
+  --color-croft-yellow: #F2F600;
+  --color-croft-base100: #FFFFFF;
+  --color-croft-base200: #F1F1F1;
+  --color-croft-base300: #E3E3E3;
+  --color-croft-base400: #AEAEAE;
+  --color-croft-base500: #767676;
+  --color-croft-base600: #2f2f2f;
+  --color-croft-secondary: #F3ECDF;
+  --color-croft-primary-accent: #87DFCA;
+}

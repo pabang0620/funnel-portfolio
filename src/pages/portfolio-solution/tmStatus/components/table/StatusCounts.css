@@ -1,0 +1,216 @@
+/* 상태 카운트 컴포넌트 전용 스타일 - media-stats 스타일 적용 */
+
+/* 상태 카운트 컨테이너 */
+.portfolio-solution-app .tmWorkStatus_container .tmStatusCounts_container {
+  margin: 30px 0 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+/* 상태 카드 */
+.portfolio-solution-app .tmWorkStatus_container .status-card {
+  flex: 1;
+  height: 150px;
+  background: linear-gradient(135deg, #f8fafb 0%, #ffffff 100%);
+  border: 1px solid #e1e8ed;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* 예약 부재 취소 그룹 카드 */
+.portfolio-solution-app .tmWorkStatus_container .status-card.grouped {
+  flex: 2.5;
+}
+
+/* 상태 카드 내부 */
+.portfolio-solution-app .tmWorkStatus_container .status-card-inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+/* 예약 부재 취소 카드는 가로 배치 */
+.portfolio-solution-app .tmWorkStatus_container .status-card.grouped .status-card-inner {
+  flex-direction: row;
+  gap: 15px;
+}
+
+/* 일반 카드는 세로 배치 (중앙 정렬) */
+.portfolio-solution-app .tmWorkStatus_container .status-card:not(.grouped) .status-card-inner {
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 예약 부재 취소 내부 작은 카드 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item {
+  border-radius: 14px;
+  padding: 16px 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* cursor: pointer; */
+  min-width: 150px;
+  backdrop-filter: blur(8px);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* .portfolio-solution-app .tmWorkStatus_container .status-box-item:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12), 0 4px 10px rgba(99, 102, 241, 0.1);
+} */
+
+/* 상태 아이템 */
+.portfolio-solution-app .tmWorkStatus_container .status-item {
+  text-align: center;
+}
+
+/* 상태명 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item .status-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-item h4,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item .status-name h4 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* 상태 색상 원형 아이콘 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item .status-color {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-item p,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item .status-count {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0;
+  gap: 5px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-item p span,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item .status-count span {
+  font-size: 40px;
+}
+
+/* 콜 전체 카운트 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .status-item.totalItems p,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.totalItems .status-count {
+  color: #222222;
+}
+
+/* 신규 카운트 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .status-item.newCount p,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.newCount .status-count {
+  color: #4880ff;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-item.todayEmptyMemosCount p,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.todayEmptyMemosCount .status-count {
+  color: #4880ff;
+}
+
+/* 예약 카운트 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .status-item.reservationCount p,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.reservationCount .status-count {
+  color: #ff8c00;
+}
+
+/* 취소 카운트 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .status-item.cancellationsCount p,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.cancellationsCount .status-count {
+  color: #ea0234;
+}
+
+/* 부재 카운트 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .status-item.absenceCount p,
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.absenceCount .status-count {
+  color: #868686;
+}
+
+/* 콜 진행 카운트 카드 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.callProgressCount .status-count {
+  color: #00b69b;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.callProgressCount .status-count span {
+  color: #00b69b;
+}
+
+/* 각 항목별 색상 원형 아이콘 색상 */
+/* 콜 전체 - 검정색 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.totalItems .status-color {
+  background-color: #222222;
+}
+
+/* 신규 - 파란색 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.newCount .status-color {
+  background-color: #4880ff;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.todayEmptyMemosCount .status-color {
+  background-color: #4880ff;
+}
+
+/* 콜 진행 - 초록색 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.callProgressCount .status-color {
+  background-color: #00b69b;
+}
+
+/* 예약 - 주황색 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.reservationCount .status-color {
+  background-color: #ff8c00;
+}
+
+/* 부재 - 회색 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.absenceCount .status-color {
+  background-color: #868686;
+}
+
+/* 취소 - 빨간색 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.cancellationsCount .status-color {
+  background-color: #ea0234;
+}
+
+/* 신규/콜 전체 통합 카드 - 파란색 */
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.overview .status-color {
+  background-color: #4880ff;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.overview .status-count .new-count {
+  color: #4880ff;
+  font-size: 35px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.overview .status-count .separator {
+  color: #222222;
+  font-weight: 400;
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .status-box-item.overview .status-count .total-count {
+  color: #222222;
+  font-size: 35px;
+}

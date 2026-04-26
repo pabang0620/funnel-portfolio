@@ -1,0 +1,176 @@
+/* WorkStatusTable 컴포넌트 전용 스타일 */
+
+/* TM 작업 현황 테이블 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .work-status-table,
+.portfolio-solution-app .tmWorkStatus_container .tm_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .work-status-table th,
+.portfolio-solution-app .tmWorkStatus_container .work-status-table td,
+.portfolio-solution-app .tmWorkStatus_container .tm_table th,
+.portfolio-solution-app .tmWorkStatus_container .tm_table td {
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  height: 40px;
+}
+
+
+/* 테이블 헤더 */
+.portfolio-solution-app .tmWorkStatus_container .work-status-table thead,
+.portfolio-solution-app .tmWorkStatus_container .tm_table thead {
+  background: #3b82f6;
+  height: 40px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .work-status-table thead th,
+.portfolio-solution-app .tmWorkStatus_container .tm_table thead th {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  height: 40px;
+  background: #3b82f6;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .work-status-table thead th:first-child,
+.portfolio-solution-app .tmWorkStatus_container .tm_table thead th:first-child {
+  text-align: center;
+  width: 140px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table thead th:nth-child(2) {
+  width: 8%;
+}
+
+/* 정렬 가능한 헤더 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .sortable-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .sortable-header:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-solution-app .tmWorkStatus_container .sort-arrows {
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+  line-height: 1;
+  gap: 1px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .sort-arrow {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .sort-arrow.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+
+/* 테이블 바디 */
+.portfolio-solution-app .tmWorkStatus_container .work-status-table tbody tr,
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr {
+  height: 40px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .work-status-table tbody tr td,
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td {
+  font-size: 12px;
+  color: #646464;
+  letter-spacing: -0.48px;
+  font-weight: 500;
+  word-break: break-word;
+  height: 40px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .work-status-table tbody tr td:first-child,
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td:first-child {
+  text-align: center;
+  width: 140px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td:nth-child(2) {
+  font-weight: 700;
+  width: 8%;
+}
+
+/* 방문상태 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td.visit-status {
+  color: #222;
+  font-weight: normal;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td.notvisit-status {
+  color: #f77;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td.empty-status {
+  color: #222;
+}
+
+/* 상태 스팬 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td span {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  width: 70px;
+  padding: 3%;
+  border-radius: 20px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td span.default-status {
+  background: rgba(151, 151, 151, 0.2);
+  color: #979797;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td span.red-status {
+  background: rgba(255, 0, 0, 0.2);
+  color: rgba(255, 0, 0, 1);
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td span.yellow-status {
+  color: rgba(255, 149, 0, 1);
+  background: rgba(255, 149, 0, 0.2);
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td span.blue-status {
+  color: #4880ff;
+  background: rgba(72, 128, 255, 0.2);
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td span.green-status {
+  color: #00b69b;
+  background: rgba(0, 182, 155, 0.2);
+}
+
+/* 콜 진행 셀 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td.call-progress-cell {
+  text-align: center;
+  font-weight: 500;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td.call-progress-cell .progress-indicator {
+  color: #00b69b;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .tm_table tbody tr td.call-progress-cell .progress-indicator-no {
+  color: #646464;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+

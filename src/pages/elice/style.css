@@ -1,0 +1,579 @@
+/* ========================================
+   Elice Math Workbook - 문제집 스타일
+   ======================================== */
+
+/* 공통 변수 */
+:root {
+  --elice-pink: #ff6291;
+  --elice-pink-light: #ffd0de;
+  --elice-blue: #6297ff;
+  --elice-blue-light: #d0e0ff;
+  --elice-green: #4caf50;
+  --elice-green-light: #c8e6c9;
+  --elice-orange: #ff9800;
+  --elice-orange-light: #ffd6b8;
+  --elice-gray: #666;
+  --elice-border-radius: 16px;
+}
+
+/* ========================================
+   공통 타이틀 스타일
+   ======================================== */
+
+.elice-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.elice-title h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.elice-title p {
+  font-size: 1rem;
+  color: var(--elice-gray);
+  margin: 0;
+}
+
+/* ========================================
+   FifthGrade01 - 덧셈과 뺄셈
+   ======================================== */
+
+.elice-grade01 {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.elice-quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.elice-card {
+  background: #fff;
+  border-radius: var(--elice-border-radius);
+  padding: 24px;
+  border: 2px solid var(--elice-pink-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.elice-card-pink { border-color: var(--elice-pink-light); }
+.elice-card-blue { border-color: var(--elice-blue-light); }
+.elice-card-green { border-color: var(--elice-green-light); }
+.elice-card-orange { border-color: var(--elice-orange-light); }
+
+/* 문제 번호 + 결과 아이콘 */
+.elice-question-number {
+  position: relative;
+  display: inline-block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--elice-pink);
+  margin-bottom: 16px;
+}
+
+.elice-result-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* 계산 테이블 레이아웃 - = 기호 세로 정렬 */
+.elice-calc-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.elice-calc-row {
+  display: grid;
+  grid-template-columns: 140px 24px 70px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.elice-calc-left {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.elice-calc-equals {
+  text-align: center;
+  font-weight: 700;
+  color: #555;
+}
+
+.elice-calc-input {
+  display: flex;
+  justify-content: center;
+}
+
+.elice-calc-right {
+  text-align: left;
+  white-space: nowrap;
+  color: #555;
+}
+
+.elice-input {
+  width: 60px;
+  height: 40px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #fff;
+  transition: all 0.2s;
+}
+
+.elice-input:focus {
+  outline: none;
+  border-color: var(--elice-pink);
+  box-shadow: 0 0 0 3px rgba(255, 98, 145, 0.15);
+}
+
+.elice-input:disabled {
+  background: #f9f9f9;
+  color: #333;
+  cursor: not-allowed;
+}
+
+/* ========================================
+   FifthGrade02 - 나눗셈으로 약수 찾기
+   ======================================== */
+
+.elice-grade02 {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.elice-division-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.elice-target-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.elice-division-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.elice-division-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.elice-division-formula {
+  min-width: 50px;
+  text-align: right;
+}
+
+.elice-division-result {
+  min-width: 50px;
+}
+
+/* ========================================
+   FifthGrade04 - 약수의 개수 찾기
+   ======================================== */
+
+.elice-grade04 {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.elice-quiz-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.elice-divisor-card {
+  background: #fff;
+  border-radius: var(--elice-border-radius);
+  padding: 28px;
+  border: 2px solid var(--elice-blue-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.elice-question-header {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.elice-question-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--elice-blue);
+}
+
+.elice-result-overlay-large {
+  position: absolute;
+  top: -8px;
+  left: 24px;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.elice-divisor-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.elice-target-box {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #e8f4ff 0%, #d0e0ff 100%);
+  border: 3px solid var(--elice-blue);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elice-target-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--elice-blue);
+}
+
+.elice-candidates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.elice-candidate-box {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--elice-blue);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--elice-blue);
+  background: #fff;
+}
+
+.elice-answer-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.elice-answer-label {
+  color: #555;
+}
+
+.elice-input-small {
+  width: 48px;
+  height: 36px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #fff;
+  transition: all 0.2s;
+}
+
+.elice-input-small:focus {
+  outline: none;
+  border-color: var(--elice-blue);
+  box-shadow: 0 0 0 3px rgba(98, 151, 255, 0.15);
+}
+
+.elice-input-small:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.elice-answer-unit {
+  color: #555;
+}
+
+/* ========================================
+   버튼 스타일
+   ======================================== */
+
+.eliceButtonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.eliceButtonWrapper > button {
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 56px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.eliceConfirmBox {
+  color: #fff;
+  border: none;
+  background: linear-gradient(135deg, var(--elice-pink) 0%, #ff8fb1 100%);
+}
+
+.eliceConfirmBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 98, 145, 0.3);
+}
+
+.eliceRetryButton {
+  background: white;
+  border: 2px solid var(--elice-pink);
+  color: var(--elice-pink);
+}
+
+.eliceRetryButton:hover {
+  background: #fff5f8;
+}
+
+/* ========================================
+   Page.jsx용 컨테이너
+   ======================================== */
+
+.elicePortfolio {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffeef5 0%, #e8f4ff 100%);
+}
+
+.eliceNav {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.eliceNavButton {
+  padding: 1rem 2rem;
+  border: 2px solid var(--elice-pink);
+  border-radius: 12px;
+  background: white;
+  color: var(--elice-pink);
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.eliceNavButton:hover {
+  background: var(--elice-pink);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.eliceNavButton.active {
+  background: var(--elice-pink);
+  color: white;
+}
+
+.eliceContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+/* ========================================
+   반응형 스타일
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .elice-quiz-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .elice-calc-row {
+    grid-template-columns: 120px 20px 60px 1fr;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .elice-quiz-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .elice-card,
+  .elice-divisor-card {
+    padding: 16px;
+  }
+
+  .elice-calc-table {
+    font-size: 1rem;
+  }
+
+  .elice-calc-row {
+    grid-template-columns: 100px 18px 54px 1fr;
+    gap: 6px;
+  }
+
+  .elice-input {
+    width: 50px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .elice-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .elice-division-row {
+    font-size: 1rem;
+  }
+
+  .elice-target-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .elice-target-value {
+    font-size: 1.5rem;
+  }
+
+  .elice-candidate-box {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .eliceContent {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .eliceButtonWrapper > button {
+    width: 160px;
+    height: 48px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .elicePortfolio {
+    padding: 20px 10px;
+  }
+
+  .eliceNav {
+    gap: 0.5rem;
+  }
+
+  .eliceNavButton {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .elice-calc-row {
+    grid-template-columns: 80px 16px 48px 1fr;
+    font-size: 0.9rem;
+    gap: 4px;
+  }
+
+  .elice-input {
+    width: 44px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .elice-division-formula {
+    min-width: 40px;
+    font-size: 1rem;
+  }
+
+  .elice-answer-section {
+    font-size: 0.9rem;
+  }
+
+  .elice-input-small {
+    width: 42px;
+    height: 32px;
+    font-size: 1rem;
+  }
+}
+
+/* ========================================
+   기존 호환성 유지 스타일 (deprecated)
+   ======================================== */
+
+.eliceSectionSize {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.eliceResultIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}

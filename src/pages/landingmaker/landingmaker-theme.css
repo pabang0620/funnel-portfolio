@@ -1,0 +1,1968 @@
+/* Footer ------------------------------------------------------- */
+/* Footer 기본 스타일 */
+.footerClassName {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.footerClassName img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer 텍스트 - 반응형 (clamp로 모바일/PC 대응) */
+.footerDetail {
+  margin: 0;
+  margin: 0 auto;
+  font-size: clamp(10px, 2.5vw, 14px);
+  line-height: clamp(16px, 3.8vw, 22px);
+  color: #666;
+  white-space: pre-line;
+}
+
+/* Footer 어두운 스타일 */
+.footerClassName.footer-dark {
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footerClassName.footer-dark .footerDetail {
+  color: #ccc;
+}
+
+/* Footer 밝은 스타일 */
+.footerClassName.footer-light {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+}
+
+.footerClassName.footer-light .footerDetail {
+  color: #555;
+}
+
+/* Footer 파란색 스타일 */
+.footerClassName.footer-blue {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  padding: 20px;
+}
+
+.footerClassName.footer-blue .footerDetail {
+  color: #e6f3ff;
+}
+
+/* Footer 미니멀 스타일 */
+.footerClassName.footer-minimal {
+  background: transparent;
+  border-top: 1px solid #eee;
+  color: #666;
+  padding: 15px;
+}
+
+.footerClassName.footer-minimal .footerDetail {
+  color: #888;
+}
+
+/* Footer 어두운 회색 보더 스타일 */
+.footerClassName.footer-gray-border {
+  background: #f8f9fa;
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+  color: #333;
+  padding: 20px;
+}
+
+.footerClassName.footer-gray-border .footerDetail {
+  color: #495057;
+}
+
+/* Footer Navy 배경 스타일 */
+.footerClassName.footer-navy {
+  background: #1e3a5f;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.footerClassName.footer-navy .footerDetail {
+  color: #b8d4f0;
+}
+
+/* Footer 정렬 스타일 */
+/* 왼쪽 정렬 - 기존 스타일 상속 + 정렬 변경 */
+.footerClassName.footer-dark-left {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.footerClassName.footer-dark-left .footerDetail {
+  color: #ccc;
+}
+
+.footerClassName.footer-light-left {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+  text-align: left;
+}
+
+.footerClassName.footer-light-left .footerDetail {
+  color: #555;
+}
+
+.footerClassName.footer-blue-left {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.footerClassName.footer-blue-left .footerDetail {
+  color: #e6f3ff;
+}
+
+.footerClassName.footer-minimal-left {
+  background: transparent;
+  border-top: 1px solid #eee;
+  color: #666;
+  padding: 15px;
+  text-align: left;
+}
+
+.footerClassName.footer-minimal-left .footerDetail {
+  color: #888;
+}
+
+/* 오른쪽 정렬 - 기존 스타일 상속 + 정렬 변경 */
+.footerClassName.footer-dark-right {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: right;
+}
+
+.footerClassName.footer-dark-right .footerDetail {
+  color: #ccc;
+}
+
+.footerClassName.footer-light-right {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+  text-align: right;
+}
+
+.footerClassName.footer-light-right .footerDetail {
+  color: #555;
+}
+
+.footerClassName.footer-blue-right {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  padding: 20px;
+  text-align: right;
+}
+
+.footerClassName.footer-blue-right .footerDetail {
+  color: #e6f3ff;
+}
+
+.footerClassName.footer-minimal-right {
+  background: transparent;
+  border-top: 1px solid #eee;
+  color: #666;
+  padding: 15px;
+  text-align: right;
+}
+
+.footerClassName.footer-minimal-right .footerDetail {
+  color: #888;
+}
+
+.footerClassName.footer-gray-border-left {
+  background: #f8f9fa;
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+  color: #333;
+  padding: 20px;
+  text-align: left;
+}
+
+.footerClassName.footer-gray-border-left .footerDetail {
+  color: #495057;
+}
+
+.footerClassName.footer-gray-border-right {
+  background: #f8f9fa;
+  border: 2px solid #6c757d;
+  border-radius: 8px;
+  color: #333;
+  padding: 20px;
+  text-align: right;
+}
+
+.footerClassName.footer-gray-border-right .footerDetail {
+  color: #495057;
+}
+
+.footerClassName.footer-navy-left {
+  background: #1e3a5f;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.footerClassName.footer-navy-left .footerDetail {
+  color: #b8d4f0;
+}
+
+.footerClassName.footer-navy-right {
+  background: #1e3a5f;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.footerClassName.footer-navy-right .footerDetail {
+  color: #b8d4f0;
+}
+
+/* ===============================================================================
+   LEGACY FOOTER STYLES (from zentorga) - 복잡한 HTML 구조 지원
+   =============================================================================== */
+
+/* 1. Obsidian - 흑요석, "유의사항" 회색 타원형 배경 */
+.footerClassName.eventclinic-footer,
+.footerClassName.footer-eventclinic,
+.footerClassName.footer-obsidian {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 0;
+  background-color: #2a2e33;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.footerClassName.eventclinic-footer .footer-content,
+.footerClassName.footer-eventclinic .footer-content,
+.footerClassName.footer-obsidian .footer-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footerClassName.eventclinic-footer .notice-title,
+.footerClassName.footer-eventclinic .notice-title,
+.footerClassName.footer-obsidian .notice-title {
+  font-size: clamp(10px, 2.5vw, 14px);
+  font-weight: bold;
+  color: white;
+  background-color: #48494d;
+  padding: 1% 7%;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.footerClassName.eventclinic-footer .notice-text,
+.footerClassName.footer-eventclinic .notice-text,
+.footerClassName.footer-obsidian .notice-text {
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: white;
+  line-height: clamp(16px, 3.8vw, 22px);
+}
+
+.footerClassName.eventclinic-footer .copyright,
+.footerClassName.footer-eventclinic .copyright,
+.footerClassName.footer-obsidian .copyright {
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: white;
+  margin: 0;
+}
+
+.footerClassName.eventclinic-footer .business-info,
+.footerClassName.footer-eventclinic .business-info,
+.footerClassName.footer-obsidian .business-info {
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: white;
+}
+
+/* 기존 단순 구조 지원 (fallback) */
+.footerClassName.eventclinic-footer .footerDetail,
+.footerClassName.footer-eventclinic .footerDetail,
+.footerClassName.footer-obsidian .footerDetail {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: white;
+  line-height: clamp(16px, 3.8vw, 22px);
+}
+
+/* 2. Capsule - 박스 인 박스, "유의사항" 타이틀 */
+.footerClassName.dentvents-footer,
+.footerClassName.footer-dentvents,
+.footerClassName.footer-capsule {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 0;
+  background: #e8e8e8;
+  padding: 11px 15px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .footerClassName.dentvents-footer,
+  .footerClassName.footer-dentvents,
+  .footerClassName.footer-capsule {
+    padding: 7px 10px;
+  }
+}
+
+.footerClassName.dentvents-footer .footer-content,
+.footerClassName.footer-dentvents .footer-content,
+.footerClassName.footer-capsule .footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: #6b6b6b;
+  padding: 18px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .footerClassName.dentvents-footer .footer-content,
+  .footerClassName.footer-dentvents .footer-content,
+  .footerClassName.footer-capsule .footer-content {
+    padding: 20px 25px;
+  }
+}
+
+.footerClassName.dentvents-footer .footer-title,
+.footerClassName.footer-dentvents .footer-title,
+.footerClassName.footer-capsule .footer-title {
+  color: white;
+  font-size: clamp(10px, 2.5vw, 14px);
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.5px;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.footerClassName.dentvents-footer .footer-disclaimer,
+.footerClassName.footer-dentvents .footer-disclaimer,
+.footerClassName.footer-capsule .footer-disclaimer {
+  color: white;
+  font-size: clamp(10px, 2.5vw, 14px);
+  line-height: clamp(16px, 3.8vw, 22px);
+  margin: 0;
+  font-weight: 400;
+  font-family: "GmarketSansMedium", sans-serif;
+  word-break: keep-all;
+}
+
+.footerClassName.dentvents-footer .footer-copyright,
+.footerClassName.footer-dentvents .footer-copyright,
+.footerClassName.footer-capsule .footer-copyright {
+  color: white;
+  font-size: clamp(10px, 2.2vw, 12px);
+  margin: 0;
+  font-weight: 400;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+/* 기존 단순 구조 지원 (fallback) */
+.footerClassName.dentvents-footer .footerDetail,
+.footerClassName.footer-dentvents .footerDetail,
+.footerClassName.footer-capsule .footerDetail {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: #6b6b6b;
+  padding: 18px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: clamp(10px, 2.5vw, 14px);
+  line-height: clamp(16px, 3.8vw, 22px);
+  font-family: "GmarketSansMedium", sans-serif;
+  word-break: keep-all;
+}
+
+@media (min-width: 768px) {
+  .footerClassName.dentvents-footer .footerDetail,
+  .footerClassName.footer-dentvents .footerDetail,
+  .footerClassName.footer-capsule .footerDetail {
+    padding: 20px 25px;
+  }
+}
+
+/* 3. Chrome - 회사명 위, 구분선, 상세내용 아래 */
+.footerClassName.dentevent-footer,
+.footerClassName.footer-dentevent,
+.footerClassName.footer-chrome {
+  width: 100%;
+  max-width: 768px;
+  margin: 20px auto 0;
+  background-color: #c0c0c0;
+  padding: 15px 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footerClassName.dentevent-footer .footer-content,
+.footerClassName.footer-dentevent .footer-content,
+.footerClassName.footer-chrome .footer-content {
+  font-family: "GmarketSansMedium", sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footerClassName.dentevent-footer .company-name,
+.footerClassName.footer-dentevent .company-name,
+.footerClassName.footer-chrome .company-name {
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: #000000;
+  font-weight: bold;
+  border-bottom: 1px solid #747474;
+  width: 90%;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.footerClassName.dentevent-footer .disclaimer,
+.footerClassName.footer-dentevent .disclaimer,
+.footerClassName.footer-chrome .disclaimer {
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: #000000;
+  line-height: clamp(16px, 3.8vw, 22px);
+}
+
+/* 기존 단순 구조 지원 (fallback) */
+.footerClassName.dentevent-footer .footerDetail,
+.footerClassName.footer-dentevent .footerDetail,
+.footerClassName.footer-chrome .footerDetail {
+  font-family: "GmarketSansMedium", sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: #000000;
+  line-height: clamp(16px, 3.8vw, 22px);
+}
+
+/* 4. Concrete - 각 줄을 p 태그로 감쌈 */
+.footerClassName.dentaleventhub-footer,
+.footerClassName.footer-dentaleventhub,
+.footerClassName.footer-concrete {
+  width: 100%;
+  background-color: #808080;
+  color: white;
+  text-align: center;
+  padding: 10px 25px;
+  line-height: 1.4;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.footerClassName.dentaleventhub-footer .footer-content,
+.footerClassName.footer-dentaleventhub .footer-content,
+.footerClassName.footer-concrete .footer-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.footerClassName.dentaleventhub-footer .footer-content p,
+.footerClassName.footer-dentaleventhub .footer-content p,
+.footerClassName.footer-concrete .footer-content p {
+  margin: 0 0 4px 0;
+  font-size: clamp(10px, 2.5vw, 14px);
+  line-height: clamp(16px, 3.8vw, 22px);
+  color: white;
+}
+
+.footerClassName.dentaleventhub-footer .footer-content p:last-child,
+.footerClassName.footer-dentaleventhub .footer-content p:last-child,
+.footerClassName.footer-concrete .footer-content p:last-child {
+  margin: 0;
+}
+
+/* 기존 단순 구조 지원 (fallback) */
+.footerClassName.dentaleventhub-footer .footerDetail,
+.footerClassName.footer-dentaleventhub .footerDetail,
+.footerClassName.footer-concrete .footerDetail {
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(10px, 2.5vw, 14px);
+  line-height: clamp(16px, 3.8vw, 22px);
+  margin: 0;
+  color: white;
+}
+
+/* 5. Pearl - 진주빛, 밝은 회색 */
+.footerClassName.eventiro-footer,
+.footerClassName.footer-eventiro,
+.footerClassName.footer-pearl,
+.footerClassName.footer-pearl-left,
+.footerClassName.footer-pearl-right {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 0;
+  background-color: #d3d3d3;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.footerClassName.eventiro-footer .footer-content,
+.footerClassName.footer-eventiro .footer-content,
+.footerClassName.footer-pearl .footer-content,
+.footerClassName.footer-pearl-left .footer-content,
+.footerClassName.footer-pearl-right .footer-content {
+  color: #000000;
+}
+
+.footerClassName.eventiro-footer .notice-title,
+.footerClassName.footer-eventiro .notice-title,
+.footerClassName.footer-pearl .notice-title,
+.footerClassName.footer-pearl-left .notice-title,
+.footerClassName.footer-pearl-right .notice-title {
+  font-size: clamp(10px, 2.5vw, 14px);
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: #000000;
+}
+
+.footerClassName.eventiro-footer .notice-text,
+.footerClassName.footer-eventiro .notice-text,
+.footerClassName.footer-pearl .notice-text,
+.footerClassName.footer-pearl-left .notice-text,
+.footerClassName.footer-pearl-right .notice-text {
+  font-size: clamp(10px, 2.5vw, 14px);
+  line-height: clamp(16px, 3.8vw, 22px);
+  margin: 0;
+  color: #000000;
+}
+
+/* 기존 단순 구조 지원 (fallback) */
+.footerClassName.eventiro-footer .footerDetail,
+.footerClassName.footer-eventiro .footerDetail,
+.footerClassName.footer-pearl .footerDetail,
+.footerClassName.footer-pearl-left .footerDetail,
+.footerClassName.footer-pearl-right .footerDetail {
+  color: #000000;
+  font-size: clamp(10px, 2.5vw, 14px);
+  line-height: clamp(16px, 3.8vw, 22px);
+  margin: 0;
+}
+
+/* 6. Graphite - obsidian과 동일, "유의사항" 회색 타원형 배경 */
+.footerClassName.veronaon-footer,
+.footerClassName.footer-veronaon,
+.footerClassName.footer-graphite {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 0;
+  background-color: #2a2e33;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.footerClassName.veronaon-footer .footer-content,
+.footerClassName.footer-veronaon .footer-content,
+.footerClassName.footer-graphite .footer-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footerClassName.veronaon-footer .notice-title,
+.footerClassName.footer-veronaon .notice-title,
+.footerClassName.footer-graphite .notice-title {
+  font-size: clamp(10px, 1.3vw, 13px);
+  font-weight: bold;
+  color: white;
+  background-color: #48494d;
+  padding: 1% 7%;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.footerClassName.veronaon-footer .notice-text,
+.footerClassName.footer-veronaon .notice-text,
+.footerClassName.footer-graphite .notice-text {
+  font-size: clamp(10px, 1.3vw, 13px);
+  color: white;
+  line-height: 1.6;
+}
+
+.footerClassName.veronaon-footer .copyright,
+.footerClassName.footer-veronaon .copyright,
+.footerClassName.footer-graphite .copyright {
+  font-size: clamp(10px, 1.3vw, 13px);
+  color: white;
+  margin: 0;
+}
+
+.footerClassName.veronaon-footer .business-info,
+.footerClassName.footer-veronaon .business-info,
+.footerClassName.footer-graphite .business-info {
+  font-size: clamp(9px, 1.3vw, 13px);
+  color: white;
+}
+
+/* 기존 단순 구조 지원 (fallback) */
+.footerClassName.veronaon-footer .footerDetail,
+.footerClassName.footer-veronaon .footerDetail,
+.footerClassName.footer-graphite .footerDetail {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: clamp(10px, 1.3vw, 13px);
+  color: white;
+  line-height: 1.6;
+}
+
+/* ===============================================================================
+   FOOTER ALIGNMENT CLASSES (정렬만 변경, 기존 스타일 유지)
+   =============================================================================== */
+
+/* 정렬 클래스 - text-align만 변경, 다른 스타일은 그대로 유지 */
+.footer-align-left {
+  text-align: left !important;
+}
+
+.footer-align-center {
+  text-align: center !important;
+}
+
+.footer-align-right {
+  text-align: right !important;
+}
+
+/* notice-title (타원형 배경) - 정렬에 따라 위치만 조정, 타원형 스타일 유지 */
+.footer-align-left .notice-title {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.footer-align-center .notice-title {
+  display: inline-block;
+}
+
+.footer-align-right .notice-title {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* notice-text, disclaimer - text-align만 변경 */
+.footer-align-left .notice-text,
+.footer-align-left .disclaimer {
+  text-align: left;
+}
+
+.footer-align-center .notice-text,
+.footer-align-center .disclaimer {
+  text-align: center;
+}
+
+.footer-align-right .notice-text,
+.footer-align-right .disclaimer {
+  text-align: right;
+}
+
+/* Chrome 푸터의 company-name (구분선) - 정렬에 따라 너비 조정 */
+.footer-align-left .company-name {
+  display: block;
+  text-align: left;
+}
+
+.footer-align-center .company-name {
+  display: inline-block;
+  text-align: center;
+}
+
+.footer-align-right .company-name {
+  display: block;
+  text-align: right;
+}
+
+/* Capsule 푸터의 footer-title - text-align만 변경, 박스 스타일 유지 */
+.footer-align-left .footer-title {
+  text-align: left;
+}
+
+.footer-align-center .footer-title {
+  text-align: center;
+}
+
+.footer-align-right .footer-title {
+  text-align: right;
+}
+
+/* Capsule 푸터의 footer-disclaimer - text-align만 변경, 박스 스타일 유지 */
+.footer-align-left .footer-disclaimer {
+  text-align: left;
+}
+
+.footer-align-center .footer-disclaimer {
+  text-align: center;
+}
+
+.footer-align-right .footer-disclaimer {
+  text-align: right;
+}
+
+/* footer-concrete의 p 태그에 정렬 적용 */
+.footer-align-left p {
+  text-align: left;
+}
+
+.footer-align-center p {
+  text-align: center;
+}
+
+.footer-align-right p {
+  text-align: right;
+}
+
+/* ===============================================================================
+   END OF LEGACY FOOTER STYLES
+   =============================================================================== */
+
+/* ===============================================================================
+   PREVIEW-SPECIFIC FOOTER STYLES - 미리보기 크기에 맞춤
+   =============================================================================== */
+
+/* 1. Obsidian & Graphite - 모바일 미리보기 */
+.preview-mobile .footerClassName.footer-obsidian .notice-title,
+.preview-mobile .footerClassName.footer-graphite .notice-title {
+  font-size: 7px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.preview-mobile .footerClassName.footer-obsidian .notice-text,
+.preview-mobile .footerClassName.footer-graphite .notice-text,
+.preview-mobile .footerClassName.footer-obsidian .copyright,
+.preview-mobile .footerClassName.footer-graphite .copyright,
+.preview-mobile .footerClassName.footer-obsidian .business-info,
+.preview-mobile .footerClassName.footer-graphite .business-info,
+.preview-mobile .footerClassName.footer-obsidian .footerDetail,
+.preview-mobile .footerClassName.footer-graphite .footerDetail {
+  font-size: 7px;
+  line-height: 1.4;
+}
+
+/* 1. Obsidian & Graphite - PC 미리보기 */
+.preview-pc .footerClassName.footer-obsidian .notice-title,
+.preview-pc .footerClassName.footer-graphite .notice-title {
+  font-size: 10px;
+  padding: 3px 15px;
+}
+
+.preview-pc .footerClassName.footer-obsidian .notice-text,
+.preview-pc .footerClassName.footer-graphite .notice-text,
+.preview-pc .footerClassName.footer-obsidian .copyright,
+.preview-pc .footerClassName.footer-graphite .copyright,
+.preview-pc .footerClassName.footer-obsidian .business-info,
+.preview-pc .footerClassName.footer-graphite .business-info,
+.preview-pc .footerClassName.footer-obsidian .footerDetail,
+.preview-pc .footerClassName.footer-graphite .footerDetail {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* 2. Capsule - 모바일 미리보기 */
+.preview-mobile .footerClassName.footer-capsule {
+  padding: 6px 10px;
+}
+
+.preview-mobile .footerClassName.footer-capsule .footer-content {
+  padding: 10px 8px;
+  border-radius: 6px;
+}
+
+.preview-mobile .footerClassName.footer-capsule .footer-title {
+  font-size: 8px;
+  margin: 0 0 6px 0;
+}
+
+.preview-mobile .footerClassName.footer-capsule .footer-disclaimer,
+.preview-mobile .footerClassName.footer-capsule .footer-copyright,
+.preview-mobile .footerClassName.footer-capsule .footerDetail {
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+/* 2. Capsule - PC 미리보기 */
+.preview-pc .footerClassName.footer-capsule {
+  padding: 8px 12px;
+}
+
+.preview-pc .footerClassName.footer-capsule .footer-content {
+  padding: 14px 12px;
+  border-radius: 8px;
+}
+
+.preview-pc .footerClassName.footer-capsule .footer-title {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+
+.preview-pc .footerClassName.footer-capsule .footer-disclaimer,
+.preview-pc .footerClassName.footer-capsule .footer-copyright,
+.preview-pc .footerClassName.footer-capsule .footerDetail {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* 3. Chrome - 모바일 미리보기 */
+.preview-mobile .footerClassName.footer-chrome {
+  padding: 10px 8px;
+}
+
+.preview-mobile .footerClassName.footer-chrome .company-name {
+  font-size: 8px;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+
+.preview-mobile .footerClassName.footer-chrome .disclaimer,
+.preview-mobile .footerClassName.footer-chrome .footerDetail {
+  font-size: 7px;
+  line-height: 1.3;
+}
+
+/* 3. Chrome - PC 미리보기 */
+.preview-pc .footerClassName.footer-chrome {
+  padding: 12px 10px;
+}
+
+.preview-pc .footerClassName.footer-chrome .company-name {
+  font-size: 11px;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+.preview-pc .footerClassName.footer-chrome .disclaimer,
+.preview-pc .footerClassName.footer-chrome .footerDetail {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* 4. Concrete - 모바일 미리보기 */
+.preview-mobile .footerClassName.footer-concrete {
+  padding: 6px 12px;
+  min-height: 40px;
+}
+
+.preview-mobile .footerClassName.footer-concrete .footer-content p,
+.preview-mobile .footerClassName.footer-concrete .footerDetail {
+  font-size: 7px;
+  line-height: 1.3;
+  margin: 0 0 2px 0;
+}
+
+/* 4. Concrete - PC 미리보기 */
+.preview-pc .footerClassName.footer-concrete {
+  padding: 8px 18px;
+  min-height: 50px;
+}
+
+.preview-pc .footerClassName.footer-concrete .footer-content p,
+.preview-pc .footerClassName.footer-concrete .footerDetail {
+  font-size: 10px;
+  line-height: 1.4;
+  margin: 0 0 3px 0;
+}
+
+/* 5. Pearl - 모바일 미리보기 */
+.preview-mobile .footerClassName.footer-pearl,
+.preview-mobile .footerClassName.footer-pearl-left,
+.preview-mobile .footerClassName.footer-pearl-right {
+  padding: 10px 12px;
+}
+
+.preview-mobile .footerClassName.footer-pearl .notice-title,
+.preview-mobile .footerClassName.footer-pearl-left .notice-title,
+.preview-mobile .footerClassName.footer-pearl-right .notice-title {
+  font-size: 9px;
+  margin: 0 0 5px 0;
+}
+
+.preview-mobile .footerClassName.footer-pearl .notice-text,
+.preview-mobile .footerClassName.footer-pearl-left .notice-text,
+.preview-mobile .footerClassName.footer-pearl-right .notice-text,
+.preview-mobile .footerClassName.footer-pearl .footerDetail,
+.preview-mobile .footerClassName.footer-pearl-left .footerDetail,
+.preview-mobile .footerClassName.footer-pearl-right .footerDetail {
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+/* 5. Pearl - PC 미리보기 */
+.preview-pc .footerClassName.footer-pearl,
+.preview-pc .footerClassName.footer-pearl-left,
+.preview-pc .footerClassName.footer-pearl-right {
+  padding: 12px 16px;
+}
+
+.preview-pc .footerClassName.footer-pearl .notice-title,
+.preview-pc .footerClassName.footer-pearl-left .notice-title,
+.preview-pc .footerClassName.footer-pearl-right .notice-title {
+  font-size: 11px;
+  margin: 0 0 6px 0;
+}
+
+.preview-pc .footerClassName.footer-pearl .notice-text,
+.preview-pc .footerClassName.footer-pearl-left .notice-text,
+.preview-pc .footerClassName.footer-pearl-right .notice-text,
+.preview-pc .footerClassName.footer-pearl .footerDetail,
+.preview-pc .footerClassName.footer-pearl-left .footerDetail,
+.preview-pc .footerClassName.footer-pearl-right .footerDetail {
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* ===============================================================================
+   END OF PREVIEW-SPECIFIC FOOTER STYLES
+   =============================================================================== */
+
+/* Partner Notice ------------------------------------------------------- */
+/* Partner Notice 어두운 스타일 - 모바일 */
+.preview-mobile .serviceInfoClassName.service-dark {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+/* Partner Notice 어두운 스타일 - PC */
+.preview-pc .serviceInfoClassName.service-dark {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Partner Notice 밝은 스타일 - 모바일 */
+.preview-mobile .serviceInfoClassName.service-light {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+/* Partner Notice 밝은 스타일 - PC */
+.preview-pc .serviceInfoClassName.service-light {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Partner Notice 흰색 스타일 - 모바일 */
+.preview-mobile .serviceInfoClassName.service-white {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+/* Partner Notice 흰색 스타일 - PC */
+.preview-pc .serviceInfoClassName.service-white {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Partner Notice 베이지 스타일 - 모바일 */
+.preview-mobile .serviceInfoClassName.service-beige {
+  background: #fff8dc;
+  border: 1px solid #f0e68c;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+/* Partner Notice 베이지 스타일 - PC */
+.preview-pc .serviceInfoClassName.service-beige {
+  background: #fff8dc;
+  border: 1px solid #f0e68c;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Partner Notice 파란색 스타일 - 모바일 */
+.preview-mobile .serviceInfoClassName.service-blue {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #1565c0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+/* Partner Notice 파란색 스타일 - PC */
+.preview-pc .serviceInfoClassName.service-blue {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #1565c0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Benefit Date ------------------------------------------------------- */
+.benefitDate {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto 15px auto;
+}
+
+.benefitDate p {
+  margin: 0;
+  font-weight: 600;
+  color: #424242;
+}
+
+.benefitDate .benefit-label {
+  display: inline-block;
+  background: #424242;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.preview-mobile .benefitDate p {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.preview-pc .benefitDate p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* Preview Scrollbar ------------------------------------------------------- */
+/* Webkit browsers (Chrome, Safari, Edge) */
+.preview-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.preview-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.preview-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.preview-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+.preview-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Form Styles ------------------------------------------------------- */
+.formStyleClassName {
+  margin: 0 auto 20px auto;
+  width: 90%;
+}
+
+/* Form 기본 스타일 */
+.input-wrap {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Form 그레이 스타일 */
+.formStyleClassName.form-gray .input-wrap {
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+}
+
+.formStyleClassName.form-gray label {
+  color: #24292f;
+}
+
+.formStyleClassName.form-gray input {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  color: #24292f;
+}
+
+.formStyleClassName.form-gray input:focus {
+  border-color: #0969da;
+}
+
+/* Form 밝은 스타일 */
+.formStyleClassName.form-light .input-wrap {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.formStyleClassName.form-light label {
+  color: #495057;
+}
+
+.formStyleClassName.form-light input {
+  border: 1px solid #ced4da;
+  background: #ffffff;
+}
+
+.formStyleClassName.form-light input:focus {
+  border-color: #80bdff;
+}
+
+/* Form 화이트 스타일 */
+.formStyleClassName.form-white .input-wrap {
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formStyleClassName.form-white label {
+  color: #212529;
+}
+
+.formStyleClassName.form-white input {
+  border: 1px solid #dee2e6;
+  background: #ffffff;
+}
+
+.formStyleClassName.form-white input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Form 베이지 스타일 */
+.formStyleClassName.form-beige .input-wrap {
+  background: #fefcf8;
+  border: 1px solid #f0e6d2;
+}
+
+.formStyleClassName.form-beige label {
+  color: #a67c6e;
+}
+
+.formStyleClassName.form-beige input {
+  border: 1px solid #e8d5c1;
+  background: #ffffff;
+  color: #7a5c4a;
+}
+
+.formStyleClassName.form-beige input:focus {
+  border-color: #d4b896;
+}
+
+/* Form 파란색 스타일 */
+.formStyleClassName.form-blue .input-wrap {
+  background: #f8fbff;
+  border: 1px solid #e3efff;
+}
+
+.formStyleClassName.form-blue label {
+  color: #5a8bb5;
+}
+
+.formStyleClassName.form-blue input {
+  border: 1px solid #c7e0ff;
+  background: #ffffff;
+  color: #3f72a0;
+}
+
+.formStyleClassName.form-blue input:focus {
+  border-color: #85b8ec;
+}
+
+/* Form 모던 스타일 */
+.formStyleClassName.form-modern .input-wrap {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 1px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.formStyleClassName.form-modern label {
+  color: #495057;
+}
+
+.formStyleClassName.form-modern input {
+  border: 1px solid #ced4da;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.formStyleClassName.form-modern input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Form None 스타일 - outline과 동일하되 보더 없음 */
+.formStyleClassName.form-none .input-wrap {
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+
+.formStyleClassName.form-none .input-user,
+.formStyleClassName.form-none .input-contact {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.formStyleClassName.form-none .input-user:hover,
+.formStyleClassName.form-none .input-contact:hover {
+  background: #f8f9fa;
+}
+
+.formStyleClassName.form-none .input-user:focus-within,
+.formStyleClassName.form-none .input-contact:focus-within {
+  background: #f0f8ff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.formStyleClassName.form-none label {
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.formStyleClassName.form-none input {
+  border: 1px solid #ddd;
+  background: #ffffff;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+.formStyleClassName.form-none input:focus {
+  border-color: #007bff;
+}
+
+.formStyleClassName.form-none .phone-wrap {
+  margin-top: 5px;
+}
+
+/* Form Outline 스타일 - label과 input 한 박스 느낌 */
+.formStyleClassName.form-outline .input-wrap {
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+
+.formStyleClassName.form-outline .input-user,
+.formStyleClassName.form-outline .input-contact {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  transition: border-color 0.2s ease;
+}
+
+.formStyleClassName.form-outline .input-user:hover,
+.formStyleClassName.form-outline .input-contact:hover {
+  border-color: #c0c0c0;
+}
+
+.formStyleClassName.form-outline .input-user:focus-within,
+.formStyleClassName.form-outline .input-contact:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.formStyleClassName.form-outline label {
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.formStyleClassName.form-outline input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.formStyleClassName.form-outline .phone-wrap {
+  margin-top: 5px;
+}
+
+/* Form Outline Square 스타일 - radius 없는 버전 */
+.formStyleClassName.form-outline-square .input-wrap {
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+
+.formStyleClassName.form-outline-square .input-user,
+.formStyleClassName.form-outline-square .input-contact {
+  border: 2px solid #e0e0e0;
+  border-radius: 0;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  transition: border-color 0.2s ease;
+}
+
+.formStyleClassName.form-outline-square .input-user:hover,
+.formStyleClassName.form-outline-square .input-contact:hover {
+  border-color: #c0c0c0;
+}
+
+.formStyleClassName.form-outline-square .input-user:focus-within,
+.formStyleClassName.form-outline-square .input-contact:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.formStyleClassName.form-outline-square label {
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.formStyleClassName.form-outline-square input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.formStyleClassName.form-outline-square .phone-wrap {
+  margin-top: 5px;
+}
+
+/* Form Outline Gray 스타일 - 회색 배경 버전 */
+.formStyleClassName.form-outline-gray .input-wrap {
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+
+.formStyleClassName.form-outline-gray .input-user,
+.formStyleClassName.form-outline-gray .input-contact {
+  border: none;
+  border-radius: 0;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.formStyleClassName.form-outline-gray .input-user:hover,
+.formStyleClassName.form-outline-gray .input-contact:hover {
+  background: #f0f1f2;
+}
+
+.formStyleClassName.form-outline-gray .input-user:focus-within,
+.formStyleClassName.form-outline-gray .input-contact:focus-within {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.formStyleClassName.form-outline-gray label {
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.formStyleClassName.form-outline-gray input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
+.formStyleClassName.form-outline-gray .phone-wrap {
+  margin-top: 5px;
+}
+
+.input-user {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-user:last-child,
+.input-contact:last-child {
+  margin-bottom: 0;
+}
+
+.input-user label {
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+  vertical-align: top;
+  line-height: 36px;
+  width: 20%;
+  flex-shrink: 0;
+}
+
+.preview-mobile .input-user label {
+  font-size: 13px;
+}
+
+.preview-pc .input-user label {
+  font-size: 15px;
+}
+
+.input-contact {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-contact label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  vertical-align: top;
+  line-height: 36px;
+  width: 20%;
+  flex-shrink: 0;
+}
+
+.preview-mobile .input-contact label {
+  font-size: 13px;
+}
+
+.preview-pc .input-contact label {
+  font-size: 15px;
+}
+
+.input-user input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.preview-mobile .input-user input {
+  font-size: 14px;
+}
+
+.preview-pc .input-user input {
+  font-size: 16px;
+}
+
+.input-user input:focus {
+  outline: none;
+}
+
+.phone-wrap {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+}
+
+.phone-wrap input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.preview-mobile .phone-wrap input {
+  font-size: 14px;
+}
+
+.preview-pc .phone-wrap input {
+  font-size: 16px;
+}
+
+.phone-wrap input:focus {
+  outline: none;
+}
+
+.phone-wrap input:first-child {
+  width: 25%;
+  flex-shrink: 0;
+}
+
+.phone-wrap input:nth-child(2),
+.phone-wrap input:nth-child(3) {
+  flex: 1;
+  min-width: 0;
+  max-width: calc((100% - 60px - 16px) / 2);
+}
+
+.phone-wrap input:first-child {
+  background-color: #f5f5f5;
+}
+
+/* Privacy Consent Styles ------------------------------------------------------- */
+/* Consent 기본 스타일 */
+.consentClassName {
+  width: 90%;
+  margin: 0 auto 15px auto;
+  background: #f8f9fa;
+  padding: 15px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.consentClassName .consent-text {
+  font-weight: 500;
+  color: #333;
+}
+
+.preview-mobile .consentClassName .consent-text {
+  font-size: 11px;
+  line-height: 1.1;
+}
+
+.preview-pc .consentClassName .consent-text {
+  font-size: 14px;
+}
+
+.consentClassName .consent-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0;
+}
+
+.preview-mobile .consentClassName .consent-button {
+  font-size: 10px;
+}
+
+.preview-pc .consentClassName .consent-button {
+  font-size: 13px;
+}
+
+.privacyPolicy {
+  background: #f1f3f4;
+  padding: 15px;
+  border-radius: 4px;
+  line-height: 1.4;
+  width: 90%;
+  margin: 0 auto 15px auto;
+  white-space: pre-line;
+}
+
+.preview-mobile .privacyPolicy {
+  font-size: 9px;
+}
+
+.preview-pc .privacyPolicy {
+  font-size: 13px;
+}
+
+.privacyPolicy p {
+  margin: 0;
+  color: #666;
+}
+
+/* Consent 어두운 스타일 */
+.consentClassName.consent-dark {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+.consentClassName.consent-dark .consent-text {
+  color: #ccc;
+}
+
+.consentClassName.consent-dark .consent-button {
+  color: #66b3ff;
+}
+
+.consentClassName.consent-dark + .privacyPolicy {
+  background: #333;
+  color: #ccc;
+  border: 1px solid #444;
+}
+
+.consentClassName.consent-dark + .privacyPolicy p {
+  color: #ccc;
+}
+
+/* Consent 밝은 스타일 */
+.consentClassName.consent-light {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #495057;
+}
+
+.consentClassName.consent-light .consent-text {
+  color: #495057;
+}
+
+.consentClassName.consent-light .consent-button {
+  color: #007bff;
+}
+
+.consentClassName.consent-light + .privacyPolicy {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #495057;
+}
+
+.consentClassName.consent-light + .privacyPolicy p {
+  color: #6c757d;
+}
+
+/* Consent 화이트 스타일 */
+.consentClassName.consent-white {
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.consentClassName.consent-white .consent-text {
+  color: #212529;
+}
+
+.consentClassName.consent-white .consent-button {
+  color: #0d6efd;
+}
+
+.consentClassName.consent-white + .privacyPolicy {
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.consentClassName.consent-white + .privacyPolicy p {
+  color: #495057;
+}
+
+/* Consent 베이지 스타일 */
+.consentClassName.consent-beige {
+  background: #fefcf8;
+  border: 1px solid #f0e6d2;
+  color: #7a5c4a;
+}
+
+.consentClassName.consent-beige .consent-text {
+  color: #a67c6e;
+}
+
+.consentClassName.consent-beige .consent-button {
+  color: #d4b896;
+}
+
+.consentClassName.consent-beige + .privacyPolicy {
+  background: #fefcf8;
+  border: 1px solid #f0e6d2;
+  color: #7a5c4a;
+}
+
+.consentClassName.consent-beige + .privacyPolicy p {
+  color: #7a5c4a;
+}
+
+/* Consent 파란색 스타일 */
+.consentClassName.consent-blue {
+  background: #f8fbff;
+  border: 1px solid #e3efff;
+  color: #3f72a0;
+}
+
+.consentClassName.consent-blue .consent-text {
+  color: #5a8bb5;
+}
+
+.consentClassName.consent-blue .consent-button {
+  color: #85b8ec;
+}
+
+.consentClassName.consent-blue + .privacyPolicy {
+  background: #f8fbff;
+  border: 1px solid #e3efff;
+  color: #3f72a0;
+}
+
+.consentClassName.consent-blue + .privacyPolicy p {
+  color: #3f72a0;
+}
+
+/* Privacy Policy Detail Styles ------------------------------------------------------- */
+/* 개인정보처리방침 상세 - 강조형 (style1) - 모바일 */
+.preview-mobile .privacyPolicyClassName.privacy-style1 {
+  background: #f9fafb;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 10px;
+  line-height: 16px;
+  color: #374151;
+  white-space: pre-line;
+}
+
+/* 개인정보처리방침 상세 - 강조형 (style1) - PC */
+.preview-pc .privacyPolicyClassName.privacy-style1 {
+  background: #f9fafb;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 13px;
+  line-height: 20px;
+  color: #374151;
+  white-space: pre-line;
+}
+
+/* 개인정보처리방침 상세 - 표준형 (style2) - 모바일 */
+.preview-mobile .privacyPolicyClassName.privacy-style2 {
+  background: #fff;
+  border: 1px solid #3b82f6;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  font-size: 10px;
+  line-height: 16px;
+  color: #374151;
+  white-space: pre-line;
+}
+
+/* 개인정보처리방침 상세 - 표준형 (style2) - PC */
+.preview-pc .privacyPolicyClassName.privacy-style2 {
+  background: #fff;
+  border: 1px solid #3b82f6;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  font-size: 13px;
+  line-height: 20px;
+  color: #374151;
+  white-space: pre-line;
+}
+
+/* 개인정보처리방침 상세 - 미니멀형 (style3) - 모바일 */
+.preview-mobile .privacyPolicyClassName.privacy-style3 {
+  background: #f3f4f6;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  font-size: 10px;
+  line-height: 16px;
+  color: #6b7280;
+  white-space: pre-line;
+}
+
+/* 개인정보처리방침 상세 - 미니멀형 (style3) - PC */
+.preview-pc .privacyPolicyClassName.privacy-style3 {
+  background: #f3f4f6;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  font-size: 13px;
+  line-height: 20px;
+  color: #6b7280;
+  white-space: pre-line;
+}
+
+/* 설문조사 버튼형 스타일 */
+.survey-answers-button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.survey-answer-button {
+  width: 100%;
+  padding: 14px 18px;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.survey-answer-button .answer-text {
+  /* Font size set by viewport-specific classes */
+}
+
+.preview-mobile .survey-answer-button .answer-text {
+  font-size: 14px;
+}
+
+.preview-pc .survey-answer-button .answer-text {
+  font-size: 18px;
+}
+
+.survey-answer-button .check-mark {
+  font-weight: bold;
+  margin-right: 8px;
+  color: white;
+}
+
+.preview-mobile .survey-answer-button .check-mark {
+  font-size: 16px;
+}
+
+.preview-pc .survey-answer-button .check-mark {
+  font-size: 20px;
+}
+
+.survey-answer-button:hover {
+  background: #ececec;
+}
+
+.survey-answer-button.selected {
+  background-color: var(--answer-color, #ff8c42);
+  border-color: var(--answer-color, #ff8c42);
+  color: white;
+}
+
+.survey-answer-button.selected .answer-text {
+  color: white;
+}
+
+/* Radio 타입 - 가로 배열, 가로 꽉참 */
+.survey-answers-radio {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.survey-answer-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.survey-answer-option span {
+  /* Font size set by viewport-specific classes */
+}
+
+.preview-mobile .survey-answer-option span {
+  font-size: 14px;
+}
+
+.preview-pc .survey-answer-option span {
+  font-size: 18px;
+}
+
+.survey-answer-option input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  background: white;
+}
+
+.survey-answer-option input[type="radio"]:checked {
+  border-color: var(--answer-color, #ff8c42);
+  background-color: var(--answer-color, #ff8c42);
+}
+
+.survey-answer-option input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

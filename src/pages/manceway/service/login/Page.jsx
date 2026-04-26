@@ -42,7 +42,7 @@ function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <p className="login-group-name">Funnel GROUP</p>
+          <p className="login-group-name">Portfolio GROUP</p>
           <h1 className="login-title">Manceway</h1>
         </div>
 

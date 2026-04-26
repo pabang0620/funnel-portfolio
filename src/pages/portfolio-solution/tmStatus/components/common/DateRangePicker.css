@@ -1,0 +1,81 @@
+/* DateRangePicker 컴포넌트 전용 스타일 */
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker {
+  position: relative;
+  z-index: 1000;
+}
+
+/* React DatePicker 커스텀 스타일 */
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker {
+  font-family: inherit;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__header {
+  background-color: #4880ff;
+  border-bottom: 1px solid #4880ff;
+  border-radius: 10px 10px 0 0;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__current-month {
+  color: white;
+  font-weight: 600;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day-name {
+  color: white;
+  font-weight: 500;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__navigation {
+  border: none;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__navigation--previous {
+  border-right-color: white;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__navigation--next {
+  border-left-color: white;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day {
+  color: #202224;
+  border-radius: 4px;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day:hover {
+  background-color: #f0f8ff;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day--selected {
+  background-color: #4880ff;
+  color: white;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day--in-selecting-range {
+  background-color: rgba(72, 128, 255, 0.3);
+  color: #202224;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day--in-range {
+  background-color: rgba(72, 128, 255, 0.2);
+  color: #202224;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day--range-start,
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day--range-end {
+  background-color: #4880ff;
+  color: white;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.portfolio-solution-app .tmWorkStatus_container .workstatus-date-picker .react-datepicker__day--outside-month {
+  color: #ccc;
+}

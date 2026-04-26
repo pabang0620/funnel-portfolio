@@ -137,16 +137,16 @@ let reservations: Reservation[] = buildSeedReservations();
 // ── mock members (Slack-like) ─────────────────────────────────────────────────
 
 const slackMembers = [
-  { id: 'U001', name: 'hong', real_name: '홍길동', email: 'hong@funnelzone.com' },
-  { id: 'U002', name: 'jisu', real_name: '김지수', email: 'jisu@funnelzone.com' },
-  { id: 'U003', name: 'minjun', real_name: '이민준', email: 'minjun@funnelzone.com' },
-  { id: 'U004', name: 'soyeon', real_name: '박소연', email: 'soyeon@funnelzone.com' },
-  { id: 'U005', name: 'hyunwoo', real_name: '최현우', email: 'hyunwoo@funnelzone.com' },
-  { id: 'U006', name: 'daeun', real_name: '정다은', email: 'daeun@funnelzone.com' },
-  { id: 'U007', name: 'dohyun', real_name: '강도현', email: 'dohyun@funnelzone.com' },
-  { id: 'U008', name: 'seojin', real_name: '윤서진', email: 'seojin@funnelzone.com' },
-  { id: 'U009', name: 'jaewon', real_name: '임재원', email: 'jaewon@funnelzone.com' },
-  { id: 'U010', name: 'yerin', real_name: '한예린', email: 'yerin@funnelzone.com' },
+  { id: 'U001', name: 'hong', real_name: '홍길동', email: 'hong@portfoliozone.com' },
+  { id: 'U002', name: 'jisu', real_name: '김지수', email: 'jisu@portfoliozone.com' },
+  { id: 'U003', name: 'minjun', real_name: '이민준', email: 'minjun@portfoliozone.com' },
+  { id: 'U004', name: 'soyeon', real_name: '박소연', email: 'soyeon@portfoliozone.com' },
+  { id: 'U005', name: 'hyunwoo', real_name: '최현우', email: 'hyunwoo@portfoliozone.com' },
+  { id: 'U006', name: 'daeun', real_name: '정다은', email: 'daeun@portfoliozone.com' },
+  { id: 'U007', name: 'dohyun', real_name: '강도현', email: 'dohyun@portfoliozone.com' },
+  { id: 'U008', name: 'seojin', real_name: '윤서진', email: 'seojin@portfoliozone.com' },
+  { id: 'U009', name: 'jaewon', real_name: '임재원', email: 'jaewon@portfoliozone.com' },
+  { id: 'U010', name: 'yerin', real_name: '한예린', email: 'yerin@portfoliozone.com' },
 ];
 
 // ── calendar events (CEO) ─────────────────────────────────────────────────────
@@ -214,11 +214,11 @@ function generateSlots(roomId: string, date: string): TimeSlot[] {
 
 const orgDepartments: OrgDepartment[] = orgJson as OrgDepartment[];
 const orgMembers: OrgMember[] = [
-  { id: 'm-1', department_id: 'dept-3', name: '홍길동', email: 'hong@funnelzone.com', position: '시니어 개발자', display_order: 1, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
-  { id: 'm-2', department_id: 'dept-3', name: '김지수', email: 'jisu@funnelzone.com', position: '개발자', display_order: 2, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
-  { id: 'm-3', department_id: 'dept-5', name: '이민준', email: 'minjun@funnelzone.com', position: '마케터', display_order: 1, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
-  { id: 'm-4', department_id: 'dept-5', name: '박소연', email: 'soyeon@funnelzone.com', position: '콘텐츠 마케터', display_order: 2, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
-  { id: 'm-5', department_id: 'dept-6', name: '최현우', email: 'hyunwoo@funnelzone.com', position: 'UI 디자이너', display_order: 1, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
+  { id: 'm-1', department_id: 'dept-3', name: '홍길동', email: 'hong@portfoliozone.com', position: '시니어 개발자', display_order: 1, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
+  { id: 'm-2', department_id: 'dept-3', name: '김지수', email: 'jisu@portfoliozone.com', position: '개발자', display_order: 2, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
+  { id: 'm-3', department_id: 'dept-5', name: '이민준', email: 'minjun@portfoliozone.com', position: '마케터', display_order: 1, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
+  { id: 'm-4', department_id: 'dept-5', name: '박소연', email: 'soyeon@portfoliozone.com', position: '콘텐츠 마케터', display_order: 2, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
+  { id: 'm-5', department_id: 'dept-6', name: '최현우', email: 'hyunwoo@portfoliozone.com', position: 'UI 디자이너', display_order: 1, employment_status: 1, created_at: '2024-01-01T00:00:00Z' },
 ];
 
 // ── mock API functions ────────────────────────────────────────────────────────

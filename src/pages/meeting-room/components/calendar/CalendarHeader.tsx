@@ -57,7 +57,7 @@ export function CalendarHeader({
         {/* Logo */}
         <img
           src="/images/funnelzone.png"
-          alt="FunnelZone"
+          alt="PortfolioZone"
           className="w-[140px] md:w-[180px] lg:w-[200px] object-contain"
           onError={(e) => { e.currentTarget.style.display = 'none' }}
         />

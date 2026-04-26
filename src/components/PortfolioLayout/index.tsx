@@ -10,13 +10,13 @@ const PROJECTS = [
   { name: 'UTM Builder', path: '/utm-builder' },
   { name: 'HR Hub', path: '/hr-hub' },
   { name: 'Ad Content Storage', path: '/ad-content-storage' },
-  { name: 'Edu Platform', path: '/funnel-edu' },
-  { name: 'CS Manager', path: '/funnelmance-cs' },
+  { name: 'Edu Platform', path: '/portfolio-edu' },
+  { name: 'CS Manager', path: '/portfolio-cs' },
   { name: 'Ad Library Scraper', path: '/ad-library-scraper' },
   { name: 'Meeting Room', path: '/meeting-room' },
-  { name: 'File Hub', path: '/funnels-drive' },
+  { name: 'File Hub', path: '/portfolio-drive' },
   { name: 'Manceway', path: '/manceway' },
-  { name: 'Med Manager', path: '/funnelsolution' },
+  { name: 'Med Manager', path: '/portfolio-solution' },
 ]
 
 export default function PortfolioLayout({ children }: PortfolioLayoutProps) {

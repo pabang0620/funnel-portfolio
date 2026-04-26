@@ -8,11 +8,11 @@ export function CompanyBadge({ company }: CompanyBadgeProps) {
   let label: string
   let className: string
 
-  if (lower === 'funnels') {
-    label = 'F'
+  if (lower === 'portfolios') {
+    label = 'P'
     className = 'bg-blue-100 text-blue-700'
-  } else if (lower === 'funnelmance') {
-    label = 'FM'
+  } else if (lower === 'portfoliomance') {
+    label = 'PM'
     className = 'bg-blue-700 text-blue-100'
   } else {
     label = company.slice(0, 2).toUpperCase()

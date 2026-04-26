@@ -312,7 +312,7 @@ export default function OrgChartPage() {
             data={(() => {
               if (showAll) {
                 const virtualRoot: OrgNode = {
-                  name: 'funnelgroup',
+                  name: 'portfoliogroup',
                   type: 'group',
                   children: orgData,
                 }
