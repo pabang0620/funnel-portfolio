@@ -1,23 +1,11 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { PROJECTS } from '@/data/projects'
 
 interface PortfolioLayoutProps {
   project: string
   children: React.ReactNode
 }
-
-const PROJECTS = [
-  { name: 'UTM Builder', path: '/utm-builder' },
-  { name: 'HR Hub', path: '/hr-hub' },
-  { name: 'Ad Content Storage', path: '/ad-content-storage' },
-  { name: 'Edu Platform', path: '/funnel-edu' },
-  { name: 'CS Manager', path: '/funnelmance-cs' },
-  { name: 'Ad Library Scraper', path: '/ad-library-scraper' },
-  { name: 'Meeting Room', path: '/meeting-room' },
-  { name: 'File Hub', path: '/funnels-drive' },
-  { name: 'Manceway', path: '/manceway' },
-  { name: 'Med Manager', path: '/funnelsolution' },
-]
 
 export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
   const [expanded, setExpanded] = useState(false)
