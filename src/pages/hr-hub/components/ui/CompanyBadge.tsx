@@ -3,21 +3,8 @@ interface CompanyBadgeProps {
 }
 
 export function CompanyBadge({ company }: CompanyBadgeProps) {
-  const lower = company.toLowerCase()
-
-  let label: string
-  let className: string
-
-  if (lower === 'funnels') {
-    label = 'F'
-    className = 'bg-blue-100 text-blue-700'
-  } else if (lower === 'funnelmance') {
-    label = 'FM'
-    className = 'bg-blue-700 text-blue-100'
-  } else {
-    label = company.slice(0, 2).toUpperCase()
-    className = 'bg-muted text-muted-foreground'
-  }
+  const label = company.slice(0, 2).toUpperCase()
+  const className = 'bg-muted text-muted-foreground'
 
   return (
     <span

@@ -1,0 +1,69 @@
+{
+  "hospitals": [
+    { "value": 1, "label": "강남 스마일 치과", "code": "GN" },
+    { "value": 2, "label": "홍대 미소 피부과", "code": "HD" },
+    { "value": 3, "label": "분당 연세 안과", "code": "BD" },
+    { "value": 4, "label": "신촌 바른 정형외과", "code": "SC" },
+    { "value": 5, "label": "잠실 밝은 내과", "code": "JS" },
+    { "value": 6, "label": "수원 한결 한의원", "code": "SW" }
+  ],
+  "events": [
+    { "value": 1, "label": "임플란트 할인 이벤트" },
+    { "value": 2, "label": "레이저 토닝 이벤트" },
+    { "value": 3, "label": "라식 라섹 특가" },
+    { "value": 4, "label": "도수치료 3회 패키지" },
+    { "value": 5, "label": "치아미백 50% 이벤트" },
+    { "value": 6, "label": "보톡스 필러 이벤트" },
+    { "value": 7, "label": "교정 상담 무료" },
+    { "value": 8, "label": "라미네이트 이벤트" },
+    { "value": 9, "label": "여드름 흉터 치료 이벤트" },
+    { "value": 10, "label": "체외충격파 이벤트" },
+    { "value": 11, "label": "울쎄라 리프팅 특가" },
+    { "value": 12, "label": "백내장 수술 특가" },
+    { "value": 13, "label": "레이저 제모 패키지" },
+    { "value": 14, "label": "스케일링 50% 할인" },
+    { "value": 15, "label": "관절 프롤로 치료" }
+  ],
+  "advertisingCompanies": [
+    { "value": 1, "label": "네이버" },
+    { "value": 2, "label": "카카오" },
+    { "value": 3, "label": "인스타그램" },
+    { "value": 4, "label": "유튜브" },
+    { "value": 5, "label": "페이스북" },
+    { "value": 6, "label": "틱톡" },
+    { "value": 7, "label": "구글" }
+  ],
+  "regions": [
+    { "value": 1, "label": "서울" },
+    { "value": 2, "label": "경기" },
+    { "value": 3, "label": "인천" },
+    { "value": 4, "label": "부산" },
+    { "value": 5, "label": "대구" },
+    { "value": 6, "label": "광주" },
+    { "value": 7, "label": "대전" },
+    { "value": 8, "label": "울산" },
+    { "value": 9, "label": "강원" },
+    { "value": 10, "label": "전국" }
+  ],
+  "contentTypes": [
+    { "value": 1, "label": "이미지형" },
+    { "value": 2, "label": "영상형" },
+    { "value": 3, "label": "카드뉴스형" },
+    { "value": 4, "label": "웹툰형" },
+    { "value": 5, "label": "인포그래픽" },
+    { "value": 6, "label": "UGC형" }
+  ],
+  "domains": [
+    { "value": 1, "label": "https://smilevent.co.kr" },
+    { "value": 2, "label": "https://rafinity.co.kr" },
+    { "value": 3, "label": "https://medi-link.kr" },
+    { "value": 4, "label": "https://carelink.kr" }
+  ],
+  "usersWithInitial": [
+    { "value": 101, "label": "이마케터 (LMK)" },
+    { "value": 102, "label": "김마케터 (KMK)" },
+    { "value": 103, "label": "박마케터 (PMK)" },
+    { "value": 104, "label": "최마케터 (CMK)" },
+    { "value": 105, "label": "정마케터 (JMK)" }
+  ]
+}

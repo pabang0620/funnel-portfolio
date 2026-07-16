@@ -1,0 +1,34 @@
+# edu-platform needed packages
+# Check which are already installed in portfolio's package.json before installing
+
+# REQUIRED (not in portfolio yet):
+zustand@^5.0.12
+
+# ALREADY IN PORTFOLIO:
+# lucide-react - YES
+# react-router-dom - YES
+
+# OPTIONAL (for full feature parity with production):
+# @tiptap/react - for full rich text editor (currently using simplified textarea fallback)
+# @tiptap/starter-kit
+# @tiptap/extension-color
+# @tiptap/extension-font-family
+# @tiptap/extension-heading
+# @tiptap/extension-image
+# @tiptap/extension-link
+# @tiptap/extension-placeholder
+# @tiptap/extension-text-style
+# @tiptap/extension-underline
+# @tiptap/extension-youtube
+# @tiptap/suggestion
+# date-fns - for date formatting utilities
+# react-datepicker - for date picker in lecture create/edit forms
+# @types/react-datepicker - dev dependency for above
+# clsx + tailwind-merge - for className utilities (cn function)
+
+# Install command for required packages only:
+# npm install zustand
+
+# Install command for all packages (full TipTap editor):
+# npm install zustand @tiptap/react @tiptap/starter-kit @tiptap/extension-color @tiptap/extension-font-family @tiptap/extension-heading @tiptap/extension-image @tiptap/extension-link @tiptap/extension-placeholder @tiptap/extension-text-style @tiptap/extension-underline @tiptap/extension-youtube @tiptap/suggestion date-fns react-datepicker clsx tailwind-merge
+# npm install -D @types/react-datepicker

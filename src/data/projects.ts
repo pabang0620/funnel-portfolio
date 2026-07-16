@@ -32,17 +32,17 @@ export const PROJECTS: Project[] = [
     tag: 'AI',
   },
   {
-    key: 'funnel-edu',
+    key: 'edu-platform',
     name: 'Edu Platform',
-    path: '/funnel-edu',
+    path: '/edu-platform',
     description:
       'AI 교육·마케팅 교육·사내 교육 콘텐츠를 통합 관리하는 교육 플랫폼. 수강 현황 관리와 교육 자료 배포를 한 곳에서 운영',
     tag: 'Education',
   },
   {
-    key: 'funnelmance-cs',
+    key: 'cs-manager',
     name: 'CS Manager',
-    path: '/funnelmance-cs',
+    path: '/cs-manager',
     description:
       '콜팀 상담 녹취록을 저장·관리하는 CS 플랫폼. 운영 시간 외에도 챗봇으로 대응할 수 있도록 연동 기반을 갖춰 24시간 고객 응대 체계 구축',
     tag: 'Support',
@@ -63,24 +63,24 @@ export const PROJECTS: Project[] = [
     tag: 'Internal',
   },
   {
-    key: 'funnels-drive',
+    key: 'file-hub',
     name: 'File Hub',
-    path: '/funnels-drive',
+    path: '/file-hub',
     description:
       '구글 드라이브처럼 회사 자료를 업로드·분류·관리하는 사내 파일 스토리지. 폴더 구조와 드래그앤드롭으로 윈도우 탐색기처럼 사용 가능',
     tag: 'Infra',
   },
   {
-    key: 'manceway',
-    name: 'Manceway',
-    path: '/manceway',
+    key: 'ad-performance',
+    name: 'Ad Performance',
+    path: '/ad-performance',
     description: '이커머스 제품 광고 성과 대시보드. 채널별 광고비·매출·이익을 한눈에 확인하고 마케팅 의사결정을 지원',
     tag: 'Analytics',
   },
   {
-    key: 'funnelsolution',
+    key: 'med-manager',
     name: 'Med Manager',
-    path: '/funnelsolution',
+    path: '/med-manager',
     description:
       '병원 광고 대행 통합 관리 플랫폼. 광고로 유입된 리드 데이터 저장, 성과 보고, 광고비 조절, TM 콜 데이터 관리까지 병원 광고 운영 전반을 커버',
     tag: 'Ops',

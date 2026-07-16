@@ -1,6 +1,6 @@
 /* ── 폰트 (Pretendard - 대부분 프로젝트 기본) ───────────────── */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
-/* Poppins - Funnels Drive, Funnelsolution */
+/* Poppins - File Hub, Med Manager */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @import "tailwindcss";

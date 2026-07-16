@@ -3,13 +3,13 @@ import Landing from '@/pages/Landing'
 import UtmBuilderRoutes from '@/pages/utm-builder/routes'
 import HrHubRoutes from '@/pages/hr-hub/routes'
 import AdContentStorageRoutes from '@/pages/ad-content-storage/routes'
-import FunnelEduRoutes from '@/pages/funnel-edu/routes'
-import FunnelmanceCsRoutes from '@/pages/funnelmance-cs/routes'
+import EduPlatformRoutes from '@/pages/edu-platform/routes'
+import CsManagerRoutes from '@/pages/cs-manager/routes'
 import AdLibraryScraperRoutes from '@/pages/ad-library-scraper/routes'
 import MeetingRoomRoutes from '@/pages/meeting-room/routes'
-import FunnelsDriveRoutes from '@/pages/funnels-drive/routes'
-import MancewayRoutes from '@/pages/manceway/routes'
-import FunnelSolutionRoutes from '@/pages/funnelsolution/routes'
+import FileHubRoutes from '@/pages/file-hub/routes'
+import AdPerformanceRoutes from '@/pages/ad-performance/routes'
+import MedManagerRoutes from '@/pages/med-manager/routes'
 import PortfolioLayout from '@/components/PortfolioLayout'
 
 function App() {
@@ -32,14 +32,14 @@ function App() {
             <AdContentStorageRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnel-edu/*" element={
+        <Route path="/edu-platform/*" element={
           <PortfolioLayout project="Edu Platform">
-            <FunnelEduRoutes />
+            <EduPlatformRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnelmance-cs/*" element={
+        <Route path="/cs-manager/*" element={
           <PortfolioLayout project="CS Manager">
-            <FunnelmanceCsRoutes />
+            <CsManagerRoutes />
           </PortfolioLayout>
         } />
         <Route path="/ad-library-scraper/*" element={
@@ -52,19 +52,19 @@ function App() {
             <MeetingRoomRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnels-drive/*" element={
+        <Route path="/file-hub/*" element={
           <PortfolioLayout project="File Hub">
-            <FunnelsDriveRoutes />
+            <FileHubRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/manceway/*" element={
-          <PortfolioLayout project="Manceway">
-            <MancewayRoutes />
+        <Route path="/ad-performance/*" element={
+          <PortfolioLayout project="Ad Performance">
+            <AdPerformanceRoutes />
           </PortfolioLayout>
         } />
-        <Route path="/funnelsolution/*" element={
+        <Route path="/med-manager/*" element={
           <PortfolioLayout project="Med Manager">
-            <FunnelSolutionRoutes />
+            <MedManagerRoutes />
           </PortfolioLayout>
         } />
       </Routes>

@@ -1,0 +1,40 @@
+# Packages required for med-manager portfolio integration
+# Run: npm install <package>
+
+# SASS - for .scss source file compatibility (Vite supports SASS natively with this package)
+sass
+
+# FontAwesome - used in original source for icons
+@fortawesome/fontawesome-svg-core
+@fortawesome/free-solid-svg-icons
+@fortawesome/react-fontawesome
+
+# Date-fns - used for date manipulation (Filters component uses ko locale)
+date-fns
+
+# React DatePicker - used in TM Filters component
+react-datepicker
+@types/react-datepicker
+
+# Note: The following packages from the original source are NOT needed
+# because they have been replaced or are already present:
+#
+# axios           → replaced with mockService (no HTTP calls)
+# socket.io-client → replaced with setInterval simulation
+# html2pdf.js     → not used in portfolio (PDF export removed)
+# react-to-print  → not used in portfolio (print removed)
+# file-saver      → not used (Excel download removed)
+# xlsx            → not used (Excel download removed)
+# jwt-decode      → not used (auth removed)
+# @tiptap/*       → not used (TipTap not required in these 4 pages)
+# @dnd-kit/*      → not used in the 4 selected pages
+# @tanstack/react-virtual → not used in the 4 selected pages
+
+# Already present in funnel-portfolio:
+# react             ✓
+# react-dom         ✓
+# react-router-dom  ✓
+# lucide-react      ✓
+# typescript        ✓
+# vite              ✓
+# tailwindcss       ✓

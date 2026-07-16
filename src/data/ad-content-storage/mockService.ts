@@ -15,7 +15,7 @@ const attributeLabels = attributesRaw as AttributeLabel[]
 
 export const MOCK_USER = {
   id: '1',
-  email: 'admin@funnelmance.co.kr',
+  email: 'admin@company.com',
   name: '관리자',
   role: 'admin',
   team: '운영팀',

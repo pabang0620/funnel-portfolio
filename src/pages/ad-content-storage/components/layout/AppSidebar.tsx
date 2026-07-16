@@ -116,7 +116,7 @@ export function AppSidebar({ activeTab, onTabChange }: AppSidebarProps) {
         {!collapsed && (
           <div className="min-w-0">
             <div className="text-sm font-medium text-sidebar-foreground truncate">관리자</div>
-            <div className="text-xs text-sidebar-muted truncate">admin@funnelmance.co.kr</div>
+            <div className="text-xs text-sidebar-muted truncate">admin@company.com</div>
           </div>
         )}
       </div>
