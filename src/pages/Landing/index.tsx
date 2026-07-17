@@ -1,9 +1,7 @@
 import { useEffect } from 'react'
 import './landing-theme.css'
 import HyperspaceBackground from './components/HyperspaceBackground'
-import Hero from './components/Hero'
-import ProjectGrid from './components/ProjectGrid'
-import Footer from './components/Footer'
+import PlanetScene from './components/PlanetScene'
 
 export default function Landing() {
   useEffect(() => {
@@ -17,9 +15,7 @@ export default function Landing() {
     <div className="landing-hyperspace">
       <HyperspaceBackground />
       <main>
-        <Hero />
-        <ProjectGrid />
-        <Footer />
+        <PlanetScene />
       </main>
     </div>
   )
