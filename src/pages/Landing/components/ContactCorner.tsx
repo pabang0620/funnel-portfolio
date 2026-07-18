@@ -16,19 +16,22 @@ export default function ContactCorner() {
       <span className="cc-corner cc-br" aria-hidden="true" />
       <div className="cc-tag">Contact</div>
       <nav className="cc-links" aria-label="연락처">
-        {/* TODO: replace with real contact email link */}
-        <a className="cc-link" href="#">
+        <a className="cc-link" href="mailto:lwh970924@gmail.com">
           <span className="cc-icon" aria-hidden="true">
             ✉
           </span>
           이메일 보내기
         </a>
-        {/* TODO: replace with real resume link */}
-        <a className="cc-link" href="#">
+        <a
+          className="cc-link"
+          href="https://github.com/pabang0620"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span className="cc-icon" aria-hidden="true">
-            ▤
+            ◆
           </span>
-          이력서 보기
+          GitHub
         </a>
       </nav>
     </div>
