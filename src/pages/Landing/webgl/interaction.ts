@@ -431,7 +431,21 @@ export function stepInteractionFrame(
         p.drawAlpha = 1
       } else if (state.focus.mode === 'zooming-out') {
         const eased2 = easeOutCubic(prog)
-        const liveIdle = computeIdleXY(p, t - p.pausedTime, reducedMotion ? 0 : 1)
+        // Reuses the SAME smoothed `slow` (= state.ambientDim, computed once
+        // above for this planet) that the plain-idle branch below will use
+        // on the very next frame once `mode` flips to 'idle'. This used to
+        // hardcode `slow=1` (full amplitude) here, while globalFocusActive
+        // stays true for the entire zooming-out animation, so ambientDim sits
+        // near its dimmed 0.32 floor the whole time — meaning the very NEXT
+        // frame after the mode flip (now idle, using ambientDim directly)
+        // read a much smaller amplitude than this frame's liveIdle target
+        // did, snapping the just-closed planet's wander offset by up to
+        // ~0.6*amp px (~20px+ observed) exactly at the moment focus closes —
+        // the same class of bug as the wander-amplitude fix below, but on
+        // this planet's own zoom-out-to-idle handoff rather than the OTHER
+        // planets' idle branch. Matching the value here keeps it continuous
+        // across that handoff frame with zero perceptible snap.
+        const liveIdle = computeIdleXY(p, t - p.pausedTime, slow)
         const liveR = p.baseR * p.scaleMul
         p.drawX = lerp(state.focus.startX, liveIdle.x, eased2)
         p.drawY = lerp(state.focus.startY, liveIdle.y, eased2)
