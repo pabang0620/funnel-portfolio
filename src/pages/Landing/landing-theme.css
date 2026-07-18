@@ -486,6 +486,16 @@ body.landing-body {
   margin-bottom: 1.6rem;
 }
 
+/* Each ACTUALLY-wrapped visual line of the description is rendered as its
+   own child div (see interaction.ts renderTextAsLines) so it can cascade in
+   on its own step via the shared .fp-line opacity/transform reveal above.
+   No extra layout rules needed — div is block by default and inherits
+   font-size/line-height/color from .fp-desc, so stacked lines match the
+   original single-paragraph wrap exactly. */
+.landing-hyperspace .fp-desc-line {
+  display: block;
+}
+
 .landing-hyperspace .fp-link {
   display: inline-flex;
   align-items: center;

@@ -1,5 +1,6 @@
 import { distSq, easeOutBack, easeOutCubic, lerp, rgba } from './geometry'
 import { computeIdleXY, type Planet } from './sceneState'
+import { renderTextAsLines } from './textLines'
 
 // hysteresis: tighter radius to START a hover, looser radius to KEEP one —
 // without this a cursor sitting near a planet's edge flickers the card
@@ -242,24 +243,44 @@ function clearPanelTimers(state: InteractionState) {
 
 function hidePanelLines(dom: PlanetSceneDom) {
   dom.panel.classList.remove('show')
-  ;[dom.fpTag, dom.fpTitle, dom.fpDesc, dom.fpLink].forEach((el) => el.classList.remove('show'))
+  ;[dom.fpTag, dom.fpTitle, dom.fpLink].forEach((el) => el.classList.remove('show'))
+  // desc is rendered as N per-visual-line child divs (see fillPanel) rather
+  // than a single block, so its reveal state lives on those children
+  dom.fpDesc.querySelectorAll('.fp-desc-line').forEach((el) => el.classList.remove('show'))
 }
 
 function fillPanel(dom: PlanetSceneDom, p: Planet) {
   dom.fpTag.textContent = p.family.label
   dom.fpTitle.textContent = p.name
-  dom.fpDesc.textContent = p.desc
+  // Rebuilds fpDesc's children as one div per ACTUALLY rendered visual line
+  // (Range/getClientRects-measured against fpDesc's real width/font, not a
+  // char-count guess) so each wrapped line can cascade in on its own — see
+  // schedulePanelReveal. Always rebuilds from scratch, so reopening the
+  // panel (same or different planet) never leaves stale line spans behind.
+  renderTextAsLines(dom.fpDesc, p.desc, 'fp-line fp-desc-line')
   dom.panel.style.setProperty('--accent', rgba(p.color, 1))
 }
 
 function schedulePanelReveal(state: InteractionState, dom: PlanetSceneDom) {
   const base = Math.round(state.focus.duration * 0.55)
   const stagger = 100
+  const descLines = dom.fpDesc.querySelectorAll<HTMLElement>('.fp-desc-line')
+
   state.panelTimers.push(setTimeout(() => dom.panel.classList.add('show'), base))
   state.panelTimers.push(setTimeout(() => dom.fpTag.classList.add('show'), base + 80))
   state.panelTimers.push(setTimeout(() => dom.fpTitle.classList.add('show'), base + 80 + stagger))
-  state.panelTimers.push(setTimeout(() => dom.fpDesc.classList.add('show'), base + 80 + stagger * 2))
-  state.panelTimers.push(setTimeout(() => dom.fpLink.classList.add('show'), base + 80 + stagger * 3))
+
+  // each wrapped description line cascades in on its own, one stagger apart,
+  // starting where the old single-block desc reveal used to fire
+  const descStart = base + 80 + stagger * 2
+  descLines.forEach((lineEl, i) => {
+    state.panelTimers.push(setTimeout(() => lineEl.classList.add('show'), descStart + i * stagger))
+  })
+
+  // CTA waits one stagger past the LAST desc line (matches the original
+  // single-stagger gap between desc and link when there's only one line)
+  const linkDelay = descStart + Math.max(descLines.length, 1) * stagger
+  state.panelTimers.push(setTimeout(() => dom.fpLink.classList.add('show'), linkDelay))
 }
 
 export function startFocus(state: InteractionState, dom: PlanetSceneDom, planets: Planet[], idx: number) {
