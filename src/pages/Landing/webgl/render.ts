@@ -69,13 +69,35 @@ export function drawPlanetsGL(
   glDPR: number,
   handles: GLProgramHandles,
   textures: TextureRegistry,
-  planets: Planet[]
+  planets: Planet[],
+  focusIndex: number = -1
 ): void {
   gl.viewport(0, 0, glCanvas.width, glCanvas.height)
   gl.clear(gl.COLOR_BUFFER_BIT)
 
+  // Draw order determines who paints over whom: each planet clears its OWN
+  // depth buffer just below (see gl.clear(gl.DEPTH_BUFFER_BIT) inside the
+  // loop), so the depth test never persists across different planets — it
+  // only resolves self-occlusion within a single planet's own sphere+cloud
+  // geometry. Cross-planet "occlusion" is therefore purely whichever planet
+  // is painted LAST into the color buffer for a given pixel, since the
+  // opaque sphere pass draws with blending disabled (a later draw fully
+  // overwrites an earlier one wherever they overlap on screen).
+  //
+  // During focus, the enlarged focused planet must always appear in front
+  // of the other 9 dimmed/defocused planets, even if one of them is
+  // mid-drift through the same screen region. Fixed array-index draw order
+  // can't guarantee that (a higher-index background planet drawn after the
+  // focused one would paint over it), so when a planet is focused it's
+  // moved to the end of the draw order for this frame.
+  const order: number[] = []
   for (let i = 0; i < planets.length; i++) {
-    const p = planets[i]
+    if (i !== focusIndex) order.push(i)
+  }
+  if (focusIndex >= 0 && focusIndex < planets.length) order.push(focusIndex)
+
+  for (let oi = 0; oi < order.length; oi++) {
+    const p = planets[order[oi]]
     if (p.drawAlpha <= 0.004) continue
     const rot = mat3Mul(mat3RotX(p.tilt), mat3RotY(p.spinAngle))
 
@@ -190,5 +212,6 @@ export function renderSceneFrame(deps: SceneFrameDeps, ctx: FrameContext, W: num
 
   drawNebulae(pCtx, nebulae, W, H, interactionState.ambientDim)
   drawDust(pCtx, dust, W, H, ctx.now, interactionState.ambientDim, ctx.reducedMotion)
-  drawPlanetsGL(gl, glCanvas, glDPR, handles, textures, planets)
+  const focusIndex = interactionState.focus.mode !== 'idle' ? interactionState.focus.index : -1
+  drawPlanetsGL(gl, glCanvas, glDPR, handles, textures, planets, focusIndex)
 }
