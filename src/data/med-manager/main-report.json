@@ -1,26 +1,71 @@
 {
   "hospitals": [
-    { "id": 1, "name": "강남 스마일 치과" },
-    { "id": 2, "name": "홍대 미소 피부과" },
-    { "id": 3, "name": "분당 연세 안과" },
-    { "id": 4, "name": "신촌 바른 정형외과" }
+    {
+      "id": 1,
+      "name": "강남 스마일 치과"
+    },
+    {
+      "id": 2,
+      "name": "홍대 미소 피부과"
+    },
+    {
+      "id": 3,
+      "name": "분당 연세 안과"
+    },
+    {
+      "id": 4,
+      "name": "신촌 바른 정형외과"
+    }
   ],
   "cohortList": [
-    { "cohort": 15, "start_date": "2026-04-01", "end_date": "2026-04-30" },
-    { "cohort": 14, "start_date": "2026-03-01", "end_date": "2026-03-31" },
-    { "cohort": 13, "start_date": "2026-02-01", "end_date": "2026-02-28" }
+    {
+      "cohort": 15,
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-30"
+    },
+    {
+      "cohort": 14,
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-31"
+    },
+    {
+      "cohort": 13,
+      "start_date": "2026-02-01",
+      "end_date": "2026-02-28"
+    }
   ],
   "hospitalInfo": {
     "cohort": 15,
-    "main_media": [1, 2],
-    "sub_media": [3, 4]
+    "main_media": [
+      1,
+      2
+    ],
+    "sub_media": [
+      3,
+      4
+    ]
   },
   "advertisingCompanies": [
-    { "id": 1, "name": "네이버" },
-    { "id": 2, "name": "카카오" },
-    { "id": 3, "name": "인스타그램" },
-    { "id": 4, "name": "유튜브" },
-    { "id": 5, "name": "페이스북" }
+    {
+      "id": 1,
+      "name": "네이버"
+    },
+    {
+      "id": 2,
+      "name": "카카오"
+    },
+    {
+      "id": 3,
+      "name": "인스타그램"
+    },
+    {
+      "id": 4,
+      "name": "유튜브"
+    },
+    {
+      "id": 5,
+      "name": "페이스북"
+    }
   ],
   "reportData": {
     "tmStats": {
@@ -95,23 +140,42 @@
         "dbUnitPrice": 11765
       },
       {
+        "id": 7,
+        "name": "구글",
+        "type": "main",
+        "customer_count": 60,
+        "reservation_count": 22,
+        "visit_count": 17,
+        "paid_customer_count": 9,
+        "total_ad_spend": 382430,
+        "total_payment_sum": 3797613,
+        "roas": 993,
+        "reservation_rate": 36.7,
+        "fulfillment_rate": 84,
+        "noShowRate": 14,
+        "consultation_agreement_rate": 78,
+        "invalid_db_count": 5,
+        "invalid_db_rate": 4.6,
+        "dbUnitPrice": 6374
+      },
+      {
         "id": -1,
         "name": "TOTAL",
         "type": "main",
-        "customer_count": 180,
-        "reservation_count": 81,
-        "visit_count": 59,
-        "paid_customer_count": 43,
-        "total_ad_spend": 2200000,
-        "total_payment_sum": 29700000,
-        "roas": 1350,
-        "reservation_rate": 45,
-        "fulfillment_rate": 76,
-        "noShowRate": 13,
-        "consultation_agreement_rate": 72,
-        "invalid_db_count": 8,
-        "invalid_db_rate": 4.4,
-        "dbUnitPrice": 12222
+        "customer_count": 240,
+        "reservation_count": 103,
+        "visit_count": 76,
+        "paid_customer_count": 52,
+        "total_ad_spend": 2582430,
+        "total_payment_sum": 33497613,
+        "roas": 1297,
+        "reservation_rate": 42.9,
+        "fulfillment_rate": 79,
+        "noShowRate": 14,
+        "consultation_agreement_rate": 74,
+        "invalid_db_count": 13,
+        "invalid_db_rate": 5.4,
+        "dbUnitPrice": 10760
       },
       {
         "id": 3,
@@ -171,23 +235,42 @@
         "dbUnitPrice": 6667
       },
       {
+        "id": 6,
+        "name": "틱톡",
+        "type": "sub",
+        "customer_count": 38,
+        "reservation_count": 18,
+        "visit_count": 15,
+        "paid_customer_count": 11,
+        "total_ad_spend": 336890,
+        "total_payment_sum": 7328805,
+        "roas": 2175,
+        "reservation_rate": 47.4,
+        "fulfillment_rate": 78,
+        "noShowRate": 9,
+        "consultation_agreement_rate": 76,
+        "invalid_db_count": 4,
+        "invalid_db_rate": 4.6,
+        "dbUnitPrice": 8866
+      },
+      {
         "id": -2,
         "name": "TOTAL",
         "type": "sub",
-        "customer_count": 104,
-        "reservation_count": 46,
-        "visit_count": 39,
-        "paid_customer_count": 29,
-        "total_ad_spend": 1000000,
-        "total_payment_sum": 18800000,
-        "roas": 1880,
-        "reservation_rate": 44.2,
-        "fulfillment_rate": 84,
+        "customer_count": 142,
+        "reservation_count": 64,
+        "visit_count": 54,
+        "paid_customer_count": 40,
+        "total_ad_spend": 1336890,
+        "total_payment_sum": 26128805,
+        "roas": 1954,
+        "reservation_rate": 45.1,
+        "fulfillment_rate": 83,
         "noShowRate": 9,
-        "consultation_agreement_rate": 74,
-        "invalid_db_count": 4,
-        "invalid_db_rate": 3.8,
-        "dbUnitPrice": 9615
+        "consultation_agreement_rate": 75,
+        "invalid_db_count": 8,
+        "invalid_db_rate": 5.6,
+        "dbUnitPrice": 9415
       }
     ],
     "eventStats": {
@@ -195,61 +278,101 @@
         {
           "eventName": "임플란트 할인",
           "reservedCount": 89,
-          "reservedRate": 31.3,
+          "reservedRate": 25.6,
           "fulfillmentRate": 78.5,
           "unitPayment": 600000,
           "consultAgreeRate": 72.5,
           "eventPayment": 18600000,
-          "eventPaymentRatio": 38.4
+          "eventPaymentRatio": 25.4
         },
         {
           "eventName": "레이저 토닝",
           "reservedCount": 54,
-          "reservedRate": 19.0,
+          "reservedRate": 15.6,
           "fulfillmentRate": 74.1,
           "unitPayment": 500000,
           "consultAgreeRate": 69.4,
           "eventPayment": 9000000,
-          "eventPaymentRatio": 18.6
+          "eventPaymentRatio": 12.3
         },
         {
           "eventName": "라식 라섹 특가",
           "reservedCount": 48,
-          "reservedRate": 16.9,
+          "reservedRate": 13.8,
           "fulfillmentRate": 81.3,
           "unitPayment": 600000,
           "consultAgreeRate": 73.3,
           "eventPayment": 10200000,
-          "eventPaymentRatio": 21.0
+          "eventPaymentRatio": 13.9
         },
         {
           "eventName": "도수치료 3회",
           "reservedCount": 38,
-          "reservedRate": 13.4,
+          "reservedRate": 11.0,
           "fulfillmentRate": 79.0,
           "unitPayment": 400000,
           "consultAgreeRate": 68.4,
           "eventPayment": 6000000,
-          "eventPaymentRatio": 12.4
+          "eventPaymentRatio": 8.2
         },
         {
           "eventName": "치아미백 50%",
           "reservedCount": 29,
-          "reservedRate": 10.2,
+          "reservedRate": 8.4,
           "fulfillmentRate": 82.8,
           "unitPayment": 300000,
           "consultAgreeRate": 75.0,
           "eventPayment": 3300000,
+          "eventPaymentRatio": 4.5
+        },
+        {
+          "eventName": "울쎄라 리프팅",
+          "reservedCount": 22,
+          "reservedRate": 6.3,
+          "fulfillmentRate": 73.9,
+          "unitPayment": 400000,
+          "consultAgreeRate": 73.5,
+          "eventPayment": 8800000,
+          "eventPaymentRatio": 12.0
+        },
+        {
+          "eventName": "여드름 흉터 치료",
+          "reservedCount": 17,
+          "reservedRate": 4.9,
+          "fulfillmentRate": 80.0,
+          "unitPayment": 400000,
+          "consultAgreeRate": 73.3,
+          "eventPayment": 6800000,
+          "eventPaymentRatio": 9.3
+        },
+        {
+          "eventName": "체외충격파",
+          "reservedCount": 14,
+          "reservedRate": 4.0,
+          "fulfillmentRate": 72.8,
+          "unitPayment": 300000,
+          "consultAgreeRate": 71.9,
+          "eventPayment": 4200000,
+          "eventPaymentRatio": 5.7
+        },
+        {
+          "eventName": "관절 프롤로",
+          "reservedCount": 10,
+          "reservedRate": 2.9,
+          "fulfillmentRate": 73.2,
+          "unitPayment": 500000,
+          "consultAgreeRate": 65.4,
+          "eventPayment": 5000000,
           "eventPaymentRatio": 6.8
         },
         {
           "eventName": "total",
-          "reservedCount": 284,
+          "reservedCount": 347,
           "reservedRate": 100.0,
-          "fulfillmentRate": 79.2,
-          "unitPayment": 485000,
-          "consultAgreeRate": 71.4,
-          "eventPayment": 48500000,
+          "fulfillmentRate": 72.1,
+          "unitPayment": 211239,
+          "consultAgreeRate": 66.3,
+          "eventPayment": 73300000,
           "eventPaymentRatio": 100.0
         }
       ]

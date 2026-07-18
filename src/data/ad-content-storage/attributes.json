@@ -108,5 +108,93 @@
     "updated_at": "2023-01-01T00:00:00Z",
     "created_by_name": "최지원",
     "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-011",
+    "name": "비포애프터",
+    "description": "시술/제품 사용 전후를 비교로 제시하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "정다은",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-012",
+    "name": "성분강조",
+    "description": "핵심 원료나 성분을 시각적으로 강조하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "김태호",
+    "created_by_team": "마케팅팀"
+  },
+  {
+    "id": "al-013",
+    "name": "할인이벤트",
+    "description": "한정 기간 할인/사은품 등 이벤트성 혜택을 소구하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "오수진",
+    "created_by_team": "마케팅팀"
+  },
+  {
+    "id": "al-014",
+    "name": "릴스",
+    "description": "인스타그램/틱톡 등 세로형 숏폼 포맷으로 제작된 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "강민준",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-015",
+    "name": "카드뉴스",
+    "description": "여러 장의 이미지 슬라이드로 정보를 순차 전달하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "윤서아",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-016",
+    "name": "인플루언서",
+    "description": "인플루언서/유튜버 협찬을 통해 제작된 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "임하늘",
+    "created_by_team": "마케팅팀"
+  },
+  {
+    "id": "al-017",
+    "name": "챌린지",
+    "description": "해시태그 챌린지 등 참여를 유도하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "조은별",
+    "created_by_team": "콘텐츠팀"
+  },
+  {
+    "id": "al-018",
+    "name": "브랜드스토리",
+    "description": "브랜드 철학이나 창업 스토리를 전달하는 콘텐츠",
+    "is_active": true,
+    "user_id": "user-001",
+    "created_at": "2023-01-01T00:00:00Z",
+    "updated_at": "2023-01-01T00:00:00Z",
+    "created_by_name": "배준영",
+    "created_by_team": "마케팅팀"
   }
 ]

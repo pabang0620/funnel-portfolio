@@ -1,8 +1,62 @@
 [
-  { "id": "ct-001", "name": "배너", "initial": "BN", "display_name": "Banner" },
-  { "id": "ct-002", "name": "영상", "initial": "VD", "display_name": "Video" },
-  { "id": "ct-003", "name": "카드뉴스", "initial": "CN", "display_name": "CardNews" },
-  { "id": "ct-004", "name": "스토리", "initial": "ST", "display_name": "Story" },
-  { "id": "ct-005", "name": "릴스", "initial": "RL", "display_name": "Reels" },
-  { "id": "ct-006", "name": "텍스트", "initial": "TX", "display_name": "Text" }
+  {
+    "id": "ct-001",
+    "name": "배너",
+    "initial": "BN",
+    "display_name": "Banner"
+  },
+  {
+    "id": "ct-002",
+    "name": "영상",
+    "initial": "VD",
+    "display_name": "Video"
+  },
+  {
+    "id": "ct-003",
+    "name": "카드뉴스",
+    "initial": "CN",
+    "display_name": "CardNews"
+  },
+  {
+    "id": "ct-004",
+    "name": "스토리",
+    "initial": "ST",
+    "display_name": "Story"
+  },
+  {
+    "id": "ct-005",
+    "name": "릴스",
+    "initial": "RL",
+    "display_name": "Reels"
+  },
+  {
+    "id": "ct-006",
+    "name": "텍스트",
+    "initial": "TX",
+    "display_name": "Text"
+  },
+  {
+    "id": "ct-007",
+    "name": "인터뷰",
+    "initial": "IV",
+    "display_name": "Interview"
+  },
+  {
+    "id": "ct-008",
+    "name": "라이브방송",
+    "initial": "LV",
+    "display_name": "Live"
+  },
+  {
+    "id": "ct-009",
+    "name": "웹툰",
+    "initial": "WT",
+    "display_name": "Webtoon"
+  },
+  {
+    "id": "ct-010",
+    "name": "인포그래픽",
+    "initial": "IF",
+    "display_name": "Infographic"
+  }
 ]

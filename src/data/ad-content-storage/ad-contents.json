@@ -1400,5 +1400,1695 @@
     "cpc": 300,
     "s3_key": "2026/04/프로바이오틱스_가족_260411.mp4",
     "thumbnail_url": "https://picsum.photos/seed/file029/400/400"
+  },
+  {
+    "id": "file-030",
+    "name": "퓨어_정보성_김민지_260413.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 8000000,
+    "created_at": "2026-04-13T09:00:00Z",
+    "updated_at": "2026-04-13T09:00:00Z",
+    "memo": "성분 및 효능 데이터 기반 설명 광고",
+    "ad_codes": [
+      "AD-2026-045"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 260000,
+    "total_revenue": 676000,
+    "total_conversions": 11,
+    "total_impressions": 37143,
+    "total_clicks": 817,
+    "cpc": 318,
+    "s3_key": "2026/04/퓨어_정보성_260413.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file030/400/400",
+    "scripts": {
+      "text": "성분 100%의 비밀, 임상 데이터로 증명합니다."
+    }
+  },
+  {
+    "id": "file-031",
+    "name": "두피케어_후기성_이준혁_260416.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 8733217,
+    "created_at": "2026-04-16T10:07:00Z",
+    "updated_at": "2026-04-16T10:07:00Z",
+    "memo": "실사용 후기 기반 UGC 스타일",
+    "ad_codes": [
+      "AD-2026-046"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 357133,
+    "total_revenue": 1099970,
+    "total_conversions": 18,
+    "total_impressions": 44642,
+    "total_clicks": 1071,
+    "cpc": 333,
+    "s3_key": "2026/04/두피케어_후기성_260416.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file031/400/400",
+    "scripts": {
+      "text": "3주 써보고 남긴 솔직 후기입니다."
+    }
+  },
+  {
+    "id": "file-032",
+    "name": "비타민C_프로모션_박서연_260419.png",
+    "path": "/2026/04",
+    "file_type": "image/png",
+    "size": 9466434,
+    "created_at": "2026-04-19T11:14:00Z",
+    "updated_at": "2026-04-19T11:14:00Z",
+    "memo": "한정 기간 할인 이벤트 소재",
+    "ad_codes": [
+      "AD-2026-047"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      },
+      {
+        "id": "al-013",
+        "name": "할인이벤트"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 454266,
+    "total_revenue": 1617187,
+    "total_conversions": 26,
+    "total_impressions": 50474,
+    "total_clicks": 1312,
+    "cpc": 346,
+    "s3_key": "2026/04/비타민C_프로모션_260419.png",
+    "thumbnail_url": "https://picsum.photos/seed/file032/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-033",
+    "name": "슬림다운_공포유발_최지원_260422.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 10199651,
+    "created_at": "2026-04-22T12:21:00Z",
+    "updated_at": "2026-04-22T12:21:00Z",
+    "memo": "손실회피 심리 자극 소재",
+    "ad_codes": [
+      "AD-2026-048"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-006",
+        "name": "공포유발"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 551399,
+    "total_revenue": 2227652,
+    "total_conversions": 36,
+    "total_impressions": 55140,
+    "total_clicks": 1544,
+    "cpc": 357,
+    "s3_key": "2026/04/슬림다운_공포유발_260422.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file033/400/400",
+    "scripts": {
+      "text": "지금 놓치면 다음 기회는 없습니다."
+    }
+  },
+  {
+    "id": "file-034",
+    "name": "프리미엄_권위신뢰_홍길동_260425.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 10932868,
+    "created_at": "2026-04-25T13:28:00Z",
+    "updated_at": "2026-04-25T13:28:00Z",
+    "memo": "전문가 추천 기반 신뢰 소구",
+    "ad_codes": [
+      "AD-2026-049"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-007",
+        "name": "권위신뢰"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 648532,
+    "total_revenue": 2931365,
+    "total_conversions": 75,
+    "total_impressions": 92647,
+    "total_clicks": 2779,
+    "cpc": 233,
+    "s3_key": "2026/04/프리미엄_권위신뢰_260425.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file034/400/400",
+    "scripts": {
+      "text": "전문가가 인정한 단 하나의 선택."
+    }
+  },
+  {
+    "id": "file-035",
+    "name": "프로_문제나열_이나라_260428.jpg",
+    "path": "/2026/04",
+    "file_type": "image/jpeg",
+    "size": 11666085,
+    "created_at": "2026-04-28T14:35:00Z",
+    "updated_at": "2026-04-28T14:35:00Z",
+    "memo": "공감형 문제 제시 소재",
+    "ad_codes": [
+      "AD-2026-050"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "스포츠영양",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-009",
+        "name": "문제나열"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 745665,
+    "total_revenue": 3728325,
+    "total_conversions": 39,
+    "total_impressions": 93208,
+    "total_clicks": 2983,
+    "cpc": 250,
+    "s3_key": "2026/04/프로_문제나열_260428.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file035/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-036",
+    "name": "눈밑지방재배치_판매제한_이서진_260501.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 12399302,
+    "created_at": "2026-05-01T15:42:00Z",
+    "updated_at": "2026-05-01T15:42:00Z",
+    "memo": "재고 소진 임박 긴급성 소재",
+    "ad_codes": [
+      "AD-2026-051"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-015",
+        "name": "성형/시술",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-008",
+        "name": "판매제한"
+      }
+    ],
+    "product_id": "prod-007",
+    "total_spend": 842798,
+    "total_revenue": 4618533,
+    "total_conversions": 34,
+    "total_impressions": 93644,
+    "total_clicks": 2060,
+    "cpc": 409,
+    "s3_key": "2026/05/눈밑지방재배치_판매제한_260501.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file036/400/400",
+    "scripts": {
+      "text": "이번 재입고가 마지막일 수 있습니다."
+    }
+  },
+  {
+    "id": "file-037",
+    "name": "퓨어_비포애프터_정다은_260504.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 13132519,
+    "created_at": "2026-05-04T16:49:00Z",
+    "updated_at": "2026-05-04T16:49:00Z",
+    "memo": "사용 전후 비교 이미지",
+    "ad_codes": [
+      "AD-2026-052"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-011",
+        "name": "비포애프터"
+      },
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 939931,
+    "total_revenue": 2443821,
+    "total_conversions": 45,
+    "total_impressions": 93993,
+    "total_clicks": 2256,
+    "cpc": 417,
+    "s3_key": "2026/05/퓨어_비포애프터_260504.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file037/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-038",
+    "name": "두피케어_성분강조_김태호_260507.png",
+    "path": "/2026/05",
+    "file_type": "image/png",
+    "size": 13865736,
+    "created_at": "2026-05-07T09:56:00Z",
+    "updated_at": "2026-05-07T09:56:00Z",
+    "memo": "핵심 성분 클로즈업 소재",
+    "ad_codes": [
+      "AD-2026-053"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-012",
+        "name": "성분강조"
+      },
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 1037064,
+    "total_revenue": 3194157,
+    "total_conversions": 91,
+    "total_impressions": 148152,
+    "total_clicks": 3852,
+    "cpc": 269,
+    "s3_key": "2026/05/두피케어_성분강조_260507.png",
+    "thumbnail_url": "https://picsum.photos/seed/file038/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-039",
+    "name": "비타민C_릴스_오수진_260510.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 14598953,
+    "created_at": "2026-05-10T10:03:00Z",
+    "updated_at": "2026-05-10T10:03:00Z",
+    "memo": "세로형 숏폼 15초 소재",
+    "ad_codes": [
+      "AD-2026-054"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-014",
+        "name": "릴스"
+      },
+      {
+        "id": "al-004",
+        "name": "10초이내"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 1134197,
+    "total_revenue": 4037741,
+    "total_conversions": 107,
+    "total_impressions": 141775,
+    "total_clicks": 3970,
+    "cpc": 286,
+    "s3_key": "2026/05/비타민C_릴스_260510.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file039/400/400",
+    "scripts": {
+      "text": "이거 하나로 끝! #추천템"
+    }
+  },
+  {
+    "id": "file-040",
+    "name": "슬림다운_카드뉴스_강민준_260513.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 15332170,
+    "created_at": "2026-05-13T11:10:00Z",
+    "updated_at": "2026-05-13T11:10:00Z",
+    "memo": "슬라이드형 정보 전달 소재",
+    "ad_codes": [
+      "AD-2026-055"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-015",
+        "name": "카드뉴스"
+      },
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 1231330,
+    "total_revenue": 4974573,
+    "total_conversions": 53,
+    "total_impressions": 136814,
+    "total_clicks": 4104,
+    "cpc": 300,
+    "s3_key": "2026/05/슬림다운_카드뉴스_260513.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file040/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-041",
+    "name": "프리미엄_인플루언서_윤서아_260516.jpg",
+    "path": "/2026/05",
+    "file_type": "image/jpeg",
+    "size": 16065387,
+    "created_at": "2026-05-16T12:17:00Z",
+    "updated_at": "2026-05-16T12:17:00Z",
+    "memo": "인플루언서 협찬 콘텐츠",
+    "ad_codes": [
+      "AD-2026-056"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-016",
+        "name": "인플루언서"
+      },
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 1328463,
+    "total_revenue": 6004653,
+    "total_conversions": 70,
+    "total_impressions": 132846,
+    "total_clicks": 4251,
+    "cpc": 313,
+    "s3_key": "2026/05/프리미엄_인플루언서_260516.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file041/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-042",
+    "name": "프로_챌린지_임하늘_260519.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 16798604,
+    "created_at": "2026-05-19T13:24:00Z",
+    "updated_at": "2026-05-19T13:24:00Z",
+    "memo": "해시태그 챌린지 참여 유도 소재",
+    "ad_codes": [
+      "AD-2026-057"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "스포츠영양",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-017",
+        "name": "챌린지"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 1425596,
+    "total_revenue": 7127980,
+    "total_conversions": 90,
+    "total_impressions": 203657,
+    "total_clicks": 4480,
+    "cpc": 318,
+    "s3_key": "2026/05/프로_챌린지_260519.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file042/400/400",
+    "scripts": {
+      "text": "지금 바로 챌린지에 참여해보세요!"
+    }
+  },
+  {
+    "id": "file-043",
+    "name": "눈밑지방재배치_브랜드스토리_조은별_260522.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 17531821,
+    "created_at": "2026-05-22T14:31:00Z",
+    "updated_at": "2026-05-22T14:31:00Z",
+    "memo": "브랜드 철학 전달 소재",
+    "ad_codes": [
+      "AD-2026-058"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-015",
+        "name": "성형/시술",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-018",
+        "name": "브랜드스토리"
+      }
+    ],
+    "product_id": "prod-007",
+    "total_spend": 1522729,
+    "total_revenue": 8344555,
+    "total_conversions": 107,
+    "total_impressions": 190341,
+    "total_clicks": 4568,
+    "cpc": 333,
+    "s3_key": "2026/05/눈밑지방재배치_브랜드스토리_260522.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file043/400/400",
+    "scripts": {
+      "text": "우리가 이 제품을 만든 이유입니다."
+    }
+  },
+  {
+    "id": "file-044",
+    "name": "퓨어_정보성_배준영_260525.png",
+    "path": "/2026/05",
+    "file_type": "image/png",
+    "size": 18265038,
+    "created_at": "2026-05-25T15:38:00Z",
+    "updated_at": "2026-05-25T15:38:00Z",
+    "memo": "성분 및 효능 데이터 기반 설명 광고",
+    "ad_codes": [
+      "AD-2026-059"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 1619862,
+    "total_revenue": 4211641,
+    "total_conversions": 126,
+    "total_impressions": 179985,
+    "total_clicks": 4680,
+    "cpc": 346,
+    "s3_key": "2026/05/퓨어_정보성_260525.png",
+    "thumbnail_url": "https://picsum.photos/seed/file044/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-045",
+    "name": "두피케어_후기성_김민지_260528.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 18998255,
+    "created_at": "2026-05-28T16:45:00Z",
+    "updated_at": "2026-05-28T16:45:00Z",
+    "memo": "실사용 후기 기반 UGC 스타일",
+    "ad_codes": [
+      "AD-2026-060"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 1716995,
+    "total_revenue": 5288345,
+    "total_conversions": 63,
+    "total_impressions": 171700,
+    "total_clicks": 4808,
+    "cpc": 357,
+    "s3_key": "2026/05/두피케어_후기성_260528.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file045/400/400",
+    "scripts": {
+      "text": "3주 써보고 남긴 솔직 후기입니다."
+    }
+  },
+  {
+    "id": "file-046",
+    "name": "비타민C_프로모션_이준혁_260531.mp4",
+    "path": "/2026/05",
+    "file_type": "video/mp4",
+    "size": 19731472,
+    "created_at": "2026-05-31T09:52:00Z",
+    "updated_at": "2026-05-31T09:52:00Z",
+    "memo": "한정 기간 할인 이벤트 소재",
+    "ad_codes": [
+      "AD-2026-061"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      },
+      {
+        "id": "al-013",
+        "name": "할인이벤트"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 1814128,
+    "total_revenue": 6458296,
+    "total_conversions": 128,
+    "total_impressions": 259161,
+    "total_clicks": 7775,
+    "cpc": 233,
+    "s3_key": "2026/05/비타민C_프로모션_260531.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file046/400/400",
+    "scripts": {
+      "text": "이번 주만 특별가로 만나보세요."
+    }
+  },
+  {
+    "id": "file-047",
+    "name": "슬림다운_공포유발_박서연_260603.jpg",
+    "path": "/2026/06",
+    "file_type": "image/jpeg",
+    "size": 20464689,
+    "created_at": "2026-06-03T10:59:00Z",
+    "updated_at": "2026-06-03T10:59:00Z",
+    "memo": "손실회피 심리 자극 소재",
+    "ad_codes": [
+      "AD-2026-062"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-006",
+        "name": "공포유발"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 1911261,
+    "total_revenue": 7721494,
+    "total_conversions": 153,
+    "total_impressions": 238908,
+    "total_clicks": 7645,
+    "cpc": 250,
+    "s3_key": "2026/06/슬림다운_공포유발_260603.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file047/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-048",
+    "name": "프리미엄_권위신뢰_최지원_260606.mp4",
+    "path": "/2026/06",
+    "file_type": "video/mp4",
+    "size": 21197906,
+    "created_at": "2026-06-06T11:06:00Z",
+    "updated_at": "2026-06-06T11:06:00Z",
+    "memo": "전문가 추천 기반 신뢰 소구",
+    "ad_codes": [
+      "AD-2026-063"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-007",
+        "name": "권위신뢰"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 2008394,
+    "total_revenue": 9077941,
+    "total_conversions": 115,
+    "total_impressions": 223155,
+    "total_clicks": 4909,
+    "cpc": 409,
+    "s3_key": "2026/06/프리미엄_권위신뢰_260606.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file048/400/400",
+    "scripts": {
+      "text": "전문가가 인정한 단 하나의 선택."
+    }
+  },
+  {
+    "id": "file-049",
+    "name": "프로_문제나열_홍길동_260609.mp4",
+    "path": "/2026/06",
+    "file_type": "video/mp4",
+    "size": 21931123,
+    "created_at": "2026-06-09T12:13:00Z",
+    "updated_at": "2026-06-09T12:13:00Z",
+    "memo": "공감형 문제 제시 소재",
+    "ad_codes": [
+      "AD-2026-064"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "스포츠영양",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-009",
+        "name": "문제나열"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 2105527,
+    "total_revenue": 10527635,
+    "total_conversions": 136,
+    "total_impressions": 210553,
+    "total_clicks": 5053,
+    "cpc": 417,
+    "s3_key": "2026/06/프로_문제나열_260609.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file049/400/400",
+    "scripts": {
+      "text": "이런 고민 있으신 분들 주목하세요."
+    }
+  },
+  {
+    "id": "file-050",
+    "name": "눈밑지방재배치_판매제한_이나라_260612.png",
+    "path": "/2026/06",
+    "file_type": "image/png",
+    "size": 22664340,
+    "created_at": "2026-06-12T13:20:00Z",
+    "updated_at": "2026-06-12T13:20:00Z",
+    "memo": "재고 소진 임박 긴급성 소재",
+    "ad_codes": [
+      "AD-2026-065"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-015",
+        "name": "성형/시술",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-008",
+        "name": "판매제한"
+      }
+    ],
+    "product_id": "prod-007",
+    "total_spend": 2202660,
+    "total_revenue": 12070577,
+    "total_conversions": 106,
+    "total_impressions": 314666,
+    "total_clicks": 8181,
+    "cpc": 269,
+    "s3_key": "2026/06/눈밑지방재배치_판매제한_260612.png",
+    "thumbnail_url": "https://picsum.photos/seed/file050/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-051",
+    "name": "퓨어_비포애프터_이서진_260615.mp4",
+    "path": "/2026/06",
+    "file_type": "video/mp4",
+    "size": 23397557,
+    "created_at": "2026-06-15T14:27:00Z",
+    "updated_at": "2026-06-15T14:27:00Z",
+    "memo": "사용 전후 비교 이미지",
+    "ad_codes": [
+      "AD-2026-066"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-011",
+        "name": "비포애프터"
+      },
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 2299793,
+    "total_revenue": 5979462,
+    "total_conversions": 133,
+    "total_impressions": 287474,
+    "total_clicks": 8049,
+    "cpc": 286,
+    "s3_key": "2026/06/퓨어_비포애프터_260615.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file051/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-052",
+    "name": "두피케어_성분강조_정다은_260618.mp4",
+    "path": "/2026/06",
+    "file_type": "video/mp4",
+    "size": 24130774,
+    "created_at": "2026-06-18T15:34:00Z",
+    "updated_at": "2026-06-18T15:34:00Z",
+    "memo": "핵심 성분 클로즈업 소재",
+    "ad_codes": [
+      "AD-2026-067"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-012",
+        "name": "성분강조"
+      },
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 2396926,
+    "total_revenue": 7382532,
+    "total_conversions": 160,
+    "total_impressions": 266325,
+    "total_clicks": 7990,
+    "cpc": 300,
+    "s3_key": "2026/06/두피케어_성분강조_260618.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file052/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-053",
+    "name": "비타민C_릴스_김태호_260621.jpg",
+    "path": "/2026/06",
+    "file_type": "image/jpeg",
+    "size": 24863991,
+    "created_at": "2026-06-21T16:41:00Z",
+    "updated_at": "2026-06-21T16:41:00Z",
+    "memo": "세로형 숏폼 15초 소재",
+    "ad_codes": [
+      "AD-2026-068"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-014",
+        "name": "릴스"
+      },
+      {
+        "id": "al-004",
+        "name": "10초이내"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 2494059,
+    "total_revenue": 8878850,
+    "total_conversions": 188,
+    "total_impressions": 249406,
+    "total_clicks": 7981,
+    "cpc": 312,
+    "s3_key": "2026/06/비타민C_릴스_260621.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file053/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-054",
+    "name": "슬림다운_카드뉴스_오수진_260624.mp4",
+    "path": "/2026/06",
+    "file_type": "video/mp4",
+    "size": 25597208,
+    "created_at": "2026-06-24T09:48:00Z",
+    "updated_at": "2026-06-24T09:48:00Z",
+    "memo": "슬라이드형 정보 전달 소재",
+    "ad_codes": [
+      "AD-2026-069"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-015",
+        "name": "카드뉴스"
+      },
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 2591192,
+    "total_revenue": 10468416,
+    "total_conversions": 220,
+    "total_impressions": 370170,
+    "total_clicks": 8144,
+    "cpc": 318,
+    "s3_key": "2026/06/슬림다운_카드뉴스_260624.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file054/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-055",
+    "name": "프리미엄_인플루언서_강민준_260627.mp4",
+    "path": "/2026/06",
+    "file_type": "video/mp4",
+    "size": 26330425,
+    "created_at": "2026-06-27T10:55:00Z",
+    "updated_at": "2026-06-27T10:55:00Z",
+    "memo": "인플루언서 협찬 콘텐츠",
+    "ad_codes": [
+      "AD-2026-070"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-016",
+        "name": "인플루언서"
+      },
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 2688325,
+    "total_revenue": 12151229,
+    "total_conversions": 105,
+    "total_impressions": 336041,
+    "total_clicks": 8065,
+    "cpc": 333,
+    "s3_key": "2026/06/프리미엄_인플루언서_260627.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file055/400/400",
+    "scripts": {
+      "text": "직접 써보고 알려드리는 찐 후기"
+    }
+  },
+  {
+    "id": "file-056",
+    "name": "프로_챌린지_윤서아_260630.png",
+    "path": "/2026/06",
+    "file_type": "image/png",
+    "size": 27063642,
+    "created_at": "2026-06-30T11:02:00Z",
+    "updated_at": "2026-06-30T11:02:00Z",
+    "memo": "해시태그 챌린지 참여 유도 소재",
+    "ad_codes": [
+      "AD-2026-071"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "스포츠영양",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-017",
+        "name": "챌린지"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 2785458,
+    "total_revenue": 13927290,
+    "total_conversions": 133,
+    "total_impressions": 309495,
+    "total_clicks": 8047,
+    "cpc": 346,
+    "s3_key": "2026/06/프로_챌린지_260630.png",
+    "thumbnail_url": "https://picsum.photos/seed/file056/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-057",
+    "name": "눈밑지방재배치_브랜드스토리_임하늘_260703.mp4",
+    "path": "/2026/07",
+    "file_type": "video/mp4",
+    "size": 27796859,
+    "created_at": "2026-07-03T12:09:00Z",
+    "updated_at": "2026-07-03T12:09:00Z",
+    "memo": "브랜드 철학 전달 소재",
+    "ad_codes": [
+      "AD-2026-072"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-015",
+        "name": "성형/시술",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-018",
+        "name": "브랜드스토리"
+      }
+    ],
+    "product_id": "prod-007",
+    "total_spend": 2882591,
+    "total_revenue": 15796599,
+    "total_conversions": 161,
+    "total_impressions": 288259,
+    "total_clicks": 8071,
+    "cpc": 357,
+    "s3_key": "2026/07/눈밑지방재배치_브랜드스토리_260703.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file057/400/400",
+    "scripts": {
+      "text": "우리가 이 제품을 만든 이유입니다."
+    }
+  },
+  {
+    "id": "file-058",
+    "name": "퓨어_정보성_조은별_260706.mp4",
+    "path": "/2026/07",
+    "file_type": "video/mp4",
+    "size": 28530076,
+    "created_at": "2026-07-06T13:16:00Z",
+    "updated_at": "2026-07-06T13:16:00Z",
+    "memo": "성분 및 효능 데이터 기반 설명 광고",
+    "ad_codes": [
+      "AD-2026-073"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-001",
+        "name": "정보성"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 2979724,
+    "total_revenue": 7747282,
+    "total_conversions": 300,
+    "total_impressions": 425675,
+    "total_clicks": 12770,
+    "cpc": 233,
+    "s3_key": "2026/07/퓨어_정보성_260706.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file058/400/400",
+    "scripts": {
+      "text": "성분 100%의 비밀, 임상 데이터로 증명합니다."
+    }
+  },
+  {
+    "id": "file-059",
+    "name": "두피케어_후기성_배준영_260709.jpg",
+    "path": "/2026/07",
+    "file_type": "image/jpeg",
+    "size": 29263293,
+    "created_at": "2026-07-09T14:23:00Z",
+    "updated_at": "2026-07-09T14:23:00Z",
+    "memo": "실사용 후기 기반 UGC 스타일",
+    "ad_codes": [
+      "AD-2026-074"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-011",
+        "name": "헤어케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-002",
+        "name": "후기성"
+      },
+      {
+        "id": "al-005",
+        "name": "UGC"
+      }
+    ],
+    "product_id": "prod-002",
+    "total_spend": 3076857,
+    "total_revenue": 9476720,
+    "total_conversions": 332,
+    "total_impressions": 384607,
+    "total_clicks": 12307,
+    "cpc": 250,
+    "s3_key": "2026/07/두피케어_후기성_260709.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file059/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-060",
+    "name": "비타민C_프로모션_김민지_260712.mp4",
+    "path": "/2026/07",
+    "file_type": "video/mp4",
+    "size": 29996510,
+    "created_at": "2026-07-12T15:30:00Z",
+    "updated_at": "2026-07-12T15:30:00Z",
+    "memo": "한정 기간 할인 이벤트 소재",
+    "ad_codes": [
+      "AD-2026-075"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-003",
+        "name": "프로모션"
+      },
+      {
+        "id": "al-013",
+        "name": "할인이벤트"
+      }
+    ],
+    "product_id": "prod-003",
+    "total_spend": 273990,
+    "total_revenue": 975404,
+    "total_conversions": 9,
+    "total_impressions": 30443,
+    "total_clicks": 670,
+    "cpc": 409,
+    "s3_key": "2026/07/비타민C_프로모션_260712.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file060/400/400",
+    "scripts": {
+      "text": "이번 주만 특별가로 만나보세요."
+    }
+  },
+  {
+    "id": "file-061",
+    "name": "슬림다운_공포유발_이준혁_260715.mp4",
+    "path": "/2026/07",
+    "file_type": "video/mp4",
+    "size": 30729727,
+    "created_at": "2026-07-15T16:37:00Z",
+    "updated_at": "2026-07-15T16:37:00Z",
+    "memo": "손실회피 심리 자극 소재",
+    "ad_codes": [
+      "AD-2026-076"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-013",
+        "name": "다이어트",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-006",
+        "name": "공포유발"
+      }
+    ],
+    "product_id": "prod-004",
+    "total_spend": 371123,
+    "total_revenue": 1499337,
+    "total_conversions": 15,
+    "total_impressions": 37112,
+    "total_clicks": 891,
+    "cpc": 417,
+    "s3_key": "2026/07/슬림다운_공포유발_260715.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file061/400/400",
+    "scripts": {
+      "text": "지금 놓치면 다음 기회는 없습니다."
+    }
+  },
+  {
+    "id": "file-062",
+    "name": "프리미엄_권위신뢰_박서연_260413.png",
+    "path": "/2026/04",
+    "file_type": "image/png",
+    "size": 31462944,
+    "created_at": "2026-04-13T09:44:00Z",
+    "updated_at": "2026-04-13T09:44:00Z",
+    "memo": "전문가 추천 기반 신뢰 소구",
+    "ad_codes": [
+      "AD-2026-077"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-012",
+        "name": "건강기능식품",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-007",
+        "name": "권위신뢰"
+      }
+    ],
+    "product_id": "prod-005",
+    "total_spend": 468256,
+    "total_revenue": 2116517,
+    "total_conversions": 35,
+    "total_impressions": 66894,
+    "total_clicks": 1739,
+    "cpc": 269,
+    "s3_key": "2026/04/프리미엄_권위신뢰_260413.png",
+    "thumbnail_url": "https://picsum.photos/seed/file062/400/400",
+    "scripts": null
+  },
+  {
+    "id": "file-063",
+    "name": "프로_문제나열_최지원_260416.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 32196161,
+    "created_at": "2026-04-16T10:51:00Z",
+    "updated_at": "2026-04-16T10:51:00Z",
+    "memo": "공감형 문제 제시 소재",
+    "ad_codes": [
+      "AD-2026-078"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-014",
+        "name": "스포츠영양",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-009",
+        "name": "문제나열"
+      }
+    ],
+    "product_id": "prod-006",
+    "total_spend": 565389,
+    "total_revenue": 2826945,
+    "total_conversions": 47,
+    "total_impressions": 70674,
+    "total_clicks": 1979,
+    "cpc": 286,
+    "s3_key": "2026/04/프로_문제나열_260416.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file063/400/400",
+    "scripts": {
+      "text": "이런 고민 있으신 분들 주목하세요."
+    }
+  },
+  {
+    "id": "file-064",
+    "name": "눈밑지방재배치_판매제한_홍길동_260419.mp4",
+    "path": "/2026/04",
+    "file_type": "video/mp4",
+    "size": 32929378,
+    "created_at": "2026-04-19T11:58:00Z",
+    "updated_at": "2026-04-19T11:58:00Z",
+    "memo": "재고 소진 임박 긴급성 소재",
+    "ad_codes": [
+      "AD-2026-079"
+    ],
+    "has_scripts": true,
+    "category_labels": [
+      {
+        "id": "cl-001",
+        "name": "영상",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-015",
+        "name": "성형/시술",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-008",
+        "name": "판매제한"
+      }
+    ],
+    "product_id": "prod-007",
+    "total_spend": 662522,
+    "total_revenue": 3630621,
+    "total_conversions": 60,
+    "total_impressions": 73614,
+    "total_clicks": 2208,
+    "cpc": 300,
+    "s3_key": "2026/04/눈밑지방재배치_판매제한_260419.mp4",
+    "thumbnail_url": "https://picsum.photos/seed/file064/400/400",
+    "scripts": {
+      "text": "이번 재입고가 마지막일 수 있습니다."
+    }
+  },
+  {
+    "id": "file-065",
+    "name": "퓨어_비포애프터_이나라_260422.jpg",
+    "path": "/2026/04",
+    "file_type": "image/jpeg",
+    "size": 33662595,
+    "created_at": "2026-04-22T12:05:00Z",
+    "updated_at": "2026-04-22T12:05:00Z",
+    "memo": "사용 전후 비교 이미지",
+    "ad_codes": [
+      "AD-2026-080"
+    ],
+    "has_scripts": false,
+    "category_labels": [
+      {
+        "id": "cl-002",
+        "name": "이미지",
+        "group_id": "cg-001",
+        "group_name": "미디어 유형"
+      },
+      {
+        "id": "cl-010",
+        "name": "스킨케어",
+        "group_id": "cg-002",
+        "group_name": "제품 카테고리"
+      }
+    ],
+    "attribute_labels": [
+      {
+        "id": "al-011",
+        "name": "비포애프터"
+      },
+      {
+        "id": "al-002",
+        "name": "후기성"
+      }
+    ],
+    "product_id": "prod-001",
+    "total_spend": 759655,
+    "total_revenue": 1975103,
+    "total_conversions": 32,
+    "total_impressions": 75966,
+    "total_clicks": 2431,
+    "cpc": 312,
+    "s3_key": "2026/04/퓨어_비포애프터_260422.jpg",
+    "thumbnail_url": "https://picsum.photos/seed/file065/400/400",
+    "scripts": null
   }
 ]

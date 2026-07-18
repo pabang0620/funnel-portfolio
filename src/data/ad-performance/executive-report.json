@@ -1,62 +1,311 @@
 {
   "monthly": [
-    { "month": "2026-04", "label": "4월", "sales": 211000000, "profit": 62000000, "adCost": 26000000 }
+    {
+      "month": "2026-04",
+      "label": "4월",
+      "sales": 211000000,
+      "profit": 62000000,
+      "adCost": 26000000
+    }
   ],
   "salesTable": [
     {
       "product": "알파덴탈",
-      "카페24Sales": 18500000, "쿠팡Sales": 32000000, "쿠팡그로서리Sales": 8500000,
-      "스마트스토어Sales": 22000000, "옥션Sales": 6200000, "11번가Sales": 9800000,
-      "totalSales": 97000000,
-      "salesMargin": 38800000, "contributionProfit": 29100000, "profitRate": "30.0",
-      "adCost": 12500000, "roas": "776.0", "salesCommission": 4850000
+      "카페24Sales": 18500000,
+      "쿠팡Sales": 32000000,
+      "쿠팡그로서리Sales": 8500000,
+      "스마트스토어Sales": 22000000,
+      "옥션Sales": 6200000,
+      "11번가Sales": 9800000,
+      "totalSales": 113909924,
+      "salesMargin": 38800000,
+      "contributionProfit": 29100000,
+      "profitRate": "30.0",
+      "adCost": 12500000,
+      "roas": "776.0",
+      "salesCommission": 4850000,
+      "위메프Sales": 2831728,
+      "G마켓Sales": 2742654,
+      "텐바이텐Sales": 4627155,
+      "브랜드스토어Sales": 4082576,
+      "톡스토어Sales": 2625811
     },
     {
       "product": "베타케어",
-      "카페24Sales": 12300000, "쿠팡Sales": 24500000, "쿠팡그로서리Sales": 5200000,
-      "스마트스토어Sales": 16800000, "옥션Sales": 4100000, "11번가Sales": 6900000,
-      "totalSales": 69800000,
-      "salesMargin": 27920000, "contributionProfit": 20940000, "profitRate": "30.0",
-      "adCost": 8900000, "roas": "784.3", "salesCommission": 3490000
+      "카페24Sales": 12300000,
+      "쿠팡Sales": 24500000,
+      "쿠팡그로서리Sales": 5200000,
+      "스마트스토어Sales": 16800000,
+      "옥션Sales": 4100000,
+      "11번가Sales": 6900000,
+      "totalSales": 86013315,
+      "salesMargin": 27920000,
+      "contributionProfit": 20940000,
+      "profitRate": "30.0",
+      "adCost": 8900000,
+      "roas": "784.3",
+      "salesCommission": 3490000,
+      "위메프Sales": 3773644,
+      "G마켓Sales": 2838642,
+      "텐바이텐Sales": 5044099,
+      "브랜드스토어Sales": 1347401,
+      "톡스토어Sales": 3209529
     },
     {
       "product": "감마헬스",
-      "카페24Sales": 9800000, "쿠팡Sales": 18200000, "쿠팡그로서리Sales": 3900000,
-      "스마트스토어Sales": 13500000, "옥션Sales": 3200000, "11번가Sales": 5400000,
-      "totalSales": 54000000,
-      "salesMargin": 21600000, "contributionProfit": 16200000, "profitRate": "30.0",
-      "adCost": 7000000, "roas": "771.4", "salesCommission": 2700000
+      "카페24Sales": 9800000,
+      "쿠팡Sales": 18200000,
+      "쿠팡그로서리Sales": 3900000,
+      "스마트스토어Sales": 13500000,
+      "옥션Sales": 3200000,
+      "11번가Sales": 5400000,
+      "totalSales": 75205031,
+      "salesMargin": 21600000,
+      "contributionProfit": 16200000,
+      "profitRate": "30.0",
+      "adCost": 7000000,
+      "roas": "771.4",
+      "salesCommission": 2700000,
+      "위메프Sales": 3818656,
+      "G마켓Sales": 3460993,
+      "텐바이텐Sales": 3804670,
+      "브랜드스토어Sales": 5797431,
+      "톡스토어Sales": 4323281
     },
     {
       "product": "델타치과",
-      "카페24Sales": 7200000, "쿠팡Sales": 15400000, "쿠팡그로서리Sales": 3100000,
-      "스마트스토어Sales": 10800000, "옥션Sales": 2600000, "11번가Sales": 4300000,
-      "totalSales": 43400000,
-      "salesMargin": 17360000, "contributionProfit": 13020000, "profitRate": "30.0",
-      "adCost": 5600000, "roas": "775.0", "salesCommission": 2170000
+      "카페24Sales": 7200000,
+      "쿠팡Sales": 15400000,
+      "쿠팡그로서리Sales": 3100000,
+      "스마트스토어Sales": 10800000,
+      "옥션Sales": 2600000,
+      "11번가Sales": 4300000,
+      "totalSales": 60252907,
+      "salesMargin": 17360000,
+      "contributionProfit": 13020000,
+      "profitRate": "30.0",
+      "adCost": 5600000,
+      "roas": "775.0",
+      "salesCommission": 2170000,
+      "위메프Sales": 5041832,
+      "G마켓Sales": 3653959,
+      "텐바이텐Sales": 2788086,
+      "브랜드스토어Sales": 1799490,
+      "톡스토어Sales": 3569540
     },
     {
       "product": "엡실론임플",
-      "카페24Sales": 14600000, "쿠팡Sales": 28900000, "쿠팡그로서리Sales": 6100000,
-      "스마트스토어Sales": 19700000, "옥션Sales": 4800000, "11번가Sales": 8100000,
-      "totalSales": 82200000,
-      "salesMargin": 32880000, "contributionProfit": 24660000, "profitRate": "30.0",
-      "adCost": 10500000, "roas": "782.9", "salesCommission": 4110000
+      "카페24Sales": 14600000,
+      "쿠팡Sales": 28900000,
+      "쿠팡그로서리Sales": 6100000,
+      "스마트스토어Sales": 19700000,
+      "옥션Sales": 4800000,
+      "11번가Sales": 8100000,
+      "totalSales": 101214066,
+      "salesMargin": 32880000,
+      "contributionProfit": 24660000,
+      "profitRate": "30.0",
+      "adCost": 10500000,
+      "roas": "782.9",
+      "salesCommission": 4110000,
+      "위메프Sales": 2478895,
+      "G마켓Sales": 5696665,
+      "텐바이텐Sales": 5578659,
+      "브랜드스토어Sales": 3475313,
+      "톡스토어Sales": 1784534
+    },
+    {
+      "product": "제타뷰티",
+      "카페24Sales": 2411989,
+      "쿠팡Sales": 17756429,
+      "쿠팡그로서리Sales": 5771479,
+      "스마트스토어Sales": 27634810,
+      "옥션Sales": 15181434,
+      "11번가Sales": 6726317,
+      "위메프Sales": 24946677,
+      "G마켓Sales": 3451840,
+      "텐바이텐Sales": 6653695,
+      "브랜드스토어Sales": 5772979,
+      "톡스토어Sales": 19958739,
+      "totalSales": 136266388,
+      "salesMargin": 54506555,
+      "contributionProfit": 40879916,
+      "profitRate": "30.0",
+      "adCost": 15521851,
+      "roas": "877.9",
+      "salesCommission": 6813319
+    },
+    {
+      "product": "에타스킨",
+      "카페24Sales": 27420585,
+      "쿠팡Sales": 6683918,
+      "쿠팡그로서리Sales": 6945964,
+      "스마트스토어Sales": 26852264,
+      "옥션Sales": 3111176,
+      "11번가Sales": 24218626,
+      "위메프Sales": 4033979,
+      "G마켓Sales": 6582814,
+      "텐바이텐Sales": 9756751,
+      "브랜드스토어Sales": 19973825,
+      "톡스토어Sales": 26574386,
+      "totalSales": 162154288,
+      "salesMargin": 64861715,
+      "contributionProfit": 48646286,
+      "profitRate": "30.0",
+      "adCost": 20571713,
+      "roas": "788.2",
+      "salesCommission": 8107714
+    },
+    {
+      "product": "세타정형",
+      "카페24Sales": 15843554,
+      "쿠팡Sales": 8876275,
+      "쿠팡그로서리Sales": 21900511,
+      "스마트스토어Sales": 5124299,
+      "옥션Sales": 5964395,
+      "11번가Sales": 2683384,
+      "위메프Sales": 27845230,
+      "G마켓Sales": 15520617,
+      "텐바이텐Sales": 13459953,
+      "브랜드스토어Sales": 8660475,
+      "톡스토어Sales": 8909786,
+      "totalSales": 134788479,
+      "salesMargin": 53915392,
+      "contributionProfit": 40436544,
+      "profitRate": "30.0",
+      "adCost": 16150162,
+      "roas": "834.6",
+      "salesCommission": 6739424
+    },
+    {
+      "product": "요타메디",
+      "카페24Sales": 14243835,
+      "쿠팡Sales": 22027186,
+      "쿠팡그로서리Sales": 10273292,
+      "스마트스토어Sales": 9057580,
+      "옥션Sales": 26292549,
+      "11번가Sales": 9278829,
+      "위메프Sales": 15969977,
+      "G마켓Sales": 21626018,
+      "텐바이텐Sales": 24237318,
+      "브랜드스토어Sales": 20367074,
+      "톡스토어Sales": 4015043,
+      "totalSales": 177388701,
+      "salesMargin": 70955480,
+      "contributionProfit": 53216610,
+      "profitRate": "30.0",
+      "adCost": 27889865,
+      "roas": "636.0",
+      "salesCommission": 8869435
+    },
+    {
+      "product": "카파웰니스",
+      "카페24Sales": 8036115,
+      "쿠팡Sales": 13928738,
+      "쿠팡그로서리Sales": 6521143,
+      "스마트스토어Sales": 8840333,
+      "옥션Sales": 6953474,
+      "11번가Sales": 28711393,
+      "위메프Sales": 14630293,
+      "G마켓Sales": 3019038,
+      "텐바이텐Sales": 4889466,
+      "브랜드스토어Sales": 26664044,
+      "톡스토어Sales": 19825233,
+      "totalSales": 142019270,
+      "salesMargin": 56807708,
+      "contributionProfit": 42605781,
+      "profitRate": "30.0",
+      "adCost": 21601321,
+      "roas": "657.5",
+      "salesCommission": 7100964
     }
   ],
   "marketplaces": [
-    { "id": 1, "name": "카페24" },
-    { "id": 2, "name": "쿠팡" },
-    { "id": 3, "name": "쿠팡그로서리" },
-    { "id": 4, "name": "스마트스토어" },
-    { "id": 5, "name": "옥션" },
-    { "id": 6, "name": "11번가" }
+    {
+      "id": 1,
+      "name": "카페24"
+    },
+    {
+      "id": 2,
+      "name": "쿠팡"
+    },
+    {
+      "id": 3,
+      "name": "쿠팡그로서리"
+    },
+    {
+      "id": 4,
+      "name": "스마트스토어"
+    },
+    {
+      "id": 5,
+      "name": "옥션"
+    },
+    {
+      "id": 6,
+      "name": "11번가"
+    },
+    {
+      "id": 7,
+      "name": "위메프"
+    },
+    {
+      "id": 8,
+      "name": "G마켓"
+    },
+    {
+      "id": 9,
+      "name": "텐바이텐"
+    },
+    {
+      "id": 10,
+      "name": "브랜드스토어"
+    },
+    {
+      "id": 11,
+      "name": "톡스토어"
+    }
   ],
   "products": [
-    { "id": 1, "name": "알파덴탈" },
-    { "id": 2, "name": "베타케어" },
-    { "id": 3, "name": "감마헬스" },
-    { "id": 4, "name": "델타치과" },
-    { "id": 5, "name": "엡실론임플" }
+    {
+      "id": 1,
+      "name": "알파덴탈"
+    },
+    {
+      "id": 2,
+      "name": "베타케어"
+    },
+    {
+      "id": 3,
+      "name": "감마헬스"
+    },
+    {
+      "id": 4,
+      "name": "델타치과"
+    },
+    {
+      "id": 5,
+      "name": "엡실론임플"
+    },
+    {
+      "id": 6,
+      "name": "제타뷰티"
+    },
+    {
+      "id": 7,
+      "name": "에타스킨"
+    },
+    {
+      "id": 8,
+      "name": "세타정형"
+    },
+    {
+      "id": 9,
+      "name": "요타메디"
+    },
+    {
+      "id": 10,
+      "name": "카파웰니스"
+    }
   ]
 }

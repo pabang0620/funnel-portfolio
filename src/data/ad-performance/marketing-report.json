@@ -1,84 +1,1326 @@
 {
   "dailyData": [
-    { "date": "2026-04-01", "media": "구글", "adCost": 850000, "impressions": 125000, "clicks": 3800, "conversions": 80, "revenue": 4800000 },
-    { "date": "2026-04-01", "media": "메타", "adCost": 720000, "impressions": 98000, "clicks": 3200, "conversions": 60, "revenue": 3900000 },
-    { "date": "2026-04-01", "media": "틱톡", "adCost": 450000, "impressions": 82000, "clicks": 2100, "conversions": 40, "revenue": 2200000 },
-    { "date": "2026-04-01", "media": "GFA", "adCost": 380000, "impressions": 65000, "clicks": 1800, "conversions": 30, "revenue": 1850000 },
-    { "date": "2026-04-01", "media": "쿠팡", "adCost": 520000, "impressions": 78000, "clicks": 2400, "conversions": 50, "revenue": 3100000 },
-    { "date": "2026-04-01", "media": "네이버SA", "adCost": 680000, "impressions": 102000, "clicks": 2950, "conversions": 70, "revenue": 4250000 },
-    { "date": "2026-04-02", "media": "구글", "adCost": 880000, "impressions": 132000, "clicks": 3950, "conversions": 90, "revenue": 5200000 },
-    { "date": "2026-04-02", "media": "메타", "adCost": 750000, "impressions": 101000, "clicks": 3350, "conversions": 70, "revenue": 4100000 },
-    { "date": "2026-04-02", "media": "틱톡", "adCost": 470000, "impressions": 85000, "clicks": 2200, "conversions": 50, "revenue": 2400000 },
-    { "date": "2026-04-02", "media": "GFA", "adCost": 400000, "impressions": 68000, "clicks": 1900, "conversions": 40, "revenue": 1950000 },
-    { "date": "2026-04-02", "media": "쿠팡", "adCost": 550000, "impressions": 81000, "clicks": 2550, "conversions": 60, "revenue": 3300000 },
-    { "date": "2026-04-02", "media": "네이버SA", "adCost": 710000, "impressions": 105000, "clicks": 3100, "conversions": 80, "revenue": 4500000 },
-    { "date": "2026-04-03", "media": "구글", "adCost": 820000, "impressions": 120000, "clicks": 3700, "conversions": 70, "revenue": 4650000 },
-    { "date": "2026-04-03", "media": "메타", "adCost": 700000, "impressions": 95000, "clicks": 3150, "conversions": 60, "revenue": 3800000 },
-    { "date": "2026-04-03", "media": "틱톡", "adCost": 430000, "impressions": 79000, "clicks": 2050, "conversions": 40, "revenue": 2150000 },
-    { "date": "2026-04-03", "media": "GFA", "adCost": 360000, "impressions": 62000, "clicks": 1750, "conversions": 30, "revenue": 1750000 },
-    { "date": "2026-04-03", "media": "쿠팡", "adCost": 500000, "impressions": 75000, "clicks": 2350, "conversions": 50, "revenue": 3050000 },
-    { "date": "2026-04-03", "media": "네이버SA", "adCost": 650000, "impressions": 98000, "clicks": 2850, "conversions": 60, "revenue": 4100000 },
-    { "date": "2026-04-04", "media": "구글", "adCost": 900000, "impressions": 138000, "clicks": 4100, "conversions": 100, "revenue": 5500000 },
-    { "date": "2026-04-04", "media": "메타", "adCost": 780000, "impressions": 105000, "clicks": 3450, "conversions": 80, "revenue": 4400000 },
-    { "date": "2026-04-04", "media": "틱톡", "adCost": 490000, "impressions": 88000, "clicks": 2300, "conversions": 50, "revenue": 2600000 },
-    { "date": "2026-04-04", "media": "GFA", "adCost": 420000, "impressions": 71000, "clicks": 2000, "conversions": 40, "revenue": 2050000 },
-    { "date": "2026-04-04", "media": "쿠팡", "adCost": 580000, "impressions": 84000, "clicks": 2650, "conversions": 60, "revenue": 3500000 },
-    { "date": "2026-04-04", "media": "네이버SA", "adCost": 730000, "impressions": 110000, "clicks": 3200, "conversions": 80, "revenue": 4700000 },
-    { "date": "2026-04-07", "media": "구글", "adCost": 870000, "impressions": 130000, "clicks": 3900, "conversions": 90, "revenue": 5100000 },
-    { "date": "2026-04-07", "media": "메타", "adCost": 760000, "impressions": 102000, "clicks": 3400, "conversions": 70, "revenue": 4200000 },
-    { "date": "2026-04-07", "media": "틱톡", "adCost": 480000, "impressions": 86000, "clicks": 2250, "conversions": 50, "revenue": 2450000 },
-    { "date": "2026-04-07", "media": "GFA", "adCost": 410000, "impressions": 69000, "clicks": 1950, "conversions": 40, "revenue": 2000000 },
-    { "date": "2026-04-07", "media": "쿠팡", "adCost": 560000, "impressions": 82000, "clicks": 2600, "conversions": 60, "revenue": 3400000 },
-    { "date": "2026-04-07", "media": "네이버SA", "adCost": 720000, "impressions": 108000, "clicks": 3150, "conversions": 80, "revenue": 4600000 },
-    { "date": "2026-04-08", "media": "구글", "adCost": 910000, "impressions": 140000, "clicks": 4200, "conversions": 100, "revenue": 5600000 },
-    { "date": "2026-04-08", "media": "메타", "adCost": 790000, "impressions": 108000, "clicks": 3550, "conversions": 80, "revenue": 4500000 },
-    { "date": "2026-04-08", "media": "틱톡", "adCost": 500000, "impressions": 90000, "clicks": 2350, "conversions": 50, "revenue": 2650000 },
-    { "date": "2026-04-08", "media": "GFA", "adCost": 430000, "impressions": 73000, "clicks": 2050, "conversions": 40, "revenue": 2100000 },
-    { "date": "2026-04-08", "media": "쿠팡", "adCost": 590000, "impressions": 86000, "clicks": 2700, "conversions": 60, "revenue": 3600000 },
-    { "date": "2026-04-08", "media": "네이버SA", "adCost": 750000, "impressions": 113000, "clicks": 3300, "conversions": 80, "revenue": 4800000 },
-    { "date": "2026-04-11", "media": "구글", "adCost": 950000, "impressions": 150000, "clicks": 4500, "conversions": 120, "revenue": 6100000 },
-    { "date": "2026-04-11", "media": "메타", "adCost": 830000, "impressions": 115000, "clicks": 3800, "conversions": 100, "revenue": 4900000 },
-    { "date": "2026-04-11", "media": "틱톡", "adCost": 540000, "impressions": 96000, "clicks": 2550, "conversions": 60, "revenue": 2950000 },
-    { "date": "2026-04-11", "media": "GFA", "adCost": 470000, "impressions": 79000, "clicks": 2200, "conversions": 50, "revenue": 2300000 },
-    { "date": "2026-04-11", "media": "쿠팡", "adCost": 630000, "impressions": 92000, "clicks": 2900, "conversions": 70, "revenue": 3900000 },
-    { "date": "2026-04-11", "media": "네이버SA", "adCost": 790000, "impressions": 120000, "clicks": 3500, "conversions": 90, "revenue": 5200000 },
-    { "date": "2026-04-14", "media": "구글", "adCost": 880000, "impressions": 134000, "clicks": 4000, "conversions": 90, "revenue": 5250000 },
-    { "date": "2026-04-14", "media": "메타", "adCost": 760000, "impressions": 103000, "clicks": 3420, "conversions": 70, "revenue": 4300000 },
-    { "date": "2026-04-14", "media": "틱톡", "adCost": 470000, "impressions": 85000, "clicks": 2250, "conversions": 50, "revenue": 2480000 },
-    { "date": "2026-04-14", "media": "GFA", "adCost": 400000, "impressions": 69000, "clicks": 1950, "conversions": 40, "revenue": 2000000 },
-    { "date": "2026-04-14", "media": "쿠팡", "adCost": 560000, "impressions": 82000, "clicks": 2580, "conversions": 50, "revenue": 3420000 },
-    { "date": "2026-04-14", "media": "네이버SA", "adCost": 720000, "impressions": 107000, "clicks": 3150, "conversions": 70, "revenue": 4600000 },
-    { "date": "2026-04-17", "media": "구글", "adCost": 980000, "impressions": 156000, "clicks": 4700, "conversions": 120, "revenue": 6400000 },
-    { "date": "2026-04-17", "media": "메타", "adCost": 860000, "impressions": 120000, "clicks": 3980, "conversions": 100, "revenue": 5200000 },
-    { "date": "2026-04-17", "media": "틱톡", "adCost": 570000, "impressions": 102000, "clicks": 2700, "conversions": 70, "revenue": 3150000 },
-    { "date": "2026-04-17", "media": "GFA", "adCost": 500000, "impressions": 84000, "clicks": 2350, "conversions": 60, "revenue": 2450000 },
-    { "date": "2026-04-17", "media": "쿠팡", "adCost": 660000, "impressions": 97000, "clicks": 3050, "conversions": 80, "revenue": 4100000 },
-    { "date": "2026-04-17", "media": "네이버SA", "adCost": 820000, "impressions": 126000, "clicks": 3700, "conversions": 100, "revenue": 5500000 },
-    { "date": "2026-04-21", "media": "구글", "adCost": 930000, "impressions": 145000, "clicks": 4350, "conversions": 105, "revenue": 5850000 },
-    { "date": "2026-04-21", "media": "메타", "adCost": 810000, "impressions": 111000, "clicks": 3650, "conversions": 88, "revenue": 4750000 },
-    { "date": "2026-04-21", "media": "틱톡", "adCost": 525000, "impressions": 94000, "clicks": 2480, "conversions": 62, "revenue": 2850000 },
-    { "date": "2026-04-21", "media": "GFA", "adCost": 460000, "impressions": 77000, "clicks": 2130, "conversions": 48, "revenue": 2230000 },
-    { "date": "2026-04-21", "media": "쿠팡", "adCost": 615000, "impressions": 89000, "clicks": 2780, "conversions": 68, "revenue": 3780000 },
-    { "date": "2026-04-21", "media": "네이버SA", "adCost": 770000, "impressions": 117000, "clicks": 3400, "conversions": 88, "revenue": 5000000 },
-    { "date": "2026-04-25", "media": "구글", "adCost": 1020000, "impressions": 162000, "clicks": 4850, "conversions": 128, "revenue": 6700000 },
-    { "date": "2026-04-25", "media": "메타", "adCost": 890000, "impressions": 124000, "clicks": 4100, "conversions": 105, "revenue": 5400000 },
-    { "date": "2026-04-25", "media": "틱톡", "adCost": 595000, "impressions": 107000, "clicks": 2820, "conversions": 73, "revenue": 3280000 },
-    { "date": "2026-04-25", "media": "GFA", "adCost": 520000, "impressions": 88000, "clicks": 2440, "conversions": 62, "revenue": 2560000 },
-    { "date": "2026-04-25", "media": "쿠팡", "adCost": 690000, "impressions": 102000, "clicks": 3180, "conversions": 82, "revenue": 4280000 },
-    { "date": "2026-04-25", "media": "네이버SA", "adCost": 850000, "impressions": 130000, "clicks": 3820, "conversions": 106, "revenue": 5720000 },
-    { "date": "2026-04-28", "media": "구글", "adCost": 960000, "impressions": 152000, "clicks": 4560, "conversions": 115, "revenue": 6200000 },
-    { "date": "2026-04-28", "media": "메타", "adCost": 840000, "impressions": 116000, "clicks": 3860, "conversions": 96, "revenue": 5050000 },
-    { "date": "2026-04-28", "media": "틱톡", "adCost": 560000, "impressions": 99000, "clicks": 2640, "conversions": 67, "revenue": 3040000 },
-    { "date": "2026-04-28", "media": "GFA", "adCost": 490000, "impressions": 82000, "clicks": 2290, "conversions": 57, "revenue": 2390000 },
-    { "date": "2026-04-28", "media": "쿠팡", "adCost": 648000, "impressions": 95000, "clicks": 2980, "conversions": 76, "revenue": 3990000 },
-    { "date": "2026-04-28", "media": "네이버SA", "adCost": 800000, "impressions": 122000, "clicks": 3580, "conversions": 98, "revenue": 5350000 }
+    {
+      "date": "2026-03-10",
+      "media": "구글",
+      "adCost": 679000,
+      "impressions": 100000,
+      "clicks": 3030,
+      "conversions": 64,
+      "revenue": 3850000
+    },
+    {
+      "date": "2026-03-10",
+      "media": "메타",
+      "adCost": 631000,
+      "impressions": 87000,
+      "clicks": 2790,
+      "conversions": 52,
+      "revenue": 3420000
+    },
+    {
+      "date": "2026-03-10",
+      "media": "틱톡",
+      "adCost": 393000,
+      "impressions": 71000,
+      "clicks": 1830,
+      "conversions": 34,
+      "revenue": 1920000
+    },
+    {
+      "date": "2026-03-10",
+      "media": "GFA",
+      "adCost": 321000,
+      "impressions": 55000,
+      "clicks": 1520,
+      "conversions": 24,
+      "revenue": 1560000
+    },
+    {
+      "date": "2026-03-10",
+      "media": "쿠팡",
+      "adCost": 421000,
+      "impressions": 63000,
+      "clicks": 1940,
+      "conversions": 40,
+      "revenue": 2520000
+    },
+    {
+      "date": "2026-03-10",
+      "media": "네이버SA",
+      "adCost": 606000,
+      "impressions": 92000,
+      "clicks": 2660,
+      "conversions": 62,
+      "revenue": 3810000
+    },
+    {
+      "date": "2026-03-11",
+      "media": "구글",
+      "adCost": 772000,
+      "impressions": 114000,
+      "clicks": 3440,
+      "conversions": 73,
+      "revenue": 4370000
+    },
+    {
+      "date": "2026-03-11",
+      "media": "메타",
+      "adCost": 618000,
+      "impressions": 85000,
+      "clicks": 2740,
+      "conversions": 51,
+      "revenue": 3360000
+    },
+    {
+      "date": "2026-03-11",
+      "media": "틱톡",
+      "adCost": 388000,
+      "impressions": 71000,
+      "clicks": 1810,
+      "conversions": 34,
+      "revenue": 1900000
+    },
+    {
+      "date": "2026-03-11",
+      "media": "GFA",
+      "adCost": 310000,
+      "impressions": 53000,
+      "clicks": 1470,
+      "conversions": 23,
+      "revenue": 1510000
+    },
+    {
+      "date": "2026-03-11",
+      "media": "쿠팡",
+      "adCost": 409000,
+      "impressions": 61000,
+      "clicks": 1880,
+      "conversions": 38,
+      "revenue": 2440000
+    },
+    {
+      "date": "2026-03-11",
+      "media": "네이버SA",
+      "adCost": 568000,
+      "impressions": 86000,
+      "clicks": 2500,
+      "conversions": 59,
+      "revenue": 3570000
+    },
+    {
+      "date": "2026-03-14",
+      "media": "구글",
+      "adCost": 751000,
+      "impressions": 110000,
+      "clicks": 3350,
+      "conversions": 71,
+      "revenue": 4250000
+    },
+    {
+      "date": "2026-03-14",
+      "media": "메타",
+      "adCost": 575000,
+      "impressions": 79000,
+      "clicks": 2550,
+      "conversions": 48,
+      "revenue": 3120000
+    },
+    {
+      "date": "2026-03-14",
+      "media": "틱톡",
+      "adCost": 413000,
+      "impressions": 75000,
+      "clicks": 1920,
+      "conversions": 36,
+      "revenue": 2020000
+    },
+    {
+      "date": "2026-03-14",
+      "media": "GFA",
+      "adCost": 314000,
+      "impressions": 53000,
+      "clicks": 1480,
+      "conversions": 24,
+      "revenue": 1530000
+    },
+    {
+      "date": "2026-03-14",
+      "media": "쿠팡",
+      "adCost": 432000,
+      "impressions": 64000,
+      "clicks": 1990,
+      "conversions": 41,
+      "revenue": 2590000
+    },
+    {
+      "date": "2026-03-14",
+      "media": "네이버SA",
+      "adCost": 539000,
+      "impressions": 82000,
+      "clicks": 2370,
+      "conversions": 56,
+      "revenue": 3390000
+    },
+    {
+      "date": "2026-03-15",
+      "media": "구글",
+      "adCost": 815000,
+      "impressions": 120000,
+      "clicks": 3630,
+      "conversions": 77,
+      "revenue": 4620000
+    },
+    {
+      "date": "2026-03-15",
+      "media": "메타",
+      "adCost": 658000,
+      "impressions": 90000,
+      "clicks": 2910,
+      "conversions": 55,
+      "revenue": 3570000
+    },
+    {
+      "date": "2026-03-15",
+      "media": "틱톡",
+      "adCost": 423000,
+      "impressions": 77000,
+      "clicks": 1970,
+      "conversions": 37,
+      "revenue": 2070000
+    },
+    {
+      "date": "2026-03-15",
+      "media": "GFA",
+      "adCost": 340000,
+      "impressions": 58000,
+      "clicks": 1610,
+      "conversions": 26,
+      "revenue": 1660000
+    },
+    {
+      "date": "2026-03-15",
+      "media": "쿠팡",
+      "adCost": 421000,
+      "impressions": 63000,
+      "clicks": 1940,
+      "conversions": 40,
+      "revenue": 2510000
+    },
+    {
+      "date": "2026-03-15",
+      "media": "네이버SA",
+      "adCost": 576000,
+      "impressions": 87000,
+      "clicks": 2530,
+      "conversions": 59,
+      "revenue": 3620000
+    },
+    {
+      "date": "2026-03-18",
+      "media": "구글",
+      "adCost": 756000,
+      "impressions": 111000,
+      "clicks": 3370,
+      "conversions": 71,
+      "revenue": 4280000
+    },
+    {
+      "date": "2026-03-18",
+      "media": "메타",
+      "adCost": 593000,
+      "impressions": 81000,
+      "clicks": 2630,
+      "conversions": 49,
+      "revenue": 3220000
+    },
+    {
+      "date": "2026-03-18",
+      "media": "틱톡",
+      "adCost": 434000,
+      "impressions": 79000,
+      "clicks": 2020,
+      "conversions": 37,
+      "revenue": 2120000
+    },
+    {
+      "date": "2026-03-18",
+      "media": "GFA",
+      "adCost": 329000,
+      "impressions": 56000,
+      "clicks": 1560,
+      "conversions": 25,
+      "revenue": 1600000
+    },
+    {
+      "date": "2026-03-18",
+      "media": "쿠팡",
+      "adCost": 435000,
+      "impressions": 65000,
+      "clicks": 2010,
+      "conversions": 41,
+      "revenue": 2600000
+    },
+    {
+      "date": "2026-03-18",
+      "media": "네이버SA",
+      "adCost": 636000,
+      "impressions": 96000,
+      "clicks": 2790,
+      "conversions": 66,
+      "revenue": 4000000
+    },
+    {
+      "date": "2026-03-19",
+      "media": "구글",
+      "adCost": 712000,
+      "impressions": 105000,
+      "clicks": 3170,
+      "conversions": 67,
+      "revenue": 4030000
+    },
+    {
+      "date": "2026-03-19",
+      "media": "메타",
+      "adCost": 695000,
+      "impressions": 95000,
+      "clicks": 3080,
+      "conversions": 58,
+      "revenue": 3770000
+    },
+    {
+      "date": "2026-03-19",
+      "media": "틱톡",
+      "adCost": 402000,
+      "impressions": 73000,
+      "clicks": 1870,
+      "conversions": 35,
+      "revenue": 1960000
+    },
+    {
+      "date": "2026-03-19",
+      "media": "GFA",
+      "adCost": 344000,
+      "impressions": 59000,
+      "clicks": 1630,
+      "conversions": 26,
+      "revenue": 1670000
+    },
+    {
+      "date": "2026-03-19",
+      "media": "쿠팡",
+      "adCost": 456000,
+      "impressions": 68000,
+      "clicks": 2100,
+      "conversions": 43,
+      "revenue": 2730000
+    },
+    {
+      "date": "2026-03-19",
+      "media": "네이버SA",
+      "adCost": 606000,
+      "impressions": 92000,
+      "clicks": 2660,
+      "conversions": 62,
+      "revenue": 3810000
+    },
+    {
+      "date": "2026-03-20",
+      "media": "구글",
+      "adCost": 728000,
+      "impressions": 107000,
+      "clicks": 3250,
+      "conversions": 68,
+      "revenue": 4120000
+    },
+    {
+      "date": "2026-03-20",
+      "media": "메타",
+      "adCost": 597000,
+      "impressions": 82000,
+      "clicks": 2640,
+      "conversions": 49,
+      "revenue": 3240000
+    },
+    {
+      "date": "2026-03-20",
+      "media": "틱톡",
+      "adCost": 437000,
+      "impressions": 79000,
+      "clicks": 2030,
+      "conversions": 38,
+      "revenue": 2130000
+    },
+    {
+      "date": "2026-03-20",
+      "media": "GFA",
+      "adCost": 328000,
+      "impressions": 56000,
+      "clicks": 1550,
+      "conversions": 25,
+      "revenue": 1590000
+    },
+    {
+      "date": "2026-03-20",
+      "media": "쿠팡",
+      "adCost": 499000,
+      "impressions": 74000,
+      "clicks": 2300,
+      "conversions": 47,
+      "revenue": 2980000
+    },
+    {
+      "date": "2026-03-20",
+      "media": "네이버SA",
+      "adCost": 582000,
+      "impressions": 88000,
+      "clicks": 2560,
+      "conversions": 60,
+      "revenue": 3660000
+    },
+    {
+      "date": "2026-03-23",
+      "media": "구글",
+      "adCost": 847000,
+      "impressions": 125000,
+      "clicks": 3780,
+      "conversions": 80,
+      "revenue": 4800000
+    },
+    {
+      "date": "2026-03-23",
+      "media": "메타",
+      "adCost": 706000,
+      "impressions": 97000,
+      "clicks": 3120,
+      "conversions": 58,
+      "revenue": 3830000
+    },
+    {
+      "date": "2026-03-23",
+      "media": "틱톡",
+      "adCost": 433000,
+      "impressions": 79000,
+      "clicks": 2020,
+      "conversions": 37,
+      "revenue": 2120000
+    },
+    {
+      "date": "2026-03-23",
+      "media": "GFA",
+      "adCost": 365000,
+      "impressions": 62000,
+      "clicks": 1720,
+      "conversions": 28,
+      "revenue": 1770000
+    },
+    {
+      "date": "2026-03-23",
+      "media": "쿠팡",
+      "adCost": 487000,
+      "impressions": 73000,
+      "clicks": 2240,
+      "conversions": 46,
+      "revenue": 2910000
+    },
+    {
+      "date": "2026-03-23",
+      "media": "네이버SA",
+      "adCost": 647000,
+      "impressions": 98000,
+      "clicks": 2840,
+      "conversions": 67,
+      "revenue": 4070000
+    },
+    {
+      "date": "2026-03-24",
+      "media": "구글",
+      "adCost": 735000,
+      "impressions": 108000,
+      "clicks": 3280,
+      "conversions": 69,
+      "revenue": 4160000
+    },
+    {
+      "date": "2026-03-24",
+      "media": "메타",
+      "adCost": 662000,
+      "impressions": 91000,
+      "clicks": 2930,
+      "conversions": 55,
+      "revenue": 3600000
+    },
+    {
+      "date": "2026-03-24",
+      "media": "틱톡",
+      "adCost": 443000,
+      "impressions": 81000,
+      "clicks": 2060,
+      "conversions": 38,
+      "revenue": 2160000
+    },
+    {
+      "date": "2026-03-24",
+      "media": "GFA",
+      "adCost": 333000,
+      "impressions": 57000,
+      "clicks": 1570,
+      "conversions": 25,
+      "revenue": 1620000
+    },
+    {
+      "date": "2026-03-24",
+      "media": "쿠팡",
+      "adCost": 522000,
+      "impressions": 78000,
+      "clicks": 2410,
+      "conversions": 49,
+      "revenue": 3120000
+    },
+    {
+      "date": "2026-03-24",
+      "media": "네이버SA",
+      "adCost": 671000,
+      "impressions": 102000,
+      "clicks": 2950,
+      "conversions": 69,
+      "revenue": 4220000
+    },
+    {
+      "date": "2026-03-27",
+      "media": "구글",
+      "adCost": 784000,
+      "impressions": 115000,
+      "clicks": 3490,
+      "conversions": 74,
+      "revenue": 4440000
+    },
+    {
+      "date": "2026-03-27",
+      "media": "메타",
+      "adCost": 656000,
+      "impressions": 90000,
+      "clicks": 2900,
+      "conversions": 54,
+      "revenue": 3560000
+    },
+    {
+      "date": "2026-03-27",
+      "media": "틱톡",
+      "adCost": 419000,
+      "impressions": 76000,
+      "clicks": 1950,
+      "conversions": 36,
+      "revenue": 2050000
+    },
+    {
+      "date": "2026-03-27",
+      "media": "GFA",
+      "adCost": 348000,
+      "impressions": 59000,
+      "clicks": 1650,
+      "conversions": 26,
+      "revenue": 1690000
+    },
+    {
+      "date": "2026-03-27",
+      "media": "쿠팡",
+      "adCost": 534000,
+      "impressions": 80000,
+      "clicks": 2460,
+      "conversions": 50,
+      "revenue": 3190000
+    },
+    {
+      "date": "2026-03-27",
+      "media": "네이버SA",
+      "adCost": 621000,
+      "impressions": 94000,
+      "clicks": 2730,
+      "conversions": 64,
+      "revenue": 3900000
+    },
+    {
+      "date": "2026-03-28",
+      "media": "구글",
+      "adCost": 736000,
+      "impressions": 108000,
+      "clicks": 3280,
+      "conversions": 69,
+      "revenue": 4170000
+    },
+    {
+      "date": "2026-03-28",
+      "media": "메타",
+      "adCost": 629000,
+      "impressions": 86000,
+      "clicks": 2790,
+      "conversions": 52,
+      "revenue": 3410000
+    },
+    {
+      "date": "2026-03-28",
+      "media": "틱톡",
+      "adCost": 444000,
+      "impressions": 81000,
+      "clicks": 2070,
+      "conversions": 38,
+      "revenue": 2170000
+    },
+    {
+      "date": "2026-03-28",
+      "media": "GFA",
+      "adCost": 391000,
+      "impressions": 67000,
+      "clicks": 1850,
+      "conversions": 30,
+      "revenue": 1900000
+    },
+    {
+      "date": "2026-03-28",
+      "media": "쿠팡",
+      "adCost": 494000,
+      "impressions": 74000,
+      "clicks": 2280,
+      "conversions": 47,
+      "revenue": 2960000
+    },
+    {
+      "date": "2026-03-28",
+      "media": "네이버SA",
+      "adCost": 639000,
+      "impressions": 97000,
+      "clicks": 2810,
+      "conversions": 66,
+      "revenue": 4020000
+    },
+    {
+      "date": "2026-03-29",
+      "media": "구글",
+      "adCost": 821000,
+      "impressions": 121000,
+      "clicks": 3660,
+      "conversions": 77,
+      "revenue": 4650000
+    },
+    {
+      "date": "2026-03-29",
+      "media": "메타",
+      "adCost": 717000,
+      "impressions": 98000,
+      "clicks": 3180,
+      "conversions": 59,
+      "revenue": 3890000
+    },
+    {
+      "date": "2026-03-29",
+      "media": "틱톡",
+      "adCost": 409000,
+      "impressions": 74000,
+      "clicks": 1910,
+      "conversions": 35,
+      "revenue": 2000000
+    },
+    {
+      "date": "2026-03-29",
+      "media": "GFA",
+      "adCost": 370000,
+      "impressions": 63000,
+      "clicks": 1750,
+      "conversions": 28,
+      "revenue": 1800000
+    },
+    {
+      "date": "2026-03-29",
+      "media": "쿠팡",
+      "adCost": 505000,
+      "impressions": 75000,
+      "clicks": 2330,
+      "conversions": 48,
+      "revenue": 3020000
+    },
+    {
+      "date": "2026-03-29",
+      "media": "네이버SA",
+      "adCost": 661000,
+      "impressions": 100000,
+      "clicks": 2910,
+      "conversions": 68,
+      "revenue": 4160000
+    },
+    {
+      "date": "2026-04-01",
+      "media": "구글",
+      "adCost": 850000,
+      "impressions": 125000,
+      "clicks": 3800,
+      "conversions": 80,
+      "revenue": 4800000
+    },
+    {
+      "date": "2026-04-01",
+      "media": "메타",
+      "adCost": 720000,
+      "impressions": 98000,
+      "clicks": 3200,
+      "conversions": 60,
+      "revenue": 3900000
+    },
+    {
+      "date": "2026-04-01",
+      "media": "틱톡",
+      "adCost": 450000,
+      "impressions": 82000,
+      "clicks": 2100,
+      "conversions": 40,
+      "revenue": 2200000
+    },
+    {
+      "date": "2026-04-01",
+      "media": "GFA",
+      "adCost": 380000,
+      "impressions": 65000,
+      "clicks": 1800,
+      "conversions": 30,
+      "revenue": 1850000
+    },
+    {
+      "date": "2026-04-01",
+      "media": "쿠팡",
+      "adCost": 520000,
+      "impressions": 78000,
+      "clicks": 2400,
+      "conversions": 50,
+      "revenue": 3100000
+    },
+    {
+      "date": "2026-04-01",
+      "media": "네이버SA",
+      "adCost": 680000,
+      "impressions": 102000,
+      "clicks": 2950,
+      "conversions": 70,
+      "revenue": 4250000
+    },
+    {
+      "date": "2026-04-02",
+      "media": "구글",
+      "adCost": 880000,
+      "impressions": 132000,
+      "clicks": 3950,
+      "conversions": 90,
+      "revenue": 5200000
+    },
+    {
+      "date": "2026-04-02",
+      "media": "메타",
+      "adCost": 750000,
+      "impressions": 101000,
+      "clicks": 3350,
+      "conversions": 70,
+      "revenue": 4100000
+    },
+    {
+      "date": "2026-04-02",
+      "media": "틱톡",
+      "adCost": 470000,
+      "impressions": 85000,
+      "clicks": 2200,
+      "conversions": 50,
+      "revenue": 2400000
+    },
+    {
+      "date": "2026-04-02",
+      "media": "GFA",
+      "adCost": 400000,
+      "impressions": 68000,
+      "clicks": 1900,
+      "conversions": 40,
+      "revenue": 1950000
+    },
+    {
+      "date": "2026-04-02",
+      "media": "쿠팡",
+      "adCost": 550000,
+      "impressions": 81000,
+      "clicks": 2550,
+      "conversions": 60,
+      "revenue": 3300000
+    },
+    {
+      "date": "2026-04-02",
+      "media": "네이버SA",
+      "adCost": 710000,
+      "impressions": 105000,
+      "clicks": 3100,
+      "conversions": 80,
+      "revenue": 4500000
+    },
+    {
+      "date": "2026-04-03",
+      "media": "구글",
+      "adCost": 820000,
+      "impressions": 120000,
+      "clicks": 3700,
+      "conversions": 70,
+      "revenue": 4650000
+    },
+    {
+      "date": "2026-04-03",
+      "media": "메타",
+      "adCost": 700000,
+      "impressions": 95000,
+      "clicks": 3150,
+      "conversions": 60,
+      "revenue": 3800000
+    },
+    {
+      "date": "2026-04-03",
+      "media": "틱톡",
+      "adCost": 430000,
+      "impressions": 79000,
+      "clicks": 2050,
+      "conversions": 40,
+      "revenue": 2150000
+    },
+    {
+      "date": "2026-04-03",
+      "media": "GFA",
+      "adCost": 360000,
+      "impressions": 62000,
+      "clicks": 1750,
+      "conversions": 30,
+      "revenue": 1750000
+    },
+    {
+      "date": "2026-04-03",
+      "media": "쿠팡",
+      "adCost": 500000,
+      "impressions": 75000,
+      "clicks": 2350,
+      "conversions": 50,
+      "revenue": 3050000
+    },
+    {
+      "date": "2026-04-03",
+      "media": "네이버SA",
+      "adCost": 650000,
+      "impressions": 98000,
+      "clicks": 2850,
+      "conversions": 60,
+      "revenue": 4100000
+    },
+    {
+      "date": "2026-04-04",
+      "media": "구글",
+      "adCost": 900000,
+      "impressions": 138000,
+      "clicks": 4100,
+      "conversions": 100,
+      "revenue": 5500000
+    },
+    {
+      "date": "2026-04-04",
+      "media": "메타",
+      "adCost": 780000,
+      "impressions": 105000,
+      "clicks": 3450,
+      "conversions": 80,
+      "revenue": 4400000
+    },
+    {
+      "date": "2026-04-04",
+      "media": "틱톡",
+      "adCost": 490000,
+      "impressions": 88000,
+      "clicks": 2300,
+      "conversions": 50,
+      "revenue": 2600000
+    },
+    {
+      "date": "2026-04-04",
+      "media": "GFA",
+      "adCost": 420000,
+      "impressions": 71000,
+      "clicks": 2000,
+      "conversions": 40,
+      "revenue": 2050000
+    },
+    {
+      "date": "2026-04-04",
+      "media": "쿠팡",
+      "adCost": 580000,
+      "impressions": 84000,
+      "clicks": 2650,
+      "conversions": 60,
+      "revenue": 3500000
+    },
+    {
+      "date": "2026-04-04",
+      "media": "네이버SA",
+      "adCost": 730000,
+      "impressions": 110000,
+      "clicks": 3200,
+      "conversions": 80,
+      "revenue": 4700000
+    },
+    {
+      "date": "2026-04-07",
+      "media": "구글",
+      "adCost": 870000,
+      "impressions": 130000,
+      "clicks": 3900,
+      "conversions": 90,
+      "revenue": 5100000
+    },
+    {
+      "date": "2026-04-07",
+      "media": "메타",
+      "adCost": 760000,
+      "impressions": 102000,
+      "clicks": 3400,
+      "conversions": 70,
+      "revenue": 4200000
+    },
+    {
+      "date": "2026-04-07",
+      "media": "틱톡",
+      "adCost": 480000,
+      "impressions": 86000,
+      "clicks": 2250,
+      "conversions": 50,
+      "revenue": 2450000
+    },
+    {
+      "date": "2026-04-07",
+      "media": "GFA",
+      "adCost": 410000,
+      "impressions": 69000,
+      "clicks": 1950,
+      "conversions": 40,
+      "revenue": 2000000
+    },
+    {
+      "date": "2026-04-07",
+      "media": "쿠팡",
+      "adCost": 560000,
+      "impressions": 82000,
+      "clicks": 2600,
+      "conversions": 60,
+      "revenue": 3400000
+    },
+    {
+      "date": "2026-04-07",
+      "media": "네이버SA",
+      "adCost": 720000,
+      "impressions": 108000,
+      "clicks": 3150,
+      "conversions": 80,
+      "revenue": 4600000
+    },
+    {
+      "date": "2026-04-08",
+      "media": "구글",
+      "adCost": 910000,
+      "impressions": 140000,
+      "clicks": 4200,
+      "conversions": 100,
+      "revenue": 5600000
+    },
+    {
+      "date": "2026-04-08",
+      "media": "메타",
+      "adCost": 790000,
+      "impressions": 108000,
+      "clicks": 3550,
+      "conversions": 80,
+      "revenue": 4500000
+    },
+    {
+      "date": "2026-04-08",
+      "media": "틱톡",
+      "adCost": 500000,
+      "impressions": 90000,
+      "clicks": 2350,
+      "conversions": 50,
+      "revenue": 2650000
+    },
+    {
+      "date": "2026-04-08",
+      "media": "GFA",
+      "adCost": 430000,
+      "impressions": 73000,
+      "clicks": 2050,
+      "conversions": 40,
+      "revenue": 2100000
+    },
+    {
+      "date": "2026-04-08",
+      "media": "쿠팡",
+      "adCost": 590000,
+      "impressions": 86000,
+      "clicks": 2700,
+      "conversions": 60,
+      "revenue": 3600000
+    },
+    {
+      "date": "2026-04-08",
+      "media": "네이버SA",
+      "adCost": 750000,
+      "impressions": 113000,
+      "clicks": 3300,
+      "conversions": 80,
+      "revenue": 4800000
+    },
+    {
+      "date": "2026-04-11",
+      "media": "구글",
+      "adCost": 950000,
+      "impressions": 150000,
+      "clicks": 4500,
+      "conversions": 120,
+      "revenue": 6100000
+    },
+    {
+      "date": "2026-04-11",
+      "media": "메타",
+      "adCost": 830000,
+      "impressions": 115000,
+      "clicks": 3800,
+      "conversions": 100,
+      "revenue": 4900000
+    },
+    {
+      "date": "2026-04-11",
+      "media": "틱톡",
+      "adCost": 540000,
+      "impressions": 96000,
+      "clicks": 2550,
+      "conversions": 60,
+      "revenue": 2950000
+    },
+    {
+      "date": "2026-04-11",
+      "media": "GFA",
+      "adCost": 470000,
+      "impressions": 79000,
+      "clicks": 2200,
+      "conversions": 50,
+      "revenue": 2300000
+    },
+    {
+      "date": "2026-04-11",
+      "media": "쿠팡",
+      "adCost": 630000,
+      "impressions": 92000,
+      "clicks": 2900,
+      "conversions": 70,
+      "revenue": 3900000
+    },
+    {
+      "date": "2026-04-11",
+      "media": "네이버SA",
+      "adCost": 790000,
+      "impressions": 120000,
+      "clicks": 3500,
+      "conversions": 90,
+      "revenue": 5200000
+    },
+    {
+      "date": "2026-04-14",
+      "media": "구글",
+      "adCost": 880000,
+      "impressions": 134000,
+      "clicks": 4000,
+      "conversions": 90,
+      "revenue": 5250000
+    },
+    {
+      "date": "2026-04-14",
+      "media": "메타",
+      "adCost": 760000,
+      "impressions": 103000,
+      "clicks": 3420,
+      "conversions": 70,
+      "revenue": 4300000
+    },
+    {
+      "date": "2026-04-14",
+      "media": "틱톡",
+      "adCost": 470000,
+      "impressions": 85000,
+      "clicks": 2250,
+      "conversions": 50,
+      "revenue": 2480000
+    },
+    {
+      "date": "2026-04-14",
+      "media": "GFA",
+      "adCost": 400000,
+      "impressions": 69000,
+      "clicks": 1950,
+      "conversions": 40,
+      "revenue": 2000000
+    },
+    {
+      "date": "2026-04-14",
+      "media": "쿠팡",
+      "adCost": 560000,
+      "impressions": 82000,
+      "clicks": 2580,
+      "conversions": 50,
+      "revenue": 3420000
+    },
+    {
+      "date": "2026-04-14",
+      "media": "네이버SA",
+      "adCost": 720000,
+      "impressions": 107000,
+      "clicks": 3150,
+      "conversions": 70,
+      "revenue": 4600000
+    },
+    {
+      "date": "2026-04-17",
+      "media": "구글",
+      "adCost": 980000,
+      "impressions": 156000,
+      "clicks": 4700,
+      "conversions": 120,
+      "revenue": 6400000
+    },
+    {
+      "date": "2026-04-17",
+      "media": "메타",
+      "adCost": 860000,
+      "impressions": 120000,
+      "clicks": 3980,
+      "conversions": 100,
+      "revenue": 5200000
+    },
+    {
+      "date": "2026-04-17",
+      "media": "틱톡",
+      "adCost": 570000,
+      "impressions": 102000,
+      "clicks": 2700,
+      "conversions": 70,
+      "revenue": 3150000
+    },
+    {
+      "date": "2026-04-17",
+      "media": "GFA",
+      "adCost": 500000,
+      "impressions": 84000,
+      "clicks": 2350,
+      "conversions": 60,
+      "revenue": 2450000
+    },
+    {
+      "date": "2026-04-17",
+      "media": "쿠팡",
+      "adCost": 660000,
+      "impressions": 97000,
+      "clicks": 3050,
+      "conversions": 80,
+      "revenue": 4100000
+    },
+    {
+      "date": "2026-04-17",
+      "media": "네이버SA",
+      "adCost": 820000,
+      "impressions": 126000,
+      "clicks": 3700,
+      "conversions": 100,
+      "revenue": 5500000
+    },
+    {
+      "date": "2026-04-21",
+      "media": "구글",
+      "adCost": 930000,
+      "impressions": 145000,
+      "clicks": 4350,
+      "conversions": 105,
+      "revenue": 5850000
+    },
+    {
+      "date": "2026-04-21",
+      "media": "메타",
+      "adCost": 810000,
+      "impressions": 111000,
+      "clicks": 3650,
+      "conversions": 88,
+      "revenue": 4750000
+    },
+    {
+      "date": "2026-04-21",
+      "media": "틱톡",
+      "adCost": 525000,
+      "impressions": 94000,
+      "clicks": 2480,
+      "conversions": 62,
+      "revenue": 2850000
+    },
+    {
+      "date": "2026-04-21",
+      "media": "GFA",
+      "adCost": 460000,
+      "impressions": 77000,
+      "clicks": 2130,
+      "conversions": 48,
+      "revenue": 2230000
+    },
+    {
+      "date": "2026-04-21",
+      "media": "쿠팡",
+      "adCost": 615000,
+      "impressions": 89000,
+      "clicks": 2780,
+      "conversions": 68,
+      "revenue": 3780000
+    },
+    {
+      "date": "2026-04-21",
+      "media": "네이버SA",
+      "adCost": 770000,
+      "impressions": 117000,
+      "clicks": 3400,
+      "conversions": 88,
+      "revenue": 5000000
+    },
+    {
+      "date": "2026-04-25",
+      "media": "구글",
+      "adCost": 1020000,
+      "impressions": 162000,
+      "clicks": 4850,
+      "conversions": 128,
+      "revenue": 6700000
+    },
+    {
+      "date": "2026-04-25",
+      "media": "메타",
+      "adCost": 890000,
+      "impressions": 124000,
+      "clicks": 4100,
+      "conversions": 105,
+      "revenue": 5400000
+    },
+    {
+      "date": "2026-04-25",
+      "media": "틱톡",
+      "adCost": 595000,
+      "impressions": 107000,
+      "clicks": 2820,
+      "conversions": 73,
+      "revenue": 3280000
+    },
+    {
+      "date": "2026-04-25",
+      "media": "GFA",
+      "adCost": 520000,
+      "impressions": 88000,
+      "clicks": 2440,
+      "conversions": 62,
+      "revenue": 2560000
+    },
+    {
+      "date": "2026-04-25",
+      "media": "쿠팡",
+      "adCost": 690000,
+      "impressions": 102000,
+      "clicks": 3180,
+      "conversions": 82,
+      "revenue": 4280000
+    },
+    {
+      "date": "2026-04-25",
+      "media": "네이버SA",
+      "adCost": 850000,
+      "impressions": 130000,
+      "clicks": 3820,
+      "conversions": 106,
+      "revenue": 5720000
+    },
+    {
+      "date": "2026-04-28",
+      "media": "구글",
+      "adCost": 960000,
+      "impressions": 152000,
+      "clicks": 4560,
+      "conversions": 115,
+      "revenue": 6200000
+    },
+    {
+      "date": "2026-04-28",
+      "media": "메타",
+      "adCost": 840000,
+      "impressions": 116000,
+      "clicks": 3860,
+      "conversions": 96,
+      "revenue": 5050000
+    },
+    {
+      "date": "2026-04-28",
+      "media": "틱톡",
+      "adCost": 560000,
+      "impressions": 99000,
+      "clicks": 2640,
+      "conversions": 67,
+      "revenue": 3040000
+    },
+    {
+      "date": "2026-04-28",
+      "media": "GFA",
+      "adCost": 490000,
+      "impressions": 82000,
+      "clicks": 2290,
+      "conversions": 57,
+      "revenue": 2390000
+    },
+    {
+      "date": "2026-04-28",
+      "media": "쿠팡",
+      "adCost": 648000,
+      "impressions": 95000,
+      "clicks": 2980,
+      "conversions": 76,
+      "revenue": 3990000
+    },
+    {
+      "date": "2026-04-28",
+      "media": "네이버SA",
+      "adCost": 800000,
+      "impressions": 122000,
+      "clicks": 3580,
+      "conversions": 98,
+      "revenue": 5350000
+    }
   ],
   "mediaList": [
-    { "id": 1, "name": "구글" },
-    { "id": 2, "name": "메타" },
-    { "id": 3, "name": "틱톡" },
-    { "id": 4, "name": "GFA" },
-    { "id": 5, "name": "쿠팡" },
-    { "id": 6, "name": "네이버SA" }
+    {
+      "id": 1,
+      "name": "구글"
+    },
+    {
+      "id": 2,
+      "name": "메타"
+    },
+    {
+      "id": 3,
+      "name": "틱톡"
+    },
+    {
+      "id": 4,
+      "name": "GFA"
+    },
+    {
+      "id": 5,
+      "name": "쿠팡"
+    },
+    {
+      "id": 6,
+      "name": "네이버SA"
+    }
   ]
 }

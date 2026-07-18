@@ -7,9 +7,27 @@
     "name": "퍼널 프로 플랜",
     "initial": "FP",
     "landing_numbers": [
-      { "id": "ln-001-1", "product_id": "prod-001", "number": "1", "description": "메인 랜딩", "initial": "M" },
-      { "id": "ln-001-2", "product_id": "prod-001", "number": "2", "description": "이벤트 랜딩", "initial": "E" },
-      { "id": "ln-001-3", "product_id": "prod-001", "number": "3", "description": "무료체험 랜딩", "initial": "T" }
+      {
+        "id": "ln-001-1",
+        "product_id": "prod-001",
+        "number": "1",
+        "description": "메인 랜딩",
+        "initial": "M"
+      },
+      {
+        "id": "ln-001-2",
+        "product_id": "prod-001",
+        "number": "2",
+        "description": "이벤트 랜딩",
+        "initial": "E"
+      },
+      {
+        "id": "ln-001-3",
+        "product_id": "prod-001",
+        "number": "3",
+        "description": "무료체험 랜딩",
+        "initial": "T"
+      }
     ],
     "created_at": "2024-01-10T09:00:00Z",
     "updated_at": "2024-03-15T11:00:00Z"
@@ -22,8 +40,20 @@
     "name": "퍼널 스타터 플랜",
     "initial": "FS",
     "landing_numbers": [
-      { "id": "ln-002-1", "product_id": "prod-002", "number": "1", "description": "입문자 랜딩", "initial": "B" },
-      { "id": "ln-002-2", "product_id": "prod-002", "number": "2", "description": "할인 이벤트", "initial": "D" }
+      {
+        "id": "ln-002-1",
+        "product_id": "prod-002",
+        "number": "1",
+        "description": "입문자 랜딩",
+        "initial": "B"
+      },
+      {
+        "id": "ln-002-2",
+        "product_id": "prod-002",
+        "number": "2",
+        "description": "할인 이벤트",
+        "initial": "D"
+      }
     ],
     "created_at": "2024-01-15T09:00:00Z",
     "updated_at": "2024-04-01T10:00:00Z"
@@ -36,9 +66,27 @@
     "name": "마케팅랩 코스",
     "initial": "ML",
     "landing_numbers": [
-      { "id": "ln-003-1", "product_id": "prod-003", "number": "1", "description": "코스 소개", "initial": "I" },
-      { "id": "ln-003-2", "product_id": "prod-003", "number": "2", "description": "수강 신청", "initial": "A" },
-      { "id": "ln-003-3", "product_id": "prod-003", "number": "3", "description": "무료 특강", "initial": "F" }
+      {
+        "id": "ln-003-1",
+        "product_id": "prod-003",
+        "number": "1",
+        "description": "코스 소개",
+        "initial": "I"
+      },
+      {
+        "id": "ln-003-2",
+        "product_id": "prod-003",
+        "number": "2",
+        "description": "수강 신청",
+        "initial": "A"
+      },
+      {
+        "id": "ln-003-3",
+        "product_id": "prod-003",
+        "number": "3",
+        "description": "무료 특강",
+        "initial": "F"
+      }
     ],
     "created_at": "2024-02-01T09:00:00Z",
     "updated_at": "2024-04-10T10:00:00Z"
@@ -51,10 +99,244 @@
     "name": "그로스 부트캠프",
     "initial": "GB",
     "landing_numbers": [
-      { "id": "ln-004-1", "product_id": "prod-004", "number": "1", "description": "부트캠프 모집", "initial": "R" },
-      { "id": "ln-004-2", "product_id": "prod-004", "number": "2", "description": "설명회 신청", "initial": "S" }
+      {
+        "id": "ln-004-1",
+        "product_id": "prod-004",
+        "number": "1",
+        "description": "부트캠프 모집",
+        "initial": "R"
+      },
+      {
+        "id": "ln-004-2",
+        "product_id": "prod-004",
+        "number": "2",
+        "description": "설명회 신청",
+        "initial": "S"
+      }
     ],
     "created_at": "2024-02-15T09:00:00Z",
     "updated_at": "2024-04-20T10:00:00Z"
+  },
+  {
+    "id": "prod-005",
+    "brand_id": "brand-004",
+    "brand_name": "데일리핏니스",
+    "base_url": "https://dailyfitness.co.kr",
+    "name": "데일리핏니스 멤버십",
+    "initial": "DF",
+    "landing_numbers": [
+      {
+        "id": "ln-005-1",
+        "product_id": "prod-005",
+        "number": "1",
+        "description": "멤버십 소개",
+        "initial": "M"
+      },
+      {
+        "id": "ln-005-2",
+        "product_id": "prod-005",
+        "number": "2",
+        "description": "체험단 모집",
+        "initial": "T"
+      }
+    ],
+    "created_at": "2024-03-01T09:00:00Z",
+    "updated_at": "2024-05-10T10:00:00Z"
+  },
+  {
+    "id": "prod-006",
+    "brand_id": "brand-005",
+    "brand_name": "코딩스퀘어",
+    "base_url": "https://codingsquare.dev",
+    "name": "코딩스퀘어 부트캠프",
+    "initial": "CQ",
+    "landing_numbers": [
+      {
+        "id": "ln-006-1",
+        "product_id": "prod-006",
+        "number": "1",
+        "description": "부트캠프 모집",
+        "initial": "R"
+      },
+      {
+        "id": "ln-006-2",
+        "product_id": "prod-006",
+        "number": "2",
+        "description": "설명회 신청",
+        "initial": "S"
+      },
+      {
+        "id": "ln-006-3",
+        "product_id": "prod-006",
+        "number": "3",
+        "description": "무료 특강",
+        "initial": "F"
+      }
+    ],
+    "created_at": "2024-03-10T09:00:00Z",
+    "updated_at": "2024-05-15T10:00:00Z"
+  },
+  {
+    "id": "prod-007",
+    "brand_id": "brand-006",
+    "brand_name": "마인드풀랩",
+    "base_url": "https://mindfullab.kr",
+    "name": "마인드풀랩 명상클래스",
+    "initial": "MF",
+    "landing_numbers": [
+      {
+        "id": "ln-007-1",
+        "product_id": "prod-007",
+        "number": "1",
+        "description": "클래스 소개",
+        "initial": "I"
+      },
+      {
+        "id": "ln-007-2",
+        "product_id": "prod-007",
+        "number": "2",
+        "description": "무료 체험",
+        "initial": "T"
+      }
+    ],
+    "created_at": "2024-03-20T09:00:00Z",
+    "updated_at": "2024-05-20T10:00:00Z"
+  },
+  {
+    "id": "prod-008",
+    "brand_id": "brand-007",
+    "brand_name": "브런치클럽",
+    "base_url": "https://brunchclub.co.kr",
+    "name": "브런치클럽 원데이클래스",
+    "initial": "BC",
+    "landing_numbers": [
+      {
+        "id": "ln-008-1",
+        "product_id": "prod-008",
+        "number": "1",
+        "description": "클래스 예약",
+        "initial": "B"
+      },
+      {
+        "id": "ln-008-2",
+        "product_id": "prod-008",
+        "number": "2",
+        "description": "할인 이벤트",
+        "initial": "D"
+      }
+    ],
+    "created_at": "2024-04-01T09:00:00Z",
+    "updated_at": "2024-05-25T10:00:00Z"
+  },
+  {
+    "id": "prod-009",
+    "brand_id": "brand-008",
+    "brand_name": "웰니스박스",
+    "base_url": "https://wellnessbox.kr",
+    "name": "웰니스박스 구독 플랜",
+    "initial": "WB",
+    "landing_numbers": [
+      {
+        "id": "ln-009-1",
+        "product_id": "prod-009",
+        "number": "1",
+        "description": "구독 소개",
+        "initial": "I"
+      },
+      {
+        "id": "ln-009-2",
+        "product_id": "prod-009",
+        "number": "2",
+        "description": "첫 달 무료",
+        "initial": "F"
+      },
+      {
+        "id": "ln-009-3",
+        "product_id": "prod-009",
+        "number": "3",
+        "description": "리뷰 이벤트",
+        "initial": "R"
+      }
+    ],
+    "created_at": "2024-04-10T09:00:00Z",
+    "updated_at": "2024-06-01T10:00:00Z"
+  },
+  {
+    "id": "prod-010",
+    "brand_id": "brand-009",
+    "brand_name": "트래블킷",
+    "base_url": "https://travelkit.co.kr",
+    "name": "트래블킷 여행 멤버십",
+    "initial": "TK",
+    "landing_numbers": [
+      {
+        "id": "ln-010-1",
+        "product_id": "prod-010",
+        "number": "1",
+        "description": "멤버십 소개",
+        "initial": "M"
+      },
+      {
+        "id": "ln-010-2",
+        "product_id": "prod-010",
+        "number": "2",
+        "description": "얼리버드 할인",
+        "initial": "E"
+      }
+    ],
+    "created_at": "2024-04-20T09:00:00Z",
+    "updated_at": "2024-06-05T10:00:00Z"
+  },
+  {
+    "id": "prod-011",
+    "brand_id": "brand-001",
+    "brand_name": "퍼널브랜드",
+    "base_url": "https://funnelbrand.co.kr/enterprise",
+    "name": "퍼널 엔터프라이즈 플랜",
+    "initial": "FE",
+    "landing_numbers": [
+      {
+        "id": "ln-011-1",
+        "product_id": "prod-011",
+        "number": "1",
+        "description": "기업용 소개",
+        "initial": "B"
+      },
+      {
+        "id": "ln-011-2",
+        "product_id": "prod-011",
+        "number": "2",
+        "description": "도입 상담 신청",
+        "initial": "C"
+      }
+    ],
+    "created_at": "2024-05-01T09:00:00Z",
+    "updated_at": "2024-06-10T10:00:00Z"
+  },
+  {
+    "id": "prod-012",
+    "brand_id": "brand-003",
+    "brand_name": "그로스해커스",
+    "base_url": "https://growthhackers.kr/masterclass",
+    "name": "그로스 마스터클래스",
+    "initial": "GM",
+    "landing_numbers": [
+      {
+        "id": "ln-012-1",
+        "product_id": "prod-012",
+        "number": "1",
+        "description": "마스터클래스 소개",
+        "initial": "I"
+      },
+      {
+        "id": "ln-012-2",
+        "product_id": "prod-012",
+        "number": "2",
+        "description": "얼리버드 신청",
+        "initial": "E"
+      }
+    ],
+    "created_at": "2024-05-10T09:00:00Z",
+    "updated_at": "2024-06-15T10:00:00Z"
   }
 ]

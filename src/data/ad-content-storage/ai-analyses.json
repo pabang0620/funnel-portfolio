@@ -33,7 +33,7 @@
     "id": "ana-004",
     "file_id": "file-004",
     "intent_label": "공포유발",
-    "confidence": 0.90,
+    "confidence": 0.9,
     "reason": "여름이 오기 전 지금 시작하지 않으면 후회한다는 손실 회피 심리를 명확히 자극하는 콘텐츠입니다. '지금 시작하지 않으면'이라는 조건부 문구가 시청자의 행동 시급성을 만들어냅니다.",
     "script_quality": "high",
     "hook_strength": "very_strong",
@@ -98,5 +98,185 @@
     "script_quality": "high",
     "hook_strength": "very_strong",
     "analyzed_at": "2023-10-15T12:30:00Z"
+  },
+  {
+    "id": "ana-011",
+    "file_id": "file-011",
+    "intent_label": "정보성",
+    "confidence": 0.8,
+    "reason": "『탄력앰플_정보성_김민지_231120.mp4』 소재는 '정보성' 축을 중심으로 구성되어 있으며, 리프팅 메커니즘 과학적 설명를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(퓨어 진정크림) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "high",
+    "hook_strength": "strong",
+    "analyzed_at": "2026-02-20T09:45:00Z"
+  },
+  {
+    "id": "ana-012",
+    "file_id": "file-012",
+    "intent_label": "후기성",
+    "confidence": 0.87,
+    "reason": "『다이어트쉐이크_후기_이준혁_231205.mp4』 소재는 '후기성' 축을 중심으로 구성되어 있으며, 3개월 후기 영상를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(슬림다운 다이어트쉐이크) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "medium",
+    "hook_strength": "medium",
+    "analyzed_at": "2026-03-05T08:30:00Z"
+  },
+  {
+    "id": "ana-013",
+    "file_id": "file-013",
+    "intent_label": "정보성",
+    "confidence": 0.94,
+    "reason": "『오메가3_정보성_박서연_240110.jpg』 소재는 '정보성' 축을 중심으로 구성되어 있으며, 신년 건강 챙기기 캠페인를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(프리미엄 프로바이오틱스) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "low",
+    "hook_strength": "very_strong",
+    "analyzed_at": "2026-01-10T10:00:00Z"
+  },
+  {
+    "id": "ana-014",
+    "file_id": "file-014",
+    "intent_label": "공포유발",
+    "confidence": 0.83,
+    "reason": "『모공케어_공포유발_최지원_240215.mp4』 소재는 '공포유발' 축을 중심으로 구성되어 있으며, 봄 환절기 피부 트러블 경고를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(퓨어 진정크림) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "high",
+    "hook_strength": "weak",
+    "analyzed_at": "2026-02-15T11:00:00Z"
+  },
+  {
+    "id": "ana-015",
+    "file_id": "file-015",
+    "intent_label": "권위신뢰",
+    "confidence": 0.9,
+    "reason": "『크레아틴_권위신뢰_홍길동_240320.mp4』 소재는 '권위신뢰' 축을 중심으로 구성되어 있으며, 스포츠 영양학 연구 기반 광고를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(프로 크레아틴 모노하이드레이트) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "medium",
+    "hook_strength": "strong",
+    "analyzed_at": "2026-03-20T09:00:00Z"
+  },
+  {
+    "id": "ana-016",
+    "file_id": "file-016",
+    "intent_label": "릴스",
+    "confidence": 0.97,
+    "reason": "『진정크림_숏폼_릴스_이나라_260215.mp4』 소재는 '릴스' 축을 중심으로 구성되어 있으며, 틱톡 스타일 숏폼 15초를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(퓨어 진정크림) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "low",
+    "hook_strength": "medium",
+    "analyzed_at": "2026-02-15T11:20:00Z"
+  },
+  {
+    "id": "ana-017",
+    "file_id": "file-017",
+    "intent_label": "정보성",
+    "confidence": 0.86,
+    "reason": "『탈모샴푸_배너_성분강조_260220.jpg』 소재는 '정보성' 축을 중심으로 구성되어 있으며, 네이버 디스플레이 배너 성분 강조를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(두피케어 탈모샴푸) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "high",
+    "hook_strength": "very_strong",
+    "analyzed_at": "2026-02-20T09:45:00Z"
+  },
+  {
+    "id": "ana-018",
+    "file_id": "file-018",
+    "intent_label": "정보성",
+    "confidence": 0.93,
+    "reason": "『비타민C_복용방법_영상_이서진_260225.mp4』 소재는 '정보성' 축을 중심으로 구성되어 있으며, 올바른 복용법 안내 신뢰 구축를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(비타민C 고함량 영양제) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "medium",
+    "hook_strength": "weak",
+    "analyzed_at": "2026-02-25T15:30:00Z"
+  },
+  {
+    "id": "ana-019",
+    "file_id": "file-019",
+    "intent_label": "프로모션",
+    "confidence": 0.82,
+    "reason": "『다이어트쉐이크_봄이벤트_배너_260310.png』 소재는 '프로모션' 축을 중심으로 구성되어 있으며, 봄 시즌 한정 2+1 프로모션를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(슬림다운 다이어트쉐이크) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "low",
+    "hook_strength": "strong",
+    "analyzed_at": "2026-03-10T09:00:00Z"
+  },
+  {
+    "id": "ana-020",
+    "file_id": "file-020",
+    "intent_label": "인플루언서",
+    "confidence": 0.89,
+    "reason": "『크레아틴_운동콜라보_영상_260318.mp4』 소재는 '인플루언서' 축을 중심으로 구성되어 있으며, 헬스 유튜버 협찬 운동 루틴를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(프로 크레아틴 모노하이드레이트) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "high",
+    "hook_strength": "medium",
+    "analyzed_at": "2026-03-18T11:45:00Z"
+  },
+  {
+    "id": "ana-021",
+    "file_id": "file-021",
+    "intent_label": "정보성",
+    "confidence": 0.96,
+    "reason": "『프로바이오틱스_인포그래픽_260322.jpg』 소재는 '정보성' 축을 중심으로 구성되어 있으며, 장내 세균 균형 인포그래픽를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(프리미엄 프로바이오틱스) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "medium",
+    "hook_strength": "very_strong",
+    "analyzed_at": "2026-03-22T14:20:00Z"
+  },
+  {
+    "id": "ana-022",
+    "file_id": "file-022",
+    "intent_label": "비포애프터",
+    "confidence": 0.85,
+    "reason": "『눈밑시술_전후비교_이미지_260325.png』 소재는 '비포애프터' 축을 중심으로 구성되어 있으며, Before After 비교 이미지를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(눈밑지방재배치 시술) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "low",
+    "hook_strength": "weak",
+    "analyzed_at": "2026-03-25T13:30:00Z"
+  },
+  {
+    "id": "ana-023",
+    "file_id": "file-023",
+    "intent_label": "후기성",
+    "confidence": 0.92,
+    "reason": "『진정크림_인터뷰영상_260328.mp4』 소재는 '후기성' 축을 중심으로 구성되어 있으며, 30대 민감성 피부 타겟 인터뷰를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(퓨어 진정크림) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "high",
+    "hook_strength": "strong",
+    "analyzed_at": "2026-03-28T10:00:00Z"
+  },
+  {
+    "id": "ana-024",
+    "file_id": "file-024",
+    "intent_label": "후기성",
+    "confidence": 0.81,
+    "reason": "『탈모샴푸_여성숏폼_260402.mp4』 소재는 '후기성' 축을 중심으로 구성되어 있으며, 여성 탈모 타겟 감성적 접근를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(두피케어 탈모샴푸) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "medium",
+    "hook_strength": "medium",
+    "analyzed_at": "2026-04-02T10:00:00Z"
+  },
+  {
+    "id": "ana-025",
+    "file_id": "file-025",
+    "intent_label": "프로모션",
+    "confidence": 0.88,
+    "reason": "『비타민C_봄철건강_이미지_260404.png』 소재는 '프로모션' 축을 중심으로 구성되어 있으며, 봄철 면역 강화 시즌 소재를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(비타민C 고함량 영양제) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "low",
+    "hook_strength": "very_strong",
+    "analyzed_at": "2026-04-04T13:00:00Z"
+  },
+  {
+    "id": "ana-026",
+    "file_id": "file-026",
+    "intent_label": "후기성",
+    "confidence": 0.95,
+    "reason": "『다이어트쉐이크_맛후기_영상_260406.mp4』 소재는 '후기성' 축을 중심으로 구성되어 있으며, 맛 소구 다이어트 식품 거부감 해소를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(슬림다운 다이어트쉐이크) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "high",
+    "hook_strength": "weak",
+    "analyzed_at": "2026-04-06T11:30:00Z"
+  },
+  {
+    "id": "ana-027",
+    "file_id": "file-027",
+    "intent_label": "프로모션",
+    "confidence": 0.84,
+    "reason": "『진정크림_신제품런칭_배너_260408.jpg』 소재는 '프로모션' 축을 중심으로 구성되어 있으며, 리뉴얼 패키지 런칭 기념 배너를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(퓨어 진정크림) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "medium",
+    "hook_strength": "strong",
+    "analyzed_at": "2026-04-08T09:00:00Z"
+  },
+  {
+    "id": "ana-028",
+    "file_id": "file-028",
+    "intent_label": "정보성",
+    "confidence": 0.91,
+    "reason": "『크레아틴_QA영상_260410.mp4』 소재는 '정보성' 축을 중심으로 구성되어 있으며, 소비자 Q&A 안전성 우려 해소를 전달하는 방식으로 시청자의 주의를 끕니다. 제품(프로 크레아틴 모노하이드레이트) 특성과 소구 포인트가 자연스럽게 연결되어 광고 목적에 부합하는 구성으로 평가됩니다.",
+    "script_quality": "low",
+    "hook_strength": "medium",
+    "analyzed_at": "2026-04-10T14:00:00Z"
   }
 ]

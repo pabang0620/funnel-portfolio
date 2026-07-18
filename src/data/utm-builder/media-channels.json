@@ -1,10 +1,107 @@
 [
-  { "id": "media-001", "name": "네이버", "initial": "NV", "display_name": "Naver", "group": "검색광고" },
-  { "id": "media-002", "name": "구글", "initial": "GG", "display_name": "Google", "group": "검색광고" },
-  { "id": "media-003", "name": "카카오", "initial": "KK", "display_name": "Kakao", "group": "SNS" },
-  { "id": "media-004", "name": "메타", "initial": "MT", "display_name": "Meta", "group": "SNS" },
-  { "id": "media-005", "name": "틱톡", "initial": "TT", "display_name": "TikTok", "group": "SNS" },
-  { "id": "media-006", "name": "유튜브", "initial": "YT", "display_name": "YouTube", "group": "동영상" },
-  { "id": "media-007", "name": "카카오채널", "initial": "KC", "display_name": "KakaoChannel", "group": "SNS" },
-  { "id": "media-008", "name": "인스타그램", "initial": "IG", "display_name": "Instagram", "group": "SNS" }
+  {
+    "id": "media-001",
+    "name": "네이버",
+    "initial": "NV",
+    "display_name": "Naver",
+    "group": "검색광고"
+  },
+  {
+    "id": "media-002",
+    "name": "구글",
+    "initial": "GG",
+    "display_name": "Google",
+    "group": "검색광고"
+  },
+  {
+    "id": "media-003",
+    "name": "카카오",
+    "initial": "KK",
+    "display_name": "Kakao",
+    "group": "SNS"
+  },
+  {
+    "id": "media-004",
+    "name": "메타",
+    "initial": "MT",
+    "display_name": "Meta",
+    "group": "SNS"
+  },
+  {
+    "id": "media-005",
+    "name": "틱톡",
+    "initial": "TT",
+    "display_name": "TikTok",
+    "group": "SNS"
+  },
+  {
+    "id": "media-006",
+    "name": "유튜브",
+    "initial": "YT",
+    "display_name": "YouTube",
+    "group": "동영상"
+  },
+  {
+    "id": "media-007",
+    "name": "카카오채널",
+    "initial": "KC",
+    "display_name": "KakaoChannel",
+    "group": "SNS"
+  },
+  {
+    "id": "media-008",
+    "name": "인스타그램",
+    "initial": "IG",
+    "display_name": "Instagram",
+    "group": "SNS"
+  },
+  {
+    "id": "media-009",
+    "name": "네이버밴드",
+    "initial": "NB",
+    "display_name": "NaverBand",
+    "group": "SNS"
+  },
+  {
+    "id": "media-010",
+    "name": "다음",
+    "initial": "DM",
+    "display_name": "Daum",
+    "group": "검색광고"
+  },
+  {
+    "id": "media-011",
+    "name": "트위터",
+    "initial": "TW",
+    "display_name": "X(Twitter)",
+    "group": "SNS"
+  },
+  {
+    "id": "media-012",
+    "name": "링크드인",
+    "initial": "LI",
+    "display_name": "LinkedIn",
+    "group": "SNS"
+  },
+  {
+    "id": "media-013",
+    "name": "크리테오",
+    "initial": "CR",
+    "display_name": "Criteo",
+    "group": "리타게팅"
+  },
+  {
+    "id": "media-014",
+    "name": "당근마켓",
+    "initial": "DR",
+    "display_name": "Daangn",
+    "group": "SNS"
+  },
+  {
+    "id": "media-015",
+    "name": "카카오모먼트",
+    "initial": "KO",
+    "display_name": "KakaoMoment",
+    "group": "디스플레이"
+  }
 ]

@@ -258,5 +258,343 @@
         "ad_data": null
       }
     ]
+  },
+  {
+    "id": "ref-5",
+    "name": "여행/라이프스타일 소재 모음",
+    "completed": false,
+    "completed_at": null,
+    "created_at": "2026-05-01T00:00:00.000Z",
+    "updated_at": "2026-05-25T12:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-5-1",
+        "set_id": "ref-5",
+        "url": "https://picsum.photos/seed/travel1/800/600",
+        "url_type": "image",
+        "note": "여행 패키지 배너 — 목적지 사진 + 할인율 강조 레이아웃",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-5-2",
+        "set_id": "ref-5",
+        "url": "https://picsum.photos/seed/travel2/800/500",
+        "url_type": "image",
+        "note": "감성 여행 무드보드 — 파스텔톤 필터로 통일감 연출",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-5-3",
+        "set_id": "ref-5",
+        "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+        "url_type": "video",
+        "note": "여행 브이로그형 광고 — 몰입감 있는 현지 촬영 컷",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-5-4",
+        "set_id": "ref-5",
+        "url": "https://travelfriends.kr/ads",
+        "url_type": "link",
+        "note": "여행프렌즈 랜딩 — 패키지 비교 테이블 UX 참고",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-5-5",
+        "set_id": "ref-5",
+        "url": "https://picsum.photos/seed/travel5/600/800",
+        "url_type": "image",
+        "note": "세로형 스토리 광고 — 예약 CTA 상단 고정",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      }
+    ]
+  },
+  {
+    "id": "ref-6",
+    "name": "반려동물 카테고리 벤치마킹",
+    "completed": false,
+    "completed_at": null,
+    "created_at": "2026-05-01T00:00:00.000Z",
+    "updated_at": "2026-05-25T12:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-6-1",
+        "set_id": "ref-6",
+        "url": "https://picsum.photos/seed/pet1/800/600",
+        "url_type": "image",
+        "note": "펫용품 언박싱 스타일 — 제품 구성 한눈에 소개",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-6-2",
+        "set_id": "ref-6",
+        "url": "https://picsum.photos/seed/pet2/800/600",
+        "url_type": "image",
+        "note": "반려동물과 함께하는 라이프스타일 컷 — 감성 소구",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-6-3",
+        "set_id": "ref-6",
+        "url": "https://picsum.photos/seed/pet3/600/600",
+        "url_type": "image",
+        "note": "정사각형 카드 — 정기구독 혜택 요약",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-6-4",
+        "set_id": "ref-6",
+        "url": "https://picsum.photos/seed/ad044/400/300",
+        "url_type": "image",
+        "note": "퍼포먼스랩투 실제 스크랩 소재 참고 — 벤치마킹용으로 저장",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": "ad-044",
+        "ad_data": {
+          "id": "ad-044",
+          "keyword_id": "kw-002",
+          "source": "meta",
+          "advertiser_name": "퍼포먼스랩투",
+          "variants": [
+            {
+              "content_url": "https://picsum.photos/seed/ad044/400/300",
+              "thumbnail_url": null,
+              "landing_page_url": "https://performancelab2.co.kr/ads"
+            }
+          ],
+          "scraped_date": "2026-05-09",
+          "last_shown_date": "2026-05-09",
+          "created_at": "2026-05-09T17:18:00Z",
+          "updated_at": "2026-05-09T17:18:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ref-7",
+    "name": "헬스/피트니스 소재 아카이브",
+    "completed": true,
+    "completed_at": "2026-05-20T18:00:00.000Z",
+    "created_at": "2026-05-01T00:00:00.000Z",
+    "updated_at": "2026-05-25T12:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-7-1",
+        "set_id": "ref-7",
+        "url": "https://picsum.photos/seed/fit1/800/600",
+        "url_type": "image",
+        "note": "PT 등록 프로모션 — Before/After 체형 변화 강조",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-7-2",
+        "set_id": "ref-7",
+        "url": "https://picsum.photos/seed/fit2/800/500",
+        "url_type": "image",
+        "note": "필라테스 스튜디오 인테리어 컷 — 공간감 있는 촬영 참고",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-7-3",
+        "set_id": "ref-7",
+        "url": "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+        "url_type": "video",
+        "note": "홈트레이닝 챌린지 영상 — 참여 유도 CTA 삽입 방식",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-7-4",
+        "set_id": "ref-7",
+        "url": "https://healthboxpt.com",
+        "url_type": "link",
+        "note": "헬스박스PT 랜딩 — 무료체험 신청 폼 UX",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-7-5",
+        "set_id": "ref-7",
+        "url": "https://picsum.photos/seed/fit5/800/600",
+        "url_type": "image",
+        "note": "체험단 후기 카드뉴스 — 별점+코멘트 레이아웃",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-7-6",
+        "set_id": "ref-7",
+        "url": "https://picsum.photos/seed/ad051/400/300",
+        "url_type": "image",
+        "note": "더마스킨원 실제 스크랩 소재 참고 — 벤치마킹용으로 저장",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": "ad-051",
+        "ad_data": {
+          "id": "ad-051",
+          "keyword_id": "kw-008",
+          "source": "meta",
+          "advertiser_name": "더마스킨원",
+          "variants": [
+            {
+              "content_url": "https://picsum.photos/seed/ad051/400/300",
+              "thumbnail_url": null,
+              "landing_page_url": "https://dermaskin1.co.kr/ads"
+            }
+          ],
+          "scraped_date": "2026-05-23",
+          "last_shown_date": "2026-05-23",
+          "created_at": "2026-05-23T14:35:00Z",
+          "updated_at": "2026-05-23T14:35:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ref-8",
+    "name": "B2B/SaaS 랜딩 UX 리서치",
+    "completed": false,
+    "completed_at": null,
+    "created_at": "2026-05-01T00:00:00.000Z",
+    "updated_at": "2026-05-25T12:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-8-1",
+        "set_id": "ref-8",
+        "url": "https://picsum.photos/seed/saas1/1200/600",
+        "url_type": "image",
+        "note": "히어로 섹션 — 대시보드 스크린샷 목업 활용",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-8-2",
+        "set_id": "ref-8",
+        "url": "https://picsum.photos/seed/saas2/800/600",
+        "url_type": "image",
+        "note": "기능 비교표 — 경쟁사 대비 강점 3가지 시각화",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-8-3",
+        "set_id": "ref-8",
+        "url": "https://clouderp.kr",
+        "url_type": "link",
+        "note": "클라우드ERP코리아 랜딩 — 무료 데모 신청 폼",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-8-4",
+        "set_id": "ref-8",
+        "url": "https://automationhub.io",
+        "url_type": "link",
+        "note": "오토메이션허브 랜딩 — 고객사 로고 신뢰 섹션",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      }
+    ]
+  },
+  {
+    "id": "ref-9",
+    "name": "법률/세무 전문서비스 소재",
+    "completed": false,
+    "completed_at": null,
+    "created_at": "2026-05-01T00:00:00.000Z",
+    "updated_at": "2026-05-25T12:00:00.000Z",
+    "items": [
+      {
+        "id": "ritem-9-1",
+        "set_id": "ref-9",
+        "url": "https://picsum.photos/seed/legal1/800/600",
+        "url_type": "image",
+        "note": "전문가 프로필 강조 컷 — 경력/자격 텍스트 오버레이",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-9-2",
+        "set_id": "ref-9",
+        "url": "https://picsum.photos/seed/legal2/800/500",
+        "url_type": "image",
+        "note": "무료 상담 후킹 배너 — 전화 아이콘 + 상담시간 안내",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-9-3",
+        "set_id": "ref-9",
+        "url": "https://taxnara.co.kr",
+        "url_type": "link",
+        "note": "세무나라 랜딩 — 요금제 비교 카드 UI",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      },
+      {
+        "id": "ritem-9-4",
+        "set_id": "ref-9",
+        "url": "https://picsum.photos/seed/ad059/400/300",
+        "url_type": "image",
+        "note": "펫케어스토어 실제 스크랩 소재 참고 — 벤치마킹용으로 저장",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": "ad-059",
+        "ad_data": {
+          "id": "ad-059",
+          "keyword_id": "kw-017",
+          "source": "meta",
+          "advertiser_name": "펫케어스토어",
+          "variants": [
+            {
+              "content_url": "https://picsum.photos/seed/ad059/400/300",
+              "thumbnail_url": null,
+              "landing_page_url": "https://petcarestore.kr/ads"
+            }
+          ],
+          "scraped_date": "2026-06-11",
+          "last_shown_date": "2026-06-11",
+          "created_at": "2026-06-11T12:03:00Z",
+          "updated_at": "2026-06-11T12:03:00Z"
+        }
+      },
+      {
+        "id": "ritem-9-5",
+        "set_id": "ref-9",
+        "url": "https://picsum.photos/seed/legal5/800/600",
+        "url_type": "image",
+        "note": "고객 후기 슬라이더 — 별점 요약 상단 배치",
+        "created_at": "2026-05-01T10:00:00.000Z",
+        "ad_id": null,
+        "ad_data": null
+      }
+    ]
   }
 ]

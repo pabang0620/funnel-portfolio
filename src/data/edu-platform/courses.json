@@ -8,7 +8,12 @@
     "updated_at": "2026-03-20T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-002", "name": "김민준", "team": "개발팀", "part": "프론트엔드" }
+      {
+        "id": "user-002",
+        "name": "김민준",
+        "team": "개발팀",
+        "part": "프론트엔드"
+      }
     ],
     "lecture_count": 12,
     "lectures_done": 8,
@@ -29,7 +34,12 @@
     "updated_at": "2026-03-25T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-003", "name": "박지훈", "team": "데이터팀", "part": "데이터분석" }
+      {
+        "id": "user-003",
+        "name": "박지훈",
+        "team": "데이터팀",
+        "part": "데이터분석"
+      }
     ],
     "lecture_count": 10,
     "lectures_done": 6,
@@ -50,7 +60,12 @@
     "updated_at": "2026-03-28T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-004", "name": "정유진", "team": "개발팀", "part": "백엔드" }
+      {
+        "id": "user-004",
+        "name": "정유진",
+        "team": "개발팀",
+        "part": "백엔드"
+      }
     ],
     "lecture_count": 8,
     "lectures_done": 8,
@@ -71,7 +86,12 @@
     "updated_at": "2026-04-01T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-005", "name": "최승호", "team": "법무팀", "part": "개인정보보호" }
+      {
+        "id": "user-005",
+        "name": "최승호",
+        "team": "법무팀",
+        "part": "개인정보보호"
+      }
     ],
     "lecture_count": 4,
     "lectures_done": 4,
@@ -92,7 +112,12 @@
     "updated_at": "2026-04-02T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-006", "name": "이서연", "team": "마케팅팀", "part": "퍼포먼스마케팅" }
+      {
+        "id": "user-006",
+        "name": "이서연",
+        "team": "마케팅팀",
+        "part": "퍼포먼스마케팅"
+      }
     ],
     "lecture_count": 6,
     "lectures_done": 3,
@@ -113,7 +138,12 @@
     "updated_at": "2026-04-03T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-001", "name": "한예림", "team": "HR팀", "part": "HR" }
+      {
+        "id": "user-001",
+        "name": "한예림",
+        "team": "HR팀",
+        "part": "HR"
+      }
     ],
     "lecture_count": 5,
     "lectures_done": 2,
@@ -134,7 +164,12 @@
     "updated_at": "2026-04-04T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-004", "name": "정유진", "team": "개발팀", "part": "백엔드" }
+      {
+        "id": "user-004",
+        "name": "정유진",
+        "team": "개발팀",
+        "part": "백엔드"
+      }
     ],
     "lecture_count": 10,
     "lectures_done": 4,
@@ -155,7 +190,12 @@
     "updated_at": "2026-04-05T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-007", "name": "윤소희", "team": "디자인팀", "part": "UXUI" }
+      {
+        "id": "user-007",
+        "name": "윤소희",
+        "team": "디자인팀",
+        "part": "UXUI"
+      }
     ],
     "lecture_count": 8,
     "lectures_done": 5,
@@ -176,7 +216,12 @@
     "updated_at": "2026-04-06T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-003", "name": "박지훈", "team": "데이터팀", "part": "데이터엔지니어링" }
+      {
+        "id": "user-003",
+        "name": "박지훈",
+        "team": "데이터팀",
+        "part": "데이터엔지니어링"
+      }
     ],
     "lecture_count": 9,
     "lectures_done": 3,
@@ -197,7 +242,12 @@
     "updated_at": "2026-04-07T10:00:00Z",
     "created_by": "user-001",
     "instructors": [
-      { "id": "user-001", "name": "한예림", "team": "HR팀", "part": "조직개발" }
+      {
+        "id": "user-001",
+        "name": "한예림",
+        "team": "HR팀",
+        "part": "조직개발"
+      }
     ],
     "lecture_count": 6,
     "lectures_done": 2,
@@ -208,5 +258,473 @@
     "attendance_rate": 95,
     "submission_rate": 90,
     "thumbnail": "https://picsum.photos/seed/leadership/800/400"
+  },
+  {
+    "id": "cur-011",
+    "name": "머신러닝 실전 입문",
+    "description": "<p>지도학습과 비지도학습의 핵심 개념을 익히고 scikit-learn으로 실전 예측 모델을 구축하는 과정입니다.</p>",
+    "type": "데이터사이언스, 기술교육",
+    "created_at": "2026-03-10T09:00:00Z",
+    "updated_at": "2026-05-01T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-003",
+        "name": "박지훈",
+        "team": "데이터팀",
+        "part": "데이터분석"
+      }
+    ],
+    "lecture_count": 10,
+    "lectures_done": 5,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 4,
+    "assignment_count": 4,
+    "student_count": 17,
+    "attendance_rate": 89,
+    "submission_rate": 81,
+    "thumbnail": "https://picsum.photos/seed/ml-intro/800/400"
+  },
+  {
+    "id": "cur-012",
+    "name": "브랜드 아이덴티티 디자인 워크숍",
+    "description": "<p>로고, 컬러 시스템, 타이포그래피 등 브랜드 아이덴티티 요소를 기획하고 제작하는 실습 중심 워크숍입니다.</p>",
+    "type": "디자인, 직무교육",
+    "created_at": "2026-03-12T09:00:00Z",
+    "updated_at": "2026-05-02T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-007",
+        "name": "윤소희",
+        "team": "디자인팀",
+        "part": "UXUI"
+      }
+    ],
+    "lecture_count": 6,
+    "lectures_done": 3,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 2,
+    "assignment_count": 2,
+    "student_count": 14,
+    "attendance_rate": 92,
+    "submission_rate": 85,
+    "thumbnail": "https://picsum.photos/seed/brand-identity/800/400"
+  },
+  {
+    "id": "cur-013",
+    "name": "Git & 협업 워크플로우",
+    "description": "<p>브랜치 전략, 코드 리뷰, PR 컨벤션 등 팀 개발 생산성을 높이는 Git 협업 워크플로우를 다룹니다.</p>",
+    "type": "개발, 기술교육",
+    "created_at": "2026-03-15T09:00:00Z",
+    "updated_at": "2026-05-03T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-004",
+        "name": "정유진",
+        "team": "개발팀",
+        "part": "백엔드"
+      }
+    ],
+    "lecture_count": 5,
+    "lectures_done": 5,
+    "lectures_ongoing": 0,
+    "lectures_upcoming": 0,
+    "assignment_count": 2,
+    "student_count": 25,
+    "attendance_rate": 95,
+    "submission_rate": 93,
+    "thumbnail": "https://picsum.photos/seed/git-workflow/800/400"
+  },
+  {
+    "id": "cur-014",
+    "name": "생성형 AI 프롬프트 엔지니어링",
+    "description": "<p>업무 생산성을 높이는 프롬프트 설계 원칙과 사내 업무 자동화 사례를 실습하는 과정입니다.</p>",
+    "type": "AI, 기술교육",
+    "created_at": "2026-03-18T09:00:00Z",
+    "updated_at": "2026-05-05T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-002",
+        "name": "김민준",
+        "team": "개발팀",
+        "part": "프론트엔드"
+      }
+    ],
+    "lecture_count": 6,
+    "lectures_done": 2,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 3,
+    "assignment_count": 3,
+    "student_count": 30,
+    "attendance_rate": 88,
+    "submission_rate": 79,
+    "thumbnail": "https://picsum.photos/seed/prompt-eng/800/400"
+  },
+  {
+    "id": "cur-015",
+    "name": "그로스 해킹 실전 전략",
+    "description": "<p>AARRR 프레임워크를 기반으로 데이터 기반 실험 설계와 지표 개선 전략을 학습하는 과정입니다.</p>",
+    "type": "마케팅, 직무교육",
+    "created_at": "2026-03-20T09:00:00Z",
+    "updated_at": "2026-05-06T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-006",
+        "name": "이서연",
+        "team": "마케팅팀",
+        "part": "퍼포먼스마케팅"
+      }
+    ],
+    "lecture_count": 7,
+    "lectures_done": 4,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 2,
+    "assignment_count": 3,
+    "student_count": 18,
+    "attendance_rate": 84,
+    "submission_rate": 76,
+    "thumbnail": "https://picsum.photos/seed/growth-hacking/800/400"
+  },
+  {
+    "id": "cur-016",
+    "name": "TypeScript 마스터클래스",
+    "description": "<p>제네릭, 유틸리티 타입, 타입 추론 등 TypeScript 고급 기능을 실무 코드와 함께 심도 있게 다룹니다.</p>",
+    "type": "프론트엔드, 기술교육",
+    "created_at": "2026-03-22T09:00:00Z",
+    "updated_at": "2026-05-08T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-002",
+        "name": "김민준",
+        "team": "개발팀",
+        "part": "프론트엔드"
+      }
+    ],
+    "lecture_count": 9,
+    "lectures_done": 6,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 2,
+    "assignment_count": 4,
+    "student_count": 16,
+    "attendance_rate": 90,
+    "submission_rate": 86,
+    "thumbnail": "https://picsum.photos/seed/ts-master/800/400"
+  },
+  {
+    "id": "cur-017",
+    "name": "쿠버네티스 & 컨테이너 오케스트레이션",
+    "description": "<p>Docker 컨테이너화부터 쿠버네티스 클러스터 운영까지 실습으로 익히는 인프라 심화 과정입니다.</p>",
+    "type": "인프라, 기술교육",
+    "created_at": "2026-03-25T09:00:00Z",
+    "updated_at": "2026-05-09T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-004",
+        "name": "정유진",
+        "team": "개발팀",
+        "part": "백엔드"
+      }
+    ],
+    "lecture_count": 8,
+    "lectures_done": 3,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 4,
+    "assignment_count": 3,
+    "student_count": 12,
+    "attendance_rate": 87,
+    "submission_rate": 80,
+    "thumbnail": "https://picsum.photos/seed/kubernetes/800/400"
+  },
+  {
+    "id": "cur-018",
+    "name": "정보보안 컴플라이언스 심화",
+    "description": "<p>ISO 27001, ISMS-P 기준에 따른 정보보안 컴플라이언스 체계와 내부 감사 대응 방법을 학습합니다.</p>",
+    "type": "보안, 필수교육",
+    "created_at": "2026-03-28T09:00:00Z",
+    "updated_at": "2026-05-10T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-005",
+        "name": "최승호",
+        "team": "법무팀",
+        "part": "개인정보보호"
+      }
+    ],
+    "lecture_count": 4,
+    "lectures_done": 4,
+    "lectures_ongoing": 0,
+    "lectures_upcoming": 0,
+    "assignment_count": 2,
+    "student_count": 42,
+    "attendance_rate": 97,
+    "submission_rate": 95,
+    "thumbnail": "https://picsum.photos/seed/security-compliance/800/400"
+  },
+  {
+    "id": "cur-019",
+    "name": "콘텐츠 마케팅 & SEO 전략",
+    "description": "<p>검색엔진 최적화와 콘텐츠 기획을 결합하여 유기적 트래픽을 늘리는 실전 전략을 다룹니다.</p>",
+    "type": "마케팅, 직무교육",
+    "created_at": "2026-04-01T09:00:00Z",
+    "updated_at": "2026-05-12T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-006",
+        "name": "이서연",
+        "team": "마케팅팀",
+        "part": "퍼포먼스마케팅"
+      }
+    ],
+    "lecture_count": 6,
+    "lectures_done": 2,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 3,
+    "assignment_count": 3,
+    "student_count": 19,
+    "attendance_rate": 85,
+    "submission_rate": 78,
+    "thumbnail": "https://picsum.photos/seed/seo-content/800/400"
+  },
+  {
+    "id": "cur-020",
+    "name": "직장 내 괴롭힘 예방 교육",
+    "description": "<p>직장 내 괴롭힘 판단 기준과 예방·대응 절차를 학습하는 전 직원 필수 이수 과정입니다.</p>",
+    "type": "필수교육",
+    "created_at": "2026-04-03T09:00:00Z",
+    "updated_at": "2026-05-13T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-001",
+        "name": "한예림",
+        "team": "HR팀",
+        "part": "HR"
+      }
+    ],
+    "lecture_count": 2,
+    "lectures_done": 2,
+    "lectures_ongoing": 0,
+    "lectures_upcoming": 0,
+    "assignment_count": 1,
+    "student_count": 50,
+    "attendance_rate": 99,
+    "submission_rate": 98,
+    "thumbnail": "https://picsum.photos/seed/workplace-harassment/800/400"
+  },
+  {
+    "id": "cur-021",
+    "name": "SNS 광고 크리에이티브 제작",
+    "description": "<p>메타, 인스타그램 등 SNS 채널별 광고 소재 기획과 A/B 테스트 운영 방법을 실습합니다.</p>",
+    "type": "마케팅, 직무교육",
+    "created_at": "2026-04-05T09:00:00Z",
+    "updated_at": "2026-05-14T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-006",
+        "name": "이서연",
+        "team": "마케팅팀",
+        "part": "퍼포먼스마케팅"
+      }
+    ],
+    "lecture_count": 5,
+    "lectures_done": 1,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 3,
+    "assignment_count": 2,
+    "student_count": 15,
+    "attendance_rate": 82,
+    "submission_rate": 74,
+    "thumbnail": "https://picsum.photos/seed/sns-ads/800/400"
+  },
+  {
+    "id": "cur-022",
+    "name": "GraphQL API 설계",
+    "description": "<p>REST와의 차이를 이해하고 스키마 설계, 리졸버 구현, N+1 문제 해결까지 다루는 백엔드 심화 과정입니다.</p>",
+    "type": "백엔드, 기술교육",
+    "created_at": "2026-04-08T09:00:00Z",
+    "updated_at": "2026-05-15T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-004",
+        "name": "정유진",
+        "team": "개발팀",
+        "part": "백엔드"
+      }
+    ],
+    "lecture_count": 7,
+    "lectures_done": 2,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 4,
+    "assignment_count": 3,
+    "student_count": 13,
+    "attendance_rate": 86,
+    "submission_rate": 79,
+    "thumbnail": "https://picsum.photos/seed/graphql-api/800/400"
+  },
+  {
+    "id": "cur-023",
+    "name": "UX 리서치 & 사용성 테스트",
+    "description": "<p>사용자 인터뷰 설계부터 사용성 테스트 진행, 인사이트 도출까지 UX 리서치 전 과정을 실습합니다.</p>",
+    "type": "디자인, 직무교육",
+    "created_at": "2026-04-10T09:00:00Z",
+    "updated_at": "2026-05-16T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-007",
+        "name": "윤소희",
+        "team": "디자인팀",
+        "part": "UXUI"
+      }
+    ],
+    "lecture_count": 6,
+    "lectures_done": 1,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 4,
+    "assignment_count": 2,
+    "student_count": 11,
+    "attendance_rate": 90,
+    "submission_rate": 83,
+    "thumbnail": "https://picsum.photos/seed/ux-research/800/400"
+  },
+  {
+    "id": "cur-024",
+    "name": "데이터 시각화 심화 (Tableau)",
+    "description": "<p>Tableau를 활용해 비즈니스 데이터를 대시보드로 시각화하고 인사이트를 전달하는 방법을 학습합니다.</p>",
+    "type": "데이터사이언스, 기술교육",
+    "created_at": "2026-04-12T09:00:00Z",
+    "updated_at": "2026-05-18T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-003",
+        "name": "박지훈",
+        "team": "데이터팀",
+        "part": "데이터분석"
+      }
+    ],
+    "lecture_count": 7,
+    "lectures_done": 3,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 3,
+    "assignment_count": 3,
+    "student_count": 17,
+    "attendance_rate": 88,
+    "submission_rate": 81,
+    "thumbnail": "https://picsum.photos/seed/tableau-viz/800/400"
+  },
+  {
+    "id": "cur-025",
+    "name": "신규 팀장 코칭 프로그램",
+    "description": "<p>신규 승진 팀장을 위한 1:1 코칭 스킬, 목표 설정, 피드백 기법을 다루는 리더십 프로그램입니다.</p>",
+    "type": "리더십, 필수교육",
+    "created_at": "2026-04-15T09:00:00Z",
+    "updated_at": "2026-05-20T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-001",
+        "name": "한예림",
+        "team": "HR팀",
+        "part": "HR"
+      }
+    ],
+    "lecture_count": 5,
+    "lectures_done": 1,
+    "lectures_ongoing": 0,
+    "lectures_upcoming": 4,
+    "assignment_count": 2,
+    "student_count": 9,
+    "attendance_rate": 94,
+    "submission_rate": 90,
+    "thumbnail": "https://picsum.photos/seed/new-leader-coaching/800/400"
+  },
+  {
+    "id": "cur-026",
+    "name": "웹 접근성(A11y) 실무",
+    "description": "<p>WCAG 기준에 따른 시맨틱 마크업, ARIA 속성, 키보드 내비게이션 등 웹 접근성 실무를 다룹니다.</p>",
+    "type": "프론트엔드, 기술교육",
+    "created_at": "2026-04-18T09:00:00Z",
+    "updated_at": "2026-05-22T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-002",
+        "name": "김민준",
+        "team": "개발팀",
+        "part": "프론트엔드"
+      }
+    ],
+    "lecture_count": 5,
+    "lectures_done": 0,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 4,
+    "assignment_count": 2,
+    "student_count": 14,
+    "attendance_rate": 80,
+    "submission_rate": 60,
+    "thumbnail": "https://picsum.photos/seed/web-a11y/800/400"
+  },
+  {
+    "id": "cur-027",
+    "name": "계약서 검토 실무",
+    "description": "<p>용역·라이선스 계약서의 주요 조항을 검토하고 리스크를 식별하는 법무 실무 과정입니다.</p>",
+    "type": "법무, 직무교육",
+    "created_at": "2026-04-20T09:00:00Z",
+    "updated_at": "2026-05-24T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-005",
+        "name": "최승호",
+        "team": "법무팀",
+        "part": "개인정보보호"
+      }
+    ],
+    "lecture_count": 4,
+    "lectures_done": 1,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 2,
+    "assignment_count": 2,
+    "student_count": 23,
+    "attendance_rate": 91,
+    "submission_rate": 84,
+    "thumbnail": "https://picsum.photos/seed/contract-review/800/400"
+  },
+  {
+    "id": "cur-028",
+    "name": "생성형 AI 사내 활용 가이드",
+    "description": "<p>전 직원을 대상으로 생성형 AI 도구의 사내 활용 사례와 사용 가이드라인을 안내하는 과정입니다.</p>",
+    "type": "AI, 필수교육",
+    "created_at": "2026-04-25T09:00:00Z",
+    "updated_at": "2026-05-28T10:00:00Z",
+    "created_by": "user-001",
+    "instructors": [
+      {
+        "id": "user-003",
+        "name": "박지훈",
+        "team": "데이터팀",
+        "part": "데이터분석"
+      }
+    ],
+    "lecture_count": 3,
+    "lectures_done": 0,
+    "lectures_ongoing": 1,
+    "lectures_upcoming": 2,
+    "assignment_count": 1,
+    "student_count": 40,
+    "attendance_rate": 76,
+    "submission_rate": 40,
+    "thumbnail": "https://picsum.photos/seed/genai-guide/800/400"
   }
 ]

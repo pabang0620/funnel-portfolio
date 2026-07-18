@@ -403,5 +403,377 @@
     "scraped_date": "2026-03-19",
     "last_shown_date": "2026-04-11",
     "keyword_id": "kw-010"
+  },
+  {
+    "id": "bm-21",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-026",
+    "landing_url": null,
+    "note": "여행 카테고리 소재 — 시즌 프로모션 카피 참고",
+    "created_at": "2026-05-10T09:00:00.000Z",
+    "advertiser_name": "여행프렌즈",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad026/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://travelfriends.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad026b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://travelfriends.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-04-01",
+    "last_shown_date": "2026-04-01",
+    "keyword_id": "kw-016"
+  },
+  {
+    "id": "bm-22",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-027",
+    "landing_url": null,
+    "note": "반려동물 쇼핑몰 — 제품 그리드 레이아웃 벤치마킹",
+    "created_at": "2026-05-11T10:00:00.000Z",
+    "advertiser_name": "펫스토리몰",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad027/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://petstorymall.com/ads"
+      }
+    ],
+    "scraped_date": "2026-04-03",
+    "last_shown_date": "2026-04-03",
+    "keyword_id": "kw-017"
+  },
+  {
+    "id": "bm-23",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-028",
+    "landing_url": null,
+    "note": "재테크 강의 광고 — 무료 특강 후킹 전략 분석",
+    "created_at": "2026-05-12T11:00:00.000Z",
+    "advertiser_name": "돈버는습관",
+    "source": "google",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad028/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://moneyhabit.io/ads"
+      }
+    ],
+    "scraped_date": "2026-04-05",
+    "last_shown_date": "2026-04-05",
+    "keyword_id": "kw-018"
+  },
+  {
+    "id": "bm-24",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-029",
+    "landing_url": null,
+    "note": "필라테스 학원 소재 — 체험 신청 CTA 문구 참고",
+    "created_at": "2026-05-13T12:00:00.000Z",
+    "advertiser_name": "코어필라테스",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad029/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://corepilates.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-07",
+    "last_shown_date": "2026-04-07",
+    "keyword_id": "kw-019"
+  },
+  {
+    "id": "bm-25",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-030",
+    "landing_url": null,
+    "note": "웨딩 카테고리 — 상담 예약 폼 최적화 사례",
+    "created_at": "2026-05-14T13:00:00.000Z",
+    "advertiser_name": "드림웨딩",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad030/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://dreamwedding.co.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad030b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://dreamwedding.co.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-04-09",
+    "last_shown_date": "2026-04-09",
+    "keyword_id": "kw-020"
+  },
+  {
+    "id": "bm-26",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-031",
+    "landing_url": null,
+    "note": "중고차 플랫폼 — 가격 비교 UI 참고용",
+    "created_at": "2026-05-15T14:00:00.000Z",
+    "advertiser_name": "첫차마켓",
+    "source": "google",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad031/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://firstcarmarket.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-11",
+    "last_shown_date": "2026-04-11",
+    "keyword_id": "kw-021"
+  },
+  {
+    "id": "bm-27",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-032",
+    "landing_url": null,
+    "note": "인테리어 시공 소재 — 시공 전후 비교 연출 방식",
+    "created_at": "2026-05-16T15:00:00.000Z",
+    "advertiser_name": "홈스타일링랩",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad032/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://homestylinglab.com/ads"
+      }
+    ],
+    "scraped_date": "2026-04-13",
+    "last_shown_date": "2026-04-13",
+    "keyword_id": "kw-022"
+  },
+  {
+    "id": "bm-28",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-033",
+    "landing_url": null,
+    "note": "새벽배송 구독 — 첫 구독 할인 후킹 카피",
+    "created_at": "2026-05-17T16:00:00.000Z",
+    "advertiser_name": "새벽마켓",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad033/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://dawnmarket.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-15",
+    "last_shown_date": "2026-04-15",
+    "keyword_id": "kw-023"
+  },
+  {
+    "id": "bm-29",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-034",
+    "landing_url": null,
+    "note": "탈모 클리닉 — 전문의 권위 소구 방식 분석",
+    "created_at": "2026-05-18T09:00:00.000Z",
+    "advertiser_name": "헤어클리닉원",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad034/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://hairclinic1.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad034b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://hairclinic1.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-04-17",
+    "last_shown_date": "2026-04-17",
+    "keyword_id": "kw-024"
+  },
+  {
+    "id": "bm-30",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-035",
+    "landing_url": null,
+    "note": "치아교정 병원 — 상담 예약 퍼널 구조 참고",
+    "created_at": "2026-05-19T10:00:00.000Z",
+    "advertiser_name": "스마일교정치과",
+    "source": "google",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad035/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://smilebrace.co.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-19",
+    "last_shown_date": "2026-04-19",
+    "keyword_id": "kw-025"
+  },
+  {
+    "id": "bm-31",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-036",
+    "landing_url": null,
+    "note": "영어회화 앱 — 무료체험 전환 유도 소재",
+    "created_at": "2026-05-20T11:00:00.000Z",
+    "advertiser_name": "스픽업잉글리시",
+    "source": "meta",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad036/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://speakupenglish.io/ads"
+      }
+    ],
+    "scraped_date": "2026-04-21",
+    "last_shown_date": "2026-04-21",
+    "keyword_id": "kw-026"
+  },
+  {
+    "id": "bm-32",
+    "user_id": "demo-user",
+    "target_type": "ad",
+    "ad_id": "ad-037",
+    "landing_url": null,
+    "note": "이사 견적비교 — 즉시 견적 신청 폼 UX",
+    "created_at": "2026-05-21T12:00:00.000Z",
+    "advertiser_name": "이사왕비교",
+    "source": "google",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad037/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://movingking.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-23",
+    "last_shown_date": "2026-04-23",
+    "keyword_id": "kw-027"
+  },
+  {
+    "id": "bm-33",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://franchisehub.kr/ads",
+    "note": "프랜차이즈 랜딩 — 창업 비용 시뮬레이터 참고",
+    "created_at": "2026-05-15T10:30:00.000Z",
+    "advertiser_name": "프랜차이즈허브",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-04-25",
+    "last_shown_date": "2026-04-25",
+    "keyword_id": null
+  },
+  {
+    "id": "bm-34",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://lawtalkpartners.kr/ads",
+    "note": "법률상담 랜딩 — 무료 상담 신청 폼 구조",
+    "created_at": "2026-05-16T11:30:00.000Z",
+    "advertiser_name": "로톡파트너스",
+    "source": "google",
+    "variants": [],
+    "scraped_date": "2026-04-27",
+    "last_shown_date": "2026-04-27",
+    "keyword_id": null
+  },
+  {
+    "id": "bm-35",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://taxnara.co.kr/ads",
+    "note": "세무대행 랜딩 — 신뢰 배지와 후기 배치 분석",
+    "created_at": "2026-05-17T12:30:00.000Z",
+    "advertiser_name": "세무나라",
+    "source": "google",
+    "variants": [],
+    "scraped_date": "2026-05-01",
+    "last_shown_date": "2026-05-01",
+    "keyword_id": null
+  },
+  {
+    "id": "bm-36",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://greenfieldgolf.kr/ads",
+    "note": "골프 레슨 랜딩 — 예약 캘린더 UX 참고",
+    "created_at": "2026-05-18T13:30:00.000Z",
+    "advertiser_name": "그린필드골프",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-05-03",
+    "last_shown_date": "2026-05-03",
+    "keyword_id": null
+  },
+  {
+    "id": "bm-37",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://clouderp.kr/ads",
+    "note": "ERP 솔루션 랜딩 — 기능 비교표 구성 분석",
+    "created_at": "2026-05-19T14:30:00.000Z",
+    "advertiser_name": "클라우드ERP코리아",
+    "source": "google",
+    "variants": [],
+    "scraped_date": "2026-05-05",
+    "last_shown_date": "2026-05-05",
+    "keyword_id": null
+  },
+  {
+    "id": "bm-38",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://fulfillment1.co.kr/ads",
+    "note": "물류대행 랜딩 — 요금 계산기 인터랙션 참고",
+    "created_at": "2026-05-20T15:30:00.000Z",
+    "advertiser_name": "풀필먼트원",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-05-07",
+    "last_shown_date": "2026-05-07",
+    "keyword_id": null
+  },
+  {
+    "id": "bm-39",
+    "user_id": "demo-user",
+    "target_type": "landing_url",
+    "ad_id": null,
+    "landing_url": "https://performancelab2.co.kr/ads",
+    "note": "메타 광고대행사 랜딩 — 포트폴리오 그리드 레이아웃 참고",
+    "created_at": "2026-05-21T10:30:00.000Z",
+    "advertiser_name": "퍼포먼스랩투",
+    "source": "meta",
+    "variants": [],
+    "scraped_date": "2026-05-09",
+    "last_shown_date": "2026-05-09",
+    "keyword_id": null
   }
 ]

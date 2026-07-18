@@ -1,9 +1,68 @@
 [
-  { "id": "pl-001", "name": "피드", "initial": "FD", "display_name": "Feed" },
-  { "id": "pl-002", "name": "스토리", "initial": "ST", "display_name": "Story" },
-  { "id": "pl-003", "name": "검색결과", "initial": "SR", "display_name": "SearchResult" },
-  { "id": "pl-004", "name": "디스플레이", "initial": "DP", "display_name": "Display" },
-  { "id": "pl-005", "name": "쇼핑검색", "initial": "SH", "display_name": "Shopping" },
-  { "id": "pl-006", "name": "인스트림", "initial": "IS", "display_name": "InStream" },
-  { "id": "pl-007", "name": "메시지", "initial": "MS", "display_name": "Message" }
+  {
+    "id": "pl-001",
+    "name": "피드",
+    "initial": "FD",
+    "display_name": "Feed"
+  },
+  {
+    "id": "pl-002",
+    "name": "스토리",
+    "initial": "ST",
+    "display_name": "Story"
+  },
+  {
+    "id": "pl-003",
+    "name": "검색결과",
+    "initial": "SR",
+    "display_name": "SearchResult"
+  },
+  {
+    "id": "pl-004",
+    "name": "디스플레이",
+    "initial": "DP",
+    "display_name": "Display"
+  },
+  {
+    "id": "pl-005",
+    "name": "쇼핑검색",
+    "initial": "SH",
+    "display_name": "Shopping"
+  },
+  {
+    "id": "pl-006",
+    "name": "인스트림",
+    "initial": "IS",
+    "display_name": "InStream"
+  },
+  {
+    "id": "pl-007",
+    "name": "메시지",
+    "initial": "MS",
+    "display_name": "Message"
+  },
+  {
+    "id": "pl-008",
+    "name": "프로필",
+    "initial": "PF",
+    "display_name": "Profile"
+  },
+  {
+    "id": "pl-009",
+    "name": "브랜드검색",
+    "initial": "BS",
+    "display_name": "BrandSearch"
+  },
+  {
+    "id": "pl-010",
+    "name": "알림톡",
+    "initial": "AT",
+    "display_name": "AlimTalk"
+  },
+  {
+    "id": "pl-011",
+    "name": "리워드",
+    "initial": "RW",
+    "display_name": "Reward"
+  }
 ]

@@ -438,5 +438,684 @@
     "last_shown_date": "2025-03-19",
     "created_at": "2025-03-19T10:00:00Z",
     "updated_at": "2025-03-19T10:00:00Z"
+  },
+  {
+    "id": "ad-026",
+    "keyword_id": "kw-016",
+    "source": "meta",
+    "advertiser_name": "여행프렌즈",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad026/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://travelfriends.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad026b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://travelfriends.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-04-01",
+    "last_shown_date": "2026-04-01",
+    "created_at": "2026-04-01T09:00:00Z",
+    "updated_at": "2026-04-01T09:00:00Z"
+  },
+  {
+    "id": "ad-027",
+    "keyword_id": "kw-017",
+    "source": "meta",
+    "advertiser_name": "펫스토리몰",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad027/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://petstorymall.com/ads"
+      }
+    ],
+    "scraped_date": "2026-04-03",
+    "last_shown_date": "2026-04-03",
+    "created_at": "2026-04-03T10:11:00Z",
+    "updated_at": "2026-04-03T10:11:00Z"
+  },
+  {
+    "id": "ad-028",
+    "keyword_id": "kw-018",
+    "source": "google",
+    "advertiser_name": "돈버는습관",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad028/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://moneyhabit.io/ads"
+      }
+    ],
+    "scraped_date": "2026-04-05",
+    "last_shown_date": "2026-04-05",
+    "created_at": "2026-04-05T11:22:00Z",
+    "updated_at": "2026-04-05T11:22:00Z"
+  },
+  {
+    "id": "ad-029",
+    "keyword_id": "kw-019",
+    "source": "meta",
+    "advertiser_name": "코어필라테스",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad029/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://corepilates.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-07",
+    "last_shown_date": "2026-04-07",
+    "created_at": "2026-04-07T12:33:00Z",
+    "updated_at": "2026-04-07T12:33:00Z"
+  },
+  {
+    "id": "ad-030",
+    "keyword_id": "kw-020",
+    "source": "meta",
+    "advertiser_name": "드림웨딩",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad030/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://dreamwedding.co.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad030b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://dreamwedding.co.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-04-09",
+    "last_shown_date": "2026-04-09",
+    "created_at": "2026-04-09T13:44:00Z",
+    "updated_at": "2026-04-09T13:44:00Z"
+  },
+  {
+    "id": "ad-031",
+    "keyword_id": "kw-021",
+    "source": "google",
+    "advertiser_name": "첫차마켓",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad031/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://firstcarmarket.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-11",
+    "last_shown_date": "2026-04-11",
+    "created_at": "2026-04-11T14:55:00Z",
+    "updated_at": "2026-04-11T14:55:00Z"
+  },
+  {
+    "id": "ad-032",
+    "keyword_id": "kw-022",
+    "source": "meta",
+    "advertiser_name": "홈스타일링랩",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad032/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://homestylinglab.com/ads"
+      }
+    ],
+    "scraped_date": "2026-04-13",
+    "last_shown_date": "2026-04-13",
+    "created_at": "2026-04-13T15:06:00Z",
+    "updated_at": "2026-04-13T15:06:00Z"
+  },
+  {
+    "id": "ad-033",
+    "keyword_id": "kw-023",
+    "source": "meta",
+    "advertiser_name": "새벽마켓",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad033/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://dawnmarket.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-15",
+    "last_shown_date": "2026-04-15",
+    "created_at": "2026-04-15T16:17:00Z",
+    "updated_at": "2026-04-15T16:17:00Z"
+  },
+  {
+    "id": "ad-034",
+    "keyword_id": "kw-024",
+    "source": "meta",
+    "advertiser_name": "헤어클리닉원",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad034/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://hairclinic1.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad034b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://hairclinic1.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-04-17",
+    "last_shown_date": "2026-04-17",
+    "created_at": "2026-04-17T17:28:00Z",
+    "updated_at": "2026-04-17T17:28:00Z"
+  },
+  {
+    "id": "ad-035",
+    "keyword_id": "kw-025",
+    "source": "google",
+    "advertiser_name": "스마일교정치과",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad035/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://smilebrace.co.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-19",
+    "last_shown_date": "2026-04-19",
+    "created_at": "2026-04-19T18:39:00Z",
+    "updated_at": "2026-04-19T18:39:00Z"
+  },
+  {
+    "id": "ad-036",
+    "keyword_id": "kw-026",
+    "source": "meta",
+    "advertiser_name": "스픽업잉글리시",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad036/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://speakupenglish.io/ads"
+      }
+    ],
+    "scraped_date": "2026-04-21",
+    "last_shown_date": "2026-04-21",
+    "created_at": "2026-04-21T09:50:00Z",
+    "updated_at": "2026-04-21T09:50:00Z"
+  },
+  {
+    "id": "ad-037",
+    "keyword_id": "kw-027",
+    "source": "google",
+    "advertiser_name": "이사왕비교",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad037/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://movingking.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-23",
+    "last_shown_date": "2026-04-23",
+    "created_at": "2026-04-23T10:01:00Z",
+    "updated_at": "2026-04-23T10:01:00Z"
+  },
+  {
+    "id": "ad-038",
+    "keyword_id": "kw-028",
+    "source": "meta",
+    "advertiser_name": "프랜차이즈허브",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad038/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://franchisehub.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad038b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://franchisehub.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-04-25",
+    "last_shown_date": "2026-04-25",
+    "created_at": "2026-04-25T11:12:00Z",
+    "updated_at": "2026-04-25T11:12:00Z"
+  },
+  {
+    "id": "ad-039",
+    "keyword_id": "kw-029",
+    "source": "google",
+    "advertiser_name": "로톡파트너스",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad039/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://lawtalkpartners.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-04-27",
+    "last_shown_date": "2026-04-27",
+    "created_at": "2026-04-27T12:23:00Z",
+    "updated_at": "2026-04-27T12:23:00Z"
+  },
+  {
+    "id": "ad-040",
+    "keyword_id": "kw-030",
+    "source": "google",
+    "advertiser_name": "세무나라",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad040/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://taxnara.co.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-01",
+    "last_shown_date": "2026-05-01",
+    "created_at": "2026-05-01T13:34:00Z",
+    "updated_at": "2026-05-01T13:34:00Z"
+  },
+  {
+    "id": "ad-041",
+    "keyword_id": "kw-031",
+    "source": "meta",
+    "advertiser_name": "그린필드골프",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad041/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://greenfieldgolf.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-03",
+    "last_shown_date": "2026-05-03",
+    "created_at": "2026-05-03T14:45:00Z",
+    "updated_at": "2026-05-03T14:45:00Z"
+  },
+  {
+    "id": "ad-042",
+    "keyword_id": "kw-032",
+    "source": "google",
+    "advertiser_name": "클라우드ERP코리아",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad042/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://clouderp.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad042b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://clouderp.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-05-05",
+    "last_shown_date": "2026-05-05",
+    "created_at": "2026-05-05T15:56:00Z",
+    "updated_at": "2026-05-05T15:56:00Z"
+  },
+  {
+    "id": "ad-043",
+    "keyword_id": "kw-033",
+    "source": "meta",
+    "advertiser_name": "풀필먼트원",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad043/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://fulfillment1.co.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-07",
+    "last_shown_date": "2026-05-07",
+    "created_at": "2026-05-07T16:07:00Z",
+    "updated_at": "2026-05-07T16:07:00Z"
+  },
+  {
+    "id": "ad-044",
+    "keyword_id": "kw-002",
+    "source": "meta",
+    "advertiser_name": "퍼포먼스랩투",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad044/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://performancelab2.co.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-09",
+    "last_shown_date": "2026-05-09",
+    "created_at": "2026-05-09T17:18:00Z",
+    "updated_at": "2026-05-09T17:18:00Z"
+  },
+  {
+    "id": "ad-045",
+    "keyword_id": "kw-002",
+    "source": "meta",
+    "advertiser_name": "애드테크스튜디오",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad045/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://adtechstudio.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-11",
+    "last_shown_date": "2026-05-11",
+    "created_at": "2026-05-11T18:29:00Z",
+    "updated_at": "2026-05-11T18:29:00Z"
+  },
+  {
+    "id": "ad-046",
+    "keyword_id": "kw-003",
+    "source": "google",
+    "advertiser_name": "서치엔진프로",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad046/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://searchengine.pro/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad046b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://searchengine.pro/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-05-13",
+    "last_shown_date": "2026-05-13",
+    "created_at": "2026-05-13T09:40:00Z",
+    "updated_at": "2026-05-13T09:40:00Z"
+  },
+  {
+    "id": "ad-047",
+    "keyword_id": "kw-004",
+    "source": "google",
+    "advertiser_name": "스마트몰빌더",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad047/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://smartmallbuilder.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-15",
+    "last_shown_date": "2026-05-15",
+    "created_at": "2026-05-15T10:51:00Z",
+    "updated_at": "2026-05-15T10:51:00Z"
+  },
+  {
+    "id": "ad-048",
+    "keyword_id": "kw-005",
+    "source": "meta",
+    "advertiser_name": "헬시밸런스",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad048/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://healthybalance.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-17",
+    "last_shown_date": "2026-05-17",
+    "created_at": "2026-05-17T11:02:00Z",
+    "updated_at": "2026-05-17T11:02:00Z"
+  },
+  {
+    "id": "ad-049",
+    "keyword_id": "kw-006",
+    "source": "google",
+    "advertiser_name": "잉글리시마스터랩",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad049/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://englishmasterlab.com/ads"
+      }
+    ],
+    "scraped_date": "2026-05-19",
+    "last_shown_date": "2026-05-19",
+    "created_at": "2026-05-19T12:13:00Z",
+    "updated_at": "2026-05-19T12:13:00Z"
+  },
+  {
+    "id": "ad-050",
+    "keyword_id": "kw-007",
+    "source": "meta",
+    "advertiser_name": "리치인베스트",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad050/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://richinvest.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad050b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://richinvest.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-05-21",
+    "last_shown_date": "2026-05-21",
+    "created_at": "2026-05-21T13:24:00Z",
+    "updated_at": "2026-05-21T13:24:00Z"
+  },
+  {
+    "id": "ad-051",
+    "keyword_id": "kw-008",
+    "source": "meta",
+    "advertiser_name": "더마스킨원",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad051/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://dermaskin1.co.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-23",
+    "last_shown_date": "2026-05-23",
+    "created_at": "2026-05-23T14:35:00Z",
+    "updated_at": "2026-05-23T14:35:00Z"
+  },
+  {
+    "id": "ad-052",
+    "keyword_id": "kw-009",
+    "source": "google",
+    "advertiser_name": "헬스박스PT",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad052/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://healthboxpt.com/ads"
+      }
+    ],
+    "scraped_date": "2026-05-25",
+    "last_shown_date": "2026-05-25",
+    "created_at": "2026-05-25T15:46:00Z",
+    "updated_at": "2026-05-25T15:46:00Z"
+  },
+  {
+    "id": "ad-053",
+    "keyword_id": "kw-010",
+    "source": "google",
+    "advertiser_name": "셀러부스트",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad053/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://sellerboost.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-05-27",
+    "last_shown_date": "2026-05-27",
+    "created_at": "2026-05-27T16:57:00Z",
+    "updated_at": "2026-05-27T16:57:00Z"
+  },
+  {
+    "id": "ad-054",
+    "keyword_id": "kw-011",
+    "source": "google",
+    "advertiser_name": "카인슈어런스",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad054/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://carinsurance.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad054b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://carinsurance.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-06-01",
+    "last_shown_date": "2026-06-01",
+    "created_at": "2026-06-01T17:08:00Z",
+    "updated_at": "2026-06-01T17:08:00Z"
+  },
+  {
+    "id": "ad-055",
+    "keyword_id": "kw-012",
+    "source": "meta",
+    "advertiser_name": "크리에이터플로우",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad055/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://creatorflow.io/ads"
+      }
+    ],
+    "scraped_date": "2026-06-03",
+    "last_shown_date": "2026-06-03",
+    "created_at": "2026-06-03T18:19:00Z",
+    "updated_at": "2026-06-03T18:19:00Z"
+  },
+  {
+    "id": "ad-056",
+    "keyword_id": "kw-013",
+    "source": "meta",
+    "advertiser_name": "오토메이션허브",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad056/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://automationhub.io/ads"
+      }
+    ],
+    "scraped_date": "2026-06-05",
+    "last_shown_date": "2026-06-05",
+    "created_at": "2026-06-05T09:30:00Z",
+    "updated_at": "2026-06-05T09:30:00Z"
+  },
+  {
+    "id": "ad-057",
+    "keyword_id": "kw-014",
+    "source": "meta",
+    "advertiser_name": "리타겟프로",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad057/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://retargetpro.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-06-07",
+    "last_shown_date": "2026-06-07",
+    "created_at": "2026-06-07T10:41:00Z",
+    "updated_at": "2026-06-07T10:41:00Z"
+  },
+  {
+    "id": "ad-058",
+    "keyword_id": "kw-015",
+    "source": "google",
+    "advertiser_name": "콘텐츠스퀘어랩",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad058/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://contentsquarelab.io/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad058b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://contentsquarelab.io/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-06-09",
+    "last_shown_date": "2026-06-09",
+    "created_at": "2026-06-09T11:52:00Z",
+    "updated_at": "2026-06-09T11:52:00Z"
+  },
+  {
+    "id": "ad-059",
+    "keyword_id": "kw-017",
+    "source": "meta",
+    "advertiser_name": "펫케어스토어",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad059/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://petcarestore.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-06-11",
+    "last_shown_date": "2026-06-11",
+    "created_at": "2026-06-11T12:03:00Z",
+    "updated_at": "2026-06-11T12:03:00Z"
+  },
+  {
+    "id": "ad-060",
+    "keyword_id": "kw-018",
+    "source": "google",
+    "advertiser_name": "웰스빌더",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad060/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://wealthbuilder.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-06-13",
+    "last_shown_date": "2026-06-13",
+    "created_at": "2026-06-13T13:14:00Z",
+    "updated_at": "2026-06-13T13:14:00Z"
+  },
+  {
+    "id": "ad-061",
+    "keyword_id": "kw-019",
+    "source": "meta",
+    "advertiser_name": "바디핏필라테스",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad061/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://bodyfitpilates.kr/ads"
+      }
+    ],
+    "scraped_date": "2026-06-15",
+    "last_shown_date": "2026-06-15",
+    "created_at": "2026-06-15T14:25:00Z",
+    "updated_at": "2026-06-15T14:25:00Z"
+  },
+  {
+    "id": "ad-062",
+    "keyword_id": "kw-020",
+    "source": "meta",
+    "advertiser_name": "그레이스웨딩홀",
+    "variants": [
+      {
+        "content_url": "https://picsum.photos/seed/ad062/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://graceweddinghall.co.kr/ads"
+      },
+      {
+        "content_url": "https://picsum.photos/seed/ad062b/400/300",
+        "thumbnail_url": null,
+        "landing_page_url": "https://graceweddinghall.co.kr/ads/v2"
+      }
+    ],
+    "scraped_date": "2026-06-17",
+    "last_shown_date": "2026-06-17",
+    "created_at": "2026-06-17T15:36:00Z",
+    "updated_at": "2026-06-17T15:36:00Z"
   }
 ]

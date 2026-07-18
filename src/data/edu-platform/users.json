@@ -94,5 +94,133 @@
     "is_admin": false,
     "team": "디자인팀",
     "part": "그래픽디자인"
+  },
+  {
+    "id": "user-013",
+    "email": "gunwoo.noh@company.com",
+    "name": "노건우",
+    "is_admin": false,
+    "team": "영업팀",
+    "part": "국내영업"
+  },
+  {
+    "id": "user-014",
+    "email": "eunbi.jang@company.com",
+    "name": "장은비",
+    "is_admin": false,
+    "team": "영업팀",
+    "part": "해외영업"
+  },
+  {
+    "id": "user-015",
+    "email": "taehyun.kwak@company.com",
+    "name": "곽태현",
+    "is_admin": false,
+    "team": "기획팀",
+    "part": "서비스기획"
+  },
+  {
+    "id": "user-016",
+    "email": "jiho.min@company.com",
+    "name": "민지호",
+    "is_admin": false,
+    "team": "개발팀",
+    "part": "프론트엔드"
+  },
+  {
+    "id": "user-017",
+    "email": "haneul.song@company.com",
+    "name": "송하늘",
+    "is_admin": false,
+    "team": "개발팀",
+    "part": "백엔드"
+  },
+  {
+    "id": "user-018",
+    "email": "yuna.pyo@company.com",
+    "name": "표유나",
+    "is_admin": false,
+    "team": "데이터팀",
+    "part": "데이터분석"
+  },
+  {
+    "id": "user-019",
+    "email": "dohyun.ahn@company.com",
+    "name": "안도현",
+    "is_admin": false,
+    "team": "데이터팀",
+    "part": "데이터엔지니어링"
+  },
+  {
+    "id": "user-020",
+    "email": "seoyoon.cha@company.com",
+    "name": "차서윤",
+    "is_admin": false,
+    "team": "마케팅팀",
+    "part": "퍼포먼스마케팅"
+  },
+  {
+    "id": "user-021",
+    "email": "naeun.kwon@company.com",
+    "name": "권나은",
+    "is_admin": false,
+    "team": "마케팅팀",
+    "part": "콘텐츠마케팅"
+  },
+  {
+    "id": "user-022",
+    "email": "siwoo.hong@company.com",
+    "name": "홍시우",
+    "is_admin": false,
+    "team": "디자인팀",
+    "part": "UXUI"
+  },
+  {
+    "id": "user-023",
+    "email": "haram.yoo@company.com",
+    "name": "유하람",
+    "is_admin": false,
+    "team": "디자인팀",
+    "part": "그래픽디자인"
+  },
+  {
+    "id": "user-024",
+    "email": "chaewon.moon@company.com",
+    "name": "문채원",
+    "is_admin": false,
+    "team": "고객지원팀",
+    "part": "CS"
+  },
+  {
+    "id": "user-025",
+    "email": "doyoung.lee@company.com",
+    "name": "이도영",
+    "is_admin": false,
+    "team": "법무팀",
+    "part": "개인정보보호"
+  },
+  {
+    "id": "user-026",
+    "email": "seojun.kim@company.com",
+    "name": "김서준",
+    "is_admin": false,
+    "team": "HR팀",
+    "part": "HR"
+  },
+  {
+    "id": "user-027",
+    "email": "jian.seo@company.com",
+    "name": "서지안",
+    "is_admin": false,
+    "team": "개발팀",
+    "part": "프론트엔드"
+  },
+  {
+    "id": "user-028",
+    "email": "suhyun.bae@company.com",
+    "name": "배수현",
+    "is_admin": false,
+    "team": "마케팅팀",
+    "part": "퍼포먼스마케팅"
   }
 ]
