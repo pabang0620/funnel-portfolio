@@ -352,8 +352,20 @@ export function stepInteractionFrame(
     const isFocusPlanet = state.focus.index === i && globalFocusActive
     const isFrozenForInfo = i === state.activeInfoIndex && !globalFocusActive
 
-    let slow = reducedMotion ? 0 : 1
-    if (globalFocusActive && !isFocusPlanet) slow *= 0.32
+    // Uses the already-smoothed `ambientDim` (eased toward the same 0.32/1
+    // targets, see above) rather than a raw discrete 1-vs-0.32 step keyed
+    // off `globalFocusActive`. The discrete version caused a real bug: the
+    // frame `focus.mode` flips zooming-out -> idle, `globalFocusActive`
+    // (recomputed once at the top of this function from the START-of-frame
+    // mode) snaps from true to false, so `slow` jumped 0.32 -> 1 in a single
+    // frame — every OTHER planet's wander position (homeX + sin(...)*amp*slow)
+    // instantly snapped by up to ~0.68*amp px, which read as the whole scene
+    // "re-rendering"/resetting on close (background click, Escape, and the
+    // panel close button all hit this, since they all funnel through the
+    // same closeFocus() state transition). Reusing ambientDim (already eased
+    // 0.1/frame for the background nebula/dust alpha in render.ts) keeps the
+    // amplitude continuous through that transition with zero perceptible snap.
+    const slow = reducedMotion ? 0 : state.ambientDim
 
     let extraSpin = 0
     if (isFocusPlanet && !reducedMotion) {
