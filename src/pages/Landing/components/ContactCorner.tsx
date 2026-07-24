@@ -1,5 +1,5 @@
 /**
- * Persistent top-left contact widget — replaces the old scrolling Footer
+ * Persistent top-left contact widget - replaces the old scrolling Footer
  * entirely (client instruction: "연락처 그런건 왼쪽상단에 느낌있게 넣어줘").
  * Reuses the previous Footer's actual link intent (email / resume), just
  * condensed into a compact, always-visible, holographic corner tag instead

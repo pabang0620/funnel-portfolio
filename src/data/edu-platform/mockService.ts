@@ -227,7 +227,7 @@ let resources: Resource[] = [
   },
   {
     id: 'res-004',
-    title: 'AI 기초 개념 정리 — 머신러닝과 딥러닝',
+    title: 'AI 기초 개념 정리 - 머신러닝과 딥러닝',
     content: '<p>머신러닝과 딥러닝의 핵심 개념을 비개발자도 이해할 수 있게 정리한 가이드입니다.</p>',
     type: '가이드',
     thumbnail_url: null,

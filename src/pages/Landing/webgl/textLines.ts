@@ -1,6 +1,6 @@
 /**
  * Splits `text` into the substrings that actually render as separate VISUAL
- * lines inside `measureEl` at its CURRENT width/font/line-height — using the
+ * lines inside `measureEl` at its CURRENT width/font/line-height - using the
  * DOM Range API to read each character's real bounding rect, rather than
  * guessing line breaks from a character-count heuristic (which would be
  * wrong across different screen widths and font rendering).
@@ -9,7 +9,7 @@
  * character offset a zero-width Range is created around just that character
  * and `range.getClientRects()` is read. When a character's rect `top` is
  * greater than the current line's `top`, that character starts a new visual
- * line — this is the standard "measure actual wrap points via Range" trick.
+ * line - this is the standard "measure actual wrap points via Range" trick.
  *
  * Mutates `measureEl.textContent` as a side effect of measuring (callers
  * that need `measureEl` to end up holding per-line child elements should
@@ -33,14 +33,14 @@ export function splitIntoVisualLines(measureEl: HTMLElement, text: string): stri
     range.setStart(textNode, i)
     range.setEnd(textNode, i + 1)
     const rect = range.getClientRects()[0]
-    if (!rect) continue // collapsed/invisible char (e.g. a wrapped trailing space) — ignore
+    if (!rect) continue // collapsed/invisible char (e.g. a wrapped trailing space) - ignore
 
     if (lineTop === null) {
       lineTop = rect.top
       continue
     }
     if (Math.round(rect.top) > Math.round(lineTop)) {
-      // this character starts a new visual line — the break is right before it
+      // this character starts a new visual line - the break is right before it
       lines.push(trimmed.slice(lineStart, i).trim())
       lineStart = i
       lineTop = rect.top

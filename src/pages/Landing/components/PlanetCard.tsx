@@ -12,7 +12,7 @@ interface PlanetCardProps {
 }
 
 /**
- * Static markup only for the hover hologram card — its text content,
+ * Static markup only for the hover hologram card - its text content,
  * accent color, direction offsets and visible/hiding classes are mutated
  * directly via refs by the interaction hook (usePlanetScene), never
  * through React state, so a fast-moving mouse never triggers a 60fps-class

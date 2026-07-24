@@ -8,7 +8,7 @@ import { useAuth } from '../../../../contexts/AuthContext';
  * 모든 state 및 데이터 fetch 로직을 관리합니다
  */
 export const useExecutiveReportData = () => {
-  // localStorage 버전 체크 — 구 데이터 자동 초기화
+  // localStorage 버전 체크 - 구 데이터 자동 초기화
   const STORAGE_VERSION = 'v2-2026apr';
   const storedVersion = localStorage.getItem('executive-report-version');
   if (storedVersion !== STORAGE_VERSION) {

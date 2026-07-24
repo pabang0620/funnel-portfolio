@@ -118,7 +118,7 @@ function sampleHomes(entries: PlanetSceneEntry[]): HomeSlot[] {
 
 /**
  * Builds the runtime planet array fresh from the scene entries. Factory
- * function — never a module-level mutable array. Call once per
+ * function - never a module-level mutable array. Call once per
  * usePlanetScene mount.
  */
 export function createPlanets(entries: PlanetSceneEntry[]): Planet[] {

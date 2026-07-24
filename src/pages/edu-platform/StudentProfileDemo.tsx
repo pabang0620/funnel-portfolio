@@ -177,7 +177,7 @@ function AssignmentButton({ assignment }: { assignment: Assignment }) {
 }
 
 // ──────────────────────────────────────────────
-// Variant A — upcoming: two side-by-side alert cards
+// Variant A - upcoming: two side-by-side alert cards
 // ──────────────────────────────────────────────
 function UpcomingCardsA() {
   return (
@@ -277,7 +277,7 @@ function HistoryTable() {
 }
 
 // ──────────────────────────────────────────────
-// Variant A — 프로필 카드 + 통계 대시보드
+// Variant A - 프로필 카드 + 통계 대시보드
 // ──────────────────────────────────────────────
 function VariantA() {
   const lecturePct = STUDENT.totalLectures > 0
@@ -435,7 +435,7 @@ function VariantA() {
 }
 
 // ──────────────────────────────────────────────
-// Variant B — 사이드바 + 메인 콘텐츠
+// Variant B - 사이드바 + 메인 콘텐츠
 // ──────────────────────────────────────────────
 function VariantB() {
   return (
@@ -540,7 +540,7 @@ function VariantB() {
 }
 
 // ──────────────────────────────────────────────
-// Variant C — 타임라인 스타일
+// Variant C - 타임라인 스타일
 // ──────────────────────────────────────────────
 function VariantC() {
   return (
@@ -685,7 +685,7 @@ export default function StudentProfileDemo() {
         {/* Variant A */}
         <section className="mb-12">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant A — 프로필 카드 + 통계 대시보드</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant A - 프로필 카드 + 통계 대시보드</h2>
             <p className="text-sm text-gray-500 mt-0.5">풀 너비 카드에 프로필, 4개 통계 박스, 진행률 바, 이력 테이블을 순서대로 배치합니다.</p>
           </div>
           <VariantA />
@@ -694,7 +694,7 @@ export default function StudentProfileDemo() {
         {/* Variant B */}
         <section className="mb-12">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant B — 사이드바 + 메인 콘텐츠</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant B - 사이드바 + 메인 콘텐츠</h2>
             <p className="text-sm text-gray-500 mt-0.5">왼쪽 사이드바에 기본 정보, 오른쪽에 통계 카드와 이력 테이블을 배치합니다.</p>
           </div>
           <VariantB />
@@ -703,7 +703,7 @@ export default function StudentProfileDemo() {
         {/* Variant C */}
         <section className="mb-12">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant C — 타임라인 스타일</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant C - 타임라인 스타일</h2>
             <p className="text-sm text-gray-500 mt-0.5">헤더에 요약 pill 통계를 보여주고, 수강 이력을 타임라인 형태로 나열합니다.</p>
           </div>
           <VariantC />

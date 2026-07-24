@@ -5,7 +5,7 @@ import createdCodesData from './created-codes.json'
 import tmStatusData from './tm-status.json'
 
 // ──────────────────────────────────────────────
-// DB List (고객 DB 리스트) — mock API wrappers
+// DB List (고객 DB 리스트) - mock API wrappers
 // These mirror the real API endpoints used by the source CustomerDbPage
 // ──────────────────────────────────────────────
 

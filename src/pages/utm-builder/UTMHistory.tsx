@@ -1221,31 +1221,31 @@ export function UTMHistory() {
                     if (!visibleColumns[colKey as keyof typeof visibleColumns]) return null;
                     switch (colKey) {
                       case 'brand':
-                        return <TableCell key={colKey} className="text-sm whitespace-nowrap">{item.brand_name || '—'}</TableCell>;
+                        return <TableCell key={colKey} className="text-sm whitespace-nowrap">{item.brand_name || '-'}</TableCell>;
                       case 'product': {
                         const colorKey = item.product_id ?? item.product_name?.replace(/ \([^)]+\)$/, '') ?? '';
-                        return <TableCell key={colKey} className="text-sm whitespace-nowrap">{item.product_name ? <Badge className={cn(getProductColor(colorKey).bg, getProductColor(colorKey).text)}>{item.product_name}</Badge> : '—'}</TableCell>;
+                        return <TableCell key={colKey} className="text-sm whitespace-nowrap">{item.product_name ? <Badge className={cn(getProductColor(colorKey).bg, getProductColor(colorKey).text)}>{item.product_name}</Badge> : '-'}</TableCell>;
                       }
                       case 'media': { const n = item.media_name?.replace(/ \([^)]+\)$/, '') ?? '';
                         const mediaId = masterData?.mediaList.find(m => m.initial === item.media_initial)?.id ?? masterData?.mediaList.find(m => m.name === n)?.id ?? n;
-                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.media_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(mediaId).bg, getProductColor(mediaId).text)}>{item.media_name}</Badge> : '—'}</TableCell>; }
+                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.media_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(mediaId).bg, getProductColor(mediaId).text)}>{item.media_name}</Badge> : '-'}</TableCell>; }
                       case 'contentType': { const n = item.content_type_name?.replace(/ \([^)]+\)$/, '') ?? '';
                         const ctId = masterData?.contentTypesList.find(ct => ct.initial === item.content_type_initial)?.id ?? masterData?.contentTypesList.find(ct => ct.name === n)?.id ?? n;
-                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.content_type_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(ctId).bg, getProductColor(ctId).text)}>{item.content_type_name}</Badge> : '—'}</TableCell>; }
+                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.content_type_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(ctId).bg, getProductColor(ctId).text)}>{item.content_type_name}</Badge> : '-'}</TableCell>; }
                       case 'placement': { const n = item.placement_name?.replace(/ \([^)]+\)$/, '') ?? '';
                         const plId = masterData?.placementsList.find(pl => pl.initial === item.placement_initial)?.id ?? masterData?.placementsList.find(pl => pl.name === n)?.id ?? n;
-                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.placement_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(plId).bg, getProductColor(plId).text)}>{item.placement_name}</Badge> : '—'}</TableCell>; }
+                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.placement_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(plId).bg, getProductColor(plId).text)}>{item.placement_name}</Badge> : '-'}</TableCell>; }
                       case 'planner': {
                         const plannerKey = item.planner_initial ?? '';
-                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.planner_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(plannerKey).bg, getProductColor(plannerKey).text)}>{item.planner_name}</Badge> : '—'}</TableCell>; }
+                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.planner_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(plannerKey).bg, getProductColor(plannerKey).text)}>{item.planner_name}</Badge> : '-'}</TableCell>; }
                       case 'marketer': {
                         const marketerKey = item.marketer_initial ?? '';
-                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.marketer_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(marketerKey).bg, getProductColor(marketerKey).text)}>{item.marketer_name}</Badge> : '—'}</TableCell>; }
+                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.marketer_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(marketerKey).bg, getProductColor(marketerKey).text)}>{item.marketer_name}</Badge> : '-'}</TableCell>; }
                       case 'creator': {
                         const creatorKey = item.creator_initial ?? '';
-                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.creator_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(creatorKey).bg, getProductColor(creatorKey).text)}>{item.creator_name}</Badge> : '—'}</TableCell>; }
+                        return <TableCell key={colKey} className="text-xs whitespace-nowrap">{item.creator_name ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(creatorKey).bg, getProductColor(creatorKey).text)}>{item.creator_name}</Badge> : '-'}</TableCell>; }
                       case 'author':
-                        return <TableCell key={colKey} className="text-sm whitespace-nowrap">{item.author_name || '—'}</TableCell>;
+                        return <TableCell key={colKey} className="text-sm whitespace-nowrap">{item.author_name || '-'}</TableCell>;
                       case 'createdAt':
                         return <TableCell key={colKey} className="text-xs whitespace-nowrap">{formatDate(item.created_at)}</TableCell>;
                       case 'utmCode':

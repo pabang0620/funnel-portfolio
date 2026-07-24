@@ -24,7 +24,7 @@ function DeleteBox({ message, pendingStatus, onCancel, onConfirm }) {
               fontSize: "14px",
             }}
           >
-            *Deleting from trash permanently removes the DB record — it cannot be recovered
+            *Deleting from trash permanently removes the DB record - it cannot be recovered
           </p>
         )}
         <div className="delete-box-buttons">

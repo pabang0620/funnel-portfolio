@@ -204,7 +204,7 @@ export function OrgChartDialog({ open, onOpenChange }: OrgChartDialogProps) {
                 <div className="relative max-w-xs">
                   <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground pointer-events-none" />
                   <Input
-                    placeholder="구성원 검색 (이름, 이메일, 직급) — Enter"
+                    placeholder="구성원 검색 (이름, 이메일, 직급) - Enter"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onKeyDown={(e) => { if (e.key === 'Enter') setSubmittedQuery(searchQuery); }}

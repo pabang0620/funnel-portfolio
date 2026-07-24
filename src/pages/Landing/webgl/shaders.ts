@@ -1,5 +1,5 @@
 /**
- * GLSL shader source strings — true constants, no mutable state.
+ * GLSL shader source strings - true constants, no mutable state.
  * Ported verbatim from the approved mockup. No drawGlow / ring shader exists
  * here (that effect was removed per client feedback and never re-added).
  */
@@ -95,7 +95,7 @@ void main() {
   float oceanMask = 1.0;
   if (uHasPhoto > 0.5) {
     // real photographed/rendered texture (Solar System Scope CC BY 4.0) sampled
-    // via standard equirectangular UVs — replaces the procedural noise pattern
+    // via standard equirectangular UVs - replaces the procedural noise pattern
     // entirely for this archetype; the async loader seeds this sampler with a
     // flat placeholder pixel matching uBaseColor until the real image decodes,
     // so there is no black/broken frame while it loads.
@@ -104,7 +104,7 @@ void main() {
       oceanMask = texture2D(uSpecMap, vUV).r;
     }
   } else if (uSurfaceType < 0.5) {
-    // GAS GIANT (Jupiter-like) — irregular warm bands + a signature storm spot
+    // GAS GIANT (Jupiter-like) - irregular warm bands + a signature storm spot
     float warp = vnoise(vLocalPos * 2.2 + seedOff) * 0.5;
     float band = sin(vLocalPos.y * 5.5 + warp * 1.8 + uPatternSeed) * 0.5 + 0.5;
     float fine = vnoise(vLocalPos * 8.0 + seedOff) * 0.15;
@@ -115,14 +115,14 @@ void main() {
     float spot = smoothstep(0.42, 0.16, spotD);
     bodyColor = mix(bodyColor, vec3(0.72, 0.30, 0.22), spot * 0.75);
   } else if (uSurfaceType < 1.5) {
-    // MOON / ROCKY — gray, heavily cratered, no atmosphere
+    // MOON / ROCKY - gray, heavily cratered, no atmosphere
     float n = vnoise(vLocalPos * 4.5 + seedOff);
     float n2 = vnoise(vLocalPos * 10.0 + seedOff * 1.6);
     float crater = smoothstep(0.5, 0.58, n) - smoothstep(0.58, 0.7, n);
     float pattern = clamp(0.55 - crater * 0.85 + n2 * 0.2, 0.0, 1.0);
     bodyColor = mix(uBaseColor2, uBaseColor, pattern);
   } else if (uSurfaceType < 2.5) {
-    // MARS-LIKE — rusty red/orange/tan with darker rocky speckling + faint polar cap
+    // MARS-LIKE - rusty red/orange/tan with darker rocky speckling + faint polar cap
     float n = vnoise(vLocalPos * 3.6 + seedOff);
     float n2 = vnoise(vLocalPos * 9.5 + seedOff * 1.4);
     float speck = smoothstep(0.46, 0.62, n2);
@@ -131,7 +131,7 @@ void main() {
     float polar = smoothstep(0.8, 0.97, abs(vLocalPos.y));
     bodyColor = mix(bodyColor, vec3(0.72, 0.66, 0.6), polar * 0.35);
   } else if (uSurfaceType < 3.5) {
-    // EARTH-LIKE — ocean base + noise-carved continents + baked cloud wisps + polar caps
+    // EARTH-LIKE - ocean base + noise-carved continents + baked cloud wisps + polar caps
     float landN = vnoise(vLocalPos * 2.6 + seedOff);
     float landMask = smoothstep(0.48, 0.56, landN);
     vec3 landColor = mix(vec3(0.42, 0.5, 0.28), vec3(0.5, 0.4, 0.26), vnoise(vLocalPos * 5.0 + seedOff * 1.3));
@@ -142,7 +142,7 @@ void main() {
     float polar = smoothstep(0.74, 0.94, abs(vLocalPos.y));
     bodyColor = mix(bodyColor, vec3(0.95, 0.97, 1.0), polar * 0.8);
   } else {
-    // ICE GIANT (Neptune/Uranus-like) — smooth pale blue-cyan, minimal noise
+    // ICE GIANT (Neptune/Uranus-like) - smooth pale blue-cyan, minimal noise
     float band = sin(vLocalPos.y * 3.0 + uPatternSeed) * 0.5 + 0.5;
     float fine = vnoise(vLocalPos * 3.0 + seedOff) * 0.12;
     float pattern = clamp(band * 0.4 + fine + 0.35, 0.0, 1.0);
@@ -151,7 +151,7 @@ void main() {
   vec3 lit = bodyColor * (ambient + diff * 0.95);
   vec3 Hf = normalize(L + V);
   // oceanMask (from the real specular/ocean map, Earth only) makes water
-  // shine and land stay matte — 1.0 everywhere for non-photo archetypes
+  // shine and land stay matte - 1.0 everywhere for non-photo archetypes
   float specMul = mix(0.12, 1.0, oceanMask);
   float spec = pow(max(dot(N, Hf), 0.0), 28.0) * 0.3 * (uHasSpec > 0.5 ? specMul : 1.0);
   float rim = pow(1.0 - max(dot(N, V), 0.0), 2.6);
@@ -160,7 +160,7 @@ void main() {
 }
 `
 
-// Earth cloud-shell shader (Earth archetype only) — a second, very slightly
+// Earth cloud-shell shader (Earth archetype only) - a second, very slightly
 // larger sphere shell over the day-map sphere, using the real
 // cloud-coverage photo's luminance as alpha so clouds visibly float over
 // the terrain and can drift at their own speed.

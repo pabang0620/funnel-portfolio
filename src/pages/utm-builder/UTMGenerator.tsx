@@ -1656,7 +1656,7 @@ export function UTMGenerator() {
                             </div>
                           </td>
                         ),
-                        media_name: <td key="media_name" className="px-3 py-2 whitespace-nowrap">{item.mediaName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.mediaId || item.mediaInitial).bg, getProductColor(item.mediaId || item.mediaInitial).text)}>{item.mediaName}{item.mediaInitial ? ` (${item.mediaInitial})` : ''}</Badge> : '—'}</td>,
+                        media_name: <td key="media_name" className="px-3 py-2 whitespace-nowrap">{item.mediaName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.mediaId || item.mediaInitial).bg, getProductColor(item.mediaId || item.mediaInitial).text)}>{item.mediaName}{item.mediaInitial ? ` (${item.mediaInitial})` : ''}</Badge> : '-'}</td>,
                         landing_number: (
                           <td key="landing_number" className="px-3 py-2 whitespace-nowrap">
                             {item.landingNumber ? (() => {
@@ -1664,15 +1664,15 @@ export function UTMGenerator() {
                               const label = suffix ? `${item.landingNumber} (${suffix})` : item.landingNumber;
                               const color = getProductColor(item.landingNumberId);
                               return <Badge className={cn('text-xs px-1.5 py-0', color.bg, color.text)}>{label}</Badge>;
-                            })() : '—'}
+                            })() : '-'}
                           </td>
                         ),
-                        content_type_name: <td key="content_type_name" className="px-3 py-2 whitespace-nowrap">{item.contentTypeName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.contentTypeId || item.contentTypeInitial).bg, getProductColor(item.contentTypeId || item.contentTypeInitial).text)}>{item.contentTypeName}{item.contentTypeInitial ? ` (${item.contentTypeInitial})` : ''}</Badge> : '—'}</td>,
-                        placement_name: <td key="placement_name" className="px-3 py-2 whitespace-nowrap">{item.spaceName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.placementId).bg, getProductColor(item.placementId).text)}>{item.spaceName}{item.spaceInitial ? ` (${item.spaceInitial})` : ''}</Badge> : '—'}</td>,
-                        product_name: <td key="product_name" className="px-3 py-2 whitespace-nowrap">{item.productName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.productId).bg, getProductColor(item.productId).text)}>{item.productName}{item.productInitial ? ` (${item.productInitial})` : ''}</Badge> : '—'}</td>,
-                        planner_name: <td key="planner_name" className="px-3 py-2 whitespace-nowrap">{item.plannerName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.plannerInitial).bg, getProductColor(item.plannerInitial).text)}>{item.plannerName}{item.plannerInitial ? ` (${item.plannerInitial})` : ''}</Badge> : '—'}</td>,
-                        marketer_name: <td key="marketer_name" className="px-3 py-2 whitespace-nowrap">{item.marketerName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.marketerInitial).bg, getProductColor(item.marketerInitial).text)}>{item.marketerName}{item.marketerInitial ? ` (${item.marketerInitial})` : ''}</Badge> : '—'}</td>,
-                        creator_name: <td key="creator_name" className="px-3 py-2 whitespace-nowrap">{item.creatorName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.creatorInitial).bg, getProductColor(item.creatorInitial).text)}>{item.creatorName}{item.creatorInitial ? ` (${item.creatorInitial})` : ''}</Badge> : '—'}</td>,
+                        content_type_name: <td key="content_type_name" className="px-3 py-2 whitespace-nowrap">{item.contentTypeName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.contentTypeId || item.contentTypeInitial).bg, getProductColor(item.contentTypeId || item.contentTypeInitial).text)}>{item.contentTypeName}{item.contentTypeInitial ? ` (${item.contentTypeInitial})` : ''}</Badge> : '-'}</td>,
+                        placement_name: <td key="placement_name" className="px-3 py-2 whitespace-nowrap">{item.spaceName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.placementId).bg, getProductColor(item.placementId).text)}>{item.spaceName}{item.spaceInitial ? ` (${item.spaceInitial})` : ''}</Badge> : '-'}</td>,
+                        product_name: <td key="product_name" className="px-3 py-2 whitespace-nowrap">{item.productName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.productId).bg, getProductColor(item.productId).text)}>{item.productName}{item.productInitial ? ` (${item.productInitial})` : ''}</Badge> : '-'}</td>,
+                        planner_name: <td key="planner_name" className="px-3 py-2 whitespace-nowrap">{item.plannerName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.plannerInitial).bg, getProductColor(item.plannerInitial).text)}>{item.plannerName}{item.plannerInitial ? ` (${item.plannerInitial})` : ''}</Badge> : '-'}</td>,
+                        marketer_name: <td key="marketer_name" className="px-3 py-2 whitespace-nowrap">{item.marketerName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.marketerInitial).bg, getProductColor(item.marketerInitial).text)}>{item.marketerName}{item.marketerInitial ? ` (${item.marketerInitial})` : ''}</Badge> : '-'}</td>,
+                        creator_name: <td key="creator_name" className="px-3 py-2 whitespace-nowrap">{item.creatorName ? <Badge className={cn('text-xs px-1.5 py-0', getProductColor(item.creatorInitial).bg, getProductColor(item.creatorInitial).text)}>{item.creatorName}{item.creatorInitial ? ` (${item.creatorInitial})` : ''}</Badge> : '-'}</td>,
                         ad_url: (
                           <td key="ad_url" className="px-3 py-2 overflow-hidden">
                             <div className="flex items-center gap-2 min-w-0">
@@ -1956,20 +1956,20 @@ export function UTMGenerator() {
                             </div>
                           </td>
                         ),
-                        media_name: <td key="media_name" className="px-3 py-2 whitespace-nowrap">{item.media_name ? <Badge className={cn('text-xs px-1.5 py-0', mediaColor.bg, mediaColor.text)}>{item.media_name}{media?.initial && !item.media_name?.includes('(') ? ` (${media.initial})` : ''}</Badge> : '—'}</td>,
+                        media_name: <td key="media_name" className="px-3 py-2 whitespace-nowrap">{item.media_name ? <Badge className={cn('text-xs px-1.5 py-0', mediaColor.bg, mediaColor.text)}>{item.media_name}{media?.initial && !item.media_name?.includes('(') ? ` (${media.initial})` : ''}</Badge> : '-'}</td>,
                         landing_number: (
                           <td key="landing_number" className="px-3 py-2 whitespace-nowrap">{selectedLn ? (() => {
                             const suffix = [selectedLn.initial, selectedLn.description].filter(Boolean).join('-');
                             const label = suffix ? `${selectedLn.number} (${suffix})` : selectedLn.number;
                             return <Badge className={cn('text-xs px-1.5 py-0', landingColor.bg, landingColor.text)}>{label}</Badge>;
-                          })() : item.landing_number != null ? <span className="text-xs text-muted-foreground">{item.landing_number}</span> : '—'}</td>
+                          })() : item.landing_number != null ? <span className="text-xs text-muted-foreground">{item.landing_number}</span> : '-'}</td>
                         ),
-                        content_type_name: <td key="content_type_name" className="px-3 py-2 whitespace-nowrap">{item.content_type_name ? <Badge className={cn('text-xs px-1.5 py-0', ctColor.bg, ctColor.text)}>{item.content_type_name}{ct?.initial && !item.content_type_name?.includes('(') ? ` (${ct.initial})` : ''}</Badge> : '—'}</td>,
-                        placement_name: <td key="placement_name" className="px-3 py-2 whitespace-nowrap">{item.placement_name ? <Badge className={cn('text-xs px-1.5 py-0', plColor.bg, plColor.text)}>{item.placement_name}{pl?.initial && !item.placement_name?.includes('(') ? ` (${pl.initial})` : ''}</Badge> : '—'}</td>,
-                        product_name: <td key="product_name" className="px-3 py-2 whitespace-nowrap">{item.product_name ? <Badge className={cn('text-xs px-1.5 py-0', productColor.bg, productColor.text)}>{item.product_name}{product?.initial && !item.product_name?.includes('(') ? ` (${product.initial})` : ''}</Badge> : '—'}</td>,
-                        planner_name: <td key="planner_name" className="px-3 py-2 whitespace-nowrap">{item.planner_name ? <Badge className={cn('text-xs px-1.5 py-0', plannerColor.bg, plannerColor.text)}>{item.planner_name}{planner?.initial && !item.planner_name?.includes('(') ? ` (${planner.initial})` : ''}</Badge> : '—'}</td>,
-                        marketer_name: <td key="marketer_name" className="px-3 py-2 whitespace-nowrap">{item.marketer_name ? <Badge className={cn('text-xs px-1.5 py-0', marketerColor.bg, marketerColor.text)}>{item.marketer_name}{marketer?.initial && !item.marketer_name?.includes('(') ? ` (${marketer.initial})` : ''}</Badge> : '—'}</td>,
-                        creator_name: <td key="creator_name" className="px-3 py-2 whitespace-nowrap">{item.creator_name ? <Badge className={cn('text-xs px-1.5 py-0', creatorColor.bg, creatorColor.text)}>{item.creator_name}{creator?.initial && !item.creator_name?.includes('(') ? ` (${creator.initial})` : ''}</Badge> : '—'}</td>,
+                        content_type_name: <td key="content_type_name" className="px-3 py-2 whitespace-nowrap">{item.content_type_name ? <Badge className={cn('text-xs px-1.5 py-0', ctColor.bg, ctColor.text)}>{item.content_type_name}{ct?.initial && !item.content_type_name?.includes('(') ? ` (${ct.initial})` : ''}</Badge> : '-'}</td>,
+                        placement_name: <td key="placement_name" className="px-3 py-2 whitespace-nowrap">{item.placement_name ? <Badge className={cn('text-xs px-1.5 py-0', plColor.bg, plColor.text)}>{item.placement_name}{pl?.initial && !item.placement_name?.includes('(') ? ` (${pl.initial})` : ''}</Badge> : '-'}</td>,
+                        product_name: <td key="product_name" className="px-3 py-2 whitespace-nowrap">{item.product_name ? <Badge className={cn('text-xs px-1.5 py-0', productColor.bg, productColor.text)}>{item.product_name}{product?.initial && !item.product_name?.includes('(') ? ` (${product.initial})` : ''}</Badge> : '-'}</td>,
+                        planner_name: <td key="planner_name" className="px-3 py-2 whitespace-nowrap">{item.planner_name ? <Badge className={cn('text-xs px-1.5 py-0', plannerColor.bg, plannerColor.text)}>{item.planner_name}{planner?.initial && !item.planner_name?.includes('(') ? ` (${planner.initial})` : ''}</Badge> : '-'}</td>,
+                        marketer_name: <td key="marketer_name" className="px-3 py-2 whitespace-nowrap">{item.marketer_name ? <Badge className={cn('text-xs px-1.5 py-0', marketerColor.bg, marketerColor.text)}>{item.marketer_name}{marketer?.initial && !item.marketer_name?.includes('(') ? ` (${marketer.initial})` : ''}</Badge> : '-'}</td>,
+                        creator_name: <td key="creator_name" className="px-3 py-2 whitespace-nowrap">{item.creator_name ? <Badge className={cn('text-xs px-1.5 py-0', creatorColor.bg, creatorColor.text)}>{item.creator_name}{creator?.initial && !item.creator_name?.includes('(') ? ` (${creator.initial})` : ''}</Badge> : '-'}</td>,
                         ad_url: item.status === 'not_found' ? (
                           <td key="ad_url" className="px-3 py-2 text-xs text-red-500 whitespace-nowrap">{item.error ?? '매핑 실패'}</td>
                         ) : (
@@ -1979,7 +1979,7 @@ export function UTMGenerator() {
                                 <code className="text-xs break-all">{displayAdUrl}</code>
                                 <Button size="icon" variant="ghost" className="h-6 w-6 flex-shrink-0" onClick={() => navigator.clipboard.writeText(displayAdUrl).then(() => toast.success('광고 URL 복사됨'))} title="광고 URL 복사"><Copy className="h-3 w-3" /></Button>
                               </div>
-                            ) : item.status === 'registered' ? '—' : (
+                            ) : item.status === 'registered' ? '-' : (
                               <span className="text-xs text-muted-foreground">랜딩번호를 선택하세요.</span>
                             )}
                           </td>

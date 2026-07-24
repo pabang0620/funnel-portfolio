@@ -55,7 +55,7 @@ interface SceneHandle {
  * React glue for the WebGL planet scene. Every piece of mutable
  * WebGL/scene state (textures, GL program/buffers, planets array,
  * dust/nebulae, interaction state) is created FRESH inside this effect's
- * closure on every mount — nothing lives as a module-level singleton, so
+ * closure on every mount - nothing lives as a module-level singleton, so
  * repeated navigation to/from the Landing page never leaks a WebGL context
  * or carries over stale state.
  */
@@ -107,7 +107,7 @@ export function usePlanetScene(refs: PlanetSceneRefs, reducedMotion: boolean): U
       glCanvas.getContext('experimental-webgl')) as WebGLRenderingContext | null
 
     // Rule: get WebGL context (webgl2 then webgl fallback); if both fail,
-    // early-return after signalling the graceful text-only fallback —
+    // early-return after signalling the graceful text-only fallback -
     // PlanetScene.tsx renders a plain project link list when !webglSupported.
     if (!pCtx || !gl) {
       setWebglSupported(false)
@@ -207,7 +207,7 @@ export function usePlanetScene(refs: PlanetSceneRefs, reducedMotion: boolean): U
       sceneHandleRef.current = null
     }
     // `refs` is a stable ref-bag object (its individual fields are React
-    // refs, guaranteed stable across renders) — only `reducedMotion`
+    // refs, guaranteed stable across renders) - only `reducedMotion`
     // meaningfully changes and should retrigger scene (re)initialization.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reducedMotion])

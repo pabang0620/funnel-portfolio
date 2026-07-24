@@ -302,7 +302,7 @@ export default function DashboardDemo() {
       <div className="max-w-5xl mx-auto px-6 space-y-12">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">대시보드 디자인 시안</h1>
-          <p className="text-sm text-gray-500 mt-1">관리자 대시보드 — 커리큘럼 선택 시 차트 데이터 연동</p>
+          <p className="text-sm text-gray-500 mt-1">관리자 대시보드 - 커리큘럼 선택 시 차트 데이터 연동</p>
         </div>
 
         <div className="bg-gray-100 rounded-2xl p-6 border border-gray-200">
@@ -374,7 +374,7 @@ export default function DashboardDemo() {
             {/* Chart section title */}
             <div className="flex items-center gap-2">
               <h3 className="text-sm font-semibold text-gray-700">{selectedCurriculum}</h3>
-              <span className="text-xs text-gray-400">— 상세 현황</span>
+              <span className="text-xs text-gray-400">- 상세 현황</span>
             </div>
 
             {/* Charts row (driven by selected curriculum) */}

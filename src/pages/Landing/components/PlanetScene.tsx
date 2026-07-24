@@ -57,10 +57,10 @@ export default function PlanetScene() {
           id="gl-canvas"
           ref={glCanvasRef}
           tabIndex={0}
-          aria-label="Project planet scene — use arrow keys to browse, Enter to open"
+          aria-label="Project planet scene - use arrow keys to browse, Enter to open"
         />
       ) : (
-        // Graceful fallback if WebGL is unavailable on this device/browser —
+        // Graceful fallback if WebGL is unavailable on this device/browser -
         // a plain, fully navigable project list instead of a blank scene.
         <nav className="planet-scene-fallback" aria-label="Project list">
           <ul>

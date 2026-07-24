@@ -1,4 +1,4 @@
-/* ── Funnels Drive — oklch 기반 테마 (원본 그대로) ─────── */
+/* ── Funnels Drive - oklch 기반 테마 (원본 그대로) ─────── */
 .file-hub-app {
   --background: oklch(0.995 0 0);
   --foreground: oklch(0.145 0.004 285.82);
@@ -116,7 +116,7 @@
   --sidebar-ring: oklch(0.62 0.012 285.94);
   --sidebar-muted: oklch(0.62 0.012 285.94);
 
-  /* Tailwind v4 color token overrides — dark */
+  /* Tailwind v4 color token overrides - dark */
   --color-background: oklch(0.13 0.004 285.82);
   --color-foreground: oklch(0.965 0.001 286.38);
   --color-card: oklch(0.17 0.005 285.88);

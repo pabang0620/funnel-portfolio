@@ -246,7 +246,7 @@ export default function CurriculumDetail() {
               <div className="space-y-2">
                 {lectures.map(lecture => {
                   const status = lectureStatus(lecture.start_at, lecture.end_at)
-                  const dateStr = lecture.start_at ? new Date(lecture.start_at).toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' }) : '—'
+                  const dateStr = lecture.start_at ? new Date(lecture.start_at).toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' }) : '-'
                   return (
                     <div
                       key={lecture.id}

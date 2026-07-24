@@ -100,7 +100,7 @@ export function DateRangePicker({ from, to, onChange }: DateRangePickerProps) {
             ))}
           </div>
 
-          {/* 달력 — style을 DayPicker에 직접 적용해야 .rdp-root CSS 변수를 덮어씀 */}
+          {/* 달력 - style을 DayPicker에 직접 적용해야 .rdp-root CSS 변수를 덮어씀 */}
           <DayPicker
             mode="range"
             selected={selected}

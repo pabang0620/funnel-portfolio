@@ -78,7 +78,7 @@ function readUniforms(gl: WebGLRenderingContext, program: WebGLProgram, names: s
 /**
  * Compiles/links both GL programs (main sphere + earth cloud shell), builds
  * the shared sphere mesh buffers, and returns everything as a plain handles
- * object. Called fresh inside usePlanetScene's effect on every mount —
+ * object. Called fresh inside usePlanetScene's effect on every mount -
  * never a module-level singleton.
  */
 export function createGLProgram(gl: WebGLRenderingContext): GLProgramHandles | null {
@@ -153,7 +153,7 @@ export function createGLProgram(gl: WebGLRenderingContext): GLProgramHandles | n
 
   gl.enable(gl.DEPTH_TEST)
   gl.depthFunc(gl.LEQUAL)
-  // NOTE: blending is intentionally NOT left globally enabled here — see the
+  // NOTE: blending is intentionally NOT left globally enabled here - see the
   // BLEND note in render.ts's drawPlanetsGL for why (translucent-looking
   // "opaque" planets bug, fixed by disabling BLEND right before every
   // opaque draw call instead of relying on it never having been re-enabled).

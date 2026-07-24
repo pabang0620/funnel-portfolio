@@ -1,7 +1,7 @@
 /**
  * Fixed bottom-center "about this demo" block for English-speaking visitors
  * (recruiters landing here from a resume/GitHub/LinkedIn link). Sits in the
- * same fixed, non-scrolling viewport as the rest of the scene — see the
+ * same fixed, non-scrolling viewport as the rest of the scene - see the
  * note at the top of landing-theme.css. Deliberately `pointer-events: none`
  * (see .intro-panel in landing-theme.css) so it never steals clicks from a
  * planet that happens to wander underneath it.
@@ -17,7 +17,7 @@ export default function IntroPanel() {
       <h2 className="ip-title">Ten internal tools, rebuilt as one live demo</h2>
       <p className="ip-body">
         I built these as the only engineer at a 150-person marketing agency, where 120 people used
-        them every day — a no-code page builder, an internal CRM, an ad-performance dashboard, and
+        them every day - a no-code page builder, an internal CRM, an ad-performance dashboard, and
         more. The original code belongs to the company, so I rebuilt the tooling here with sample
         data.
       </p>

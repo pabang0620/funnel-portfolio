@@ -104,7 +104,7 @@ function pillCls(type: string) {
 }
 
 // ──────────────────────────────────────────────
-// Variant A — 컬러 헤더 카드
+// Variant A - 컬러 헤더 카드
 // ──────────────────────────────────────────────
 function VariantACard({ c }: { c: SampleCurriculum }) {
   const progressPct = c.lectureCount > 0
@@ -162,7 +162,7 @@ function VariantACard({ c }: { c: SampleCurriculum }) {
 }
 
 // ──────────────────────────────────────────────
-// Variant B — 미니멀 리스트 스타일
+// Variant B - 미니멀 리스트 스타일
 // ──────────────────────────────────────────────
 function VariantBCard({ c }: { c: SampleCurriculum }) {
   const progressPct = c.lectureCount > 0
@@ -194,7 +194,7 @@ function VariantBCard({ c }: { c: SampleCurriculum }) {
         </div>
       </div>
 
-      {/* Right — circular percent */}
+      {/* Right - circular percent */}
       <div className="flex-shrink-0 flex flex-col items-center justify-center w-16 text-center">
         <span className="text-2xl font-bold text-gray-800 leading-none">{progressPct}</span>
         <span className="text-xs text-gray-400 mt-0.5">% 완료</span>
@@ -209,7 +209,7 @@ function VariantBCard({ c }: { c: SampleCurriculum }) {
 }
 
 // ──────────────────────────────────────────────
-// Variant C — 뱃지 강조 카드
+// Variant C - 뱃지 강조 카드
 // ──────────────────────────────────────────────
 function VariantCCard({ c }: { c: SampleCurriculum }) {
   const total = c.lecturesDone + c.lecturesOngoing + c.lecturesUpcoming || 1
@@ -287,7 +287,7 @@ export default function CurriculumCardDemo() {
         {/* Variant A */}
         <section className="mb-12">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant A — 컬러 헤더 카드</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant A - 컬러 헤더 카드</h2>
             <p className="text-sm text-gray-500 mt-0.5">그라디언트 헤더 + 진행률 바. 시각적으로 강렬한 인상을 줍니다.</p>
           </div>
           <div className="grid grid-cols-2 gap-5">
@@ -298,7 +298,7 @@ export default function CurriculumCardDemo() {
         {/* Variant B */}
         <section className="mb-12">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant B — 미니멀 리스트 스타일</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant B - 미니멀 리스트 스타일</h2>
             <p className="text-sm text-gray-500 mt-0.5">왼쪽 컬러 세로 바 + 납작한 형태. 목록이 많을 때 적합합니다.</p>
           </div>
           <div className="grid grid-cols-2 gap-5">
@@ -309,7 +309,7 @@ export default function CurriculumCardDemo() {
         {/* Variant C */}
         <section className="mb-12">
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant C — 뱃지 강조 카드</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant C - 뱃지 강조 카드</h2>
             <p className="text-sm text-gray-500 mt-0.5">큰 종류 뱃지 + 통계 pill + 세그먼트 바. 정보 밀도가 높습니다.</p>
           </div>
           <div className="grid grid-cols-2 gap-5">

@@ -22,7 +22,7 @@ import type { ReferenceSet } from '../types/reference'
 
 const LIMIT = 5
 
-// Mock auth — always admin in portfolio demo
+// Mock auth - always admin in portfolio demo
 const useAuth = () => ({ user: { is_admin: true } })
 
 function sortSets(sets: ReferenceSet[]): ReferenceSet[] {

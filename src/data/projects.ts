@@ -35,7 +35,7 @@ export const PROJECTS: Project[] = [
     name: 'Edu Platform',
     path: '/edu-platform',
     description:
-      'Training platform that unifies AI, marketing, and internal course content — course progress tracking and material distribution in one place.',
+      'Training platform that unifies AI, marketing, and internal course content - course progress tracking and material distribution in one place.',
     tag: 'Education',
   },
   {
@@ -66,14 +66,14 @@ export const PROJECTS: Project[] = [
     name: 'File Hub',
     path: '/file-hub',
     description:
-      'Internal file storage for uploading, organizing, and sharing company files — folder structure and drag-and-drop, Google-Drive-style.',
+      'Internal file storage for uploading, organizing, and sharing company files - folder structure and drag-and-drop, Google-Drive-style.',
     tag: 'Infra',
   },
   {
     key: 'ad-performance',
     name: 'Ad Performance',
     path: '/ad-performance',
-    description: 'Ad-performance dashboard for e-commerce products — ad spend, revenue, and profit by channel in one view, to support marketing decisions.',
+    description: 'Ad-performance dashboard for e-commerce products - ad spend, revenue, and profit by channel in one view, to support marketing decisions.',
     tag: 'Analytics',
   },
   {
@@ -81,7 +81,7 @@ export const PROJECTS: Project[] = [
     name: 'Med Manager',
     path: '/med-manager',
     description:
-      'Operations platform for a hospital ad agency — lead data from incoming ads, performance reporting, ad-spend adjustment, and TM (phone-sales) call tracking in one system.',
+      'Operations platform for a hospital ad agency - lead data from incoming ads, performance reporting, ad-spend adjustment, and TM (phone-sales) call tracking in one system.',
     tag: 'Ops',
   },
 ]

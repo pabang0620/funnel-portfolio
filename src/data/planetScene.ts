@@ -26,7 +26,7 @@ export const PLANET_ARCHETYPES: Record<
   ice: { id: 4, base: [165, 205, 218], base2: [112, 162, 190] },
 }
 
-// "ice" intentionally has no entry — keeps its procedural noise shader, no real texture
+// "ice" intentionally has no entry - keeps its procedural noise shader, no real texture
 export const ARCHETYPE_TEXTURE_KEY: Partial<Record<PlanetArchetype, string>> = {
   gas: 'jupiter',
   moon: 'moon',
@@ -66,7 +66,7 @@ export interface PlanetSceneEntry {
 
 /**
  * Runtime planet list, derived from PROJECTS (SSOT) mapped through
- * PLANET_SCENE_CONFIG, preserving PROJECTS' own array order — this order
+ * PLANET_SCENE_CONFIG, preserving PROJECTS' own array order - this order
  * drives keyboard arrow-cycle order in the scene.
  */
 export function buildPlanetSceneEntries(): PlanetSceneEntry[] {
@@ -74,7 +74,7 @@ export function buildPlanetSceneEntries(): PlanetSceneEntry[] {
     const config = PLANET_SCENE_CONFIG[project.key]
     if (!config) {
       throw new Error(
-        `planetScene: PROJECTS entry "${project.key}" has no matching PLANET_SCENE_CONFIG entry — ` +
+        `planetScene: PROJECTS entry "${project.key}" has no matching PLANET_SCENE_CONFIG entry - ` +
           'add one before shipping (see src/data/planetScene.ts).'
       )
     }

@@ -1,4 +1,4 @@
-/* HR Hub — 원본 oklch 스타일 완전 복제 */
+/* HR Hub - 원본 oklch 스타일 완전 복제 */
 .hr-hub-app {
   /* 원본 CSS 변수 (oklch 형식, 함수 포함) */
   --background: oklch(1 0 0);

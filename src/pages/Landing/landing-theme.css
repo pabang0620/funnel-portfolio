@@ -1,7 +1,7 @@
-/* Landing page — "Wormhole Hyperspace" + WebGL solar-system-planets theme.
+/* Landing page - "Wormhole Hyperspace" + WebGL solar-system-planets theme.
    Scoped under body.landing-body / .landing-hyperspace so it never leaks
    into the other demo pages. The page is a FIXED, NON-SCROLLING single
-   viewport (approved final direction) — every scene element below is
+   viewport (approved final direction) - every scene element below is
    `position: fixed`, not `absolute`, since there is no scroll to account
    for. */
 
@@ -173,7 +173,7 @@ body.landing-body {
   width: 240px;
   padding: 1rem 1.15rem 1.1rem 1.15rem;
   /* holographic look = lines + glowing text floating in space, not a
-     filled panel — background is only a faint scrim for legibility */
+     filled panel - background is only a faint scrim for legibility */
   background: rgba(5, 3, 10, 0.32);
   opacity: 0;
   pointer-events: none;
@@ -489,7 +489,7 @@ body.landing-body {
 /* Each ACTUALLY-wrapped visual line of the description is rendered as its
    own child div (see interaction.ts renderTextAsLines) so it can cascade in
    on its own step via the shared .fp-line opacity/transform reveal above.
-   No extra layout rules needed — div is block by default and inherits
+   No extra layout rules needed - div is block by default and inherits
    font-size/line-height/color from .fp-desc, so stacked lines match the
    original single-paragraph wrap exactly. */
 .landing-hyperspace .fp-desc-line {
@@ -653,7 +653,7 @@ body.landing-body {
   padding: 0.95rem 1.3rem 1.05rem 1.3rem;
   background: rgba(5, 3, 10, 0.4);
   text-align: center;
-  /* never intercepts clicks — a wandering planet underneath must stay
+  /* never intercepts clicks - a wandering planet underneath must stay
      clickable at all times (see IntroPanel.tsx doc comment) */
   pointer-events: none;
 }
@@ -733,7 +733,7 @@ body.landing-body {
 }
 
 /* Small screens: the fixed viewport is tight, so trade the full pitch for
-   a compact strip — keep the hook (title) + the one instruction visitors
+   a compact strip - keep the hook (title) + the one instruction visitors
    actually need (how to navigate), drop the longer body copy and the
    Korean-UI caveat rather than shrinking text to the point of being
    unreadable. */

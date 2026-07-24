@@ -27,7 +27,7 @@ function CurrentEditorProblem() {
   return (
     <div>
       <div className="mb-3">
-        <h3 className="text-base font-bold text-gray-800">현재 — 문제점</h3>
+        <h3 className="text-base font-bold text-gray-800">현재 - 문제점</h3>
         <p className="text-sm text-gray-500 mt-0.5">현재 에디터 디자인의 두 가지 문제점을 강조 표시합니다.</p>
       </div>
       <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
@@ -100,7 +100,7 @@ function EditorVariantA() {
   return (
     <div>
       <div className="mb-3">
-        <h3 className="text-base font-bold text-gray-800">Variant A — 인라인 타입 토글</h3>
+        <h3 className="text-base font-bold text-gray-800">Variant A - 인라인 타입 토글</h3>
         <p className="text-sm text-gray-500 mt-0.5">
           각 행에 타입 토글 칩을 추가하고, 빈 항목명에는 점수 원을 흐리게 처리합니다.
         </p>
@@ -152,7 +152,7 @@ function EditorVariantA() {
                       <input
                         type="text"
                         readOnly
-                        placeholder="서술형 항목 — 점수 없이 의견 입력"
+                        placeholder="서술형 항목 - 점수 없이 의견 입력"
                         className="w-full text-xs border border-gray-200 rounded-md px-3 py-1.5 text-gray-400 bg-gray-50 placeholder:text-gray-400 cursor-default"
                       />
                     </td>
@@ -186,7 +186,7 @@ function EditorVariantB() {
   return (
     <div>
       <div className="mb-3">
-        <h3 className="text-base font-bold text-gray-800">Variant B — 카드형 편집기</h3>
+        <h3 className="text-base font-bold text-gray-800">Variant B - 카드형 편집기</h3>
         <p className="text-sm text-gray-500 mt-0.5">테이블 대신 카드 형태로 각 항목을 표현합니다. 타입 드롭다운과 경고 메시지를 카드 내에 배치합니다.</p>
       </div>
       <div className="flex flex-col gap-2">
@@ -279,7 +279,7 @@ function ScoreVariantA() {
   return (
     <div>
       <div className="mb-3">
-        <h3 className="text-base font-bold text-gray-800">Variant A — 그룹 구분선 방식 (테이블, 개선)</h3>
+        <h3 className="text-base font-bold text-gray-800">Variant A - 그룹 구분선 방식 (테이블, 개선)</h3>
         <p className="text-sm text-gray-500 mt-0.5">rowSpan 제거, 그룹명을 서브헤더 행으로 분리하고 점수 원 크기를 키웠습니다.</p>
       </div>
       <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
@@ -372,7 +372,7 @@ function ScoreVariantB() {
   return (
     <div>
       <div className="mb-3">
-        <h3 className="text-base font-bold text-gray-800">Variant B — 카드형 평가</h3>
+        <h3 className="text-base font-bold text-gray-800">Variant B - 카드형 평가</h3>
         <p className="text-sm text-gray-500 mt-0.5">그룹별 카드로 묶어 소계를 표시하고, 점수 원을 카드 내 수평 배열합니다.</p>
       </div>
       <div className="flex flex-col gap-3">
@@ -456,7 +456,7 @@ export default function RubricDemo() {
         {/* Section 1: Editor */}
         <section className="mb-14">
           <div className="mb-6">
-            <h2 className="text-xl font-bold text-gray-900">평가지 편집 — 편집기</h2>
+            <h2 className="text-xl font-bold text-gray-900">평가지 편집 - 편집기</h2>
             <p className="text-sm text-gray-500 mt-1">관리자가 평가 항목을 구성하는 편집기의 3가지 variant입니다.</p>
           </div>
 

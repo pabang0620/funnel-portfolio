@@ -77,7 +77,7 @@ function upgradeTextureAsync(
 }
 
 /**
- * Factory — builds a FRESH texture registry (6 real-photo textures) every
+ * Factory - builds a FRESH texture registry (6 real-photo textures) every
  * time it's called. Never a module-level singleton: this must be invoked
  * once per usePlanetScene mount so repeated Landing mount/unmount doesn't
  * share GL textures across (possibly different) WebGL contexts.

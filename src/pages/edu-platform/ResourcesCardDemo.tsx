@@ -13,7 +13,7 @@ const SAMPLES: Sample[] = [
   { id: '1', title: '개인정보보호 및 보안 교육', type: '공지', author: '김민준', date: '2026-03-10', hasImage: true },
   { id: '2', title: '디지털 마케팅 트렌드 2026', type: '가이드', author: '이서연', date: '2026-03-15', hasImage: false },
   { id: '3', title: '신입사원 온보딩 체크리스트', type: '자료', author: '박지훈', date: '2026-04-01', hasImage: true },
-  { id: '4', title: 'AI 기초 개념 정리 — 머신러닝과 딥러닝', type: '가이드', author: '정유진', date: '2026-02-20', hasImage: false },
+  { id: '4', title: 'AI 기초 개념 정리 - 머신러닝과 딥러닝', type: '가이드', author: '정유진', date: '2026-02-20', hasImage: false },
   { id: '5', title: 'Edu Platform 교육자료실 사용 가이드', type: '공지', author: '최승호', date: '2026-04-05', hasImage: true },
   { id: '6', title: '2026년 상반기 회사 방침 안내', type: '공지', author: '한예림', date: '2026-01-08', hasImage: false },
 ]
@@ -140,13 +140,13 @@ export default function ResourcesCardDemo() {
       <div className="max-w-5xl mx-auto space-y-14">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">교육자료실 카드 디자인 시안</h1>
-          <p className="text-sm text-gray-500 mt-1">3가지 레이아웃 스타일 비교 — 동일한 샘플 데이터로 각 variant를 확인하세요.</p>
+          <p className="text-sm text-gray-500 mt-1">3가지 레이아웃 스타일 비교 - 동일한 샘플 데이터로 각 variant를 확인하세요.</p>
         </div>
 
         {/* Variant A */}
         <section>
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant A — 매거진 스타일</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant A - 매거진 스타일</h2>
             <p className="text-sm text-gray-500 mt-0.5">이미지/그라디언트 헤더가 있는 카드. 시각적 임팩트가 강하고 현대적인 느낌.</p>
           </div>
           <div className="grid grid-cols-3 gap-5">
@@ -159,7 +159,7 @@ export default function ResourcesCardDemo() {
         {/* Variant B */}
         <section>
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant B — 가로형 리스트 카드</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant B - 가로형 리스트 카드</h2>
             <p className="text-sm text-gray-500 mt-0.5">왼쪽 썸네일 + 오른쪽 텍스트 구조. 많은 자료를 한눈에 파악하기 유리함.</p>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -172,7 +172,7 @@ export default function ResourcesCardDemo() {
         {/* Variant C */}
         <section>
           <div className="mb-4">
-            <h2 className="text-lg font-bold text-gray-800">Variant C — 타일 강조 카드</h2>
+            <h2 className="text-lg font-bold text-gray-800">Variant C - 타일 강조 카드</h2>
             <p className="text-sm text-gray-500 mt-0.5">종류별 배경색으로 카테고리가 즉시 구분됨. 텍스트 중심의 심플한 구성.</p>
           </div>
           <div className="grid grid-cols-3 gap-5">

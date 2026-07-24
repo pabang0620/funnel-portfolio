@@ -76,7 +76,7 @@ export default function AdminLayout() {
                   <p className="text-xs text-gray-500 mt-0.5">{user?.email}</p>
                 </div>
                 <div className="px-4 py-2.5 text-xs text-gray-400 italic">
-                  Demo version — log out disabled
+                  Demo version - log out disabled
                 </div>
               </div>
             )}

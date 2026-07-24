@@ -13,13 +13,13 @@ interface FocusPanelProps {
 }
 
 /**
- * Static markup for the click-focus cascading panel — tag/title text and
+ * Static markup for the click-focus cascading panel - tag/title text and
  * the show/hide cascade classes are mutated directly via refs by the
  * interaction hook; the description container's children are rebuilt as
  * one div per actually-wrapped visual line so each line can cascade in on
  * its own (see interaction.ts's renderTextAsLines/schedulePanelReveal).
  * The close button itself is wired up by the interaction
- * hook's own addEventListener (via closeBtnRef), not a React onClick — only
+ * hook's own addEventListener (via closeBtnRef), not a React onClick - only
  * the CTA link's real-route navigation lives here, since that's the one
  * piece of genuine app behavior (routing) that belongs in React, not the
  * imperative DOM layer.
@@ -49,7 +49,7 @@ export default function FocusPanel({
       <div className="fp-line fp-tag" ref={fpTagRef} />
       <div className="fp-line fp-title" ref={fpTitleRef} />
       {/* Children are rebuilt imperatively (one div per actually-wrapped
-          visual line) by interaction.ts's fillPanel/renderTextAsLines —
+          visual line) by interaction.ts's fillPanel/renderTextAsLines -
           this container itself no longer carries fp-line (it's just a
           layout wrapper now; each child line owns its own cascade reveal). */}
       <div className="fp-desc" ref={fpDescRef} />

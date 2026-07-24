@@ -235,6 +235,6 @@ export function confirmUpload(previewResults: UploadPreviewResult[]): Array<{ fi
 // ─── Presigned URL (mock) ─────────────────────────────────────────────────────
 
 export function getPresignedUrl(s3Key: string): string {
-  // Return a placeholder URL – actual S3 is not accessible in the demo
+  // Return a placeholder URL - actual S3 is not accessible in the demo
   return `https://example.com/mock-audio/${s3Key.split('/').pop()}`
 }

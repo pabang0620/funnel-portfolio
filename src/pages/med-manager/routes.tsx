@@ -1,16 +1,16 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import './med-manager-theme.css'
 import DemoLock from '@/components/DemoLock'
-// @ts-ignore — JSX file, no type declarations needed for demo
+// @ts-ignore - JSX file, no type declarations needed for demo
 import Layout from './shared/Layout'
-// @ts-ignore — JSX file, no type declarations needed for demo
+// @ts-ignore - JSX file, no type declarations needed for demo
 import MainReportPage from './mainReport/index'
-// @ts-ignore — JSX file, no type declarations needed for demo
+// @ts-ignore - JSX file, no type declarations needed for demo
 import CustomerDbPage from './dbList/index'
 import CreateCodePage from './createCode/index'
-// @ts-ignore — JSX file, no type declarations needed for demo
+// @ts-ignore - JSX file, no type declarations needed for demo
 import TmStatusPage from './tmStatus/index'
-// @ts-ignore — JSX file, no type declarations needed for demo
+// @ts-ignore - JSX file, no type declarations needed for demo
 import PivotPage from './pivot/index'
 
 function LockedPage({ pageName }: { pageName: string }) {

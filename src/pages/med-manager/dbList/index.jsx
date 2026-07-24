@@ -26,7 +26,7 @@ import ExcelTemp from "./components/ExcelTemp";
 import DeleteBox from "./components/DeleteBox";
 import Spinner from "../shared/Spinner";
 
-// 6. constants (인라인 — 파일이 같은 폴더에 없으므로)
+// 6. constants (인라인 - 파일이 같은 폴더에 없으므로)
 const BRAND_COLORS = {
   '카카오': '#FEE500',
   '구글': '#4285F4',

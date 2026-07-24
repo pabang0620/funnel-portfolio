@@ -62,7 +62,7 @@
   font-display: swap;
 }
 
-/* ── CS Manager — scoped CSS variables (replaces :root) ─── */
+/* ── CS Manager - scoped CSS variables (replaces :root) ─── */
 .cs-manager-app {
   /* 회색 계열 주 색상 + 주황색 포인트 */
   --background: #fafafa;

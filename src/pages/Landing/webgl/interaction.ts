@@ -2,7 +2,7 @@ import { distSq, easeOutBack, easeOutCubic, lerp, rgba } from './geometry'
 import { computeIdleXY, type Planet } from './sceneState'
 import { renderTextAsLines } from './textLines'
 
-// hysteresis: tighter radius to START a hover, looser radius to KEEP one —
+// hysteresis: tighter radius to START a hover, looser radius to KEEP one -
 // without this a cursor sitting near a planet's edge flickers the card
 // in/out every frame it crosses the single boundary
 export const HOVER_ENTER_MARGIN = 10
@@ -109,7 +109,7 @@ export function getActiveInfoIndex(state: InteractionState): number {
 }
 
 // Card faces away from whichever screen edge the planet is nearest, using
-// the planet's LIVE drawn position (drawX/drawY) — the mockup read a pair
+// the planet's LIVE drawn position (drawX/drawY) - the mockup read a pair
 // of fields (p.x/p.y) that were declared but never updated per-frame
 // (always 0,0), which pinned every card to the same bottom-left offset
 // regardless of the planet's actual screen position. Fixed here to use the
@@ -165,7 +165,7 @@ function typewriterInto(state: InteractionState, cardDescEl: HTMLElement, text: 
 // Forces the pc-anim reveal keyframes (frame draw-in, corner brackets,
 // title flicker-in) to restart even when the card is already visible and
 // only its content is being retargeted to a new planet (rapid hover
-// switching) — removing then re-adding the class with a forced reflow in
+// switching) - removing then re-adding the class with a forced reflow in
 // between is what makes CSS animations replay from frame 0.
 function retriggerCardReveal(cardEl: HTMLElement) {
   cardEl.classList.remove('pc-anim')
@@ -254,7 +254,7 @@ function fillPanel(dom: PlanetSceneDom, p: Planet) {
   dom.fpTitle.textContent = p.name
   // Rebuilds fpDesc's children as one div per ACTUALLY rendered visual line
   // (Range/getClientRects-measured against fpDesc's real width/font, not a
-  // char-count guess) so each wrapped line can cascade in on its own — see
+  // char-count guess) so each wrapped line can cascade in on its own - see
   // schedulePanelReveal. Always rebuilds from scratch, so reopening the
   // panel (same or different planet) never leaves stale line spans behind.
   renderTextAsLines(dom.fpDesc, p.desc, 'fp-line fp-desc-line')
@@ -349,7 +349,7 @@ export interface FrameContext {
  * update (idle wander / focus zoom), hover hit-testing with
  * hysteresis+debounce, the unified mouse-or-keyboard active-info target,
  * card show/hide, hover-glow smoothing, and the keyboard focus ring DOM
- * position. Pure orchestration over `state`/`planets`/`dom` — no drawing.
+ * position. Pure orchestration over `state`/`planets`/`dom` - no drawing.
  */
 export function stepInteractionFrame(
   state: InteractionState,
@@ -379,7 +379,7 @@ export function stepInteractionFrame(
     // frame `focus.mode` flips zooming-out -> idle, `globalFocusActive`
     // (recomputed once at the top of this function from the START-of-frame
     // mode) snaps from true to false, so `slow` jumped 0.32 -> 1 in a single
-    // frame — every OTHER planet's wander position (homeX + sin(...)*amp*slow)
+    // frame - every OTHER planet's wander position (homeX + sin(...)*amp*slow)
     // instantly snapped by up to ~0.68*amp px, which read as the whole scene
     // "re-rendering"/resetting on close (background click, Escape, and the
     // panel close button all hit this, since they all funnel through the
@@ -436,11 +436,11 @@ export function stepInteractionFrame(
         // on the very next frame once `mode` flips to 'idle'. This used to
         // hardcode `slow=1` (full amplitude) here, while globalFocusActive
         // stays true for the entire zooming-out animation, so ambientDim sits
-        // near its dimmed 0.32 floor the whole time — meaning the very NEXT
+        // near its dimmed 0.32 floor the whole time - meaning the very NEXT
         // frame after the mode flip (now idle, using ambientDim directly)
         // read a much smaller amplitude than this frame's liveIdle target
         // did, snapping the just-closed planet's wander offset by up to
-        // ~0.6*amp px (~20px+ observed) exactly at the moment focus closes —
+        // ~0.6*amp px (~20px+ observed) exactly at the moment focus closes -
         // the same class of bug as the wander-amplitude fix below, but on
         // this planet's own zoom-out-to-idle handoff rather than the OTHER
         // planets' idle branch. Matching the value here keeps it continuous
@@ -467,7 +467,7 @@ export function stepInteractionFrame(
       const ph = planets[h]
       // hysteresis dead zone: the planet already committed as hovered gets
       // the larger "stay" radius, everything else uses the tighter "enter"
-      // radius — prevents flicker right at the boundary
+      // radius - prevents flicker right at the boundary
       const margin = h === state.mouseCommittedIndex ? HOVER_STAY_MARGIN : HOVER_ENTER_MARGIN
       const d2 = Math.sqrt(distSq(state.mouseX, state.mouseY, ph.drawX, ph.drawY))
       if (d2 < ph.drawR + margin && d2 < nearestDist) {
@@ -503,7 +503,7 @@ export function stepInteractionFrame(
     dom.glCanvas.style.cursor = overOther ? 'pointer' : 'default'
   }
 
-  // unified mouse-or-keyboard info target — drives the card, the planet's
+  // unified mouse-or-keyboard info target - drives the card, the planet's
   // own hover reaction (glow/scale), and the wander freeze above, all off
   // the same committed signal so they stay in sync
   state.activeInfoIndex = getActiveInfoIndex(state)
@@ -525,7 +525,7 @@ export function stepInteractionFrame(
     pg.hoverT += ((pg.idx === state.activeInfoIndex ? 1 : 0) - pg.hoverT) * HOVER_SMOOTH
   }
 
-  // keyboard focus ring — DOM overlay tracking the focused planet's screen
+  // keyboard focus ring - DOM overlay tracking the focused planet's screen
   // position every frame (same anchor technique as the card)
   if (state.usingKeyboard && state.keyboardFocusIndex !== -1 && state.focus.mode === 'idle') {
     const kp = planets[state.keyboardFocusIndex]
@@ -541,7 +541,7 @@ export function stepInteractionFrame(
     dom.kbdRing.classList.remove('visible')
   }
 
-  // follow the active hover card's planet every frame (idle only) — the
+  // follow the active hover card's planet every frame (idle only) - the
   // planet is fully frozen once hover/focus commits, so this is now
   // tracking a static point, not a moving one
   if (state.activeCardIndex !== -1) {

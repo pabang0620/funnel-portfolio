@@ -6,7 +6,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-// Demo: always treat as admin (role 1) — no JWT needed
+// Demo: always treat as admin (role 1) - no JWT needed
 const DEMO_USER = { role: 1, name: '관리자' };
 
 const CalendarDateFilter = ({

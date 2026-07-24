@@ -1,5 +1,5 @@
 /**
- * api_stub.ts — shims for the portfolio demo.
+ * api_stub.ts - shims for the portfolio demo.
  * All real API calls are replaced by mockService functions.
  */
 import {

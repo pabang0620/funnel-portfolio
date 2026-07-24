@@ -36,7 +36,7 @@ export function useOrganization() {
     }
   }, []);
 
-  // Demo stubs — in portfolio we just log these actions
+  // Demo stubs - in portfolio we just log these actions
   const createDepartment = async (data: CreateDepartmentRequest): Promise<OrgDepartment> => {
     console.log('[Demo] createDepartment', data);
     const newDept: OrgDepartment = {

@@ -17,12 +17,12 @@ interface AssignmentModalProps {
 function MetaFields({ assignment }: { assignment: any }) {
   const start = assignment?.start_date ? assignment.start_date.slice(0, 10) : null
   const end = assignment?.deadline ? assignment.deadline.slice(0, 10) : null
-  const period = start && end ? `${start} ~ ${end}` : start ? `${start} ~` : end ? `~ ${end}` : '—'
+  const period = start && end ? `${start} ~ ${end}` : start ? `${start} ~` : end ? `~ ${end}` : '-'
   return (
     <div className="flex items-start gap-8 pb-4 border-b border-gray-100">
       <div>
         <p className="text-xs font-medium text-gray-400 mb-0.5">과제명</p>
-        <p className="text-sm font-semibold text-gray-900">{assignment?.title ?? '—'}</p>
+        <p className="text-sm font-semibold text-gray-900">{assignment?.title ?? '-'}</p>
       </div>
       <div>
         <p className="text-xs font-medium text-gray-400 mb-0.5">기간</p>
@@ -153,7 +153,7 @@ export default function AssignmentModal({ assignmentId, open, onClose, isAdmin, 
           <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 flex-shrink-0">
             <div className="flex items-baseline gap-2 min-w-0">
               <h2 className="text-base font-bold text-gray-900 truncate">
-                {assignment?.lecture?.name ?? '—'}
+                {assignment?.lecture?.name ?? '-'}
               </h2>
               <span className="text-xs text-gray-500 whitespace-nowrap flex-shrink-0">
                 · {assignment?.lecture?.curriculum_name ?? ''}

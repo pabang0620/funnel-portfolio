@@ -7,12 +7,12 @@ import AssignmentModal from './components/AssignmentModal'
 import RichTextEditor from './components/RichTextEditor'
 
 function fmtDate(iso?: string) {
-  if (!iso) return '—'
+  if (!iso) return '-'
   return new Date(iso).toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
 function fmtTime(iso?: string) {
-  if (!iso) return '—'
+  if (!iso) return '-'
   return new Date(iso).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })
 }
 
@@ -107,7 +107,7 @@ export default function LectureDetail() {
               </div>
               <div>
                 <p className="text-xs text-gray-400 mb-1">유형</p>
-                <p className="text-gray-900">{lecture.type || '—'}</p>
+                <p className="text-gray-900">{lecture.type || '-'}</p>
               </div>
               <div>
                 <p className="text-xs text-gray-400 mb-1">수강생</p>
@@ -210,7 +210,7 @@ export default function LectureDetail() {
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-gray-500">최대 정원</span>
-                <span className="font-bold text-gray-900">{lecture.max_capacity ?? '—'}명</span>
+                <span className="font-bold text-gray-900">{lecture.max_capacity ?? '-'}명</span>
               </div>
             </div>
           </div>

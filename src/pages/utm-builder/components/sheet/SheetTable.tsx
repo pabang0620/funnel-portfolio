@@ -855,7 +855,7 @@ export function SheetTable({
                                 ?? rawProductName;
                               const color = getProductColor(productId);
                               return <Badge className={cn('text-xs px-1.5 py-0', color.bg, color.text)}>{displayValue}</Badge>;
-                            })() : '—'}
+                            })() : '-'}
                           </span>
                         ) : isCode ? (
                           <CopyableCell value={displayValue} colKey={colKey} />
@@ -899,7 +899,7 @@ export function SheetTable({
                               }
                               const color = getProductColor(colorKey);
                               return <Badge className={cn('text-xs px-1.5 py-0', color.bg, color.text)}>{displayValue}</Badge>;
-                            })() : <span style={{ color: '#bdbdbd' }}>—</span>}
+                            })() : <span style={{ color: '#bdbdbd' }}>-</span>}
                           </span>
                         ) : (
                           <span
@@ -911,7 +911,7 @@ export function SheetTable({
                               color: '#444',
                             }}
                           >
-                            {displayValue || '—'}
+                            {displayValue || '-'}
                           </span>
                         )
                       ) : (
@@ -968,7 +968,7 @@ export function SheetTable({
                                 const productId = (row as NewRow).productId ?? activeProductId ?? displayValue;
                                 const color = getProductColor(productId);
                                 return <Badge className={cn(color.bg, color.text)}>{displayValue}</Badge>;
-                              })() : <span style={{ color: '#bdbdbd' }}>—</span>}
+                              })() : <span style={{ color: '#bdbdbd' }}>-</span>}
                             </span>
                           ) : colKey === 'media' ? (
                             <span style={{ display: 'block', padding: '0 6px' }}>
@@ -976,7 +976,7 @@ export function SheetTable({
                                 const mediaId = (row as NewRow).mediaId || displayValue;
                                 const color = getProductColor(mediaId);
                                 return <Badge className={cn('text-xs px-1.5 py-0', color.bg, color.text)}>{displayValue}</Badge>;
-                              })() : <span style={{ color: '#bdbdbd' }}>—</span>}
+                              })() : <span style={{ color: '#bdbdbd' }}>-</span>}
                             </span>
                           ) : colKey === 'utmCode' ? (
                             <div style={{ display: 'flex', alignItems: 'center', width: '100%', height: '100%' }}>
@@ -992,7 +992,7 @@ export function SheetTable({
                           ) : colKey === 'adUrl' ? (
                             displayValue
                               ? <CopyableCell value={displayValue} colKey={colKey} />
-                              : <span style={{ display: 'block', padding: '0 6px', fontSize: 11, color: '#bdbdbd', fontFamily: "'Courier New', monospace" }}>—</span>
+                              : <span style={{ display: 'block', padding: '0 6px', fontSize: 11, color: '#bdbdbd', fontFamily: "'Courier New', monospace" }}>-</span>
                           ) : DROPDOWN_COLS.includes(colKey) ? (
                             <div style={{ display: 'flex', alignItems: 'center', width: '100%', height: '100%' }}>
                               <span style={{ flex: 1, padding: '0 4px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>

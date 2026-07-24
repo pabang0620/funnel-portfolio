@@ -12,7 +12,7 @@
         "set_id": "ref-1",
         "url": "https://picsum.photos/seed/ref1a/800/600",
         "url_type": "image",
-        "note": "경쟁사 A — 상단 히어로 배너. 감성적 카피와 제품 이미지 조합이 효과적",
+        "note": "경쟁사 A - 상단 히어로 배너. 감성적 카피와 제품 이미지 조합이 효과적",
         "created_at": "2026-03-05T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -22,7 +22,7 @@
         "set_id": "ref-1",
         "url": "https://picsum.photos/seed/ref1b/800/450",
         "url_type": "image",
-        "note": "경쟁사 B — 리뷰 섹션 레이아웃. 별점 + 텍스트 + 프로필 이미지 구성 참고",
+        "note": "경쟁사 B - 리뷰 섹션 레이아웃. 별점 + 텍스트 + 프로필 이미지 구성 참고",
         "created_at": "2026-03-07T11:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -32,7 +32,7 @@
         "set_id": "ref-1",
         "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "url_type": "video",
-        "note": "경쟁사 C 유튜브 광고 — 15초 인트로 후킹 방식 분석용",
+        "note": "경쟁사 C 유튜브 광고 - 15초 인트로 후킹 방식 분석용",
         "created_at": "2026-03-10T09:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -42,7 +42,7 @@
         "set_id": "ref-1",
         "url": "https://picsum.photos/seed/ref1d/600/800",
         "url_type": "image",
-        "note": "경쟁사 D — 세로형 광고 소재. 모바일 피드에 최적화된 비율",
+        "note": "경쟁사 D - 세로형 광고 소재. 모바일 피드에 최적화된 비율",
         "created_at": "2026-03-12T14:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -52,7 +52,7 @@
         "set_id": "ref-1",
         "url": "https://picsum.photos/seed/ref1e/800/600",
         "url_type": "image",
-        "note": "경쟁사 E — CTA 버튼 디자인. 컬러 대비와 문구 전략 참고",
+        "note": "경쟁사 E - CTA 버튼 디자인. 컬러 대비와 문구 전략 참고",
         "created_at": "2026-03-15T16:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -62,7 +62,7 @@
         "set_id": "ref-1",
         "url": "https://performancelab.co.kr/meta-ads",
         "url_type": "link",
-        "note": "퍼포먼스랩 랜딩 페이지 — 폼 배치와 헤드라인 전략 분석",
+        "note": "퍼포먼스랩 랜딩 페이지 - 폼 배치와 헤드라인 전략 분석",
         "created_at": "2026-03-18T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -82,7 +82,7 @@
         "set_id": "ref-2",
         "url": "https://picsum.photos/seed/creative1/800/600",
         "url_type": "image",
-        "note": "단일 제품 클로즈업 — 텍스처 강조로 고급감 연출. 뷰티 카테고리 참고",
+        "note": "단일 제품 클로즈업 - 텍스처 강조로 고급감 연출. 뷰티 카테고리 참고",
         "created_at": "2026-03-12T09:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -92,7 +92,7 @@
         "set_id": "ref-2",
         "url": "https://picsum.photos/seed/creative2/800/600",
         "url_type": "image",
-        "note": "Before/After 포맷 — 사용 전후 비교로 효과 직관적 전달",
+        "note": "Before/After 포맷 - 사용 전후 비교로 효과 직관적 전달",
         "created_at": "2026-03-14T11:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -102,7 +102,7 @@
         "set_id": "ref-2",
         "url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
         "url_type": "video",
-        "note": "UGC 스타일 영상 광고 — 자연스러운 추천 형식으로 신뢰도 향상",
+        "note": "UGC 스타일 영상 광고 - 자연스러운 추천 형식으로 신뢰도 향상",
         "created_at": "2026-03-16T13:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -112,7 +112,7 @@
         "set_id": "ref-2",
         "url": "https://picsum.photos/seed/creative4/800/500",
         "url_type": "image",
-        "note": "인포그래픽 스타일 — 핵심 수치 3개로 간결하게 USP 전달",
+        "note": "인포그래픽 스타일 - 핵심 수치 3개로 간결하게 USP 전달",
         "created_at": "2026-03-20T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -122,7 +122,7 @@
         "set_id": "ref-2",
         "url": "https://picsum.photos/seed/creative5/600/600",
         "url_type": "image",
-        "note": "정사각형 카드 포맷 — 인스타그램 피드 최적화. 여백 활용이 돋보임",
+        "note": "정사각형 카드 포맷 - 인스타그램 피드 최적화. 여백 활용이 돋보임",
         "created_at": "2026-03-22T15:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -132,7 +132,7 @@
         "set_id": "ref-2",
         "url": "https://picsum.photos/seed/creative6/800/600",
         "url_type": "image",
-        "note": "사회적 증거 포맷 — 수강생 수 강조로 신뢰감 형성",
+        "note": "사회적 증거 포맷 - 수강생 수 강조로 신뢰감 형성",
         "created_at": "2026-03-25T09:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -142,7 +142,7 @@
         "set_id": "ref-2",
         "url": "https://adboost.kr",
         "url_type": "link",
-        "note": "애드부스트 랜딩 — 스크롤 트리거 애니메이션과 스티키 CTA 구조 참고",
+        "note": "애드부스트 랜딩 - 스크롤 트리거 애니메이션과 스티키 CTA 구조 참고",
         "created_at": "2026-03-28T11:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -162,7 +162,7 @@
         "set_id": "ref-3",
         "url": "https://picsum.photos/seed/april1/800/600",
         "url_type": "image",
-        "note": "봄 시즌 컬러팔레트 — 파스텔 그린/핑크 조합으로 시즌감 연출",
+        "note": "봄 시즌 컬러팔레트 - 파스텔 그린/핑크 조합으로 시즌감 연출",
         "created_at": "2026-03-22T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -172,7 +172,7 @@
         "set_id": "ref-3",
         "url": "https://picsum.photos/seed/april2/800/600",
         "url_type": "image",
-        "note": "봄 신상 론칭 배너 — '새로운 시작' 메시지와 제품 이미지 구성",
+        "note": "봄 신상 론칭 배너 - '새로운 시작' 메시지와 제품 이미지 구성",
         "created_at": "2026-03-24T11:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -182,7 +182,7 @@
         "set_id": "ref-3",
         "url": "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
         "url_type": "video",
-        "note": "시즌 론칭 영상 레퍼런스 — 빠른 컷편집과 배경음악 활용법",
+        "note": "시즌 론칭 영상 레퍼런스 - 빠른 컷편집과 배경음악 활용법",
         "created_at": "2026-03-27T09:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -192,7 +192,7 @@
         "set_id": "ref-3",
         "url": "https://picsum.photos/seed/april4/600/800",
         "url_type": "image",
-        "note": "세로형 스토리 광고 — 상단 텍스트 + 하단 CTA 레이아웃",
+        "note": "세로형 스토리 광고 - 상단 텍스트 + 하단 CTA 레이아웃",
         "created_at": "2026-03-30T14:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -202,7 +202,7 @@
         "set_id": "ref-3",
         "url": "https://skincare365.com",
         "url_type": "link",
-        "note": "스킨케어365 이벤트 페이지 — 카운트다운 타이머 + 한정 할인 구조",
+        "note": "스킨케어365 이벤트 페이지 - 카운트다운 타이머 + 한정 할인 구조",
         "created_at": "2026-04-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -222,7 +222,7 @@
         "set_id": "ref-4",
         "url": "https://picsum.photos/seed/lp1/1200/600",
         "url_type": "image",
-        "note": "풀위드 히어로 섹션 — 배경 이미지 위 반투명 오버레이로 텍스트 가독성 확보",
+        "note": "풀위드 히어로 섹션 - 배경 이미지 위 반투명 오버레이로 텍스트 가독성 확보",
         "created_at": "2026-04-02T09:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -232,7 +232,7 @@
         "set_id": "ref-4",
         "url": "https://picsum.photos/seed/lp2/800/600",
         "url_type": "image",
-        "note": "신뢰 배지 섹션 — 언론사 로고 5개 + '믿을 수 있는 브랜드' 헤드라인",
+        "note": "신뢰 배지 섹션 - 언론사 로고 5개 + '믿을 수 있는 브랜드' 헤드라인",
         "created_at": "2026-04-04T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -242,7 +242,7 @@
         "set_id": "ref-4",
         "url": "https://picsum.photos/seed/lp3/800/600",
         "url_type": "image",
-        "note": "FAQ 아코디언 섹션 — 전환 장벽 제거를 위한 핵심 질문 7개 구성",
+        "note": "FAQ 아코디언 섹션 - 전환 장벽 제거를 위한 핵심 질문 7개 구성",
         "created_at": "2026-04-06T11:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -252,7 +252,7 @@
         "set_id": "ref-4",
         "url": "https://creatorhub.io",
         "url_type": "link",
-        "note": "크리에이터허브 — 스크롤에 따른 프로그레스 바 + 멀티스텝 폼 UX",
+        "note": "크리에이터허브 - 스크롤에 따른 프로그레스 바 + 멀티스텝 폼 UX",
         "created_at": "2026-04-08T13:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -272,7 +272,7 @@
         "set_id": "ref-5",
         "url": "https://picsum.photos/seed/travel1/800/600",
         "url_type": "image",
-        "note": "여행 패키지 배너 — 목적지 사진 + 할인율 강조 레이아웃",
+        "note": "여행 패키지 배너 - 목적지 사진 + 할인율 강조 레이아웃",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -282,7 +282,7 @@
         "set_id": "ref-5",
         "url": "https://picsum.photos/seed/travel2/800/500",
         "url_type": "image",
-        "note": "감성 여행 무드보드 — 파스텔톤 필터로 통일감 연출",
+        "note": "감성 여행 무드보드 - 파스텔톤 필터로 통일감 연출",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -292,7 +292,7 @@
         "set_id": "ref-5",
         "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
         "url_type": "video",
-        "note": "여행 브이로그형 광고 — 몰입감 있는 현지 촬영 컷",
+        "note": "여행 브이로그형 광고 - 몰입감 있는 현지 촬영 컷",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -302,7 +302,7 @@
         "set_id": "ref-5",
         "url": "https://travelfriends.kr/ads",
         "url_type": "link",
-        "note": "여행프렌즈 랜딩 — 패키지 비교 테이블 UX 참고",
+        "note": "여행프렌즈 랜딩 - 패키지 비교 테이블 UX 참고",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -312,7 +312,7 @@
         "set_id": "ref-5",
         "url": "https://picsum.photos/seed/travel5/600/800",
         "url_type": "image",
-        "note": "세로형 스토리 광고 — 예약 CTA 상단 고정",
+        "note": "세로형 스토리 광고 - 예약 CTA 상단 고정",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -332,7 +332,7 @@
         "set_id": "ref-6",
         "url": "https://picsum.photos/seed/pet1/800/600",
         "url_type": "image",
-        "note": "펫용품 언박싱 스타일 — 제품 구성 한눈에 소개",
+        "note": "펫용품 언박싱 스타일 - 제품 구성 한눈에 소개",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -342,7 +342,7 @@
         "set_id": "ref-6",
         "url": "https://picsum.photos/seed/pet2/800/600",
         "url_type": "image",
-        "note": "반려동물과 함께하는 라이프스타일 컷 — 감성 소구",
+        "note": "반려동물과 함께하는 라이프스타일 컷 - 감성 소구",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -352,7 +352,7 @@
         "set_id": "ref-6",
         "url": "https://picsum.photos/seed/pet3/600/600",
         "url_type": "image",
-        "note": "정사각형 카드 — 정기구독 혜택 요약",
+        "note": "정사각형 카드 - 정기구독 혜택 요약",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -362,7 +362,7 @@
         "set_id": "ref-6",
         "url": "https://picsum.photos/seed/ad044/400/300",
         "url_type": "image",
-        "note": "퍼포먼스랩투 실제 스크랩 소재 참고 — 벤치마킹용으로 저장",
+        "note": "퍼포먼스랩투 실제 스크랩 소재 참고 - 벤치마킹용으로 저장",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": "ad-044",
         "ad_data": {
@@ -398,7 +398,7 @@
         "set_id": "ref-7",
         "url": "https://picsum.photos/seed/fit1/800/600",
         "url_type": "image",
-        "note": "PT 등록 프로모션 — Before/After 체형 변화 강조",
+        "note": "PT 등록 프로모션 - Before/After 체형 변화 강조",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -408,7 +408,7 @@
         "set_id": "ref-7",
         "url": "https://picsum.photos/seed/fit2/800/500",
         "url_type": "image",
-        "note": "필라테스 스튜디오 인테리어 컷 — 공간감 있는 촬영 참고",
+        "note": "필라테스 스튜디오 인테리어 컷 - 공간감 있는 촬영 참고",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -418,7 +418,7 @@
         "set_id": "ref-7",
         "url": "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
         "url_type": "video",
-        "note": "홈트레이닝 챌린지 영상 — 참여 유도 CTA 삽입 방식",
+        "note": "홈트레이닝 챌린지 영상 - 참여 유도 CTA 삽입 방식",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -428,7 +428,7 @@
         "set_id": "ref-7",
         "url": "https://healthboxpt.com",
         "url_type": "link",
-        "note": "헬스박스PT 랜딩 — 무료체험 신청 폼 UX",
+        "note": "헬스박스PT 랜딩 - 무료체험 신청 폼 UX",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -438,7 +438,7 @@
         "set_id": "ref-7",
         "url": "https://picsum.photos/seed/fit5/800/600",
         "url_type": "image",
-        "note": "체험단 후기 카드뉴스 — 별점+코멘트 레이아웃",
+        "note": "체험단 후기 카드뉴스 - 별점+코멘트 레이아웃",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -448,7 +448,7 @@
         "set_id": "ref-7",
         "url": "https://picsum.photos/seed/ad051/400/300",
         "url_type": "image",
-        "note": "더마스킨원 실제 스크랩 소재 참고 — 벤치마킹용으로 저장",
+        "note": "더마스킨원 실제 스크랩 소재 참고 - 벤치마킹용으로 저장",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": "ad-051",
         "ad_data": {
@@ -484,7 +484,7 @@
         "set_id": "ref-8",
         "url": "https://picsum.photos/seed/saas1/1200/600",
         "url_type": "image",
-        "note": "히어로 섹션 — 대시보드 스크린샷 목업 활용",
+        "note": "히어로 섹션 - 대시보드 스크린샷 목업 활용",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -494,7 +494,7 @@
         "set_id": "ref-8",
         "url": "https://picsum.photos/seed/saas2/800/600",
         "url_type": "image",
-        "note": "기능 비교표 — 경쟁사 대비 강점 3가지 시각화",
+        "note": "기능 비교표 - 경쟁사 대비 강점 3가지 시각화",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -504,7 +504,7 @@
         "set_id": "ref-8",
         "url": "https://clouderp.kr",
         "url_type": "link",
-        "note": "클라우드ERP코리아 랜딩 — 무료 데모 신청 폼",
+        "note": "클라우드ERP코리아 랜딩 - 무료 데모 신청 폼",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -514,7 +514,7 @@
         "set_id": "ref-8",
         "url": "https://automationhub.io",
         "url_type": "link",
-        "note": "오토메이션허브 랜딩 — 고객사 로고 신뢰 섹션",
+        "note": "오토메이션허브 랜딩 - 고객사 로고 신뢰 섹션",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -534,7 +534,7 @@
         "set_id": "ref-9",
         "url": "https://picsum.photos/seed/legal1/800/600",
         "url_type": "image",
-        "note": "전문가 프로필 강조 컷 — 경력/자격 텍스트 오버레이",
+        "note": "전문가 프로필 강조 컷 - 경력/자격 텍스트 오버레이",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -544,7 +544,7 @@
         "set_id": "ref-9",
         "url": "https://picsum.photos/seed/legal2/800/500",
         "url_type": "image",
-        "note": "무료 상담 후킹 배너 — 전화 아이콘 + 상담시간 안내",
+        "note": "무료 상담 후킹 배너 - 전화 아이콘 + 상담시간 안내",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -554,7 +554,7 @@
         "set_id": "ref-9",
         "url": "https://taxnara.co.kr",
         "url_type": "link",
-        "note": "세무나라 랜딩 — 요금제 비교 카드 UI",
+        "note": "세무나라 랜딩 - 요금제 비교 카드 UI",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null
@@ -564,7 +564,7 @@
         "set_id": "ref-9",
         "url": "https://picsum.photos/seed/ad059/400/300",
         "url_type": "image",
-        "note": "펫케어스토어 실제 스크랩 소재 참고 — 벤치마킹용으로 저장",
+        "note": "펫케어스토어 실제 스크랩 소재 참고 - 벤치마킹용으로 저장",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": "ad-059",
         "ad_data": {
@@ -590,7 +590,7 @@
         "set_id": "ref-9",
         "url": "https://picsum.photos/seed/legal5/800/600",
         "url_type": "image",
-        "note": "고객 후기 슬라이더 — 별점 요약 상단 배치",
+        "note": "고객 후기 슬라이더 - 별점 요약 상단 배치",
         "created_at": "2026-05-01T10:00:00.000Z",
         "ad_id": null,
         "ad_data": null

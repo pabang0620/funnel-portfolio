@@ -1,6 +1,6 @@
 /**
  * Pure geometry/math helpers for the planet sphere renderer. No GL calls,
- * no mutable module-level state — every export here is a pure function or
+ * no mutable module-level state - every export here is a pure function or
  * a true constant, safe to import from anywhere.
  */
 
@@ -13,7 +13,7 @@ export interface SphereMesh {
 
 /**
  * Builds a unit-sphere lat/long mesh with standard equirectangular UVs
- * (u wraps longitude, v runs pole-to-pole) — matches what the Solar System
+ * (u wraps longitude, v runs pole-to-pole) - matches what the Solar System
  * Scope planet-texture JPEGs (and any similar equirectangular photo) expect.
  */
 export function buildSphere(latSeg: number, lonSeg: number): SphereMesh {

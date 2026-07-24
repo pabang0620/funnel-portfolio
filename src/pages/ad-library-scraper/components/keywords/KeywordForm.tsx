@@ -41,7 +41,7 @@ export function KeywordForm({ open, onOpenChange, onSubmit, initialValue = '', i
       await onSubmit(trimmed, sources)
       onOpenChange(false)
     } catch {
-      // Keep dialog open on error — let parent handle error display
+      // Keep dialog open on error - let parent handle error display
     } finally {
       setSubmitting(false)
     }

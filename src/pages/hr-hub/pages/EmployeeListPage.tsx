@@ -53,7 +53,7 @@ function buildFlatRows(employees: Employee[]): FlatRow[] {
 // ── calcTenure ─────────────────────────────────────────────────────────────────
 
 function calcTenure(hireDate: string | null): string {
-  if (!hireDate) return '—'
+  if (!hireDate) return '-'
   const start = new Date(hireDate)
   const now = new Date('2026-03-16')
   let years = now.getFullYear() - start.getFullYear()
@@ -513,7 +513,7 @@ export default function EmployeeListPage() {
         <div className="flex items-center justify-between px-4 py-3 border-t bg-background shrink-0">
           <div className="flex items-center gap-2">
             <span className="text-xs text-muted-foreground">
-              {pageStart}–{pageEnd} / 총 {total}명
+              {pageStart}-{pageEnd} / 총 {total}명
             </span>
             <button
               onClick={() => exportEmployeesToExcel(filteredEmployees)}

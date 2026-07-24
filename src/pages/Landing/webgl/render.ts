@@ -4,7 +4,7 @@ import type { TextureKey, TextureRegistry } from './textures'
 import type { DustParticle, Nebula, Planet } from './sceneState'
 import { stepInteractionFrame, type FrameContext, type InteractionState, type PlanetSceneDom } from './interaction'
 
-// NOTE: no drawGlow() here — the per-planet background color-glow-halo was
+// NOTE: no drawGlow() here - the per-planet background color-glow-halo was
 // explicitly removed per client feedback ("행성 뒤에 은은하게 있는 색상 빼줘").
 // Only the WebGL sphere shader's own rim/fresnel edge-lighting remains.
 
@@ -32,7 +32,7 @@ export function drawNebulae(pCtx: CanvasRenderingContext2D, nebulae: Nebula[], W
 /**
  * `reducedMotion` freezes the twinkle phase (no continuous time-based
  * pulsing) while still rendering each dust mote at its own static phase
- * brightness — decorative motion is removed, the dust itself is not hidden.
+ * brightness - decorative motion is removed, the dust itself is not hidden.
  */
 export function drawDust(
   pCtx: CanvasRenderingContext2D,
@@ -77,7 +77,7 @@ export function drawPlanetsGL(
 
   // Draw order determines who paints over whom: each planet clears its OWN
   // depth buffer just below (see gl.clear(gl.DEPTH_BUFFER_BIT) inside the
-  // loop), so the depth test never persists across different planets — it
+  // loop), so the depth test never persists across different planets - it
   // only resolves self-occlusion within a single planet's own sphere+cloud
   // geometry. Cross-planet "occlusion" is therefore purely whichever planet
   // is painted LAST into the color buffer for a given pixel, since the
@@ -166,7 +166,7 @@ export function drawPlanetsGL(
       gl.uniform1i(cu.uCloudMap, 0)
 
       // clouds drift at their own rate, so their depth no longer lines up
-      // with the base sphere's depth values at the same screen pixel —
+      // with the base sphere's depth values at the same screen pixel -
       // depth-testing here would reject clouds in a moire-like striped
       // pattern. Nothing else is drawn between the sphere and its own
       // cloud shell within this planet's depth-cleared pass, so it's safe
