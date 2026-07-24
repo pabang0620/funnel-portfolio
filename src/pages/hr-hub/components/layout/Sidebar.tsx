@@ -59,7 +59,7 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
             <div className="w-7 h-7 rounded-[6px] bg-[#2563EB] flex items-center justify-center shrink-0">
               <span className="text-[11px] font-bold text-white leading-none">HR</span>
             </div>
-            <span className="text-sm font-semibold text-foreground">HR Hub</span>
+            <span className="text-sm font-semibold text-foreground" title="Employee directory over a four-level org hierarchy, with Excel export">HR Hub</span>
           </div>
         )}
         <button
@@ -83,7 +83,7 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
         }`}
       >
         <Users size={16} className="shrink-0" />
-        {isOpen && <span>직원 목록</span>}
+        {isOpen && <span>Employees</span>}
       </button>
       <button
         onClick={() => onNavigate('org')}
@@ -96,7 +96,7 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
         }`}
       >
         <Network size={16} className="shrink-0" />
-        {isOpen && <span>조직도</span>}
+        {isOpen && <span>Org Chart</span>}
       </button>
       <div className="flex-1" />
 
@@ -104,7 +104,7 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
         <button
           onClick={() => onLogout?.()}
           className="flex items-center justify-center py-2 rounded-md text-sm font-medium transition-colors text-muted-foreground hover:bg-muted hover:text-foreground"
-          title="로그아웃"
+          title="Log out"
         >
           <LogOut size={16} className="shrink-0" />
         </button>
@@ -113,22 +113,22 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
       {isOpen && (
         <div className="border-t pt-3 mt-1">
           <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-wide px-2.5 mb-2">
-            통계
+            Stats
           </p>
           <div className="flex items-center justify-between px-2.5 py-1 text-sm">
-            <span className="text-foreground">총 직원</span>
+            <span className="text-foreground">Total employees</span>
             <span className="font-semibold text-primary">{stats.employees}</span>
           </div>
           <div className="flex items-center justify-between px-2.5 py-1 text-sm">
-            <span className="text-foreground">실</span>
+            <span className="text-foreground">Divisions</span>
             <span className="font-semibold text-primary">{stats.divisions}</span>
           </div>
           <div className="flex items-center justify-between px-2.5 py-1 text-sm">
-            <span className="text-foreground">팀</span>
+            <span className="text-foreground">Teams</span>
             <span className="font-semibold text-primary">{stats.teams}</span>
           </div>
           <div className="flex items-center justify-between px-2.5 py-1 text-sm">
-            <span className="text-foreground">파트</span>
+            <span className="text-foreground">Parts</span>
             <span className="font-semibold text-primary">{stats.parts}</span>
           </div>
         </div>
@@ -138,12 +138,12 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
         <div className="border-t pt-3 mt-1">
           <div className="flex items-center justify-between px-2.5 mb-2">
             <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
-              사용자
+              User
             </p>
             <button
               onClick={() => onLogout?.()}
               className="p-1 rounded-md text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
-              title="로그아웃"
+              title="Log out"
             >
               <LogOut size={13} />
             </button>
@@ -157,7 +157,7 @@ export function Sidebar({ activePage, onNavigate, onLogout }: SidebarProps) {
             </div>
             {deptLabel && (
               <p className="text-[11px] text-muted-foreground mt-1.5 truncate">
-                <span className="font-medium">소속 : </span>{deptLabel}
+                <span className="font-medium">Dept: </span>{deptLabel}
               </p>
             )}
           </div>

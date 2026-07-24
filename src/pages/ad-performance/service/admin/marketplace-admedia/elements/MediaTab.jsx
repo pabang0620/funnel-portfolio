@@ -201,7 +201,7 @@ function MediaTab({
               {mediaDetails.length === 0 ? (
                 <tr>
                   <td colSpan="7" className="no-data">
-                    등록된 매체 상세가 없습니다.
+                    No media details registered.
                   </td>
                 </tr>
               ) : (

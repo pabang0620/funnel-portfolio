@@ -102,7 +102,7 @@ export function AttendeesSelect({ value, onChange }: AttendeesSelectProps) {
   if (error) {
     return (
       <div className="text-sm text-muted-foreground">
-        Slack 멤버를 불러올 수 없습니다. 직접 입력해주세요.
+        Could not load Slack members. Please enter manually.
       </div>
     );
   }
@@ -115,7 +115,7 @@ export function AttendeesSelect({ value, onChange }: AttendeesSelectProps) {
       onChange={handleChange}
       isLoading={loading}
       placeholder="참석자 이름 또는 이메일 입력..."
-      noOptionsMessage={() => '검색 결과가 없습니다'}
+      noOptionsMessage={() => 'No search results'}
       loadingMessage={() => 'Slack 멤버 불러오는 중...'}
       isClearable
       backspaceRemovesValue={false}

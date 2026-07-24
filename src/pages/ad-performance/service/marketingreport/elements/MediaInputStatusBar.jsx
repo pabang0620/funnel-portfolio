@@ -91,7 +91,7 @@ const MediaInputStatusBar = ({ selectedTeam, onMediaSelect }) => {
       <div className="media-input-status-bar">
         <div className="status-bar-content">
           <span className="status-label">매체 운영 현황:</span>
-          <span className="status-text-info">할당된 매체가 없습니다</span>
+          <span className="status-text-info">No media channels assigned</span>
         </div>
       </div>
     );

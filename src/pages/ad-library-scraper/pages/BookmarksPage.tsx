@@ -96,7 +96,7 @@ export function BookmarksPage() {
   const urlItems = useMemo(() => items.filter(i => i.target_type === 'landing_url'), [items])
 
   function renderAdList(list: Bookmark[]) {
-    if (list.length === 0) return <div className="flex justify-center py-12 text-muted-foreground">북마크된 광고가 없습니다.</div>
+    if (list.length === 0) return <div className="flex justify-center py-12 text-muted-foreground">No bookmarked ads.</div>
     const ads = list.map(bm => ({ bm, ad: bookmarkToAd(bm) })).filter((x): x is { bm: Bookmark; ad: Ad } => x.ad !== null)
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -116,7 +116,7 @@ export function BookmarksPage() {
   }
 
   function renderUrlList(list: Bookmark[]) {
-    if (list.length === 0) return <div className="flex justify-center py-12 text-muted-foreground">북마크된 랜딩 URL이 없습니다.</div>
+    if (list.length === 0) return <div className="flex justify-center py-12 text-muted-foreground">북마크된 No landing URLs.</div>
     return (
       <div className="border rounded-lg divide-y divide-border overflow-hidden">
         {list.map((bm) => (
@@ -186,7 +186,7 @@ export function BookmarksPage() {
                 </div>
               )}
               {adItems.length === 0 && urlItems.length === 0 && (
-                <div className="flex justify-center py-12 text-muted-foreground">북마크가 없습니다.</div>
+                <div className="flex justify-center py-12 text-muted-foreground">No bookmarks.</div>
               )}
             </div>
           )}

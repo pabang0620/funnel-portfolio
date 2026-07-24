@@ -846,7 +846,7 @@ function MarketingReport() {
   // 엑셀 다운로드 함수
   const handleExcelDownload = () => {
     if (!dailyDetailData || dailyDetailData.length === 0) {
-      alert("다운로드할 데이터가 없습니다.");
+      alert("다운로드할 No data.");
       return;
     }
 
@@ -1198,10 +1198,10 @@ function MarketingReport() {
                 if (isOperationStatusLoading) {
                   guideMessage = "매체 운영 상태를 확인 중입니다...";
                 } else if (selectedProduct[0] === 0 || selectedMedia[0] === 0) {
-                  guideMessage = "전체 선택 시에는 수정할 수 없습니다";
+                  guideMessage = "Cannot edit while 'select all' is active";
                 } else if (isParentMedia) {
                   guideMessage =
-                    "상위 매체 선택 시에는 수정할 수 없습니다. 하위 매체를 선택해주세요";
+                    "Cannot edit when a parent media channel is selected. Please select a sub-channel";
                 } else if (!isAssignedMedia) {
                   guideMessage = "본인에게 할당된 매체만 수정할 수 있습니다";
                 } else if (
@@ -1211,7 +1211,7 @@ function MarketingReport() {
                   guideMessage = "제품과 매체를 각각 하나씩 선택해주세요";
                 } else if (isOperationStopped) {
                   guideMessage =
-                    "해당 매체가 중단 상태입니다. 데이터를 수정할 수 없습니다";
+                    "This media channel is paused. Data cannot be edited";
                 }
 
                 return (
@@ -1797,11 +1797,11 @@ function MarketingReport() {
                             disabled={isEditDisabled}
                             title={
                               isOperationStatusLoading ? "매체 운영 상태를 확인 중입니다..." :
-                              selectedProduct[0] === 0 || selectedMedia[0] === 0 ? "전체 선택 시에는 수정할 수 없습니다" :
-                              isParentMedia ? "상위 매체 선택 시에는 수정할 수 없습니다. 하위 매체를 선택해주세요" :
+                              selectedProduct[0] === 0 || selectedMedia[0] === 0 ? "Cannot edit while 'select all' is active" :
+                              isParentMedia ? "Cannot edit when a parent media channel is selected. Please select a sub-channel" :
                               !isAssignedMedia ? "본인에게 할당된 매체만 수정할 수 있습니다" :
                               selectedProduct.length !== 1 || selectedMedia.length !== 1 ? "제품과 매체를 각각 하나씩 선택해주세요" :
-                              isOperationStopped ? "해당 매체가 중단 상태입니다. 데이터를 수정할 수 없습니다" : ""
+                              isOperationStopped ? "This media channel is paused. Data cannot be edited" : ""
                             }
                           >
                             수정

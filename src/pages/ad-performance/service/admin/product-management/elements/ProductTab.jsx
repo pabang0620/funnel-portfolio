@@ -184,7 +184,7 @@ function ProductTab({
                     colSpan={userRole === "S" ? "6" : "4"}
                     className="no-data"
                   >
-                    등록된 제품이 없습니다.
+                    No products registered.
                   </td>
                 </tr>
               ) : (

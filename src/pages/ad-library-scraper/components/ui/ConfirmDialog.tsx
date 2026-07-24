@@ -21,7 +21,7 @@ export function ConfirmDialog({
   onOpenChange,
   title,
   description,
-  confirmLabel = '확인',
+  confirmLabel = 'OK',
   destructive = false,
   onConfirm,
 }: ConfirmDialogProps) {
@@ -35,7 +35,7 @@ export function ConfirmDialog({
           )}
         </DialogHeader>
         <div className="flex justify-end gap-2 mt-2">
-          <Button variant="outline" onClick={() => onOpenChange(false)}>취소</Button>
+          <Button variant="outline" onClick={() => onOpenChange(false)}>Cancel</Button>
           <Button
             variant={destructive ? 'destructive' : 'default'}
             onClick={() => { onConfirm(); onOpenChange(false) }}

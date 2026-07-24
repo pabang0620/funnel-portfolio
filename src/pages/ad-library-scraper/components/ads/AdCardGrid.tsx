@@ -13,7 +13,7 @@ export function AdCardGrid({ ads, onAdClick, bookmarkedIds, bookmarkNotes, onBoo
   if (ads.length === 0) {
     return (
       <div className="flex items-center justify-center py-12 text-muted-foreground">
-        수집된 광고가 없습니다
+        No ads collected yet
       </div>
     )
   }

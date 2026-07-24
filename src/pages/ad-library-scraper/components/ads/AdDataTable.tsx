@@ -99,7 +99,7 @@ export function AdDataTable({ ads, onAdClick }: AdDataTableProps) {
                 colSpan={columns.length}
                 className="text-center py-8 text-muted-foreground"
               >
-                수집된 광고가 없습니다
+                No ads collected yet
               </TableCell>
             </TableRow>
           ) : (

@@ -30,7 +30,7 @@ export default function BreadcrumbNav({ path, onNavigate }: BreadcrumbNavProps) 
           className="flex items-center justify-center w-7 h-7 rounded text-muted-foreground hover:text-foreground hover:bg-accent transition-colors flex-shrink-0 disabled:opacity-30 disabled:pointer-events-none"
           onClick={() => onNavigate(path.length >= 2 ? path[path.length - 2] : null)}
           disabled={path.length === 0}
-          title="이전 폴더"
+          title="Previous folder"
         >
           <ChevronLeft className="w-4 h-4" />
         </button>
@@ -40,7 +40,7 @@ export default function BreadcrumbNav({ path, onNavigate }: BreadcrumbNavProps) 
           onClick={() => onNavigate(null)}
         >
           <Home className="w-4 h-4" />
-          <span>홈</span>
+          <span>Home</span>
         </button>
         {path.map((folder) => (
           <span key={folder.id} className="flex items-center gap-1 flex-shrink-0">
@@ -77,7 +77,7 @@ export default function BreadcrumbNav({ path, onNavigate }: BreadcrumbNavProps) 
             {isAdmin && (
               <DropdownMenuItem onClick={() => navigate('/file-hub/admin')}>
                 <Shield className="w-4 h-4 mr-2" />
-                관리자 페이지
+                Admin Page
               </DropdownMenuItem>
             )}
           </DropdownMenuContent>

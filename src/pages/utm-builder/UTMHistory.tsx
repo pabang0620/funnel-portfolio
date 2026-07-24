@@ -1183,7 +1183,7 @@ export function UTMHistory() {
             ) : utmCodes.length === 0 ? (
               <TableRow>
                 <TableCell colSpan={3 + Object.values(visibleColumns).filter(Boolean).length} className="text-center text-muted-foreground py-8">
-                  데이터가 없습니다
+                  No data
                 </TableCell>
               </TableRow>
             ) : (

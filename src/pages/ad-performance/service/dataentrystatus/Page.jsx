@@ -702,7 +702,7 @@ function DataEntryStatus() {
     if (selectedTeamIds.length > 0 && allowedMediaIds !== null && allowedMediaIds.length === 0) {
       return (
         <div className="no-data-container">
-          <p>선택한 팀에 할당된 매체가 없습니다.</p>
+          <p>선택한 팀에 No media channels assigned.</p>
         </div>
       );
     }
@@ -710,7 +710,7 @@ function DataEntryStatus() {
     if (dates.length === 0 || filteredMediaColumns.length === 0) {
       return (
         <div className="no-data-container">
-          <p>표시할 데이터가 없습니다.</p>
+          <p>표시할 No data.</p>
         </div>
       );
     }

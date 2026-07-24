@@ -437,7 +437,7 @@ export default function EmployeeListPage() {
 
         {!loading && !error && total === 0 && (
           <div className="flex items-center justify-center h-48 text-sm text-muted-foreground">
-            검색 결과가 없습니다
+            No search results
           </div>
         )}
 

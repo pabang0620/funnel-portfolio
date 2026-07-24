@@ -176,7 +176,7 @@ const MappingTab = () => {
               </tr>
             ) : mappings.length === 0 ? (
               <tr className="empty-row">
-                <td colSpan="5">등록된 매핑이 없습니다.</td>
+                <td colSpan="5">No mappings registered.</td>
               </tr>
             ) : (
               mappings.map(item => (

@@ -233,7 +233,7 @@ function SalesChannelTab({
               {salesChannels.length === 0 ? (
                 <tr>
                   <td colSpan="6" className="no-data">
-                    등록된 판매처가 없습니다.
+                    No sellers registered.
                   </td>
                 </tr>
               ) : (

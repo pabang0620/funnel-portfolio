@@ -326,7 +326,7 @@ export default function AdminPage() {
                       {flattenFolders(folders, expandedIds).length === 0 && (
                         <tr>
                           <td colSpan={3} className="px-4 py-6 text-center text-muted-foreground">
-                            폴더가 없습니다.
+                            No folders.
                           </td>
                         </tr>
                       )}
@@ -350,7 +350,7 @@ export default function AdminPage() {
         onOpenChange={(open) => !open && setDeleteUserId(null)}
         onConfirm={handleDeleteUser}
         title="계정 삭제"
-        description={`"${deleteTarget?.name ?? deleteTarget?.username}" 계정을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.`}
+        description={`"${deleteTarget?.name ?? deleteTarget?.username}" 계정을 삭제하시겠습니까? This action cannot be undone.`}
         isLoading={isDeleting}
       />
 

@@ -77,7 +77,7 @@ export default function SearchPage() {
           {!isLoading && q && totalCount === 0 && (
             <div className="flex flex-col items-center justify-center h-64 text-muted-foreground">
               <Search className="w-12 h-12 mb-2 opacity-30" />
-              <p className="text-sm">검색 결과가 없습니다.</p>
+              <p className="text-sm">No search results.</p>
             </div>
           )}
 

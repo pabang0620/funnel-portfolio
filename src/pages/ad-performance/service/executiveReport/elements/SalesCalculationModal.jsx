@@ -119,7 +119,7 @@ const SalesCalculationModal = ({
                 textAlign: 'center',
                 color: '#94a3b8'
               }}>
-                계산 상세 데이터가 없습니다.
+                계산 상세 No data.
               </div>
             )}
           </div>

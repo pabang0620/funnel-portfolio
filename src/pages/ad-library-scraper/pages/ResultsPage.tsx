@@ -50,7 +50,7 @@ export function ResultsPage() {
   const totalPages = Math.ceil(total / pageSize)
 
   useEffect(() => {
-    getKeywords().then(setKeywords).catch(() => toast.error('키워드 목록을 불러올 수 없습니다'))
+    getKeywords().then(setKeywords).catch(() => toast.error('Failed to load keyword list'))
   }, [])
 
   // Reset page on filter change

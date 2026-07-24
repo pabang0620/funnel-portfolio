@@ -54,7 +54,7 @@ function NavLink({ item, isCollapsed, showText, onClick }: {
       <Tooltip>
         <TooltipTrigger asChild>{content}</TooltipTrigger>
         <TooltipContent side="right">
-          {item.label}{item.locked ? ' (잠금)' : ''}
+          {item.label}{item.locked ? ' (locked)' : ''}
         </TooltipContent>
       </Tooltip>
     )
@@ -80,16 +80,16 @@ export function Sidebar({ isOpen = false, onClose, isCollapsed = false, onToggle
   }
 
   const basicMenuItems: NavItem[] = [
-    { to: '/utm-builder/create', icon: <Zap className="w-4 h-4" />, label: 'UTM 생성' },
-    { to: '/utm-builder/history', icon: <List className="w-4 h-4" />, label: 'UTM 목록' },
+    { to: '/utm-builder/create', icon: <Zap className="w-4 h-4" />, label: 'Create UTM' },
+    { to: '/utm-builder/history', icon: <List className="w-4 h-4" />, label: 'UTM History' },
   ]
 
   const adminMenuItems: NavItem[] = [
-    { to: '/utm-builder/product', icon: <Package className="w-4 h-4" />, label: '브랜드/제품 관리', locked: true },
-    { to: '/utm-builder/media', icon: <Monitor className="w-4 h-4" />, label: '매체 관리', locked: true },
-    { to: '/utm-builder/content-type', icon: <FileType className="w-4 h-4" />, label: '콘텐츠타입 관리', locked: true },
-    { to: '/utm-builder/placement', icon: <LayoutGrid className="w-4 h-4" />, label: '지면/구좌 관리', locked: true },
-    { to: '/utm-builder/users', icon: <Users className="w-4 h-4" />, label: '사용자 관리', locked: true },
+    { to: '/utm-builder/product', icon: <Package className="w-4 h-4" />, label: 'Brand/Product Management', locked: true },
+    { to: '/utm-builder/media', icon: <Monitor className="w-4 h-4" />, label: 'Media Management', locked: true },
+    { to: '/utm-builder/content-type', icon: <FileType className="w-4 h-4" />, label: 'Content Type Management', locked: true },
+    { to: '/utm-builder/placement', icon: <LayoutGrid className="w-4 h-4" />, label: 'Placement/Slot Management', locked: true },
+    { to: '/utm-builder/users', icon: <Users className="w-4 h-4" />, label: 'User Management', locked: true },
   ]
 
   return (
@@ -106,13 +106,13 @@ export function Sidebar({ isOpen = false, onClose, isCollapsed = false, onToggle
         <div className="flex h-full w-full flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-sidebar-border">
-            {showText && <h1 className="text-lg font-bold whitespace-nowrap">UTM Builder</h1>}
+            {showText && <h1 className="text-lg font-bold whitespace-nowrap" title="Bulk-generates campaign tracking URLs across ad channels">UTM Builder</h1>}
             {isCollapsed && <div className="w-full" />}
             {onToggleCollapse && (
               <button
                 onClick={onToggleCollapse}
                 className="hidden md:flex items-center justify-center h-8 w-8 rounded-md hover:bg-sidebar-accent"
-                title={isCollapsed ? '사이드바 펼치기' : '사이드바 접기'}
+                title={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
               >
                 {isCollapsed ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}
               </button>
@@ -122,11 +122,11 @@ export function Sidebar({ isOpen = false, onClose, isCollapsed = false, onToggle
           {/* Navigation */}
           <div className="flex min-h-0 flex-1 flex-col gap-2 overflow-auto p-2">
             <nav className="flex flex-col gap-1">
-              {/* 기본 메뉴 섹션 */}
+              {/* Basic menu section */}
               {showText && (
                 <div className="px-2 py-2">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                    기본 메뉴
+                    Basic
                   </p>
                 </div>
               )}
@@ -141,13 +141,13 @@ export function Sidebar({ isOpen = false, onClose, isCollapsed = false, onToggle
                 />
               ))}
 
-              {/* 관리자 메뉴 섹션 */}
+              {/* Admin menu section */}
               <div className="my-2 border-t border-sidebar-border" />
 
               {showText && (
                 <div className="px-2 py-2">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                    관리자 메뉴
+                    Admin
                   </p>
                 </div>
               )}

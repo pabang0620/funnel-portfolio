@@ -23,18 +23,18 @@ export default function DemoLock({ projectName, pageName }: DemoLockProps) {
         </p>
 
         <h2 className="text-lg font-semibold text-gray-800 mb-3">
-          데모 버전에서는 제공되지 않는 페이지입니다
+          This page isn't available in the demo version
         </h2>
 
         <p className="text-sm text-gray-500 mb-8">
-          실제 서비스에서는 정상적으로 이용 가능합니다
+          It works normally in the real service
         </p>
 
         <button
           onClick={() => navigate(-1)}
           className="inline-flex items-center gap-1.5 text-sm text-gray-600 hover:text-gray-900 transition-colors"
         >
-          ← 돌아가기
+          ← Go back
         </button>
       </div>
     </div>

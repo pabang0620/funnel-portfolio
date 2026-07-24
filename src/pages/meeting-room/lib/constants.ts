@@ -51,9 +51,9 @@ export function getReservationTop(startTime: string): number {
 }
 
 export const STATUS_LABELS: Record<string, string> = {
-  reserved: '예약됨',
-  completed: '사용완료',
-  cancelled: '취소됨'
+  reserved: 'Reserved',
+  completed: 'Completed',
+  cancelled: 'Cancelled'
 };
 
 export const STATUS_COLORS: Record<string, string> = {

@@ -18,7 +18,7 @@ export default function MyAssignments() {
     <div className="max-w-4xl mx-auto px-8 py-8">
       <h1 className="text-xl font-bold text-gray-900 mb-6">내 과제</h1>
       {assignments.length === 0 ? (
-        <p className="text-sm text-gray-400 text-center py-12">등록된 과제가 없습니다.</p>
+        <p className="text-sm text-gray-400 text-center py-12">No assignments registered.</p>
       ) : (
         <div className="space-y-6">
           {Object.entries(grouped).map(([curriculum, items]) => (

@@ -38,7 +38,7 @@ export default function Sidebar({ selectedFolderId, onFolderSelect }: SidebarPro
         className="px-3 pt-3 pb-2 flex items-center gap-2 hover:opacity-80 transition-opacity text-left cursor-pointer"
       >
         <HardDrive className="w-5 h-5 text-sidebar-primary flex-shrink-0" />
-        <span className="font-bold text-sidebar-foreground text-base truncate">File Hub</span>
+        <span className="font-bold text-sidebar-foreground text-base truncate" title="Internal file storage and sharing">File Hub</span>
       </button>
 
       {/* Row 2: Folder Filter + FolderPlus */}
@@ -46,7 +46,7 @@ export default function Sidebar({ selectedFolderId, onFolderSelect }: SidebarPro
         <Input
           value={folderFilter}
           onChange={(e) => setFolderFilter(e.target.value)}
-          placeholder="폴더 검색..."
+          placeholder="Search folders..."
           className="flex-1 h-8 text-sm"
         />
         <Button
@@ -54,7 +54,7 @@ export default function Sidebar({ selectedFolderId, onFolderSelect }: SidebarPro
           variant="ghost"
           className="w-7 h-7 flex-shrink-0 text-sidebar-muted hover:text-sidebar-foreground"
           onClick={() => setCreateRootOpen(true)}
-          title="루트 폴더 생성"
+          title="Create root folder"
         >
           <FolderPlus className="w-4 h-4" />
         </Button>
@@ -80,7 +80,7 @@ export default function Sidebar({ selectedFolderId, onFolderSelect }: SidebarPro
             )}
           >
             <Shield className="w-4 h-4" />
-            <span>관리자</span>
+            <span>Admin</span>
           </Link>
         )}
         <Link
@@ -93,7 +93,7 @@ export default function Sidebar({ selectedFolderId, onFolderSelect }: SidebarPro
           )}
         >
           <Trash2 className="w-4 h-4" />
-          <span>휴지통</span>
+          <span>Trash</span>
         </Link>
       </div>
 

@@ -214,7 +214,7 @@ export function SearchableSelect({
             <div className="max-h-60 overflow-auto p-1">
               {filteredOptions.length === 0 ? (
                 <div className="py-3 text-center text-xs text-muted-foreground">
-                  검색 결과가 없습니다.
+                  No search results.
                 </div>
               ) : (
                 filteredOptions.map((option, index) => (

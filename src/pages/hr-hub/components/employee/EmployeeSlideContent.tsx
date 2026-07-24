@@ -120,7 +120,7 @@ export function EmployeeSlideContent({ employee, onUpdated, onDeleted, departmen
             <p className="text-sm font-medium text-center">
               {employee.name}님을 삭제하시겠습니까?
               <br />
-              <span className="text-xs text-muted-foreground">이 작업은 되돌릴 수 없습니다.</span>
+              <span className="text-xs text-muted-foreground">This action cannot be undone.</span>
             </p>
             <div className="flex gap-2 w-full">
               <button

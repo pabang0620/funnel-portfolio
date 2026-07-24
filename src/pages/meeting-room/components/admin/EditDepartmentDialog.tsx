@@ -109,13 +109,13 @@ export function EditDepartmentDialog({
 
     // 하위 부서가 있는지 확인
     if (department.children && department.children.length > 0) {
-      setError('하위 부서가 있는 부서는 삭제할 수 없습니다. 먼저 하위 부서를 삭제하거나 이동해주세요.');
+      setError('Cannot delete a department that has sub-departments. Please delete or move them first.');
       return;
     }
 
     // 구성원이 있는지 확인
     if (department.members_count && department.members_count > 0) {
-      setError('구성원이 있는 부서는 삭제할 수 없습니다. 먼저 구성원을 다른 부서로 이동해주세요.');
+      setError('Cannot delete a department that has members. Please move them to another department first.');
       return;
     }
 

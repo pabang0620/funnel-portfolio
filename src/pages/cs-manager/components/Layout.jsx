@@ -73,7 +73,7 @@ function Layout({ children, title }) {
             justifyContent: 'center',
             boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
           }}
-          title={sidebarOpen ? '사이드바 닫기' : '사이드바 열기'}
+          title={sidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = 'var(--accent)'
             e.currentTarget.style.color = 'white'
@@ -107,7 +107,9 @@ function Layout({ children, title }) {
             }}></i>
           )}
           {sidebarOpen && (
-            <h1 style={{
+            <h1
+              title="Customer inquiry tracking"
+              style={{
               margin: 0,
               color: 'var(--foreground)',
               fontWeight: '700',
@@ -129,7 +131,7 @@ function Layout({ children, title }) {
                   e.preventDefault()
                   navigate('/cs-manager/upload')
                 }}
-                title={!sidebarOpen ? '파일 업로드' : undefined}
+                title={!sidebarOpen ? 'File Upload' : undefined}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -148,7 +150,7 @@ function Layout({ children, title }) {
                 }}
               >
                 <i className="fas fa-upload" style={{ width: '16px', textAlign: 'center', flexShrink: 0, fontSize: '1rem' }}></i>
-                {sidebarOpen && <span>파일 업로드</span>}
+                {sidebarOpen && <span>File Upload</span>}
               </Link>
             </li>
             <li style={{ marginBottom: '0.25rem' }}>
@@ -158,7 +160,7 @@ function Layout({ children, title }) {
                   e.preventDefault()
                   navigate('/cs-manager/files')
                 }}
-                title={!sidebarOpen ? '파일 탐색기' : undefined}
+                title={!sidebarOpen ? 'File Explorer' : undefined}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -177,7 +179,7 @@ function Layout({ children, title }) {
                 }}
               >
                 <i className="fas fa-folder-open" style={{ width: '16px', textAlign: 'center', flexShrink: 0, fontSize: '1rem' }}></i>
-                {sidebarOpen && <span>파일 탐색기</span>}
+                {sidebarOpen && <span>File Explorer</span>}
               </Link>
             </li>
             <li style={{ marginBottom: '0.25rem' }}>
@@ -187,7 +189,7 @@ function Layout({ children, title }) {
                   e.preventDefault()
                   navigate('/cs-manager/users')
                 }}
-                title={!sidebarOpen ? '유저 관리' : undefined}
+                title={!sidebarOpen ? 'User Management' : undefined}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -206,7 +208,7 @@ function Layout({ children, title }) {
                 }}
               >
                 <i className="fas fa-users" style={{ width: '16px', textAlign: 'center', flexShrink: 0, fontSize: '1rem' }}></i>
-                {sidebarOpen && <span>유저 관리</span>}
+                {sidebarOpen && <span>User Management</span>}
               </Link>
             </li>
           </ul>
@@ -231,7 +233,7 @@ function Layout({ children, title }) {
                     }}></i>
                     <div style={{ flex: 1 }}>
                       <div style={{ fontWeight: '600', color: 'var(--foreground)', fontSize: '0.9rem' }}>
-                        {currentUserInfo?.name || '사용자'}
+                        {currentUserInfo?.name || 'User'}
                       </div>
                       <div style={{ fontSize: '0.8rem', color: 'var(--muted-foreground)' }}>
                         @{currentUser || 'unknown'}
@@ -322,7 +324,7 @@ function Layout({ children, title }) {
                       }}
                     >
                       <i className="fas fa-sign-out-alt"></i>
-                      로그아웃
+                      Log out
                     </button>
                   </div>
                 </>
@@ -338,7 +340,7 @@ function Layout({ children, title }) {
               {/* 세로 점 메뉴 버튼 */}
               <button
                 onClick={toggleUserMenu}
-                title="메뉴"
+                title="Menu"
                 style={{
                   padding: '0.6rem 0.4rem',
                   backgroundColor: 'transparent',
@@ -420,7 +422,7 @@ function Layout({ children, title }) {
                         }}
                       >
                         <i className="fas fa-sign-out-alt" style={{ flexShrink: 0 }}></i>
-                        {sidebarOpen && <span>로그아웃</span>}
+                        {sidebarOpen && <span>Log out</span>}
                       </button>
                     </div>
                   </>

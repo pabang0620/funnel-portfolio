@@ -68,7 +68,7 @@ export function MobileRoomCard({ room, reservations, colorIndex, onReservationSe
           </div>
         ) : (
           <p className="text-sm text-gray-500 text-center py-4">
-            오늘 예약이 없습니다
+            No reservations today
           </p>
         )}
       </div>

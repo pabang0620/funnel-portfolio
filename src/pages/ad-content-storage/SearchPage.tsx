@@ -255,7 +255,7 @@ function SearchPage() {
             ) : files.length === 0 ? (
               <div className="flex items-center justify-center h-64 text-muted-foreground">
                 <div className="text-center">
-                  <p className="text-lg font-medium">파일이 없습니다</p>
+                  <p className="text-lg font-medium">No files</p>
                   <p className="text-sm mt-1">필터 조건을 변경해보세요</p>
                 </div>
               </div>

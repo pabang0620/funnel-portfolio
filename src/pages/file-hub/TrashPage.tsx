@@ -135,7 +135,7 @@ export default function TrashPage() {
           {!isLoading && totalCount === 0 && (
             <div className="flex flex-col items-center justify-center h-64 text-muted-foreground">
               <Trash2 className="w-12 h-12 mb-2 opacity-30" />
-              <p className="text-sm">휴지통이 비어 있습니다.</p>
+              <p className="text-sm">Trash is empty.</p>
             </div>
           )}
 
@@ -232,7 +232,7 @@ export default function TrashPage() {
         onOpenChange={setEmptyConfirmOpen}
         onConfirm={handleEmptyTrash}
         title="휴지통 비우기"
-        description="휴지통의 모든 파일과 폴더를 영구 삭제합니다. 이 작업은 되돌릴 수 없습니다."
+        description="Permanently deletes all files and folders in the trash. This action cannot be undone."
         isLoading={isEmptying}
         destructive={true}
       />
@@ -242,7 +242,7 @@ export default function TrashPage() {
         onOpenChange={(open) => !open && setDeleteFileId(null)}
         onConfirm={handleDeleteFile}
         title="파일 영구 삭제"
-        description="이 파일을 영구 삭제합니다. 이 작업은 되돌릴 수 없습니다."
+        description="Permanently deletes this file. This action cannot be undone."
         isLoading={isDeleting}
         destructive={true}
       />
@@ -252,7 +252,7 @@ export default function TrashPage() {
         onOpenChange={(open) => !open && setDeleteFolderId(null)}
         onConfirm={handleDeleteFolder}
         title="폴더 영구 삭제"
-        description="이 폴더를 영구 삭제합니다. 이 작업은 되돌릴 수 없습니다."
+        description="Permanently deletes this folder. This action cannot be undone."
         isLoading={isDeleting}
         destructive={true}
       />

@@ -49,7 +49,7 @@ export default function PlanetCard({
           <h3 ref={cardTitleRef} />
           <p ref={cardDescRef} />
           <a href="#" className="planet-card-link" onClick={handleLinkClick}>
-            자세히 보기 <span>↗</span>
+            View details <span>↗</span>
           </a>
         </div>
       </div>

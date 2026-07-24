@@ -6,6 +6,7 @@ import { usePlanetScene } from '../hooks/usePlanetScene'
 import PlanetCard from './PlanetCard'
 import FocusPanel from './FocusPanel'
 import ContactCorner from './ContactCorner'
+import IntroPanel from './IntroPanel'
 
 export default function PlanetScene() {
   const reducedMotion = usePrefersReducedMotion()
@@ -56,12 +57,12 @@ export default function PlanetScene() {
           id="gl-canvas"
           ref={glCanvasRef}
           tabIndex={0}
-          aria-label="프로젝트 행성 장면 — 방향키로 탐색, Enter로 열기"
+          aria-label="Project planet scene — use arrow keys to browse, Enter to open"
         />
       ) : (
         // Graceful fallback if WebGL is unavailable on this device/browser —
         // a plain, fully navigable project list instead of a blank scene.
-        <nav className="planet-scene-fallback" aria-label="프로젝트 목록">
+        <nav className="planet-scene-fallback" aria-label="Project list">
           <ul>
             {PROJECTS.map((project) => (
               <li key={project.key}>
@@ -77,7 +78,7 @@ export default function PlanetScene() {
 
       <div className="scene-heading" ref={sceneHeadingRef}>
         <div className="eyebrow">Portfolio · 2026</div>
-        <p className="scene-sub">행성에 마우스를 올리거나 키보드로 조작해보세요.</p>
+        <p className="scene-sub">Hover a planet, or use the keyboard to navigate.</p>
       </div>
 
       <PlanetCard
@@ -100,6 +101,8 @@ export default function PlanetScene() {
       />
 
       <ContactCorner />
+
+      <IntroPanel />
 
       <p className="texture-credit">Planet textures © Solar System Scope (CC BY 4.0)</p>
     </div>

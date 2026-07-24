@@ -391,7 +391,7 @@ function BoxPriceTab({
             {boxPriceList.length === 0 ? (
               <tr>
                 <td colSpan="6" className="no-data">
-                  등록된 박스별 가격이 없습니다.
+                  No per-box pricing registered.
                 </td>
               </tr>
             ) : (

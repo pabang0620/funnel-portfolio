@@ -32,7 +32,7 @@ export function drawNebulae(pCtx: CanvasRenderingContext2D, nebulae: Nebula[], W
 /**
  * `reducedMotion` freezes the twinkle phase (no continuous time-based
  * pulsing) while still rendering each dust mote at its own static phase
- * brightness — decorative motion is removed, the dust itself isn't hidden.
+ * brightness — decorative motion is removed, the dust itself is not hidden.
  */
 export function drawDust(
   pCtx: CanvasRenderingContext2D,
@@ -87,7 +87,7 @@ export function drawPlanetsGL(
   // During focus, the enlarged focused planet must always appear in front
   // of the other 9 dimmed/defocused planets, even if one of them is
   // mid-drift through the same screen region. Fixed array-index draw order
-  // can't guarantee that (a higher-index background planet drawn after the
+  // cannot guarantee that (a higher-index background planet drawn after the
   // focused one would paint over it), so when a planet is focused it's
   // moved to the end of the draw order for this frame.
   const order: number[] = []

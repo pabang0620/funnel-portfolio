@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { format, parseISO } from 'date-fns';
-import { ko } from 'date-fns/locale';
 import {
   Dialog,
   DialogContent,
@@ -109,7 +108,7 @@ export function ReservationDetail({
   // 회의실 이름 찾기: reservation.room?.name 우선, 없으면 rooms에서 찾기
   const roomName = reservation.room?.name
     || rooms?.find(r => r.id === reservation.room_id)?.name
-    || '회의실';
+    || 'Meeting Room';
   const roomFloor = reservation.room?.floor
     || rooms?.find(r => r.id === reservation.room_id)?.floor;
 
@@ -143,7 +142,7 @@ export function ReservationDetail({
 
   const handlePasswordConfirmForCancel = async () => {
     if (!password.trim()) {
-      setPasswordError('비밀번호를 입력해주세요');
+      setPasswordError('Please enter the password');
       return;
     }
 
@@ -152,13 +151,13 @@ export function ReservationDetail({
       handleClose();
       onUpdate();
     } catch {
-      setPasswordError('비밀번호가 일치하지 않습니다');
+      setPasswordError('Incorrect password');
     }
   };
 
   const handlePasswordConfirmForEdit = async () => {
     if (!password.trim()) {
-      setPasswordError('비밀번호를 입력해주세요');
+      setPasswordError('Please enter the password');
       return;
     }
 
@@ -185,7 +184,7 @@ export function ReservationDetail({
       handleClose();
       onUpdate();
     } catch {
-      setPasswordError('수정에 실패했습니다. 다시 시도해주세요.');
+      setPasswordError('Failed to update. Please try again.');
     }
   };
 
@@ -213,7 +212,7 @@ export function ReservationDetail({
   const formatDate = (dateStr: string) => {
     try {
       const date = parseISO(dateStr);
-      return format(date, 'yyyy년 M월 d일 (EEE)', { locale: ko });
+      return format(date, 'MMM d, yyyy (EEE)');
     } catch {
       return dateStr;
     }
@@ -239,13 +238,13 @@ export function ReservationDetail({
   const getDialogTitle = () => {
     switch (mode) {
       case 'password-cancel':
-        return '예약 취소';
+        return 'Cancel Reservation';
       case 'password-edit':
-        return '예약 변경';
+        return 'Edit Reservation';
       case 'edit':
-        return '예약 변경';
+        return 'Edit Reservation';
       default:
-        return '예약 상세';
+        return 'Reservation Details';
     }
   };
 
@@ -253,10 +252,10 @@ export function ReservationDetail({
   const renderPasswordContent = (isCancel: boolean) => (
     <div className="p-4 md:p-6 space-y-3 md:space-y-4">
       <p className="text-xs md:text-sm text-muted-foreground">
-        {isCancel ? '예약을 취소하려면 비밀번호를 입력해주세요.' : '예약을 변경하려면 비밀번호를 입력해주세요.'}
+        {isCancel ? 'Enter the password to cancel this reservation.' : 'Enter the password to edit this reservation.'}
       </p>
       <div className="grid gap-2">
-        <Label htmlFor="password">비밀번호</Label>
+        <Label htmlFor="password">Password</Label>
         <Input
           id="password"
           type="password"
@@ -265,7 +264,7 @@ export function ReservationDetail({
             setPassword(e.target.value);
             setPasswordError('');
           }}
-          placeholder="비밀번호를 입력하세요"
+          placeholder="Enter password"
           onKeyDown={(e) => {
             if (e.key === 'Enter') {
               isCancel ? handlePasswordConfirmForCancel() : handlePasswordConfirmForEdit();
@@ -307,11 +306,11 @@ export function ReservationDetail({
       {/* Editable fields */}
       <div className="space-y-3">
         <div className="grid gap-2">
-          <Label>시간</Label>
+          <Label>Time</Label>
           <div className="flex items-center gap-2">
             <Select value={editStartTime} onValueChange={setEditStartTime}>
               <SelectTrigger className="flex-1">
-                <SelectValue placeholder="시작" />
+                <SelectValue placeholder="Start" />
               </SelectTrigger>
               <SelectContent>
                 {TIME_SLOTS.slice(0, -1).map((time) => (
@@ -324,7 +323,7 @@ export function ReservationDetail({
             <span className="text-muted-foreground">~</span>
             <Select value={editEndTime} onValueChange={setEditEndTime}>
               <SelectTrigger className="flex-1">
-                <SelectValue placeholder="종료" />
+                <SelectValue placeholder="End" />
               </SelectTrigger>
               <SelectContent>
                 {getEndTimeOptions(editStartTime).map((time) => (
@@ -338,32 +337,32 @@ export function ReservationDetail({
         </div>
 
         <div className="grid gap-2">
-          <Label htmlFor="editPurpose">회의 목적</Label>
+          <Label htmlFor="editPurpose">Meeting Purpose</Label>
           <Input
             id="editPurpose"
             value={editPurpose}
             onChange={(e) => setEditPurpose(e.target.value)}
-            placeholder="회의 목적"
+            placeholder="Meeting purpose"
           />
         </div>
 
         <div className="grid gap-2">
-          <Label htmlFor="editAttendees">참석자</Label>
+          <Label htmlFor="editAttendees">Attendees</Label>
           <Input
             id="editAttendees"
             value={editAttendees}
             onChange={(e) => setEditAttendees(e.target.value)}
-            placeholder="참석자 (콤마로 구분)"
+            placeholder="Attendees (comma-separated)"
           />
         </div>
 
         <div className="grid gap-2">
-          <Label htmlFor="editMemo">메모</Label>
+          <Label htmlFor="editMemo">Memo</Label>
           <Input
             id="editMemo"
             value={editMemo}
             onChange={(e) => setEditMemo(e.target.value)}
-            placeholder="메모"
+            placeholder="Memo"
           />
         </div>
       </div>
@@ -385,7 +384,7 @@ export function ReservationDetail({
         <div className="space-y-1.5">
           <div className="flex items-center gap-2 text-muted-foreground">
             <FileText className="h-4 w-4" />
-            <span className="text-xs md:text-sm font-medium">회의 목적</span>
+            <span className="text-xs md:text-sm font-medium">Meeting Purpose</span>
           </div>
           <p className="text-sm md:text-base font-medium pl-5 md:pl-6">{reservation.purpose}</p>
         </div>
@@ -398,14 +397,14 @@ export function ReservationDetail({
         <div className="space-y-1.5">
           <div className="flex items-center gap-2 text-muted-foreground">
             <Calendar className="h-4 w-4" />
-            <span className="text-xs md:text-sm font-medium">날짜</span>
+            <span className="text-xs md:text-sm font-medium">Date</span>
           </div>
           <p className="text-xs md:text-sm pl-5 md:pl-6">{formatDate(reservation.reservation_date)}</p>
         </div>
         <div className="space-y-1.5">
           <div className="flex items-center gap-2 text-muted-foreground">
             <Clock className="h-4 w-4" />
-            <span className="text-xs md:text-sm font-medium">시간</span>
+            <span className="text-xs md:text-sm font-medium">Time</span>
           </div>
           <p className="text-xs md:text-sm pl-5 md:pl-6">
             {reservation.start_time} - {reservation.end_time}
@@ -420,7 +419,7 @@ export function ReservationDetail({
         <div className="space-y-1.5">
           <div className="flex items-center gap-2 text-muted-foreground">
             <Building2 className="h-4 w-4" />
-            <span className="text-xs md:text-sm font-medium">회의실</span>
+            <span className="text-xs md:text-sm font-medium">Room</span>
           </div>
           <p className="text-xs md:text-sm pl-5 md:pl-6">
             {roomName}
@@ -433,7 +432,7 @@ export function ReservationDetail({
           <div className="space-y-1.5">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Users className="h-4 w-4" />
-              <span className="text-xs md:text-sm font-medium">팀</span>
+              <span className="text-xs md:text-sm font-medium">Team</span>
             </div>
             <p className="text-xs md:text-sm pl-5 md:pl-6">{reservation.team.name}</p>
           </div>
@@ -446,7 +445,7 @@ export function ReservationDetail({
       <div className="space-y-1.5">
         <div className="flex items-center gap-2 text-muted-foreground">
           <User className="h-4 w-4" />
-          <span className="text-xs md:text-sm font-medium">예약자</span>
+          <span className="text-xs md:text-sm font-medium">Booked By</span>
         </div>
         <p className="text-xs md:text-sm pl-5 md:pl-6">{reservation.booker_name}</p>
       </div>
@@ -458,7 +457,7 @@ export function ReservationDetail({
           <div className="space-y-1.5">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Users className="h-4 w-4" />
-              <span className="text-xs md:text-sm font-medium">참석자</span>
+              <span className="text-xs md:text-sm font-medium">Attendees</span>
             </div>
             <p className="text-xs md:text-sm pl-5 md:pl-6">{reservation.attendees}</p>
           </div>
@@ -472,7 +471,7 @@ export function ReservationDetail({
           <div className="space-y-1.5">
             <div className="flex items-center gap-2 text-muted-foreground">
               <StickyNote className="h-4 w-4" />
-              <span className="text-xs md:text-sm font-medium">메모</span>
+              <span className="text-xs md:text-sm font-medium">Memo</span>
             </div>
             <p className="text-xs md:text-sm pl-5 md:pl-6 text-muted-foreground">{reservation.memo}</p>
           </div>
@@ -481,7 +480,7 @@ export function ReservationDetail({
 
       {/* Status Badge */}
       <div className="flex items-center gap-2 pt-2">
-        <span className="text-sm text-muted-foreground">상태:</span>
+        <span className="text-sm text-muted-foreground">Status:</span>
         <Badge
           variant="outline"
           className={cn(
@@ -505,7 +504,7 @@ export function ReservationDetail({
         <DialogFooter className="px-6 py-4 bg-slate-50 border-t flex-col sm:flex-row gap-2">
           <Button variant="outline" onClick={handleBackToView} className="w-full sm:w-auto">
             <ArrowLeft className="h-4 w-4 mr-2" />
-            돌아가기
+            Back
           </Button>
           <Button
             onClick={handlePasswordConfirmForCancel}
@@ -513,7 +512,7 @@ export function ReservationDetail({
             variant="outline"
             className="w-full sm:w-auto text-gray-600 hover:text-red-500 hover:border-red-300"
           >
-            {loading ? '처리 중...' : '취소 확인'}
+            {loading ? 'Processing...' : 'Confirm Cancellation'}
           </Button>
         </DialogFooter>
       );
@@ -524,10 +523,10 @@ export function ReservationDetail({
         <DialogFooter className="px-6 py-4 bg-slate-50 border-t flex-col sm:flex-row gap-2">
           <Button variant="outline" onClick={handleBackToView} className="w-full sm:w-auto">
             <ArrowLeft className="h-4 w-4 mr-2" />
-            돌아가기
+            Back
           </Button>
           <Button onClick={handlePasswordConfirmForEdit} disabled={loading} className="w-full sm:w-auto">
-            {loading ? '확인 중...' : '확인'}
+            {loading ? 'Checking...' : 'Confirm'}
           </Button>
         </DialogFooter>
       );
@@ -538,10 +537,10 @@ export function ReservationDetail({
         <DialogFooter className="px-6 py-4 bg-slate-50 border-t flex-col sm:flex-row gap-2">
           <Button variant="outline" onClick={handleBackToView} className="w-full sm:w-auto">
             <ArrowLeft className="h-4 w-4 mr-2" />
-            돌아가기
+            Back
           </Button>
           <Button onClick={handleEditSubmit} disabled={loading} className="w-full sm:w-auto">
-            {loading ? '저장 중...' : '저장'}
+            {loading ? 'Saving...' : 'Save'}
           </Button>
         </DialogFooter>
       );
@@ -554,7 +553,7 @@ export function ReservationDetail({
           <>
             <Button variant="outline" onClick={handleEditClick} className="w-full sm:w-auto">
               <Pencil className="h-4 w-4 mr-2" />
-              예약 변경
+              Edit Reservation
             </Button>
             <Button
               variant="outline"
@@ -562,12 +561,12 @@ export function ReservationDetail({
               disabled={loading}
               className="w-full sm:w-auto text-gray-600 hover:text-red-500 hover:border-red-300"
             >
-              예약 취소
+              Cancel Reservation
             </Button>
           </>
         )}
         <Button variant="outline" onClick={handleClose} className="w-full sm:w-auto">
-          닫기
+          Close
         </Button>
       </DialogFooter>
     );

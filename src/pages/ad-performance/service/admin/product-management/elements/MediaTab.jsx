@@ -88,7 +88,7 @@ function MediaTab({
               {mediaList.length === 0 ? (
                 <tr>
                   <td colSpan="5" className="no-data">
-                    등록된 매체가 없습니다.
+                    No media channels registered.
                   </td>
                 </tr>
               ) : (

@@ -251,7 +251,7 @@ function ExecutiveReport() {
   const handleSaveAsImage = async () => {
     const container = document.querySelector('.executive-report-container');
     if (!container) {
-      alert('저장할 영역을 찾을 수 없습니다.');
+      alert('Could not find the area to save.');
       return;
     }
 
@@ -1227,10 +1227,10 @@ function ExecutiveReport() {
           >
             <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>🔒</div>
             <h2 style={{ marginBottom: "1rem", color: "#333" }}>
-              접근 권한이 없습니다
+              Access denied
             </h2>
             <p style={{ color: "#666", marginBottom: "0.5rem" }}>
-              이 페이지에 접근할 수 있는 권한이 없습니다.
+              You do not have permission to access this page.
             </p>
             <p style={{ color: "#999", fontSize: "0.9rem" }}>
               관리자에게 권한을 요청해주세요.
@@ -1308,10 +1308,10 @@ function ExecutiveReport() {
           >
             <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>🔒</div>
             <h2 style={{ marginBottom: "1rem", color: "#333" }}>
-              제품 상세 실적 접근 권한이 없습니다
+              No permission to view product detail performance
             </h2>
             <p style={{ color: "#666", marginBottom: "0.5rem" }}>
-              제품 상세 실적을 조회할 수 있는 권한이 없습니다.
+              You do not have permission to view product detail performance.
             </p>
             <p style={{ color: "#999", fontSize: "0.9rem" }}>
               관리자에게 권한을 요청해주세요.

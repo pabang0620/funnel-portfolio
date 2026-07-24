@@ -264,7 +264,7 @@ function FileUploadPage() {
         `${uniqueFiles.length}개 파일의 미리보기가 준비되었습니다! (중복 파일 제외)`
       );
     } else {
-      toast.info("중복되지 않은 파일이 없습니다.");
+      toast.info("No unique files to add.");
     }
   };
 

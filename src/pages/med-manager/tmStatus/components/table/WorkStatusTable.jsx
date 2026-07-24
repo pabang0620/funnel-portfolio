@@ -117,7 +117,7 @@ const WorkStatusTable = React.memo(({
                 color: "#666",
               }}
             >
-              데이터가 없습니다.
+              No data.
             </td>
           </tr>
         )}

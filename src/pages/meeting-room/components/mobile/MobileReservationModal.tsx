@@ -342,7 +342,7 @@ export function MobileReservationModal({
                     <div className="max-h-52 overflow-y-auto p-1">
                       {filteredBookerMembers.length === 0 ? (
                         <div className="text-sm text-muted-foreground text-center py-4">
-                          검색 결과가 없습니다
+                          No search results
                         </div>
                       ) : (
                         filteredBookerMembers.map((member) => (
@@ -426,7 +426,7 @@ export function MobileReservationModal({
                     <div className="max-h-40 overflow-y-auto p-1">
                       {filteredAttendeeMembers.length === 0 ? (
                         <div className="text-sm text-muted-foreground text-center py-4">
-                          검색 결과가 없습니다
+                          No search results
                         </div>
                       ) : (
                         filteredAttendeeMembers.map((member) => {

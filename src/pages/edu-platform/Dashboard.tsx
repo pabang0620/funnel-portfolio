@@ -60,7 +60,7 @@ function AttendanceTrendChart({ data }: { data: { id?: string; curriculum_id?: s
   if (data.length === 0) {
     return (
       <div className="bg-white rounded-xl border border-gray-200 p-4 flex items-center justify-center h-full w-full" style={{ minHeight: 220 }}>
-        <p className="text-sm text-gray-400">데이터가 없습니다</p>
+        <p className="text-sm text-gray-400">No data</p>
       </div>
     )
   }
@@ -155,7 +155,7 @@ function BottomRankingChart({ attendanceData, assignmentData, onClickStudent }: 
         </div>
       </div>
       {data.length === 0 ? (
-        <p className="text-sm text-gray-400 text-center py-8 flex-1 flex items-center justify-center">50% 미만 수강생이 없습니다</p>
+        <p className="text-sm text-gray-400 text-center py-8 flex-1 flex items-center justify-center">No students below 50%</p>
       ) : (
         <div className="flex flex-col gap-1.5 mt-3 px-1 flex-1 overflow-y-auto">
           {data.map((s) => {

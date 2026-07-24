@@ -237,7 +237,7 @@ function CodeDetailModal({
               </h4>
               {availableChannels.length === 0 ? (
                 <p style={{ color: "#64748b", fontSize: "14px" }}>
-                  추가 가능한 판매처가 없습니다.
+                  No additional sellers available.
                 </p>
               ) : (
                 <>
@@ -457,7 +457,7 @@ function CodeDetailModal({
               </div>
             ) : (
               <p className="detail-empty-message">
-                등록된 박스별 가격이 없습니다.
+                No per-box pricing registered.
               </p>
             )}
           </div>

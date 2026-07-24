@@ -89,7 +89,7 @@ function SearchableSelect({
           <div className="searchable-select-options">
             {filteredOptions.length === 0 ? (
               <div className="searchable-select-no-result">
-                검색 결과가 없습니다
+                No search results
               </div>
             ) : (
               filteredOptions.map((option) => {

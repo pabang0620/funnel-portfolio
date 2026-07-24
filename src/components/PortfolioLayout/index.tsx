@@ -58,7 +58,7 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
               minWidth: '180px',
             }}
           >
-            {/* 포트폴리오 */}
+            {/* Back to portfolio */}
             <Link
               to="/"
               onClick={() => setExpanded(false)}
@@ -77,10 +77,10 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
               onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
             >
               <span style={{ fontSize: '15px' }}>←</span>
-              <span>포트폴리오</span>
+              <span>Portfolio</span>
             </Link>
 
-            {/* 데모 버전 */}
+            {/* Demo version badge */}
             <div
               style={{
                 display: 'flex',
@@ -102,11 +102,11 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
                   padding: '1px 8px',
                 }}
               >
-                🔒 데모 버전
+                🔒 Demo version
               </span>
             </div>
 
-            {/* 다른 데모 보기 */}
+            {/* View other demos */}
             <div style={{ position: 'relative' }}>
               <button
                 onClick={() => setDemoListOpen(prev => !prev)}
@@ -128,7 +128,7 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
                 onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#1f2937')}
                 onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
               >
-                <span>다른 데모 보기</span>
+                <span>View other demos</span>
                 <span style={{ fontSize: '10px', color: '#9ca3af' }}>{demoListOpen ? '▴' : '▾'}</span>
               </button>
 
@@ -198,7 +198,7 @@ export default function PortfolioLayout({ children }: PortfolioLayoutProps) {
             transition: 'transform 0.2s, background 0.2s',
             transform: expanded ? 'rotate(45deg)' : 'rotate(0deg)',
           }}
-          title="포트폴리오 메뉴"
+          title="Portfolio menu"
           onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#1f2937')}
           onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#111827')}
         >

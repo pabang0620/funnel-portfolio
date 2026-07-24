@@ -628,7 +628,7 @@ const CustomerDbPage = React.memo(() => {
             {totalPages === 0 || customer_db.length === 0 ? (
               <tr>
                 <td colSpan={loginUser?.role === 6 ? 10 : 12}>
-                  {checkedCompanies ? "아직 데이터가 없습니다." : "매체를 선택하여 데이터를 조회하세요."}
+                  {checkedCompanies ? "아직 No data." : "Select a media channel to view data."}
                 </td>
               </tr>
             ) : (

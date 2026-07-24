@@ -561,7 +561,7 @@ export function attachInteractionListeners(state: InteractionState, dom: PlanetS
     state.mouseX = e.clientX
     state.mouseY = e.clientY
     // real mouse movement hands control back to the mouse and hides the
-    // keyboard focus ring, so the two input modes don't fight visually
+    // keyboard focus ring, so the two input modes do not fight visually
     if (state.usingKeyboard) {
       state.usingKeyboard = false
       state.keyboardFocusIndex = -1

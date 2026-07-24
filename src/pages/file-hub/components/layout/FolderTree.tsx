@@ -87,7 +87,7 @@ export default function FolderTree({ selectedFolderId, onFolderSelect, filterTex
         ))}
         {displayFolders.length === 0 && (
           <p className="text-xs text-muted-foreground px-2 py-2">
-            {filterText?.trim() ? '검색 결과가 없습니다.' : '폴더가 없습니다.'}
+            {filterText?.trim() ? 'No search results.' : 'No folders.'}
           </p>
         )}
       </div>

@@ -24,7 +24,7 @@ function DeleteBox({ message, pendingStatus, onCancel, onConfirm }) {
               fontSize: "14px",
             }}
           >
-            *휴지통에서 삭제 시 DB는 영구 삭제되어 복구할 수 없습니다
+            *Deleting from trash permanently removes the DB record — it cannot be recovered
           </p>
         )}
         <div className="delete-box-buttons">

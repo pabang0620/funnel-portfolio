@@ -128,7 +128,7 @@ export function MobileReservationList() {
           <div className="text-center py-16">
             <Calendar className="w-12 h-12 text-gray-300 mx-auto mb-3" />
             <p className="text-gray-500">
-              {searchQuery ? '검색 결과가 없습니다' : '예약 내역이 없습니다'}
+              {searchQuery ? 'No search results' : 'No reservation history'}
             </p>
           </div>
         ) : (

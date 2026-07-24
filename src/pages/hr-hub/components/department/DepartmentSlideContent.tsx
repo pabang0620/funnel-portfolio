@@ -262,7 +262,7 @@ export function DepartmentSlideContent({ node, departments, onChanged, onSelectN
             <p className="text-sm font-medium text-center">
               {node.name}을(를) 삭제하시겠습니까?
               <br />
-              <span className="text-xs text-muted-foreground">이 작업은 되돌릴 수 없습니다.</span>
+              <span className="text-xs text-muted-foreground">This action cannot be undone.</span>
             </p>
             {deleteError && <p className="text-xs text-red-500 text-center">{deleteError}</p>}
             <div className="flex gap-2 w-full">

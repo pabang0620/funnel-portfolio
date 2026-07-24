@@ -12,8 +12,8 @@ const AlertModal = ({
   message,
   onConfirm,
   onCancel,
-  confirmText = '확인',
-  cancelText = '취소',
+  confirmText = 'OK',
+  cancelText = 'Cancel',
 }: AlertModalProps) => {
   const content = (
     <div className="alert-modal">

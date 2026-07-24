@@ -134,7 +134,7 @@ export default function AssignmentModal({ assignmentId, open, onClose, isAdmin, 
                   <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0" />
                   <h3 className="text-sm font-bold text-gray-900">과제를 삭제하시겠습니까?</h3>
                 </div>
-                <p className="text-xs text-gray-500 mb-4">이 작업은 되돌릴 수 없습니다.</p>
+                <p className="text-xs text-gray-500 mb-4">This action cannot be undone.</p>
                 <div className="flex gap-2">
                   <button onClick={handleDeleteConfirm}
                     className="flex-1 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-red-600 transition-colors cursor-pointer flex items-center justify-center gap-1.5">

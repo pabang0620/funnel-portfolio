@@ -440,7 +440,7 @@ const CustomSelect = ({
                 </div>
               ))}
               {normalOpts.length === 0 && appliedSearchQuery ? (
-                <div className="no-results">검색 결과가 없습니다.</div>
+                <div className="no-results">No search results.</div>
               ) : (
                 <>
                   {/* 즐겨찾기 항목 */}
@@ -644,7 +644,7 @@ const CustomSelect = ({
                 </div>
               ))}
               {normalOpts.length === 0 && appliedSearchQuery ? (
-                <div className="no-results">검색 결과가 없습니다.</div>
+                <div className="no-results">No search results.</div>
               ) : (
                 <>
                   {/* 즐겨찾기 항목 */}
@@ -939,7 +939,7 @@ const CustomSelect = ({
             </div>
           ))}
           {normalOpts.length === 0 && appliedSearchQuery ? (
-            <div className="no-results">검색 결과가 없습니다.</div>
+            <div className="no-results">No search results.</div>
           ) : groupByParent ? (
             renderGroupedOptions(normalOpts)
           ) : (

@@ -42,8 +42,8 @@ export default function FocusPanel({
   }
 
   return (
-    <div id="focus-panel" ref={panelRef} role="dialog" aria-modal="true" aria-label="프로젝트 상세">
-      <button id="focus-close" aria-label="닫기" ref={closeBtnRef}>
+    <div id="focus-panel" ref={panelRef} role="dialog" aria-modal="true" aria-label="Project details">
+      <button id="focus-close" aria-label="Close" ref={closeBtnRef}>
         ✕
       </button>
       <div className="fp-line fp-tag" ref={fpTagRef} />
@@ -54,7 +54,7 @@ export default function FocusPanel({
           layout wrapper now; each child line owns its own cascade reveal). */}
       <div className="fp-desc" ref={fpDescRef} />
       <a href="#" className="fp-line fp-link" ref={fpLinkRef} onClick={handleLinkClick}>
-        프로젝트 보기 <span className="fp-arrow">→</span>
+        Open project <span className="fp-arrow">→</span>
       </a>
     </div>
   )

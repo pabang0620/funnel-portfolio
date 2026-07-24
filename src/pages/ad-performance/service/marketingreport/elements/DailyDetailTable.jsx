@@ -305,7 +305,7 @@ const DailyDetailTable = ({
     const { isStopped } = checkMediaOperationStatus();
 
     if (isStopped) {
-      alert('해당 매체가 중단 상태입니다. 데이터를 수정할 수 없습니다.');
+      alert('This media channel is paused. Data cannot be edited.');
       return;
     }
 
@@ -418,7 +418,7 @@ const DailyDetailTable = ({
     if (!EDITABLE_FIELDS.includes(field)) return;
     const { isStopped } = checkMediaOperationStatus();
     if (isStopped) {
-      alert('해당 매체가 중단 상태입니다. 데이터를 수정할 수 없습니다.');
+      alert('This media channel is paused. Data cannot be edited.');
       return;
     }
     setEditingCell({ date, field });
@@ -472,7 +472,7 @@ const DailyDetailTable = ({
     try {
       const text = await navigator.clipboard.readText();
       if (!text.trim()) {
-        alert('클립보드에 데이터가 없습니다.');
+        alert('클립보드에 No data.');
         return;
       }
 
@@ -482,7 +482,7 @@ const DailyDetailTable = ({
         .map(row => row.split('\t').map(cell => cell.trim()));
 
       if (rows.length === 0) {
-        alert('붙여넣을 데이터가 없습니다.');
+        alert('붙여넣을 No data.');
         return;
       }
 

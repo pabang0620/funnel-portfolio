@@ -55,7 +55,7 @@ function QuoteTable({
   if (quotes.length === 0) {
     return (
       <div className="quote-table-empty">
-        <p>등록된 명언이 없습니다.</p>
+        <p>No quotes registered.</p>
       </div>
     );
   }

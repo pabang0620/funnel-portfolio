@@ -19,7 +19,7 @@ export function ReferenceSetCard({ set, isSelected, onSelect, onDelete }: Props)
         open={confirmOpen}
         onOpenChange={setConfirmOpen}
         title={`"${set.name}" 세트를 삭제하시겠습니까?`}
-        description="이 작업은 되돌릴 수 없습니다."
+        description="This action cannot be undone."
         confirmLabel="삭제"
         destructive
         onConfirm={() => onDelete(set.id)}

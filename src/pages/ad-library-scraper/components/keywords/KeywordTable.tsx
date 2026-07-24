@@ -36,7 +36,7 @@ export function KeywordTable({ keywords, onEdit, onDelete }: KeywordTableProps) 
           {keywords.length === 0 ? (
             <TableRow>
               <TableCell colSpan={4} className="text-center text-muted-foreground py-8">
-                등록된 키워드가 없습니다
+                No keywords registered yet
               </TableCell>
             </TableRow>
           ) : (

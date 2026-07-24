@@ -37,7 +37,7 @@ export default function LectureDetail() {
   if (!lecture) {
     return (
       <div className="flex items-center justify-center h-full">
-        <p className="text-gray-400">강의를 찾을 수 없습니다.</p>
+        <p className="text-gray-400">Lecture not found.</p>
       </div>
     )
   }
@@ -168,7 +168,7 @@ export default function LectureDetail() {
             )}
 
             {localAssignments.length === 0 ? (
-              <p className="text-sm text-gray-400 text-center py-8">등록된 과제가 없습니다.</p>
+              <p className="text-sm text-gray-400 text-center py-8">No assignments registered.</p>
             ) : (
               <div className="space-y-2">
                 {localAssignments.map(a => (

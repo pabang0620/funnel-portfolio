@@ -28,60 +28,60 @@ import { useMenuPermissions } from "../hooks/useMenuPermissions";
 const menuItems = [
   {
     path: "/ad-performance/executive-report",
-    label: "경영 리포트",
+    label: "Executive Report",
     icon: faChartLine,
   },
-  { path: "/ad-performance/marketing-report", label: "마케팅 리포트", icon: faBullhorn },
-  // { path: "/media-operations", label: "매체 운영 현황", icon: faEye },
-  { path: "/ad-performance/data-entry-status", label: "데이터 입력 현황", icon: faDatabase, locked: true },
-  // { path: "/customer-management", label: "고객 관리", icon: faUsers },
+  { path: "/ad-performance/marketing-report", label: "Marketing Report", icon: faBullhorn },
+  // { path: "/media-operations", label: "Media Operations Status", icon: faEye },
+  { path: "/ad-performance/data-entry-status", label: "Data Entry Status", icon: faDatabase, locked: true },
+  // { path: "/customer-management", label: "Customer Management", icon: faUsers },
   {
-    label: "CS 관리",
+    label: "CS Management",
     path: "/ad-performance/cs-management/data",
     icon: faUsers,
     locked: true,
     subItems: [
       {
         path: "/ad-performance/cs-management/data",
-        label: "데이터 관리",
+        label: "Data Management",
         icon: faDatabase,
       },
       {
         path: "/ad-performance/cs-management/shipping",
-        label: "출고 관리",
+        label: "Shipping Management",
         icon: faQrcode,
       },
     ],
   },
   {
-    label: "관리 리소스",
+    label: "Admin Resources",
     path: "/ad-performance/management-resources/account-creation",
     icon: faUsersCog,
     locked: true,
     subItems: [
       {
         path: "/ad-performance/management-resources/account-creation",
-        label: "계정등록",
+        label: "Account Creation",
         icon: faUserPlus,
       },
       {
         path: "/ad-performance/management-resources/permission-settings",
-        label: "등급별 권한 설정",
+        label: "Role Permission Settings",
         icon: faUserShield,
       },
       {
         path: "/ad-performance/management-resources/product-management",
-        label: "코드 및 제품 등록",
+        label: "Code & Product Registration",
         icon: faQrcode,
       },
       {
         path: "/ad-performance/management-resources/marketplace-admedia",
-        label: "판매처 및 매체 등록",
+        label: "Marketplace & Media Registration",
         icon: faPlus,
       },
       {
         path: "/ad-performance/management-resources/daily-quotes",
-        label: "오늘의 명언",
+        label: "Quote of the Day",
         icon: faQuoteLeft,
       },
     ],
@@ -102,7 +102,7 @@ function Sidebar({ isCollapsed, onToggleCollapsed }) {
   const handleNavigation = useCallback((path, e) => {
     if (!checkTokenExpiry()) {
       e?.preventDefault();
-      alert("로그인이 만료되었습니다. 다시 로그인해주세요.");
+      alert("Your session has expired. Please log in again.");
       // navigate("/login"); // PORTFOLIO: no login
       return false;
     }
@@ -166,7 +166,7 @@ function Sidebar({ isCollapsed, onToggleCollapsed }) {
     <nav className={`sidebar ${isCollapsed ? "collapsed" : ""}`}>
       <div className="sidebar-content">
         <div className="sidebar-header">
-          <h1 className="sidebar-title">{isCollapsed ? "AP" : "Ad Performance"}</h1>
+          <h1 className="sidebar-title" title="Cross-channel revenue dashboard with month-over-month deltas">{isCollapsed ? "AP" : "Ad Performance"}</h1>
         </div>
 
         <div className="sidebar-group">
@@ -336,10 +336,10 @@ function Sidebar({ isCollapsed, onToggleCollapsed }) {
           <button
             className="logout-button"
             onClick={handleLogout}
-            title="로그아웃"
+            title="Log out"
           >
             <FontAwesomeIcon icon={faSignOutAlt} />
-            {!isCollapsed && <span className="logout-text">로그아웃</span>}
+            {!isCollapsed && <span className="logout-text">Log out</span>}
           </button>
         </div>
       </div>

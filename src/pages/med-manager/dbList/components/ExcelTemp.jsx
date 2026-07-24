@@ -13,7 +13,7 @@ const ExcelTemp = React.memo(({ excelFetchData, filters }) => {
     const excelCustomer_db = await excelFetchData(filters);
 
     if (!excelCustomer_db || excelCustomer_db.length === 0) {
-      alert("다운로드할 데이터가 없습니다.");
+      alert("다운로드할 No data.");
       return;
     }
 

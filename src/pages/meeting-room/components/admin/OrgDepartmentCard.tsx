@@ -95,7 +95,7 @@ const ChildDepartmentRow = memo(function ChildDepartmentRow({
       {isExpanded && (
         <div className="bg-gray-100 px-3 py-2 space-y-1 min-h-[40px] max-h-[200px] overflow-y-auto">
           {members.length === 0 ? (
-            <div className="text-xs text-gray-400 text-center py-1">구성원이 없습니다</div>
+            <div className="text-xs text-gray-400 text-center py-1">No members</div>
           ) : (
             members.map((member) => (
               <MemberCard
@@ -175,7 +175,7 @@ export const OrgDepartmentCard = memo(function OrgDepartmentCard({
       {expanded && (
         <div className="bg-gray-50 p-2 space-y-1 min-h-[40px] max-h-[200px] overflow-y-auto">
           {sortedMembers.length === 0 ? (
-            <div className="text-xs text-gray-400 text-center py-2">구성원이 없습니다</div>
+            <div className="text-xs text-gray-400 text-center py-2">No members</div>
           ) : (
             sortedMembers.map((member) => (
               <MemberCard

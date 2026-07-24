@@ -53,7 +53,7 @@ export function AddToReferenceDialog({ open, onOpenChange, ad }: Props) {
             <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
           </div>
         ) : sets.length === 0 ? (
-          <p className="text-sm text-muted-foreground py-4 text-center">세트가 없습니다</p>
+          <p className="text-sm text-muted-foreground py-4 text-center">No sets yet</p>
         ) : (
           <div className="flex flex-col gap-0.5 max-h-64 overflow-y-auto -mx-1 px-1">
             {sets.map(set => (

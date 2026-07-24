@@ -800,7 +800,7 @@ const PivotTable = memo(function PivotTable({
   }
 
   if (!tree || tree.length === 0) {
-    return <div className="pivot-empty">데이터가 없습니다</div>
+    return <div className="pivot-empty">No data</div>
   }
 
   // dimension 타입 필드 고정 옵션 (행 필드에 없어도 값 선택 가능)

@@ -117,7 +117,7 @@ export default function AdminRoles() {
 
             <div className="flex-1 overflow-y-auto py-2">
               {filteredUsers.length === 0 ? (
-                <p className="text-sm text-gray-400 text-center py-8">추가할 수 있는 사용자가 없습니다</p>
+                <p className="text-sm text-gray-400 text-center py-8">No users available to add</p>
               ) : (
                 filteredUsers.map(u => (
                   <button

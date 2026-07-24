@@ -140,7 +140,7 @@ const CustomDropdown = React.memo(({
               </div>
             ))
           ) : (
-            <div className="no-options">옵션이 없습니다.</div>
+            <div className="no-options">No options.</div>
           )}
         </div>
       )}

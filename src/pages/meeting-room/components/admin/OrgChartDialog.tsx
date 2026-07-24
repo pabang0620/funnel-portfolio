@@ -139,7 +139,7 @@ export function OrgChartDialog({ open, onOpenChange }: OrgChartDialogProps) {
       const slackMembers: SlackMember[] = await getSlackMembers();
 
       if (slackMembers.length === 0) {
-        setImportMessage({ type: 'error', text: '가져올 Slack 멤버가 없습니다.' });
+        setImportMessage({ type: 'error', text: 'No Slack members to import.' });
         return;
       }
 

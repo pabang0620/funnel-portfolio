@@ -234,7 +234,7 @@ function UploadPage() {
             ) : filteredFiles.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-48 text-muted-foreground">
                 <FileArchive className="w-12 h-12 mb-3" />
-                <p className="text-sm">파일이 없습니다</p>
+                <p className="text-sm">No files</p>
               </div>
             ) : viewMode === 'grid' ? (
               <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 p-4">

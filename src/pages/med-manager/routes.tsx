@@ -29,16 +29,16 @@ export default function MedManagerRoutes() {
         <Route path="tm-status" element={<TmStatusPage />} />
         {/* Pivot */}
         <Route path="pivot" element={<PivotPage />} />
-        <Route path="admin/*" element={<LockedPage pageName="관리자 페이지" />} />
-        <Route path="branch-list" element={<LockedPage pageName="지점 리스트" />} />
-        <Route path="performance-report" element={<LockedPage pageName="성과 리포트" />} />
-        <Route path="ad-cost/*" element={<LockedPage pageName="광고비 관리" />} />
-        <Route path="tm/search" element={<LockedPage pageName="TM 검색 및 분배" />} />
-        <Route path="tm/notice" element={<LockedPage pageName="TM 공지사항" />} />
-        <Route path="tm/calendar" element={<LockedPage pageName="TM 예약 달력" />} />
-        <Route path="vacation" element={<LockedPage pageName="휴가 달력" />} />
-        <Route path="code-list" element={<LockedPage pageName="코드 목록" />} />
-        <Route path="*" element={<LockedPage pageName="데모 버전에서 제공되지 않는 페이지" />} />
+        <Route path="admin/*" element={<LockedPage pageName="Admin Page" />} />
+        <Route path="branch-list" element={<LockedPage pageName="Branch List" />} />
+        <Route path="performance-report" element={<LockedPage pageName="Performance Report" />} />
+        <Route path="ad-cost/*" element={<LockedPage pageName="Ad Cost Management" />} />
+        <Route path="tm/search" element={<LockedPage pageName="TM Search & Assignment" />} />
+        <Route path="tm/notice" element={<LockedPage pageName="TM Notices" />} />
+        <Route path="tm/calendar" element={<LockedPage pageName="TM Booking Calendar" />} />
+        <Route path="vacation" element={<LockedPage pageName="Vacation Calendar" />} />
+        <Route path="code-list" element={<LockedPage pageName="Code List" />} />
+        <Route path="*" element={<LockedPage pageName="Page not available in the demo version" />} />
       </Routes>
       </Layout>
     </div>

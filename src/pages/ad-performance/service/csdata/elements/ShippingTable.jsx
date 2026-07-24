@@ -14,7 +14,7 @@ const ShippingTable = ({ data, loading }) => {
   if (!data || data.length === 0) {
     return (
       <div className="empty-state">
-        <p>출고 데이터가 없습니다.</p>
+        <p>출고 No data.</p>
       </div>
     );
   }

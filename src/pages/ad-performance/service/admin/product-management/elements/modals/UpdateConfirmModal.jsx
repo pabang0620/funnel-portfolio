@@ -136,7 +136,7 @@ function UpdateConfirmModal({ updateConfirmData, onConfirm, onCancel }) {
               )}
             </div>
           ) : (
-            <p className="no-changes-message">변경된 내용이 없습니다.</p>
+            <p className="no-changes-message">No changes.</p>
           )}
         </div>
         <div className="modal-footer">

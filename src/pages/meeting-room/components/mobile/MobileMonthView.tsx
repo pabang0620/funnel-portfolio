@@ -263,7 +263,7 @@ export function MobileMonthView({
           {selectedDateReservations.length === 0 && selectedDateCalendarEvents.length === 0 ? (
             <div className="flex flex-col items-center justify-center gap-2 py-8 text-gray-400">
               <CalendarX className="w-8 h-8" />
-              <span className="text-sm">예약이 없습니다</span>
+              <span className="text-sm">No reservations</span>
             </div>
           ) : (
             <div className="space-y-1">

@@ -231,7 +231,7 @@ export default function FileListView({
     return (
       <div className="flex flex-col items-center justify-center h-64 text-muted-foreground">
         <FolderIcon className="w-12 h-12 mb-2 opacity-30" />
-        <p className="text-sm">이 폴더는 비어 있습니다.</p>
+        <p className="text-sm">This folder is empty.</p>
       </div>
     )
   }

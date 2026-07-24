@@ -44,7 +44,7 @@ export default function DeleteConfirmDialog({
           </DialogTitle>
           {destructive && (
             <p className="text-destructive font-bold text-sm text-center">
-              ⚠️ 이 작업은 되돌릴 수 없습니다.
+              ⚠️ This action cannot be undone.
             </p>
           )}
           <DialogDescription>{description}</DialogDescription>

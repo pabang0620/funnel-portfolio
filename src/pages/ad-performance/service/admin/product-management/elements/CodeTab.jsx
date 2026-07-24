@@ -92,7 +92,7 @@ function CodeTab({
               </div>
             ) : channelOptions.length === 0 ? (
               <div className="form-input disabled-input warning">
-                선택한 판매처에 자식 판매처가 없습니다.
+                The selected seller has no sub-sellers.
               </div>
             ) : (
               <CustomSelect
@@ -223,7 +223,7 @@ function CodeTab({
             ) : codeList.length === 0 ? (
               <tr>
                 <td colSpan="6" className="no-data">
-                  등록된 코드가 없습니다.
+                  No codes registered.
                 </td>
               </tr>
             ) : (

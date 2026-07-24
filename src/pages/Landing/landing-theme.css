@@ -640,6 +640,118 @@ body.landing-body {
   }
 }
 
+/* ---------- INTRO PANEL (fixed bottom-center, English "about this demo" block for recruiters) ---------- */
+
+.landing-hyperspace .intro-panel {
+  --accent: var(--blue);
+  position: fixed;
+  left: 50%;
+  bottom: 1.6rem;
+  transform: translateX(-50%);
+  z-index: 6;
+  width: min(560px, 90vw);
+  padding: 0.95rem 1.3rem 1.05rem 1.3rem;
+  background: rgba(5, 3, 10, 0.4);
+  text-align: center;
+  /* never intercepts clicks — a wandering planet underneath must stay
+     clickable at all times (see IntroPanel.tsx doc comment) */
+  pointer-events: none;
+}
+
+.landing-hyperspace .ip-corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 0 solid var(--accent);
+  opacity: 0.6;
+  filter: drop-shadow(0 0 2px var(--accent)) drop-shadow(0 0 5px var(--accent));
+}
+
+.landing-hyperspace .ip-tl {
+  top: -1px;
+  left: -1px;
+  border-top-width: 2px;
+  border-left-width: 2px;
+}
+.landing-hyperspace .ip-tr {
+  top: -1px;
+  right: -1px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+.landing-hyperspace .ip-bl {
+  bottom: -1px;
+  left: -1px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+.landing-hyperspace .ip-br {
+  bottom: -1px;
+  right: -1px;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+
+.landing-hyperspace .ip-eyebrow {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.85;
+  text-shadow: 0 0 6px var(--accent);
+}
+
+.landing-hyperspace .ip-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.005em;
+}
+
+.landing-hyperspace .ip-body {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--dim);
+}
+
+.landing-hyperspace .ip-guide {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.landing-hyperspace .ip-note {
+  margin: 0;
+  font-size: 0.68rem;
+  color: var(--dim);
+  opacity: 0.75;
+}
+
+/* Small screens: the fixed viewport is tight, so trade the full pitch for
+   a compact strip — keep the hook (title) + the one instruction visitors
+   actually need (how to navigate), drop the longer body copy and the
+   Korean-UI caveat rather than shrinking text to the point of being
+   unreadable. */
+@media (max-width: 640px) {
+  .landing-hyperspace .intro-panel {
+    bottom: 0.85rem;
+    width: 92vw;
+    padding: 0.75rem 1rem 0.85rem 1rem;
+  }
+  .landing-hyperspace .ip-title {
+    font-size: 0.88rem;
+  }
+  .landing-hyperspace .ip-body,
+  .landing-hyperspace .ip-note {
+    display: none;
+  }
+}
+
 /* ---------- TEXTURE ATTRIBUTION (fixed bottom-right, CC BY 4.0 credit) ---------- */
 
 .landing-hyperspace .texture-credit {

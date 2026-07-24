@@ -26,20 +26,20 @@ interface AppSidebarProps {
 }
 
 const mainMenuItems = [
-  { id: 'dashboard' as Tab, icon: LayoutDashboard, label: '대시보드', locked: true },
-  { id: 'upload' as Tab, icon: Upload, label: '업로드' },
-  { id: 'search' as Tab, icon: Search, label: '콘텐츠 검색' },
-  { id: 'guide' as Tab, icon: BookOpen, label: '가이드', locked: true },
-  { id: 'analytics' as Tab, icon: BarChart3, label: '콘텐츠 분석' },
-  { id: 'ad-code-mapping' as Tab, icon: Wand2, label: '광고코드 자동 입력', locked: true },
+  { id: 'dashboard' as Tab, icon: LayoutDashboard, label: 'Dashboard', locked: true },
+  { id: 'upload' as Tab, icon: Upload, label: 'Upload' },
+  { id: 'search' as Tab, icon: Search, label: 'Content Search' },
+  { id: 'guide' as Tab, icon: BookOpen, label: 'Guide', locked: true },
+  { id: 'analytics' as Tab, icon: BarChart3, label: 'Content Analytics' },
+  { id: 'ad-code-mapping' as Tab, icon: Wand2, label: 'Auto Ad-Code Mapping', locked: true },
 ]
 
 const adminMenuItems = [
-  { id: 'products' as Tab, icon: Package, label: '제품', locked: true },
-  { id: 'category-groups' as Tab, icon: FolderTree, label: '카테고리 그룹', locked: true },
-  { id: 'attribute-labels' as Tab, icon: Tags, label: '속성 라벨', locked: true },
-  { id: 'label-connections' as Tab, icon: Link, label: '라벨 연결', locked: true },
-  { id: 'admin' as Tab, icon: Users, label: '사용자 관리', locked: true },
+  { id: 'products' as Tab, icon: Package, label: 'Products', locked: true },
+  { id: 'category-groups' as Tab, icon: FolderTree, label: 'Category Groups', locked: true },
+  { id: 'attribute-labels' as Tab, icon: Tags, label: 'Attribute Labels', locked: true },
+  { id: 'label-connections' as Tab, icon: Link, label: 'Label Connections', locked: true },
+  { id: 'admin' as Tab, icon: Users, label: 'User Management', locked: true },
 ]
 
 export function AppSidebar({ activeTab, onTabChange }: AppSidebarProps) {
@@ -50,7 +50,7 @@ export function AppSidebar({ activeTab, onTabChange }: AppSidebarProps) {
       {/* Header */}
       <div className="flex items-center justify-between p-3 border-b h-14">
         {!collapsed && (
-          <span className="text-sm font-semibold text-sidebar-foreground truncate">Ad Content Storage</span>
+          <span className="text-sm font-semibold text-sidebar-foreground truncate" title="Shared library for ad creative assets">Ad Content Storage</span>
         )}
         <button
           onClick={() => setCollapsed(v => !v)}
@@ -76,7 +76,7 @@ export function AppSidebar({ activeTab, onTabChange }: AppSidebarProps) {
                 : 'text-sidebar-foreground hover:bg-sidebar-accent/50',
               item.locked ? 'opacity-60' : ''
             )}
-            title={collapsed ? `${item.label}${item.locked ? ' (잠금)' : ''}` : undefined}
+            title={collapsed ? `${item.label}${item.locked ? ' (locked)' : ''}` : undefined}
           >
             <item.icon className="w-4 h-4 shrink-0" />
             {!collapsed && <span className="truncate flex-1">{item.label}</span>}
@@ -99,7 +99,7 @@ export function AppSidebar({ activeTab, onTabChange }: AppSidebarProps) {
                 : 'text-sidebar-foreground hover:bg-sidebar-accent/50',
               item.locked ? 'opacity-60' : ''
             )}
-            title={collapsed ? `${item.label}${item.locked ? ' (잠금)' : ''}` : undefined}
+            title={collapsed ? `${item.label}${item.locked ? ' (locked)' : ''}` : undefined}
           >
             <item.icon className="w-4 h-4 shrink-0" />
             {!collapsed && <span className="truncate flex-1">{item.label}</span>}
@@ -111,11 +111,11 @@ export function AppSidebar({ activeTab, onTabChange }: AppSidebarProps) {
       {/* Footer user info */}
       <div className={cn('border-t border-sidebar-border p-3 flex items-center gap-2', collapsed && 'justify-center')}>
         <div className="w-8 h-8 rounded-full bg-sidebar-primary text-sidebar-primary-foreground flex items-center justify-center text-xs font-semibold shrink-0">
-          관
+          A
         </div>
         {!collapsed && (
           <div className="min-w-0">
-            <div className="text-sm font-medium text-sidebar-foreground truncate">관리자</div>
+            <div className="text-sm font-medium text-sidebar-foreground truncate">Admin</div>
             <div className="text-xs text-sidebar-muted truncate">admin@company.com</div>
           </div>
         )}

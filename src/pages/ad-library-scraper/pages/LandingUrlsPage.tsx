@@ -69,8 +69,8 @@ export function LandingUrlsPage() {
   const { bookmarkedLandingUrls, bookmarkIds, bookmarkNotes, markBookmarked, unmarkBookmarked } = useBookmarkStatus(emptyAdIds, landingUrls, filterKey, 'full')
 
   useEffect(() => {
-    getKeywords().then(setKeywords).catch(() => toast.error('키워드 목록을 불러올 수 없습니다'))
-    getBlockedDomains().then(setBlockedDomains).catch(() => toast.error('차단 도메인 목록을 불러올 수 없습니다'))
+    getKeywords().then(setKeywords).catch(() => toast.error('Failed to load keyword list'))
+    getBlockedDomains().then(setBlockedDomains).catch(() => toast.error('Failed to load blocked domain list'))
   }, [])
 
   useEffect(() => {
@@ -219,7 +219,7 @@ export function LandingUrlsPage() {
             {loading ? (
               <div className="flex justify-center py-12 text-muted-foreground">로딩 중...</div>
             ) : items.length === 0 ? (
-              <div className="flex justify-center py-12 text-muted-foreground">랜딩 URL이 없습니다.</div>
+              <div className="flex justify-center py-12 text-muted-foreground">No landing URLs.</div>
             ) : (
               <div className="border rounded-lg divide-y divide-border overflow-hidden">
                 {items.map((item) => {
@@ -285,7 +285,7 @@ export function LandingUrlsPage() {
 
             {/* 차단 목록 */}
             {blockedDomains.length === 0 ? (
-              <div className="flex justify-center py-12 text-muted-foreground">차단된 도메인이 없습니다.</div>
+              <div className="flex justify-center py-12 text-muted-foreground">No blocked domains.</div>
             ) : (
               <div className="border rounded-lg divide-y divide-border overflow-hidden">
                 {blockedDomains.map((bd) => (

@@ -84,7 +84,7 @@ function PriceHistoryModal({
           <div className="history-list">
             {(selectedPriceHistory.priceHistory || []).length === 0 ? (
               <p className="detail-empty-message">
-                등록된 가격 히스토리가 없습니다.
+                No price history registered.
               </p>
             ) : (
               (selectedPriceHistory.priceHistory || []).map(
@@ -437,7 +437,7 @@ function HistoryHiddenPrices({
               </div>
             ))
           ) : (
-            <p className="no-hidden-msg">등록된 히든이 없습니다.</p>
+            <p className="no-hidden-msg">No hidden items registered.</p>
           )}
         </div>
       ) : (

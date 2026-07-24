@@ -43,7 +43,7 @@ function TranscriptModal({ open, onClose, file, transcript: initialTranscript, o
 
   const handleSave = async () => {
     if (!hasChanges) {
-      toast.info("변경사항이 없습니다");
+      toast.info("No changes");
       return;
     }
 
@@ -366,7 +366,7 @@ function TranscriptModal({ open, onClose, file, transcript: initialTranscript, o
                 lineHeight: "1.6",
                 cursor: isEditing ? "text" : "default",
               }}
-              placeholder="스크립트가 없습니다"
+              placeholder="No transcript"
             />
           )}
         </div>
@@ -594,7 +594,7 @@ function TranscriptModal({ open, onClose, file, transcript: initialTranscript, o
                   lineHeight: "1.5",
                 }}
               >
-                이 작업은 되돌릴 수 없습니다.
+                This action cannot be undone.
                 <br />
                 스크립트가 영구적으로 삭제됩니다.
               </p>

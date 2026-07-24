@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const userName = "데모 관리자";
+const userName = "Demo Admin";
 
 function Header({ isSidebarOpen, setIsSidebarOpen }) {
   const navigate = useNavigate();
@@ -19,24 +19,24 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
 
   return (
     <header>
-      {/* 모바일 햄버거 버튼 */}
+      {/* Mobile hamburger button */}
       {isMobile && (
         <button
           className="mobile-menu-btn"
           onClick={handleToggle}
-          aria-label="메뉴 열기"
+          aria-label="Open menu"
         >
           <FontAwesomeIcon icon={faBars} />
         </button>
       )}
 
-      {/* 로고 */}
+      {/* Logo */}
       <div className="logo">
         <span className="gradient-text">Med Manager</span>
         <span className="solid-text">Med Manager</span>
       </div>
 
-      {/* 우측 프로필 영역 */}
+      {/* Right-side profile area */}
       <div className="profile">
         <span
           style={{
@@ -59,8 +59,8 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
             borderRadius: "6px",
             transition: "background 0.2s",
           }}
-          aria-label="로그아웃"
-          title="나가기"
+          aria-label="Log out"
+          title="Log out"
           onMouseEnter={(e) =>
             (e.currentTarget.style.background = "rgba(72,128,255,0.08)")
           }
@@ -68,12 +68,12 @@ function Header({ isSidebarOpen, setIsSidebarOpen }) {
         >
           <img
             src="/images/header/sign-out.png"
-            alt="로그아웃"
+            alt="Log out"
             style={{ width: "20px", height: "20px", objectFit: "contain" }}
             onError={(e) => {
               e.target.onerror = null;
               e.target.style.display = "none";
-              e.target.parentElement.insertAdjacentText("beforeend", "나가기");
+              e.target.parentElement.insertAdjacentText("beforeend", "Log out");
             }}
           />
         </button>

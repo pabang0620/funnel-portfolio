@@ -22,12 +22,12 @@ export default function UtmBuilderRoutes() {
             <Route index element={<Navigate to="create" replace />} />
             <Route path="create" element={<UTMGenerator />} />
             <Route path="history" element={<UTMHistory />} />
-            <Route path="product" element={<DemoLock projectName="UTM Builder" pageName="브랜드/제품 관리" />} />
-            <Route path="media" element={<DemoLock projectName="UTM Builder" pageName="매체 관리" />} />
-            <Route path="content-type" element={<DemoLock projectName="UTM Builder" pageName="콘텐츠타입 관리" />} />
-            <Route path="placement" element={<DemoLock projectName="UTM Builder" pageName="지면/구좌 관리" />} />
-            <Route path="users" element={<DemoLock projectName="UTM Builder" pageName="사용자 관리" />} />
-            <Route path="*" element={<DemoLock projectName="UTM Builder" pageName="페이지" />} />
+            <Route path="product" element={<DemoLock projectName="UTM Builder" pageName="Brand/Product Management" />} />
+            <Route path="media" element={<DemoLock projectName="UTM Builder" pageName="Media Management" />} />
+            <Route path="content-type" element={<DemoLock projectName="UTM Builder" pageName="Content Type Management" />} />
+            <Route path="placement" element={<DemoLock projectName="UTM Builder" pageName="Placement/Slot Management" />} />
+            <Route path="users" element={<DemoLock projectName="UTM Builder" pageName="User Management" />} />
+            <Route path="*" element={<DemoLock projectName="UTM Builder" pageName="Page" />} />
           </Routes>
         </UtmBuilderLayout>
       </MasterDataProvider>

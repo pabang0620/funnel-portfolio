@@ -144,7 +144,7 @@ function PermissionSettings() {
     if (!canEdit) {
       showAlert(
         "권한 없음",
-        "권한 설정을 변경할 수 있는 권한이 없습니다.",
+        "No permission to change permission settings.",
         "warning"
       );
       return;
@@ -219,7 +219,7 @@ function PermissionSettings() {
     if (!canEdit) {
       showAlert(
         "권한 없음",
-        "권한 설정을 저장할 수 있는 권한이 없습니다.",
+        "No permission to save permission settings.",
         "warning"
       );
       return;
@@ -230,7 +230,7 @@ function PermissionSettings() {
 
     // 변경사항이 없으면 알림
     if (permissionUpdates.length === 0) {
-      showAlert("알림", "변경된 권한이 없습니다.", "info");
+      showAlert("알림", "No permission changes.", "info");
       return;
     }
 
@@ -260,7 +260,7 @@ function PermissionSettings() {
     if (!canEdit) {
       showAlert(
         "권한 없음",
-        "권한 설정을 초기화할 수 있는 권한이 없습니다.",
+        "No permission to reset permission settings.",
         "warning"
       );
       return;

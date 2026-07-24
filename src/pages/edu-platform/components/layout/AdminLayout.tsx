@@ -14,17 +14,17 @@ import {
 import { useAuthStore } from '../../store/auth'
 
 const commonNavItems = [
-  { to: '/edu-platform/curriculums', icon: BookOpen, label: '커리큘럼' },
-  { to: '/edu-platform/resources', icon: FolderOpen, label: '교육자료실' },
+  { to: '/edu-platform/curriculums', icon: BookOpen, label: 'Curriculums' },
+  { to: '/edu-platform/resources', icon: FolderOpen, label: 'Resource Library' },
 ]
 
 const adminNavItems = [
-  { to: '/edu-platform/students', icon: Users, label: '수강생 관리' },
-  { to: '/edu-platform/admin-roles', icon: ShieldCheck, label: '권한 관리' },
+  { to: '/edu-platform/students', icon: Users, label: 'Students' },
+  { to: '/edu-platform/admin-roles', icon: ShieldCheck, label: 'Role Management' },
 ]
 
 const studentNavItems = [
-  { to: '/edu-platform/my-assignments', icon: UserRound, label: '내 과제' },
+  { to: '/edu-platform/my-assignments', icon: UserRound, label: 'My Assignments' },
 ]
 
 export default function AdminLayout() {
@@ -43,7 +43,7 @@ export default function AdminLayout() {
   }, [])
 
   const allItems = [
-    ...(isAdmin && !viewAsStudent ? [{ to: '/edu-platform/dashboard', icon: LayoutDashboard, label: '대시보드' }] : []),
+    ...(isAdmin && !viewAsStudent ? [{ to: '/edu-platform/dashboard', icon: LayoutDashboard, label: 'Dashboard' }] : []),
     ...commonNavItems,
     ...(isAdmin && !viewAsStudent ? adminNavItems : studentNavItems),
   ]
@@ -56,7 +56,7 @@ export default function AdminLayout() {
             <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center">
               <GraduationCap className="w-4 h-4 text-white" />
             </div>
-            <span className="font-bold text-gray-900 text-sm">Edu Platform</span>
+            <span className="font-bold text-gray-900 text-sm" title="Internal training courseware">Edu Platform</span>
           </div>
 
           <div className="ml-auto relative" ref={dropdownRef}>
@@ -76,7 +76,7 @@ export default function AdminLayout() {
                   <p className="text-xs text-gray-500 mt-0.5">{user?.email}</p>
                 </div>
                 <div className="px-4 py-2.5 text-xs text-gray-400 italic">
-                  데모 버전 — 로그아웃 비활성화
+                  Demo version — log out disabled
                 </div>
               </div>
             )}
@@ -131,7 +131,7 @@ export default function AdminLayout() {
           <div className="flex items-center gap-2.5">
             <UserRound className={`w-3.5 h-3.5 flex-shrink-0 transition-colors ${viewAsStudent ? 'text-blue-600' : 'text-gray-400'}`} />
             <span className={`text-xs font-medium transition-colors ${viewAsStudent ? 'text-blue-600' : 'text-gray-500'}`}>
-              {viewAsStudent ? '수강생 모드' : '관리자 모드'}
+              {viewAsStudent ? 'Student mode' : 'Admin mode'}
             </span>
             <div className={`relative w-9 h-5 rounded-full transition-colors duration-200 flex-shrink-0 ${viewAsStudent ? 'bg-blue-600' : 'bg-gray-200'}`}>
               <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow-sm transition-transform duration-200 ${viewAsStudent ? 'translate-x-4' : 'translate-x-0.5'}`} />

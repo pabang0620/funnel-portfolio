@@ -87,7 +87,7 @@ const ChangesSummaryModal = ({
     <div className="changes-summary-modal">
       <Modal isOpen={isOpen} onClose={onClose} title="변경사항 확인">
         {totalChanges === 0 ? (
-          <p className="modal-content">변경된 항목이 없습니다.</p>
+          <p className="modal-content">No changed items.</p>
         ) : (
           <>
             <div className="modifier-info">

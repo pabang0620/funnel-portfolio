@@ -34,7 +34,7 @@ function RecentHistory({ historyLogs, onViewDetails }) {
       </div>
       <div className="recent-history-list">
         {recentLogs.length === 0 ? (
-          <div className="no-history">히스토리가 없습니다.</div>
+          <div className="no-history">No history.</div>
         ) : (
           recentLogs.map((log, index) => (
             <div key={index} className="history-item">

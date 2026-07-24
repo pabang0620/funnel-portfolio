@@ -265,7 +265,7 @@ export function ReferencesPage() {
                           <Check className="h-3 w-3 mr-1" /> 완료
                         </Button>
                         <Button size="sm" variant="outline" onClick={() => setEditingNameSetId(null)}>
-                          취소
+                          Cancel
                         </Button>
                       </>
                     ) : (
@@ -347,7 +347,7 @@ export function ReferencesPage() {
             </div>
           </div>
           <div className="flex justify-end gap-2 mt-2">
-            <Button variant="outline" onClick={() => setCreateSetOpen(false)}>취소</Button>
+            <Button variant="outline" onClick={() => setCreateSetOpen(false)}>Cancel</Button>
             <Button onClick={handleCreateSet} disabled={creatingSet || !newSetName.trim()}>
               {creatingSet ? '생성 중...' : '생성'}
             </Button>
@@ -368,7 +368,7 @@ export function ReferencesPage() {
             ? '미완료 목록 상단으로 이동합니다.'
             : '완료된 세트는 목록 하단으로 이동합니다.'
         }
-        confirmLabel="확인"
+        confirmLabel="OK"
         onConfirm={() => {
           if (completeSetId) handleToggleSetComplete(completeSetId)
           setCompleteSetId(null)
@@ -379,7 +379,7 @@ export function ReferencesPage() {
         open={deleteSetId !== null}
         onOpenChange={(open) => { if (!open) setDeleteSetId(null) }}
         title="세트를 삭제하시겠습니까?"
-        description="이 작업은 되돌릴 수 없습니다."
+        description="This action cannot be undone."
         confirmLabel="삭제"
         destructive
         onConfirm={() => {

@@ -246,7 +246,7 @@ export function MobileCalendarView() {
           // Day View - Room Cards + CEO Calendar
           rooms.length === 0 && dayCalendarEvents.length === 0 ? (
             <div className="text-center py-16">
-              <p className="text-gray-500">등록된 회의실이 없습니다</p>
+              <p className="text-gray-500">No meeting rooms registered</p>
             </div>
           ) : (
             <div className="space-y-4">

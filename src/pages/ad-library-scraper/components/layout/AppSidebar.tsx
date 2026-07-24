@@ -13,12 +13,12 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { title: '광고 조회', url: '/ad-library-scraper/results', icon: Search },
-  { title: '랜딩 주소', url: '/ad-library-scraper/landing-urls', icon: Link },
-  { title: '북마크', url: '/ad-library-scraper/bookmarks', icon: Bookmark },
-  { title: '레퍼런스', url: '/ad-library-scraper/references', icon: LayoutGrid },
-  { title: '키워드 관리', url: '/ad-library-scraper/keywords', icon: KeyRound },
-  { title: '관리자', url: '/ad-library-scraper/admin', icon: Shield, locked: true },
+  { title: 'Ad Results', url: '/ad-library-scraper/results', icon: Search },
+  { title: 'Landing URLs', url: '/ad-library-scraper/landing-urls', icon: Link },
+  { title: 'Bookmarks', url: '/ad-library-scraper/bookmarks', icon: Bookmark },
+  { title: 'References', url: '/ad-library-scraper/references', icon: LayoutGrid },
+  { title: 'Keyword Management', url: '/ad-library-scraper/keywords', icon: KeyRound },
+  { title: 'Admin', url: '/ad-library-scraper/admin', icon: Shield, locked: true },
 ]
 
 export function AppSidebar() {
@@ -28,11 +28,11 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="p-4">
-        <h1 className="text-lg font-bold">Ad Library Scraper</h1>
+        <h1 className="text-lg font-bold" title="Collects competitor ad creatives automatically">Ad Library Scraper</h1>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>메뉴</SidebarGroupLabel>
+          <SidebarGroupLabel>Menu</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {menuItems.map((item) => (

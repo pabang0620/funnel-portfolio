@@ -256,7 +256,7 @@ const DailySalesDetailModal = ({
           </div>
         ) : finalTableData.length === 0 ? (
           <div style={{ padding: '2rem', textAlign: 'center', color: '#64748b' }}>
-            해당 기간에 판매 데이터가 없습니다.
+            해당 기간에 판매 No data.
           </div>
         ) : (
           <div>

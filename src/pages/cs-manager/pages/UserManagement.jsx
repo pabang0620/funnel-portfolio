@@ -204,7 +204,7 @@ function UserManagement() {
     if (!user) return;
 
     const confirmed = confirm(
-      `정말로 "${user.name}" 사용자를 삭제하시겠습니까?\n(삭제된 사용자는 목록에서 제외되며 로그인할 수 없습니다)`
+      `Are you sure you want to delete user "${user.name}"?\n(The user will be removed from the list and will not be able to log in)`
     );
     if (!confirmed) return;
 

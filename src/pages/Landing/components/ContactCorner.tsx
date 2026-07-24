@@ -15,12 +15,12 @@ export default function ContactCorner() {
       <span className="cc-corner cc-bl" aria-hidden="true" />
       <span className="cc-corner cc-br" aria-hidden="true" />
       <div className="cc-tag">Contact</div>
-      <nav className="cc-links" aria-label="연락처">
+      <nav className="cc-links" aria-label="Contact links">
         <a className="cc-link" href="mailto:lwh970924@gmail.com">
           <span className="cc-icon" aria-hidden="true">
             ✉
           </span>
-          이메일 보내기
+          Email me
         </a>
         <a
           className="cc-link"

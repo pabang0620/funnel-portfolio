@@ -112,7 +112,7 @@ function PresetModal({ isOpen, onClose, currentConfig, onApply }) {
         <div className="ppm-list-section">
           <div className="ppm-list-label">저장된 프리셋</div>
           {presets.length === 0 ? (
-            <div className="ppm-empty">저장된 프리셋이 없습니다</div>
+            <div className="ppm-empty">No saved presets</div>
           ) : (
             <ul className="ppm-list">
               {[...presets].sort((a, b) => {

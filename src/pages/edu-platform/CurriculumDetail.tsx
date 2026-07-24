@@ -47,7 +47,7 @@ export default function CurriculumDetail() {
   if (!curriculum) {
     return (
       <div className="flex items-center justify-center h-full">
-        <p className="text-gray-400">커리큘럼을 찾을 수 없습니다.</p>
+        <p className="text-gray-400">Curriculum not found.</p>
       </div>
     )
   }
@@ -135,7 +135,7 @@ export default function CurriculumDetail() {
               <AlertTriangle className="w-5 h-5 text-red-500" />
               <h3 className="text-sm font-bold text-gray-900">커리큘럼을 삭제하시겠습니까?</h3>
             </div>
-            <p className="text-xs text-gray-500 mb-4">이 작업은 되돌릴 수 없습니다.</p>
+            <p className="text-xs text-gray-500 mb-4">This action cannot be undone.</p>
             <div className="flex gap-2">
               <button onClick={handleDelete} className="flex-1 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-medium cursor-pointer">삭제</button>
               <button onClick={() => setShowDeleteConfirm(false)} className="flex-1 border border-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium cursor-pointer">취소</button>
@@ -241,7 +241,7 @@ export default function CurriculumDetail() {
               )}
             </div>
             {lectures.length === 0 ? (
-              <p className="text-sm text-gray-400 text-center py-8">등록된 강의가 없습니다.</p>
+              <p className="text-sm text-gray-400 text-center py-8">No lectures registered.</p>
             ) : (
               <div className="space-y-2">
                 {lectures.map(lecture => {
@@ -316,7 +316,7 @@ export default function CurriculumDetail() {
                 )}
               </div>
             ) : (
-              <p className="text-xs text-gray-400">루브릭이 없습니다.</p>
+              <p className="text-xs text-gray-400">No rubric.</p>
             )}
           </div>
 

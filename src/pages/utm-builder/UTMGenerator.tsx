@@ -661,7 +661,7 @@ export function UTMGenerator() {
     if (!formState.contentTypeFullname) errors.push(`• 콘텐츠타입 "${formState.contentTypeName}"의 파라미터값이 설정되지 않았습니다`);
     if (!formState.spaceCampaign) errors.push(`• 지면/구좌 "${formState.spaceName}"의 파라미터값이 설정되지 않았습니다`);
     if (errors.length > 0) {
-      alert(`UTM 코드를 생성할 수 없습니다.\n\n다음 항목의 파라미터값이 설정되지 않았습니다:\n\n${errors.join('\n')}\n\n해당 관리 페이지에서 파라미터값을 설정해주세요.`);
+      alert(`Cannot generate the UTM code.\n\nThe following items are missing parameter values:\n\n${errors.join('\n')}\n\nPlease set the parameter values on the relevant admin page.`);
       return;
     }
     if (!count) return;
@@ -777,7 +777,7 @@ export function UTMGenerator() {
       const creatorId = masterData?.employeesList.find(e => e.initial === creator)?.id;
 
       if (!mediaId || !contentTypeId || !placementId || !productId || !plannerId || !marketerId || !creatorId) {
-        alert('선택한 항목의 ID를 찾을 수 없습니다');
+        alert('Could not find the ID for the selected item');
         return;
       }
 
@@ -1279,7 +1279,7 @@ export function UTMGenerator() {
                       <AlertTriangle className="w-4 h-4 flex-shrink-0" />
                       <span>
                         {landingNumberOptions.length === 0
-                          ? '이 제품에 등록된 랜딩번호가 없습니다.'
+                          ? 'No landing numbers registered for this product.'
                           : <>등록된 랜딩번호에 이니셜이 설정되지 않았습니다.<br />온라인팀에 문의해주세요.</>}
                         {landingNumberOptions.length === 0 && <>{' '}온라인팀에 문의해주세요.</>}
                       </span>

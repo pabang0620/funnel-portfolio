@@ -23,8 +23,8 @@ export default function AdPerformanceRoutes() {
             <Route path="executive-report" element={<ExecutiveReport />} />
             <Route path="marketing-report" element={<MarketingReport />} />
             <Route path="media-operations" element={<MediaOperations />} />
-            <Route path="data-entry-status" element={<DemoLock projectName="Ad Performance" pageName="데이터 입력 현황" />} />
-            <Route path="data-entry-history" element={<DemoLock projectName="Ad Performance" pageName="데이터 입력 이력" />} />
+            <Route path="data-entry-status" element={<DemoLock projectName="Ad Performance" pageName="Data Entry Status" />} />
+            <Route path="data-entry-history" element={<DemoLock projectName="Ad Performance" pageName="Data Entry History" />} />
           </Routes>
         </div>
       </PermissionsProvider>

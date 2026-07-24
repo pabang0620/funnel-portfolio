@@ -10,9 +10,9 @@ export interface PlanetFamily {
 }
 
 export const PLANET_FAMILIES: Record<FamilyKey, PlanetFamily> = {
-  A: { key: 'A', label: '마케팅·광고', rgb: [92, 224, 205] },
-  B: { key: 'B', label: '사내 운영', rgb: [176, 122, 244] },
-  C: { key: 'C', label: '고객·교육', rgb: [226, 178, 100] },
+  A: { key: 'A', label: 'Marketing & Ads', rgb: [92, 224, 205] },
+  B: { key: 'B', label: 'Internal Ops', rgb: [176, 122, 244] },
+  C: { key: 'C', label: 'Customer & Education', rgb: [226, 178, 100] },
 }
 
 export const PLANET_ARCHETYPES: Record<

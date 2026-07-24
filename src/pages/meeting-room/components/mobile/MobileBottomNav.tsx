@@ -3,8 +3,8 @@ import { Home, List } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const navItems = [
-  { path: '/meeting-room/mobile', icon: Home, label: '홈' },
-  { path: '/meeting-room/mobile/list', icon: List, label: '일정목록' },
+  { path: '/meeting-room/mobile', icon: Home, label: 'Home' },
+  { path: '/meeting-room/mobile/list', icon: List, label: 'Schedule' },
 ];
 
 export function MobileBottomNav() {

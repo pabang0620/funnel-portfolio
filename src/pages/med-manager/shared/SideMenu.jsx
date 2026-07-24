@@ -24,21 +24,21 @@ const BASE = "/med-manager";
 const MENU_CONFIG = [
   {
     key: "main-report",
-    label: "메인보고서",
+    label: "Main Report",
     icon: faChartBar,
     path: `${BASE}/main-report`,
     locked: false,
   },
   {
     key: "db-list",
-    label: "DB리스트",
+    label: "DB List",
     icon: faDatabase,
     path: `${BASE}/db-list`,
     locked: false,
   },
   {
     key: "pivot",
-    label: "피봇 분석",
+    label: "Pivot Analysis",
     icon: faChartPie,
     path: `${BASE}/pivot`,
     locked: false,
@@ -51,19 +51,19 @@ const MENU_CONFIG = [
     subMenus: [
       {
         key: "tm-status",
-        label: "담당자 업무 현황",
+        label: "Rep Workload Status",
         path: `${BASE}/tm-status`,
         locked: false,
       },
       {
         key: "tm-calendar",
-        label: "예약달력",
+        label: "Booking Calendar",
         path: `${BASE}/tm/calendar`,
         locked: true,
       },
       {
         key: "tm-notice",
-        label: "공지",
+        label: "Notices",
         path: `${BASE}/tm/notice`,
         locked: true,
       },
@@ -71,19 +71,19 @@ const MENU_CONFIG = [
   },
   {
     key: "code-manage",
-    label: "코드 관리",
+    label: "Code Management",
     icon: faCode,
     locked: false,
     subMenus: [
       {
         key: "create-code",
-        label: "코드 생성",
+        label: "Create Code",
         path: `${BASE}/create-code`,
         locked: false,
       },
       {
         key: "code-list",
-        label: "코드 목록",
+        label: "Code List",
         path: `${BASE}/code-list`,
         locked: true,
       },
@@ -91,21 +91,21 @@ const MENU_CONFIG = [
   },
   {
     key: "performance-report",
-    label: "성과 리포트",
+    label: "Performance Report",
     icon: faTrophy,
     path: `${BASE}/performance-report`,
     locked: true,
   },
   {
     key: "ad-cost",
-    label: "광고비관리",
+    label: "Ad Cost Management",
     icon: faDollarSign,
     path: `${BASE}/ad-cost`,
     locked: true,
   },
   {
     key: "admin",
-    label: "관리자 페이지",
+    label: "Admin Page",
     icon: faUserShield,
     path: `${BASE}/admin`,
     locked: true,
@@ -150,7 +150,7 @@ function SideMenu({ isSidebarOpen, setIsSidebarOpen }) {
 
   const handleMenuClick = (item) => {
     if (item.locked) {
-      setAlertMessage("데모 버전에서는 제공되지 않는 기능입니다.");
+      setAlertMessage("This feature is not available in the demo version.");
       return;
     }
     navigate(item.path);
@@ -183,12 +183,13 @@ function SideMenu({ isSidebarOpen, setIsSidebarOpen }) {
           <button
             className="sidebar-toggle-btn"
             onClick={handleToggle}
-            aria-label="사이드바 토글"
+            aria-label="Toggle sidebar"
           >
             <FontAwesomeIcon icon={faBars} />
           </button>
           {(isSidebarOpen || !isMobile) && (
             <span
+              title="Operations platform for a hospital ad agency: leads, ad spend, and TM call tracking"
               style={{
                 marginLeft: "0.75rem",
                 fontWeight: 700,
@@ -298,7 +299,7 @@ function SideMenu({ isSidebarOpen, setIsSidebarOpen }) {
         <AlertModal
           message={alertMessage}
           onConfirm={() => setAlertMessage(null)}
-          confirmText="확인"
+          confirmText="OK"
         />
       )}
     </>

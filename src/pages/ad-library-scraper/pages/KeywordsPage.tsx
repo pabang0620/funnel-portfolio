@@ -53,7 +53,7 @@ export function KeywordsPage() {
       setKeywords(data)
       setPage(1)
     } catch {
-      toast.error('키워드 목록을 불러올 수 없습니다')
+      toast.error('Failed to load keyword list')
     } finally {
       setLoading(false)
     }
@@ -173,7 +173,7 @@ export function KeywordsPage() {
                   <span className="text-sm text-red-700 dark:text-red-300">
                     <strong>'{deleteTarget?.keyword}'</strong> 키워드를 삭제하면 해당 키워드로 수집된{' '}
                     <strong>모든 광고 데이터가 함께 삭제</strong>됩니다.
-                    이 작업은 되돌릴 수 없습니다.
+                    This action cannot be undone.
                   </span>
                 </div>
               </div>

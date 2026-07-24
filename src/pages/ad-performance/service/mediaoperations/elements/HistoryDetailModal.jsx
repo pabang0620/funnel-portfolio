@@ -70,7 +70,7 @@ function HistoryDetailModal({ isOpen, onClose, historyLogs }) {
                 <tbody>
                   {currentLogs.length === 0 ? (
                     <tr>
-                      <td colSpan="7" className="no-data">히스토리가 없습니다.</td>
+                      <td colSpan="7" className="no-data">No history.</td>
                     </tr>
                   ) : (
                     currentLogs.map((log, index) => (

@@ -368,7 +368,7 @@ function SalesOrders() {
               </div>
             ) : salesOrders.length === 0 ? (
               <div className="empty-message">
-                <p>데이터가 없습니다.</p>
+                <p>No data.</p>
               </div>
             ) : (
               <table className="sales-table">
@@ -491,7 +491,7 @@ function SalesOrders() {
             ) : !batchSearched ? (
               <p style={{textAlign:'center',color:'#666'}}>날짜를 선택하고 검색하세요.</p>
             ) : batches.length === 0 ? (
-              <p style={{textAlign:'center',color:'#666'}}>해당 기간에 업로드 배치가 없습니다.</p>
+              <p style={{textAlign:'center',color:'#666'}}>No upload batches for this period.</p>
             ) : (
               <div style={{overflowY:'auto',flex:1}}>
                 <table style={{width:'100%',borderCollapse:'collapse',fontSize:'13px'}}>

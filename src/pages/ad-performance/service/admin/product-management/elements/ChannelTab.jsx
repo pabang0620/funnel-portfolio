@@ -74,7 +74,7 @@ function ChannelTab({
                 {channelList.length === 0 ? (
                   <tr>
                     <td colSpan="4" className="no-data">
-                      등록된 판매처가 없습니다.
+                      No sellers registered.
                     </td>
                   </tr>
                 ) : (

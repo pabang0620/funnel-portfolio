@@ -283,7 +283,7 @@ function MediaOperations() {
     if (!canEdit) {
       setAlertModal({
         isOpen: true,
-        message: "상태를 변경할 권한이 없습니다.",
+        message: "No permission to change status.",
         onConfirm: () =>
           setAlertModal({ isOpen: false, message: "", onConfirm: null }),
       });
@@ -294,7 +294,7 @@ function MediaOperations() {
     if (!isAdmin && !canEditTeamData(teamDetail)) {
       setAlertModal({
         isOpen: true,
-        message: "해당 팀의 데이터를 수정할 권한이 없습니다.",
+        message: "No permission to edit this team's data.",
         onConfirm: () =>
           setAlertModal({ isOpen: false, message: "", onConfirm: null }),
       });
@@ -526,12 +526,12 @@ function MediaOperations() {
         onClose={() =>
           setAlertModal({ isOpen: false, message: "", onConfirm: null })
         }
-        title="확인"
+        title="Confirm"
         message={alertModal.message}
         type="warning"
         showCancel={true}
-        confirmText="확인"
-        cancelText="취소"
+        confirmText="OK"
+        cancelText="Cancel"
         onConfirm={alertModal.onConfirm}
         onCancel={() =>
           setAlertModal({ isOpen: false, message: "", onConfirm: null })

@@ -240,7 +240,7 @@ const AllHospitalsTable = ({
         <div className="section-header">
           <h3>{headerTitle}</h3>
         </div>
-        <div className="no-data-message">표시할 데이터가 없습니다.</div>
+        <div className="no-data-message">표시할 No data.</div>
       </div>
     );
   }

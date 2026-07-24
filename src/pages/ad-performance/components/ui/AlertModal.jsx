@@ -7,12 +7,12 @@ import "./AlertModal.css";
 const AlertModal = ({
   isOpen,
   onClose,
-  title = "알림",
+  title = "Notice",
   message,
   type = "warning", // warning, error, success, info
-  confirmText = "확인",
+  confirmText = "OK",
   showCancel = false,
-  cancelText = "취소",
+  cancelText = "Cancel",
   onConfirm,
   onCancel,
   isLoading = false // 로딩 상태 추가

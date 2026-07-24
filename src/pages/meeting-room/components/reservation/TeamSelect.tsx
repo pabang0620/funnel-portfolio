@@ -65,7 +65,7 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
       }
       setTeamToDelete(null);
     } catch (err) {
-      alert(err instanceof Error ? err.message : '팀 삭제에 실패했습니다. 해당 팀에 예약이 있으면 삭제할 수 없습니다.');
+      alert(err instanceof Error ? err.message : "Failed to delete team. A team with existing reservations cannot be deleted.");
       setTeamToDelete(null);
     } finally {
       setIsDeleting(false);
@@ -92,7 +92,7 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
             aria-expanded={open}
             className={cn("w-full justify-between font-normal", className)}
           >
-            {selectedTeam ? selectedTeam.name : '팀을 선택하세요'}
+            {selectedTeam ? selectedTeam.name : 'Select a team'}
             <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
@@ -100,7 +100,7 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
           <div className="max-h-[300px] overflow-y-auto">
             {activeTeams.length === 0 ? (
               <div className="py-6 text-center text-sm text-muted-foreground">
-                팀이 없습니다
+                No teams
               </div>
             ) : (
               <div className="p-1">
@@ -145,7 +145,7 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
             {isAdding ? (
               <div className="flex items-center gap-2 p-1">
                 <Input
-                  placeholder="팀 이름 입력"
+                  placeholder="Enter team name"
                   value={newTeamName}
                   onChange={(e) => setNewTeamName(e.target.value)}
                   onKeyDown={handleKeyDown}
@@ -158,7 +158,7 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
                   disabled={!newTeamName.trim() || isCreating}
                   className="h-8"
                 >
-                  {isCreating ? '...' : '추가'}
+                  {isCreating ? '...' : 'Add'}
                 </Button>
                 <Button
                   size="sm"
@@ -169,7 +169,7 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
                   }}
                   className="h-8"
                 >
-                  취소
+                  Cancel
                 </Button>
               </div>
             ) : (
@@ -179,7 +179,7 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
                 onClick={() => setIsAdding(true)}
               >
                 <Plus className="mr-2 h-4 w-4" />
-                새 팀 추가
+                Add new team
               </button>
             )}
           </div>
@@ -189,19 +189,19 @@ export function TeamSelect({ value, onChange, className }: TeamSelectProps) {
       <AlertDialog open={!!teamToDelete} onOpenChange={(open) => !open && setTeamToDelete(null)}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>팀 삭제</AlertDialogTitle>
+            <AlertDialogTitle>Delete Team</AlertDialogTitle>
             <AlertDialogDescription>
-              "{teamToDelete?.name}" 팀을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.
+              Delete team "{teamToDelete?.name}"? This action cannot be undone.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel disabled={isDeleting}>취소</AlertDialogCancel>
+            <AlertDialogCancel disabled={isDeleting}>Cancel</AlertDialogCancel>
             <AlertDialogAction
               onClick={handleDeleteTeam}
               disabled={isDeleting}
               className="bg-destructive text-white hover:bg-destructive/90"
             >
-              {isDeleting ? '삭제 중...' : '삭제'}
+              {isDeleting ? 'Deleting...' : 'Delete'}
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>

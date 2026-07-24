@@ -296,7 +296,7 @@ function AccountCreation() {
           : teamService.findTeamIdByName(teamManagement.teams, formData.team);
 
         if (!teamId) {
-          showAlert("오류", "선택한 팀을 찾을 수 없습니다.", "error");
+          showAlert("오류", "Selected team not found.", "error");
           return;
         }
       }
@@ -406,7 +406,7 @@ function AccountCreation() {
     try {
       const parentTeamId = teamService.findTeamIdByName(teamManagement.teams, formData.team);
       if (!parentTeamId) {
-        showAlert("오류", "상위 팀을 찾을 수 없습니다.", "error");
+        showAlert("오류", "Parent team not found.", "error");
         return;
       }
 
@@ -482,7 +482,7 @@ function AccountCreation() {
     if (!canEditAccount && userId !== account.id) {
       showAlert(
         "권한 없음",
-        "계정 수정 권한이 없습니다.",
+        "No permission to edit this account.",
         "warning"
       );
       return;
@@ -593,7 +593,7 @@ function AccountCreation() {
           : teamService.findTeamIdByName(teamManagement.teams, editFormData.team);
 
         if (!teamId) {
-          showAlert("오류", "선택한 팀을 찾을 수 없습니다.", "error");
+          showAlert("오류", "Selected team not found.", "error");
           return;
         }
       }

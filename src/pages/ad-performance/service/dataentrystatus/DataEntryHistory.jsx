@@ -303,7 +303,7 @@ function DataEntryHistory() {
               <p>오류: {error}</p>
             </div>
           ) : historyData.length === 0 ? (
-            <div className="no-data">히스토리가 없습니다.</div>
+            <div className="no-data">No history.</div>
           ) : (
             historyData.map((log) => (
               <div

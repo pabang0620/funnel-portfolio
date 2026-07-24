@@ -403,7 +403,7 @@ export function DayView({
     // 19:30을 넘지 않도록 체크
     if (newEndMinutes > 19 * 60 + 30) {
       setErrorTitle('시간 이동 불가');
-      setErrorMessage('예약 종료 시간이 19:30을 초과할 수 없습니다.');
+      setErrorMessage('Reservation end time cannot be later than 19:30.');
       setSuggestedEndTime(null);
       setErrorModalOpen(true);
       return;

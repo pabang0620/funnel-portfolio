@@ -215,7 +215,7 @@ const DataTable = () => {
               </tr>
             ) : data.length === 0 ? (
               <tr className="empty-row">
-                <td colSpan="8">데이터가 없습니다.</td>
+                <td colSpan="8">No data.</td>
               </tr>
             ) : (
               data.map(item => (

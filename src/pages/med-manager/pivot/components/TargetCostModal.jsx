@@ -135,7 +135,7 @@ function TargetCostModal({ isOpen, onClose, onSave }) {
           {loading ? (
             <div className="ppm-loading">불러오는 중...</div>
           ) : filteredTargets.length === 0 ? (
-            <div className="ppm-empty">{searchQuery ? '검색 결과가 없습니다' : '등록된 병원이 없습니다'}</div>
+            <div className="ppm-empty">{searchQuery ? 'No search results' : 'No hospitals registered'}</div>
           ) : (
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
               <thead>

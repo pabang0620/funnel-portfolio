@@ -157,7 +157,7 @@ function VideoPlayer({ url }: { url: string }) {
   }
   return (
     <div className="absolute inset-0 flex items-center justify-center text-white/60 text-sm">
-      재생할 수 없습니다
+      Cannot play this
     </div>
   )
 }
@@ -342,7 +342,7 @@ export function ReferenceMediaItem({ item, onDelete, onEdit }: Props) {
         open={deleteConfirmOpen}
         onOpenChange={setDeleteConfirmOpen}
         title="아이템을 삭제하시겠습니까?"
-        description="이 작업은 되돌릴 수 없습니다."
+        description="This action cannot be undone."
         confirmLabel="삭제"
         destructive
         onConfirm={() => { onDelete(item.id); setDeleteConfirmOpen(false) }}

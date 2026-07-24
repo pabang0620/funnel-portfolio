@@ -311,7 +311,7 @@ export function AdminPage() {
                 <div className="text-sm text-destructive">{teamsError}</div>
               ) : sortedTeams.length === 0 ? (
                 <div className="border rounded-lg p-8 text-center bg-muted/20">
-                  <p className="text-sm text-muted-foreground mb-3">등록된 팀이 없습니다</p>
+                  <p className="text-sm text-muted-foreground mb-3">등록된 No teams</p>
                   <Button size="sm" onClick={() => setShowTeamDialog(true)}>
                     첫 팀 추가하기
                   </Button>
@@ -483,7 +483,7 @@ export function AdminPage() {
                 <div className="text-sm text-destructive">{roomsError}</div>
               ) : sortedRooms.length === 0 ? (
                 <div className="border rounded-lg p-8 text-center bg-muted/20">
-                  <p className="text-sm text-muted-foreground mb-3">등록된 회의실이 없습니다</p>
+                  <p className="text-sm text-muted-foreground mb-3">No meeting rooms registered</p>
                   <Button size="sm" onClick={() => setShowRoomDialog(true)}>
                     첫 회의실 추가하기
                   </Button>

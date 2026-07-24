@@ -535,7 +535,7 @@ function FileListPage() {
   // 파일 삭제 모달 열기
   const openDeleteModal = (file) => {
     if (!file || !file.id) {
-      toast.error("파일 정보를 찾을 수 없습니다.");
+      toast.error("Could not find file information.");
       return;
     }
     setDeleteTargetFile(file);
@@ -1407,7 +1407,7 @@ function FileListPage() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  업로드된 파일이 없습니다
+                  No files uploaded
                 </div>
                 <div style={{ fontSize: "0.9rem" }}>
                   파일을 업로드하면 여기에 폴더 구조로 표시됩니다.
@@ -1578,11 +1578,11 @@ function FileListPage() {
                     lineHeight: "1.5",
                   }}
                 >
-                  <strong>이 작업은 되돌릴 수 없습니다!</strong>
+                  <strong>This action cannot be undone!</strong>
                   <br />
                   어디에도 해당 파일은 저장되어 있지 않으며 정말로 삭제됩니다.
                   <br />
-                  백업이 없으면 데이터를 복구할 수 없습니다.
+                  Without a backup, this data cannot be recovered.
                 </div>
               </div>
             </div>

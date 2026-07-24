@@ -306,8 +306,8 @@ function AccountModals({
                 }}
               >
                 {teamActionModal.type === "team"
-                  ? "세부팀이 있는 경우 삭제할 수 없습니다."
-                  : "팀원이 있는 경우 삭제할 수 없습니다."}
+                  ? "Cannot delete a team that has sub-teams."
+                  : "Cannot delete a team that has members."}
               </p>
             </>
           )}
