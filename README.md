@@ -10,7 +10,7 @@
 
 ## Why this exists
 
-For 2.5 years I was the only engineer at a **30-person performance marketing agency**. I built and operated everything the company ran on internally: the campaign landing page stack, the lead CRM the call team worked out of, the reporting dashboards management read every morning, and the ops tools that replaced the company's spreadsheets.
+For 2.5 years I was one of two engineers at a **150-person performance marketing agency**. I built and operated most of what the company ran on internally: the campaign landing page stack, the lead CRM the call team worked out of, the reporting dashboards management read every morning, and the ops tools that replaced the company's spreadsheets.
 
 None of that code can be published - it belongs to the company. Which left the largest part of my work history with nothing anyone could actually look at.
 

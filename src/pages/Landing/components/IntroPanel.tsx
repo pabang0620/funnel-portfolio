@@ -16,7 +16,7 @@ export default function IntroPanel() {
       <p className="ip-eyebrow">About this demo</p>
       <h2 className="ip-title">Ten internal tools, rebuilt as one live demo</h2>
       <p className="ip-body">
-        I built these as the only engineer at a 150-person marketing agency, where 120 people used
+        I built these as one of two engineers at a 150-person marketing agency, where 120 people used
         them every day - a no-code page builder, an internal CRM, an ad-performance dashboard, and
         more. The original code belongs to the company, so I rebuilt the tooling here with sample
         data.
